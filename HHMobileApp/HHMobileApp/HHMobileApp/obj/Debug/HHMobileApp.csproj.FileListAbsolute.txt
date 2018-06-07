@@ -65,5 +65,6 @@ C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobil
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\HHMobileApp\obj\Debug\android\assets\System.Runtime.Serialization.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\HHMobileApp\obj\Debug\android\assets\System.ServiceModel.Internals.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\HHMobileApp\obj\Debug\android\assets\System.Xml.pdb
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\HHMobileApp\obj\Debug\res\layout\item.xml
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\HHMobileApp\bin\Debug\HHMobileApp.dll
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\HHMobileApp\obj\Debug\linksrc\HHMobileApp.dll.mdb

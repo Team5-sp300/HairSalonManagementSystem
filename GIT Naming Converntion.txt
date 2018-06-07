@@ -1,0 +1,10 @@
+Minor Update
+	-any basic code changes
+Update
+	-mulpitple code changes or added features
+Major Update
+	-multiple added features or class revision
+Bugfix
+	-any bugs that have been fixed that initially not known
+Hotfix 
+	-any error which has been updated and imediately fixed 
