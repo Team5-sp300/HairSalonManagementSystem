@@ -662,11 +662,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHMobileApp\\HHMobileApp\\HHMobileApp.iOS\\HHMobileApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Andrew\\Desktop\\HairSalonManagementSystem\\HHMobileApp\\HHMobileApp\\HHMobileApp.iOS\\HHMobileApp.iOS.csproj",
       "projectName": "HHMobileApp.iOS",
-      "projectPath": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHMobileApp\\HHMobileApp\\HHMobileApp.iOS\\HHMobileApp.iOS.csproj",
+      "projectPath": "C:\\Users\\Andrew\\Desktop\\HairSalonManagementSystem\\HHMobileApp\\HHMobileApp\\HHMobileApp.iOS\\HHMobileApp.iOS.csproj",
       "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHMobileApp\\HHMobileApp\\HHMobileApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Andrew\\Desktop\\HairSalonManagementSystem\\HHMobileApp\\HHMobileApp\\HHMobileApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
