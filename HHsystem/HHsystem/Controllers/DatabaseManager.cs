@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace HHsystem.Controllers
@@ -10,34 +11,36 @@ namespace HHsystem.Controllers
     class DatabaseManager
     {
         MySqlConnection conn;
+        MySqlDataAdapter adapter;
+        MySqlCommand cmd;
 
-       public void connection() {
-            conn = new MySqlConnection("Server=localhost; database=HairSalonDB; UID=root; password=root");
+        public void connection()
+        {
+            conn = new MySqlConnection("Server=localhost; database=HairSalon; UID=root; password=;SslMode=none");
             conn.Open();
         }
 
-        public object[][] bookings() {
-            object[][] member=null;
-            string commandString = "SELECT * FROM booking";
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = commandString;
-            MySqlDataReader result = cmd.ExecuteReader();
-
-            int i=0;
-
-            if (result != null)
+        public MySqlDataAdapter employee()
+        {
+            try
             {
-                while (result.Read())
-                {
-                    member[i][0] = result["idBooking"].ToString();
-                    member[i][1] = result["idCustomer"].ToString();
-                    member[i][2] = result["idEmployee"].ToString();
-                    i++;
-                    Console.WriteLine(member[i][0]);
-                }
-            }
+                string command = "SELECT * FROM Employee";
+                connection();
 
-            return member;
+
+                cmd = new MySqlCommand(command, conn);
+                adapter = new MySqlDataAdapter
+                {
+                    SelectCommand = cmd
+                };
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                throw;
+            }
+            return adapter;
         }
     }
 }

@@ -7,18 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HHsystem.Controllers;
 using MySql.Data.MySqlClient;
 
 namespace HHsystem
 {
     public partial class MainForm : Form
     {
-        MySqlDataAdapter adapter;
+   
+        DatabaseManager manager = new DatabaseManager();
 
         public MainForm()
         {
             InitializeComponent();
-            FillDataGridView();
+            populateBookingTable();
             tabControl1.DrawItem += new DrawItemEventHandler(tabControl1_DrawItem);
         }
 
@@ -26,18 +28,14 @@ namespace HHsystem
         {
             Graphics g = e.Graphics;
             Brush _textBrush;
-
             // Get the item from the collection.
             TabPage _tabPage = tabControl1.TabPages[e.Index];
-
             // Get the real bounds for the tab rectangle.
             Rectangle _tabBounds = tabControl1.GetTabRect(e.Index);
-
             if (e.State == DrawItemState.Selected)
             {
-
                 // Draw a different background color, and don't paint a focus rectangle.
-                _textBrush = new SolidBrush(Color.Red);
+                _textBrush = new SolidBrush(Color.LightBlue);
                 g.FillRectangle(Brushes.Gray, e.Bounds);
             }
             else
@@ -48,7 +46,6 @@ namespace HHsystem
 
             // Use our own font.
             Font _tabFont = new Font("Arial", (float)10.0, FontStyle.Bold, GraphicsUnit.Pixel);
-
             // Draw string. Center the text.
             StringFormat _stringFlags = new StringFormat();
             _stringFlags.Alignment = StringAlignment.Center;
@@ -56,45 +53,25 @@ namespace HHsystem
             g.DrawString(_tabPage.Text, _tabFont, _textBrush, _tabBounds, new StringFormat(_stringFlags));
         }
 
-        public void populatetable()
+        public void populateBookingTable()
         {
             DataTable table = new DataTable();
-            adapter.Fill(table);
+            manager.employee() .Fill(table);
             bindingSource.DataSource = table;
             dataGridView1.DataSource = bindingSource;
         }
 
-        public void FillDataGridView()
+        public void populateStockTable()
         {
-            try
-            {
-                MySqlConnection conn;
-                string command = "SELECT * FROM booking";
-                conn = new MySqlConnection("Server=localhost; database=HairSalonDB; UID=root; password=root");
-                conn.Open();
+            DataTable table = new DataTable();
+            manager.employee().Fill(table);
+            bindingSource.DataSource = table;
+            dataGridView2.DataSource = bindingSource;
+        }
 
-                dataGridView1.AutoGenerateColumns = true;
-
-                MySqlCommand cmd = new MySqlCommand(command, conn);
-                MySqlDataAdapter adapter = new MySqlDataAdapter
-                {
-                    SelectCommand = cmd
-                };
-
-                DataTable table = new DataTable();
-
-                adapter.Fill(table);
-
-                bindingSource.DataSource = table;
-                dataGridView1.DataSource = bindingSource;
-
-    
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                throw;
-            }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
