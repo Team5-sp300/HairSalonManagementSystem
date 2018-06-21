@@ -7,6 +7,9 @@ using Android.Support.V7.App;
 using Android.Views;
 using System.Net;
 using System.Collections.Specialized;
+using System.Text;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace HHMobileApp
 {
@@ -15,6 +18,7 @@ namespace HHMobileApp
 	{
         EditText textName;
         EditText textPassword;
+        List<contants> contant;
 
         protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -47,20 +51,27 @@ namespace HHMobileApp
             parameter.Add("Password", textPassword.Text);
             client.UploadValuesCompleted += uploaded;
             client.UploadValuesAsync(uri, parameter);
-            //client.DownloadDataAsync(uri);
-            //client.DownloadDataCompleted += download;
+            
+          
+        }
+
+      
+        private void uploaded(object sender, UploadValuesCompletedEventArgs e)
+        {
+            SetContentView(Resource.Layout.item);
+            WebClient client = new WebClient();
+            Uri uri = new Uri("http://10.0.0.169/Insert.php");
+            client.DownloadDataAsync(uri);
+            client.DownloadDataCompleted += download;
         }
 
         private void download(object sender, DownloadDataCompletedEventArgs e)
         {
-            
+            string json = Encoding.UTF8.GetString(e.Result);
+            contant = JsonConvert.DeserializeObject <List<contants>>(json);
         }
 
-        private void uploaded(object sender, UploadValuesCompletedEventArgs e)
-        {
-         
-        }
-
+   
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.menu_main, menu);

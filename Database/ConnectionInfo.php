@@ -8,8 +8,8 @@ class ConnectionInfo
 	
 	public function GetConnection()
 	{
-		$this->mServerName = 'localhost';
-		$this->mConnectionInfo = array("Database"=>"HairSalon", "UID"=>"root", "PWD"=>"root");
+		$this->mServerName = '10.0.0.169';
+		$this->mConnectionInfo = array("Database"=>"HairSalon", "UID"=>"root", "PWD"=>"");
 		$this->conn = sqlsrv_connect($this->mServerName,$this->mConnectionInfo);
 		
 		return $this->conn;

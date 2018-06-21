@@ -24,6 +24,10 @@ namespace HHMobileApp
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
+		public static void UpdateIdValues()
+		{
+		}
+		
 		public partial class Animation
 		{
 			
@@ -2372,8 +2376,8 @@ namespace HHMobileApp
 			// aapt resource value: 0x7F0C0011
 			public const int action_mode_close_button = 2131492881;
 			
-			// aapt resource value: 0x7F010009
-			public const int action_settings = 2130771977;
+			// aapt resource value: 0x7F010011
+			public const int action_settings = 2130771985;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -2501,11 +2505,17 @@ namespace HHMobileApp
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
+			// aapt resource value: 0x7F010009
+			public const int imageView1 = 2130771977;
+			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
 			
 			// aapt resource value: 0x7F0C000D
 			public const int italic = 2131492877;
+			
+			// aapt resource value: 0x7F010010
+			public const int itemTxt = 2130771984;
 			
 			// aapt resource value: 0x7F0C003B
 			public const int item_touch_helper_previous_elevation = 2131492923;
@@ -2955,6 +2965,9 @@ namespace HHMobileApp
 			
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
+			
+			// aapt resource value: 0x7F020004
+			public const int item = 2130837508;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;

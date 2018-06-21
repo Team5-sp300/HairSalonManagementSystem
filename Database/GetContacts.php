@@ -15,7 +15,7 @@
 	else
 	{
 		//Create query to retrieve all contacts
-		$query = 'SELECT * FROM Contacts ORDER BY Contacts_ID';
+		$query = 'SELECT  FROM Contacts ORDER BY Contacts_ID';
 		
 		$stmt = sqlsrv_query($connectionInfo->conn, $query);
 		
