@@ -18,7 +18,8 @@ namespace HHMobileApp
 	{
         EditText textName;
         EditText textPassword;
-        List<contants> contant;
+        List<Employee> items;
+        ListView view;
 
         protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -40,6 +41,9 @@ namespace HHMobileApp
 
          
             textPassword = FindViewById<EditText>(Resource.Id.etPass);
+
+           
+
         }
 
         private void button_click(object sender, EventArgs e)
@@ -51,24 +55,36 @@ namespace HHMobileApp
             parameter.Add("Password", textPassword.Text);
             client.UploadValuesCompleted += uploaded;
             client.UploadValuesAsync(uri, parameter);
-            
-          
         }
 
       
         private void uploaded(object sender, UploadValuesCompletedEventArgs e)
         {
-            SetContentView(Resource.Layout.item);
+            SetContentView(Resource.Layout.employee_list);
+            view = FindViewById<ListView>(Resource.Id.listView1);
+
+            //items = new List<Employee>();
+            //items.Add(new Employee() { name = "Andrew", password = "12345" });
+            //items.Add(new Employee() { name = "Paul", password = "124645" });
+           
+
+            
+
             WebClient client = new WebClient();
-            Uri uri = new Uri("http://10.0.0.169/Insert.php");
+            Uri uri = new Uri("http://10.0.0.169/Retrieve.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download;
         }
 
         private void download(object sender, DownloadDataCompletedEventArgs e)
         {
-            string json = Encoding.UTF8.GetString(e.Result);
-            contant = JsonConvert.DeserializeObject <List<contants>>(json);
+            RunOnUiThread(() =>
+                {
+                string json = Encoding.UTF8.GetString(e.Result);
+                items = JsonConvert.DeserializeObject<List<Employee>>(json);
+                nListViewApdater adapter = new nListViewApdater(this, items);
+                view.Adapter = adapter;
+            });
         }
 
    

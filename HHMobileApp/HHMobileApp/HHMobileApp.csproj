@@ -55,8 +55,9 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="contants.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="nListViewApdater.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -103,7 +104,12 @@
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\item.axml">
+    <AndroidResource Include="Resources\layout\employee_list.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\listview_row.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

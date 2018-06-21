@@ -10,21 +10,22 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT firstname FROM Employee";
+$sql = "SELECT EmployeeName,EmployeePassword FROM Employee";
 $result = $conn->query($sql);
 
 $contacts = array();
 
 if ($result->num_rows > 0) {
-    // output data of each row
-    while ($row = $result->fetch_assoc()) {
-        $contact = array("Name" => $row['EmployeeName'],);
 
-        //Add the contact to the contacts array
-        array_push($contacts, $contact);
+      while($row = mysqli_fetch_assoc($result)) {
+          $contact = array("name" => $row['EmployeeName'],"password" => $row['EmployeePassword']);
 
-        echo json_encode($contacts);
-    }
+          //Add the contact to the contacts array
+          array_push($contacts, $contact);
+
+
+      }
+    echo json_encode($contacts);
 } else {
     echo "0 results";
 }
