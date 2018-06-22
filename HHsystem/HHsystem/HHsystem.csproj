@@ -58,7 +58,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Componets\CustomTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controllers\DatabaseManager.cs" />
+    <Compile Include="CustomCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
