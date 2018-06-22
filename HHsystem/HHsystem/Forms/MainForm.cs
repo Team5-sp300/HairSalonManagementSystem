@@ -16,27 +16,47 @@ namespace HHsystem
     {
    
         DatabaseManager manager = new DatabaseManager();
+        DataTable table;
 
         public MainForm()
         {
             InitializeComponent();
+            populateTable();
+        }
+
+        public void populateTable() {
+            populateEmployeeTable();
             populateBookingTable();
+            populateClientTable();
         }
 
         public void populateBookingTable()
         {
-            DataTable table = new DataTable();
-            manager.employee() .Fill(table);
+             table = new DataTable();
+            manager.getBooking() .Fill(table);
+            bindingSource1.DataSource = table;
+            dataGridView2.DataSource = bindingSource1;
+            table.Columns[0].ColumnName = "Booking ID";
+            table.Columns[1].ColumnName = "Client Name";
+            table.Columns[2].ColumnName = "Employee Name";
+            table.Columns[3].ColumnName = "Appointment Time";
+        }
+
+        public void populateEmployeeTable()
+        {
+             table = new DataTable();
+            manager.getEmployee().Fill(table);
             bindingSource.DataSource = table;
             dataGridView1.DataSource = bindingSource;
         }
 
-        public void populateStockTable()
+
+        public void populateClientTable()
         {
-            DataTable table = new DataTable();
-            manager.employee().Fill(table);
-            bindingSource.DataSource = table;
-            dataGridView2.DataSource = bindingSource;
+             table = new DataTable();
+            manager.getClients().Fill(table);
+            bindingSource2.DataSource = table;
+            dataGridView3.DataSource = bindingSource2;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -54,6 +74,7 @@ namespace HHsystem
         {
             customTabControl1.SelectedIndex = 1;
             this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            label3.Text="Appointment";
 
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -65,6 +86,7 @@ namespace HHsystem
         {
             customTabControl1.SelectedIndex = 0;
             this.button3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            label3.Text = "Home";
 
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -75,6 +97,7 @@ namespace HHsystem
         {
             customTabControl1.SelectedIndex = 2;
             this.button4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            label3.Text = "Clients";
 
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -85,6 +108,7 @@ namespace HHsystem
         {
             customTabControl1.SelectedIndex = 3;
             this.button5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            label3.Text = "Staff";
 
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;

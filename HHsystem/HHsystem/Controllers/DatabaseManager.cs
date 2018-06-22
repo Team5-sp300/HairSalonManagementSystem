@@ -20,11 +20,57 @@ namespace HHsystem.Controllers
             conn.Open();
         }
 
-        public MySqlDataAdapter employee()
+        public MySqlDataAdapter getEmployee()
         {
             try
             {
-                string command = "SELECT * FROM Employee";
+                string command = "Call getEmployee";
+                connection();
+
+
+                cmd = new MySqlCommand(command, conn);
+                adapter = new MySqlDataAdapter
+                {
+                    SelectCommand = cmd
+                };
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                throw;
+            }
+            return adapter;
+        }
+
+        public MySqlDataAdapter getBooking()
+        {
+            try
+            {
+                string command = "Call getBooking";
+                connection();
+
+
+                cmd = new MySqlCommand(command, conn);
+                adapter = new MySqlDataAdapter
+                {
+                    SelectCommand = cmd
+                };
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                throw;
+            }
+            return adapter;
+        }
+
+        public MySqlDataAdapter getClients()
+        {
+            try
+            {
+                string command = "Call getCustomer";
                 connection();
 
 
