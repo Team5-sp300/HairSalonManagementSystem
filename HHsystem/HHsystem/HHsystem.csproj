@@ -58,13 +58,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Componets\CustomLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Componets\CustomTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controllers\DatabaseManager.cs" />
-    <Compile Include="CustomCalendar.cs">
+    <Compile Include="Componets\CustomWeeklyScheduler.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controllers\DatabaseManager.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

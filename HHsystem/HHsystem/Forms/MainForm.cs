@@ -114,7 +114,5 @@ namespace HHsystem
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
         }
-
-      
     }
 }
