@@ -17,6 +17,9 @@ namespace HHsystem
 
         DatabaseManager manager = new DatabaseManager();
         DataTable table;
+        private String[] appointments;
+        private String[] time;
+        private String[] name;
 
         public MainForm()
         {
@@ -124,7 +127,10 @@ namespace HHsystem
 
         private void button10_Click(object sender, EventArgs e)
         {
-            customWeeklyScheduler1.addAppointment();
+            appointments = new String[] { "25/06", "27/06", "26/06" };
+            time = new String[] { "9:00", "13:00", "15:00" };
+            name = new String[] { "Mary", "Sarah", "Emma" };
+            customWeeklyScheduler1.addAppointment(appointments,time, name);
         }
 
         private void dataGridView2_Resize(object sender, EventArgs e)

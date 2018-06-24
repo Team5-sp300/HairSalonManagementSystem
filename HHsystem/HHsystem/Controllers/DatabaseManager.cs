@@ -83,7 +83,7 @@ namespace HHsystem.Controllers
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.ToString()); 
                 //throw;
             }
             return adapter;

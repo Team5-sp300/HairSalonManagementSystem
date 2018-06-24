@@ -18,16 +18,30 @@ namespace HHsystem.Componets
             Initialize();
         }
 
-        public void addAppointment()
+        public void addAppointment(String[] appointments, String[] time,String[]name )
         {
-            cells[1, 5].BackColor = System.Drawing.SystemColors.MenuHighlight;
-            cells[1, 5].Text = "8:00 \n Mary";
-         
-            cells[5, 1].BackColor = System.Drawing.SystemColors.MenuHighlight;
-            cells[5, 1].Text = "8:00 \n Mary";
+            //this.appointments = appointments;
+            //this.time = time;
+            int k = 0;
 
-            //cells[7, 7].BackColor = System.Drawing.SystemColors.MenuHighlight;
-            //cells[7, 7].Text = "8:00 \n Mary";
+            for (int j = 0; j < appointments.Length; j++)
+            {
+                for (int i = 0; i < dates.Count; i++)
+                {
+                    if (appointments[j].Equals(dates[i].ToString("dd/MM")))
+                    {
+                        for (int m = 0; m < times.Length; m++)
+                        {
+                                if (time[j].Equals(times[m]))
+                                {
+                                    k = i + 1;
+                                    cells[k, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
+                                    cells[k, m].Text = time[j] + " \n"+ name[j];
+                                }
+                        }
+                    }
+                }
+            }
         }
 
         public void getCurrentDate()
@@ -39,7 +53,7 @@ namespace HHsystem.Componets
             var startDate = DateTime.Today;
             var endDate = startDate.AddDays(7);
             var numDays = (int)((endDate - startDate).TotalDays);
-            myDates = Enumerable.Range(0, numDays).Select(x => startOfWeek.AddDays(x)).ToList();
+            dates = Enumerable.Range(0, numDays).Select(x => startOfWeek.AddDays(x)).ToList();
         }
 
         private void Initialize()
@@ -57,7 +71,7 @@ namespace HHsystem.Componets
             xInterval = x + (xheader / rows);
             int k = 0;
             double errorCorrection = yInterval - (yheader * 2);
-           
+
             for (int j = 0; j <= rows; j++)
             {
                 for (int i = 0; i <= colums; i++)
@@ -76,13 +90,13 @@ namespace HHsystem.Componets
                     {
                         header = new Label();
                         header.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-                       // header.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                        // header.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                         header.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                         header.Location = new System.Drawing.Point(((i * yInterval) - yheader - (int)errorCorrection), j * xInterval);
                         header.Name = "Header" + i;
                         header.Size = new System.Drawing.Size(yInterval, xheader);
                         header.Text = days[i];
-                        header.Text = myDates[k++].ToString("ddd dd/MM");
+                        header.Text = dates[k++].ToString("ddd dd/MM");
                         header.Font = new System.Drawing.Font("Arial", 11.25F);
                         header.TextAlign = ContentAlignment.TopCenter;
                         header.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -93,7 +107,7 @@ namespace HHsystem.Componets
                         header = new Label();
                         header.BackColor = System.Drawing.SystemColors.ButtonHighlight;
                         header.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                   //     header.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                        //     header.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                         header.Location = new System.Drawing.Point(i * y, (j * xInterval) - xheader);
                         header.Name = "Header" + i;
                         header.Size = new System.Drawing.Size(yheader, xInterval);
@@ -110,7 +124,7 @@ namespace HHsystem.Componets
                         cell.BackColor = System.Drawing.SystemColors.ButtonFace;
                         cell.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                         cell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                        cell.Location = new System.Drawing.Point(i * yInterval - yheader- (int)errorCorrection, j * xInterval - xheader);
+                        cell.Location = new System.Drawing.Point(i * yInterval - yheader - (int)errorCorrection, j * xInterval - xheader);
                         cell.Name = "Cell" + i;
                         cell.Size = new System.Drawing.Size(yInterval, xInterval);
                         cell.Text = "";
@@ -134,6 +148,8 @@ namespace HHsystem.Componets
         private int yInterval, xInterval;
         private int rows, colums;
         private Label[,] cells;
-        List<DateTime> myDates;
+        private List<DateTime> dates;
+        //private String[] appointments;
+        //private String[] time;
     }
 }

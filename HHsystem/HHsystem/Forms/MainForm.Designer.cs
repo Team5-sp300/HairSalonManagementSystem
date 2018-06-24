@@ -48,6 +48,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button10 = new System.Windows.Forms.Button();
+            this.customWeeklyScheduler1 = new HHsystem.Componets.WeeklyScheduler();
             this.button6 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button7 = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button8 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.customWeeklyScheduler1 = new HHsystem.Componets.WeeklyScheduler();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -255,6 +255,14 @@
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // customWeeklyScheduler1
+            // 
+            this.customWeeklyScheduler1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.customWeeklyScheduler1.Location = new System.Drawing.Point(21, 88);
+            this.customWeeklyScheduler1.Name = "customWeeklyScheduler1";
+            this.customWeeklyScheduler1.Size = new System.Drawing.Size(600, 400);
+            this.customWeeklyScheduler1.TabIndex = 10;
+            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.White;
@@ -343,14 +351,6 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(607, 378);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // customWeeklyScheduler1
-            // 
-            this.customWeeklyScheduler1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customWeeklyScheduler1.Location = new System.Drawing.Point(21, 88);
-            this.customWeeklyScheduler1.Name = "customWeeklyScheduler1";
-            this.customWeeklyScheduler1.Size = new System.Drawing.Size(600, 400);
-            this.customWeeklyScheduler1.TabIndex = 10;
             // 
             // MainForm
             // 
