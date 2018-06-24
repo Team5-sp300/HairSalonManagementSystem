@@ -14,7 +14,7 @@ namespace HHsystem
 {
     public partial class MainForm : Form
     {
-   
+
         DatabaseManager manager = new DatabaseManager();
         DataTable table;
 
@@ -24,16 +24,23 @@ namespace HHsystem
             populateTable();
         }
 
-        public void populateTable() {
-            populateEmployeeTable();
-            populateBookingTable();
-            populateClientTable();
+        public void populateTable()
+        {
+            try
+            {
+                populateEmployeeTable();
+                populateBookingTable();
+                populateClientTable();
+            }
+            catch (Exception)
+            {
+            }
         }
 
         public void populateBookingTable()
         {
-             table = new DataTable();
-            manager.getBooking() .Fill(table);
+            table = new DataTable();
+            manager.getBooking().Fill(table);
             bindingSource1.DataSource = table;
             dataGridView2.DataSource = bindingSource1;
             table.Columns[0].ColumnName = "Booking ID";
@@ -44,7 +51,7 @@ namespace HHsystem
 
         public void populateEmployeeTable()
         {
-             table = new DataTable();
+            table = new DataTable();
             manager.getEmployee().Fill(table);
             bindingSource.DataSource = table;
             dataGridView1.DataSource = bindingSource;
@@ -53,7 +60,7 @@ namespace HHsystem
 
         public void populateClientTable()
         {
-             table = new DataTable();
+            table = new DataTable();
             manager.getClients().Fill(table);
             bindingSource2.DataSource = table;
             dataGridView3.DataSource = bindingSource2;
@@ -69,12 +76,12 @@ namespace HHsystem
 
         }
 
-      
+
         private void button2_Click(object sender, EventArgs e)
         {
             customTabControl1.SelectedIndex = 1;
             this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            label3.Text="Appointment";
+            label3.Text = "Appointment";
 
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -113,6 +120,16 @@ namespace HHsystem
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            customWeeklyScheduler1.addAppointment();
+        }
+
+        private void dataGridView2_Resize(object sender, EventArgs e)
+        {
+
         }
     }
 }

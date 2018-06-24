@@ -47,7 +47,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.customWeeklyScheduler1 = new HHsystem.Componets.CustomWeeklyScheduler();
+            this.button10 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button7 = new System.Windows.Forms.Button();
@@ -55,6 +55,7 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button8 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.customWeeklyScheduler1 = new HHsystem.Componets.WeeklyScheduler();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -230,6 +231,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.button10);
             this.tabPage2.Controls.Add(this.customWeeklyScheduler1);
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -239,13 +241,19 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
-            // customWeeklyScheduler1
+            // button10
             // 
-            this.customWeeklyScheduler1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customWeeklyScheduler1.Location = new System.Drawing.Point(21, 74);
-            this.customWeeklyScheduler1.Name = "customWeeklyScheduler1";
-            this.customWeeklyScheduler1.Size = new System.Drawing.Size(600, 400);
-            this.customWeeklyScheduler1.TabIndex = 10;
+            this.button10.BackColor = System.Drawing.Color.White;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button10.Location = new System.Drawing.Point(490, 23);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(131, 45);
+            this.button10.TabIndex = 11;
+            this.button10.Text = "Test";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button6
             // 
@@ -336,6 +344,14 @@
             this.dataGridView1.Size = new System.Drawing.Size(607, 378);
             this.dataGridView1.TabIndex = 7;
             // 
+            // customWeeklyScheduler1
+            // 
+            this.customWeeklyScheduler1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.customWeeklyScheduler1.Location = new System.Drawing.Point(21, 88);
+            this.customWeeklyScheduler1.Name = "customWeeklyScheduler1";
+            this.customWeeklyScheduler1.Size = new System.Drawing.Size(600, 400);
+            this.customWeeklyScheduler1.TabIndex = 10;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -398,7 +414,8 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.BindingSource bindingSource2;
-        private Componets.CustomWeeklyScheduler customWeeklyScheduler1;
+        private System.Windows.Forms.Button button10;
+        private Componets.WeeklyScheduler customWeeklyScheduler1;
     }
 }
 

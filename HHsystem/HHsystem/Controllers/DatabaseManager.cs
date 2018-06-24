@@ -61,7 +61,7 @@ namespace HHsystem.Controllers
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-                throw;
+                //throw;
             }
             return adapter;
         }
@@ -84,7 +84,7 @@ namespace HHsystem.Controllers
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-                throw;
+                //throw;
             }
             return adapter;
         }
