@@ -20,6 +20,7 @@ namespace HHsystem
         private String[] appointments;
         private String[] time;
         private String[] name;
+        private int[] duration;
 
         public MainForm()
         {
@@ -130,7 +131,8 @@ namespace HHsystem
             appointments = new String[] { "25/06", "27/06", "26/06" };
             time = new String[] { "9:00", "13:00", "15:00" };
             name = new String[] { "Mary", "Sarah", "Emma" };
-            customWeeklyScheduler1.addAppointment(appointments,time, name);
+            duration = new int[] { 2, 2, 1 };
+            customWeeklyScheduler1.addAppointment(appointments,time, name, duration);
         }
 
         private void dataGridView2_Resize(object sender, EventArgs e)

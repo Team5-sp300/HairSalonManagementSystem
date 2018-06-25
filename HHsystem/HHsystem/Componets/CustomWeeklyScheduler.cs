@@ -18,26 +18,37 @@ namespace HHsystem.Componets
             Initialize();
         }
 
-        public void addAppointment(String[] appointments, String[] time,String[]name )
+        public void addAppointment(String[] date, String[] time, String[] description,int [] duration)
         {
-            //this.appointments = appointments;
-            //this.time = time;
             int k = 0;
 
-            for (int j = 0; j < appointments.Length; j++)
+            for (int j = 0; j < date.Length; j++)
             {
                 for (int i = 0; i < dates.Count; i++)
                 {
-                    if (appointments[j].Equals(dates[i].ToString("dd/MM")))
+                    if (date[j].Equals(dates[i].ToString("dd/MM")))
                     {
                         for (int m = 0; m < times.Length; m++)
                         {
-                                if (time[j].Equals(times[m]))
+                            if (time[j].Equals(times[m]))
+                            {
+                                if ( duration[j] == 2)
+                                {
+                                    k = i + 1;
+                                    cells[i+1, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
+                                    cells[k, m + 1].BackColor = System.Drawing.SystemColors.MenuHighlight;
+                                    cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
+                                    cells[k, m + 1].BorderStyle = System.Windows.Forms.BorderStyle.None;
+                                    cells[k, m].Text = time[j] + " \n" + description[j];
+                                }
+                                else
                                 {
                                     k = i + 1;
                                     cells[k, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
-                                    cells[k, m].Text = time[j] + " \n"+ name[j];
+                                    cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
+                                    cells[k, m].Text = time[j] + " \n" + description[j];
                                 }
+                            }
                         }
                     }
                 }
@@ -79,7 +90,7 @@ namespace HHsystem.Componets
                     if (j == 0 && i == 0)
                     {
                         header = new Label();
-                        header.BackColor = System.Drawing.SystemColors.MenuHighlight;
+                        header.BackColor = System.Drawing.Color.White;
                         header.Name = "Header" + i;
                         header.Text = "";
                         header.Location = new System.Drawing.Point(0, 0);
@@ -121,7 +132,7 @@ namespace HHsystem.Componets
                     else
                     {
                         cell = new Label();
-                        cell.BackColor = System.Drawing.SystemColors.ButtonFace;
+                        //  cell.BackColor = System.Drawing.SystemColors.ButtonFace;
                         cell.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                         cell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                         cell.Location = new System.Drawing.Point(i * yInterval - yheader - (int)errorCorrection, j * xInterval - xheader);
@@ -132,6 +143,14 @@ namespace HHsystem.Componets
                         cell.ForeColor = System.Drawing.Color.White;
                         this.Controls.Add(this.cell);
                         cells[i, j] = cell;
+                        if (i % 2 == 1)
+                        {
+                            cell.BackColor = System.Drawing.SystemColors.ButtonFace;
+                        }
+                        else
+                        {
+                            cell.BackColor = System.Drawing.Color.White;
+                        }
                     }
 
                 }
