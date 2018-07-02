@@ -90,6 +90,7 @@ namespace HHsystem
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
         }
 
 
@@ -102,6 +103,7 @@ namespace HHsystem
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -113,6 +115,7 @@ namespace HHsystem
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -124,6 +127,19 @@ namespace HHsystem
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            customTabControl1.SelectedIndex = 4;
+            this.button12.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            label3.Text = "Settings";
+
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -132,12 +148,17 @@ namespace HHsystem
             time = new String[] { "9:00", "13:00", "15:00" };
             name = new String[] { "Mary", "Sarah", "Emma" };
             duration = new int[] { 2, 2, 1 };
-            customWeeklyScheduler1.addAppointment(appointments,time, name, duration);
+            customWeeklyScheduler1.addAppointment(appointments, time, name, duration);
         }
 
-        private void dataGridView2_Resize(object sender, EventArgs e)
+        private void button13_Click(object sender, EventArgs e)
         {
+            manager.backup();
+        }
 
+        private void button14_Click(object sender, EventArgs e)
+        {
+            manager.restore();
         }
     }
 }

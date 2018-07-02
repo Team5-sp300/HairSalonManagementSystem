@@ -42,8 +42,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.button12 = new System.Windows.Forms.Button();
             this.customTabControl1 = new HHsystem.CustomTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button10 = new System.Windows.Forms.Button();
             this.customWeeklyScheduler1 = new HHsystem.Componets.WeeklyScheduler();
@@ -55,10 +59,11 @@
             this.button8 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -114,9 +119,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 11.25F);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.Location = new System.Drawing.Point(476, 26);
+            this.button2.Location = new System.Drawing.Point(469, 25);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 45);
+            this.button2.Size = new System.Drawing.Size(77, 45);
             this.button2.TabIndex = 7;
             this.button2.Text = "Calendar";
             this.button2.UseVisualStyleBackColor = true;
@@ -129,9 +134,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.Location = new System.Drawing.Point(371, 26);
+            this.button3.Location = new System.Drawing.Point(387, 25);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 45);
+            this.button3.Size = new System.Drawing.Size(77, 45);
             this.button3.TabIndex = 8;
             this.button3.Text = "Overview";
             this.button3.UseVisualStyleBackColor = true;
@@ -144,9 +149,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial", 11.25F);
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button4.Location = new System.Drawing.Point(579, 25);
+            this.button4.Location = new System.Drawing.Point(549, 25);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 45);
+            this.button4.Size = new System.Drawing.Size(77, 45);
             this.button4.TabIndex = 10;
             this.button4.Text = "Clients";
             this.button4.UseVisualStyleBackColor = true;
@@ -159,9 +164,9 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Arial", 11.25F);
             this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button5.Location = new System.Drawing.Point(682, 26);
+            this.button5.Location = new System.Drawing.Point(628, 25);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 45);
+            this.button5.Size = new System.Drawing.Size(77, 45);
             this.button5.TabIndex = 9;
             this.button5.Text = "Staff";
             this.button5.UseVisualStyleBackColor = true;
@@ -188,6 +193,21 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Home";
             // 
+            // button12
+            // 
+            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.button12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button12.Location = new System.Drawing.Point(708, 25);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(77, 45);
+            this.button12.TabIndex = 11;
+            this.button12.Text = "Manage";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // customTabControl1
             // 
             this.customTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -212,10 +232,46 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(620, 491);
+            this.tabPage1.Size = new System.Drawing.Size(622, 491);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button9.Location = new System.Drawing.Point(26, 22);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(131, 45);
+            this.button9.TabIndex = 17;
+            this.button9.Text = "Log In";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button11
+            // 
+            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button11.BackColor = System.Drawing.Color.White;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button11.Location = new System.Drawing.Point(452, 22);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(131, 45);
+            this.button11.TabIndex = 16;
+            this.button11.Text = "Log Out";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.Location = new System.Drawing.Point(3, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(616, 485);
+            this.label2.TabIndex = 15;
             // 
             // tabPage2
             // 
@@ -343,14 +399,72 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.button16);
+            this.tabPage5.Controls.Add(this.button15);
+            this.tabPage5.Controls.Add(this.button14);
+            this.tabPage5.Controls.Add(this.button13);
             this.tabPage5.Controls.Add(this.dataGridView2);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(647, 506);
+            this.tabPage5.Size = new System.Drawing.Size(622, 491);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.White;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button16.Location = new System.Drawing.Point(20, 124);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(131, 45);
+            this.button16.TabIndex = 18;
+            this.button16.Text = "Manage Tables";
+            this.button16.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.White;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button15.Location = new System.Drawing.Point(20, 175);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(131, 45);
+            this.button15.TabIndex = 17;
+            this.button15.Text = "Change Resolution";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.White;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button14.Location = new System.Drawing.Point(20, 73);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(131, 45);
+            this.button14.TabIndex = 16;
+            this.button14.Text = "Restore";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.White;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button13.Location = new System.Drawing.Point(20, 22);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(131, 45);
+            this.button13.TabIndex = 15;
+            this.button13.Text = "Backup";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // dataGridView2
             // 
@@ -358,48 +472,12 @@
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(20, 64);
+            this.dataGridView2.Location = new System.Drawing.Point(181, 29);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.Size = new System.Drawing.Size(607, 378);
+            this.dataGridView2.Size = new System.Drawing.Size(417, 413);
             this.dataGridView2.TabIndex = 14;
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(3, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(614, 485);
-            this.label2.TabIndex = 15;
-            // 
-            // button11
-            // 
-            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.BackColor = System.Drawing.Color.White;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button11.Location = new System.Drawing.Point(452, 22);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(131, 45);
-            this.button11.TabIndex = 16;
-            this.button11.Text = "Log Out";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.White;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button9.Location = new System.Drawing.Point(26, 22);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(131, 45);
-            this.button9.TabIndex = 17;
-            this.button9.Text = "Log In";
-            this.button9.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
@@ -408,6 +486,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(798, 598);
             this.ControlBox = false;
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button5);
@@ -469,6 +548,11 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
     }
 }
 
