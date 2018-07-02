@@ -27,12 +27,6 @@ namespace HHMobileApp
 
 			SetContentView(Resource.Layout.activity_main);
 
-			Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
-
-			FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;
-
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
 

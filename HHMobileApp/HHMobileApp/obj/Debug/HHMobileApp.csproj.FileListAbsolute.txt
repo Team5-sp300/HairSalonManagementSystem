@@ -74,5 +74,3 @@ C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobil
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\obj\Debug\linksrc\HHMobileApp.dll.mdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\bin\Debug\HHMobileApp.dll.mdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\obj\Debug\android\assets\HHMobileApp.dll.mdb
-C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\bin\Debug\HHMobileApp.dll
-C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHMobileApp\obj\Debug\linksrc\HHMobileApp.dll.mdb
