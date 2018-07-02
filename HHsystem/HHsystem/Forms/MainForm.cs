@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HHsystem.Controllers;
+using HHsystem.Forms;
 using MySql.Data.MySqlClient;
 
 namespace HHsystem
@@ -159,6 +160,11 @@ namespace HHsystem
         private void button14_Click(object sender, EventArgs e)
         {
             manager.restore();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            new LoginForm().Show();
         }
     }
 }
