@@ -145,7 +145,7 @@ namespace HHsystem
 
         private void button10_Click(object sender, EventArgs e)
         {
-            appointments = new String[] { "25/06", "27/06", "26/06" };
+            appointments = new String[] { "02/07", "04/07", "02/07" };
             time = new String[] { "9:00", "13:00", "15:00" };
             name = new String[] { "Mary", "Sarah", "Emma" };
             duration = new int[] { 2, 2, 1 };

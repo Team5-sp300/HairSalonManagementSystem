@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.usernametxt = new System.Windows.Forms.TextBox();
+            this.passwordtxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 80);
+            this.label1.Location = new System.Drawing.Point(22, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 131);
+            this.label2.Location = new System.Drawing.Point(22, 145);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 1;
@@ -58,17 +58,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(31, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 20);
-            this.textBox1.TabIndex = 2;
+            this.usernametxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.usernametxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.usernametxt.Location = new System.Drawing.Point(31, 110);
+            this.usernametxt.Name = "textBox1";
+            this.usernametxt.Size = new System.Drawing.Size(180, 20);
+            this.usernametxt.TabIndex = 2;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(31, 147);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 20);
-            this.textBox2.TabIndex = 3;
+            this.passwordtxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.passwordtxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.passwordtxt.Location = new System.Drawing.Point(31, 161);
+            this.passwordtxt.Name = "textBox2";
+            this.passwordtxt.Size = new System.Drawing.Size(180, 20);
+            this.passwordtxt.TabIndex = 3;
             // 
             // label4
             // 
@@ -93,6 +97,7 @@
             this.button9.TabIndex = 18;
             this.button9.Text = "Log In";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button1
             // 
@@ -123,14 +128,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(259, 289);
+            this.ClientSize = new System.Drawing.Size(248, 289);
             this.ControlBox = false;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passwordtxt);
+            this.Controls.Add(this.usernametxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -146,8 +151,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox usernametxt;
+        private System.Windows.Forms.TextBox passwordtxt;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button1;

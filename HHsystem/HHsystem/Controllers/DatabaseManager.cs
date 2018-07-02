@@ -85,34 +85,48 @@ namespace HHsystem.Controllers
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString()); 
-                //throw;
-            }
-            return adapter;
-        }
-
-        public MySqlDataAdapter login()
-        {
-            try
-            {
-                string command = "Call login";
-                connection();
-
-
-                cmd = new MySqlCommand(command, conn);
-                adapter = new MySqlDataAdapter
-                {
-                    SelectCommand = cmd
-                };
-
-            }
-            catch (Exception ex)
-            {
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
             return adapter;
         }
+
+        public string[,] login()
+        {
+            string[,] loginDetails = null;
+            string command = "Call login";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            MySqlDataReader result = cmd.ExecuteReader();
+
+            int i = 0;
+            int arrySize = 0;
+
+            if (result != null)
+            {
+                while (result.Read())
+                {
+                    arrySize++;
+                }
+
+                result.Close();
+
+                loginDetails = new string[arrySize, 2];
+
+                cmd = new MySqlCommand(command, conn);
+                result = cmd.ExecuteReader();
+
+                while (result.Read())
+
+                {
+                    loginDetails[i, 0] = result[0].ToString();
+                    loginDetails[i, 1] = result[1].ToString();
+                    i++;
+                }
+            }
+            return loginDetails;
+        }
+
 
         public void backup()
         {

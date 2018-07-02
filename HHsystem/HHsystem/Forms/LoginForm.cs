@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HHsystem.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace HHsystem.Forms
 {
     public partial class LoginForm : Form
     {
+    
         public LoginForm()
         {
             InitializeComponent();
@@ -20,6 +22,21 @@ namespace HHsystem.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            new LoginController().login(getUsername(), getPassword());
+            this.Dispose();
+        }
+
+        public string getUsername() {
+            return usernametxt.Text;
+        }
+
+        public string getPassword()
+        {
+            return passwordtxt.Text;
         }
     }
 }
