@@ -88,5 +88,28 @@ namespace HHsystem.Controllers
             }
             return adapter;
         }
+
+        public MySqlDataAdapter login()
+        {
+            try
+            {
+                string command = "Call login";
+                connection();
+
+
+                cmd = new MySqlCommand(command, conn);
+                adapter = new MySqlDataAdapter
+                {
+                    SelectCommand = cmd
+                };
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                //throw;
+            }
+            return adapter;
+        }
     }
 }
