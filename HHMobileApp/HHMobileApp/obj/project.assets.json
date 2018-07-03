@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
-      "Newtonsoft.Json/11.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
       "Xamarin.Android.Arch.Core.Common/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -259,34 +250,6 @@
     }
   },
   "libraries": {
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "type": "package",
-      "path": "newtonsoft.json/11.0.2",
-      "files": [
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
-      ]
-    },
     "Xamarin.Android.Arch.Core.Common/1.0.0": {
       "sha512": "lBtubYSL6gKvHgg2ztIE3sg+kbR5/A/T5xXPaKSVWvYbMcjAUO8qwSyiAcvKS+caqraDOEDj0U3tocUmztgvhw==",
       "type": "package",
@@ -478,7 +441,6 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
-      "Newtonsoft.Json >= 11.0.2",
       "Xamarin.Android.Support.Design >= 27.0.2"
     ]
   },
@@ -488,11 +450,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHMobileApp\\HHMobileApp\\HHMobileApp.csproj",
-      "projectName": "HHMobileApp",
-      "projectPath": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHMobileApp\\HHMobileApp\\HHMobileApp.csproj",
+      "projectUniqueName": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHmobileApp\\HHmobileApp\\HHmobileApp.csproj",
+      "projectName": "HHmobileApp",
+      "projectPath": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHmobileApp\\HHmobileApp\\HHmobileApp.csproj",
       "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHMobileApp\\HHMobileApp\\obj\\",
+      "outputPath": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHmobileApp\\HHmobileApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -515,10 +477,6 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "[11.0.2, )"
-          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
             "version": "[27.0.2, )"

@@ -2749,6 +2749,10 @@ containing a value of this type.
         public static final int abc_text_size_subtitle_material_toolbar=0x7f070009;
         public static final int abc_text_size_title_material=0x7f07004f;
         public static final int abc_text_size_title_material_toolbar=0x7f07000a;
+        /**  Default screen margins, per the Android Design guidelines. 
+         */
+        public static final int activity_horizontal_margin=0x7f07009b;
+        public static final int activity_vertical_margin=0x7f07009c;
         public static final int compat_button_inset_horizontal_material=0x7f07008b;
         public static final int compat_button_inset_vertical_material=0x7f07008c;
         public static final int compat_button_padding_horizontal_material=0x7f07008d;
@@ -2794,7 +2798,7 @@ containing a value of this type.
         public static final int design_tab_text_size_2line=0x7f070086;
         public static final int disabled_alpha_material_dark=0x7f070050;
         public static final int disabled_alpha_material_light=0x7f070051;
-        public static final int fab_margin=0x7f07009b;
+        public static final int fab_margin=0x7f07009f;
         public static final int fastscroll_default_thickness=0x7f070000;
         public static final int fastscroll_margin=0x7f070001;
         public static final int fastscroll_minimum_range=0x7f070002;
@@ -2808,6 +2812,8 @@ containing a value of this type.
         public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f070003;
         public static final int item_touch_helper_swipe_escape_max_velocity=0x7f070004;
         public static final int item_touch_helper_swipe_escape_velocity=0x7f070005;
+        public static final int nav_header_height=0x7f07009e;
+        public static final int nav_header_vertical_spacing=0x7f07009d;
         public static final int notification_action_icon_size=0x7f070090;
         public static final int notification_action_text_size=0x7f070091;
         public static final int notification_big_circle_margin=0x7f070092;
@@ -2917,34 +2923,41 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
         public static final int avd_hide_password=0x7f020053;
-        public static final int avd_hide_password_1=0x7f02006a;
-        public static final int avd_hide_password_2=0x7f02006b;
-        public static final int avd_hide_password_3=0x7f02006c;
+        public static final int avd_hide_password_1=0x7f020071;
+        public static final int avd_hide_password_2=0x7f020072;
+        public static final int avd_hide_password_3=0x7f020073;
         public static final int avd_show_password=0x7f020054;
-        public static final int avd_show_password_1=0x7f02006d;
-        public static final int avd_show_password_2=0x7f02006e;
-        public static final int avd_show_password_3=0x7f02006f;
+        public static final int avd_show_password_1=0x7f020074;
+        public static final int avd_show_password_2=0x7f020075;
+        public static final int avd_show_password_3=0x7f020076;
         public static final int design_bottom_navigation_item_background=0x7f020055;
         public static final int design_fab_background=0x7f020056;
         public static final int design_ic_visibility=0x7f020057;
         public static final int design_ic_visibility_off=0x7f020058;
         public static final int design_password_eye=0x7f020059;
         public static final int design_snackbar_background=0x7f02005a;
-        public static final int navigation_empty_icon=0x7f02005b;
-        public static final int notification_action_background=0x7f02005c;
-        public static final int notification_bg=0x7f02005d;
-        public static final int notification_bg_low=0x7f02005e;
-        public static final int notification_bg_low_normal=0x7f02005f;
-        public static final int notification_bg_low_pressed=0x7f020060;
-        public static final int notification_bg_normal=0x7f020061;
-        public static final int notification_bg_normal_pressed=0x7f020062;
-        public static final int notification_icon_background=0x7f020063;
-        public static final int notification_template_icon_bg=0x7f020068;
-        public static final int notification_template_icon_low_bg=0x7f020069;
-        public static final int notification_tile_bg=0x7f020064;
-        public static final int notify_panel_notification_icon_bg=0x7f020065;
-        public static final int tooltip_frame_dark=0x7f020066;
-        public static final int tooltip_frame_light=0x7f020067;
+        public static final int ic_menu_camera=0x7f02005b;
+        public static final int ic_menu_gallery=0x7f02005c;
+        public static final int ic_menu_manage=0x7f02005d;
+        public static final int ic_menu_send=0x7f02005e;
+        public static final int ic_menu_share=0x7f02005f;
+        public static final int ic_menu_slideshow=0x7f020060;
+        public static final int navigation_empty_icon=0x7f020061;
+        public static final int notification_action_background=0x7f020062;
+        public static final int notification_bg=0x7f020063;
+        public static final int notification_bg_low=0x7f020064;
+        public static final int notification_bg_low_normal=0x7f020065;
+        public static final int notification_bg_low_pressed=0x7f020066;
+        public static final int notification_bg_normal=0x7f020067;
+        public static final int notification_bg_normal_pressed=0x7f020068;
+        public static final int notification_icon_background=0x7f020069;
+        public static final int notification_template_icon_bg=0x7f02006f;
+        public static final int notification_template_icon_low_bg=0x7f020070;
+        public static final int notification_tile_bg=0x7f02006a;
+        public static final int notify_panel_notification_icon_bg=0x7f02006b;
+        public static final int side_nav_bar=0x7f02006c;
+        public static final int tooltip_frame_dark=0x7f02006d;
+        public static final int tooltip_frame_light=0x7f02006e;
     }
     public static final class id {
         public static final int ALT=0x7f080032;
@@ -2953,7 +2966,7 @@ containing a value of this type.
         public static final int META=0x7f080035;
         public static final int SHIFT=0x7f080036;
         public static final int SYM=0x7f080037;
-        public static final int action0=0x7f0800a4;
+        public static final int action0=0x7f0800a8;
         public static final int action_bar=0x7f08007c;
         public static final int action_bar_activity_content=0x7f080001;
         public static final int action_bar_container=0x7f08007b;
@@ -2961,18 +2974,18 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f080002;
         public static final int action_bar_subtitle=0x7f08005b;
         public static final int action_bar_title=0x7f08005a;
-        public static final int action_container=0x7f0800a1;
+        public static final int action_container=0x7f0800a5;
         public static final int action_context_bar=0x7f08007d;
-        public static final int action_divider=0x7f0800a8;
-        public static final int action_image=0x7f0800a2;
+        public static final int action_divider=0x7f0800ac;
+        public static final int action_image=0x7f0800a6;
         public static final int action_menu_divider=0x7f080003;
         public static final int action_menu_presenter=0x7f080004;
         public static final int action_mode_bar=0x7f080079;
         public static final int action_mode_bar_stub=0x7f080078;
         public static final int action_mode_close_button=0x7f08005c;
-        public static final int action_settings=0x7f0800b7;
-        public static final int action_text=0x7f0800a3;
-        public static final int actions=0x7f0800b1;
+        public static final int action_settings=0x7f0800c1;
+        public static final int action_text=0x7f0800a7;
+        public static final int actions=0x7f0800b5;
         public static final int activity_chooser_view_content=0x7f08005d;
         public static final int add=0x7f080027;
         public static final int alertTitle=0x7f080070;
@@ -2983,40 +2996,42 @@ containing a value of this type.
         public static final int beginning=0x7f08002f;
         public static final int blocking=0x7f080057;
         public static final int bottom=0x7f08003d;
-        public static final int btninsert=0x7f08008f;
+        public static final int btninsert=0x7f080094;
         public static final int buttonPanel=0x7f080063;
-        public static final int cancel_action=0x7f0800a5;
+        public static final int cancel_action=0x7f0800a9;
         public static final int center=0x7f080045;
         public static final int center_horizontal=0x7f080046;
         public static final int center_vertical=0x7f080047;
         public static final int checkbox=0x7f080073;
-        public static final int chronometer=0x7f0800ad;
+        public static final int chronometer=0x7f0800b1;
         public static final int clip_horizontal=0x7f08004e;
         public static final int clip_vertical=0x7f08004f;
         public static final int collapseActionView=0x7f080039;
-        public static final int container=0x7f080092;
+        public static final int container=0x7f080097;
         public static final int contentPanel=0x7f080066;
-        public static final int coordinator=0x7f080093;
+        public static final int coordinator=0x7f080098;
         public static final int custom=0x7f08006d;
         public static final int customPanel=0x7f08006c;
         public static final int decor_content_parent=0x7f08007a;
         public static final int default_activity_button=0x7f080060;
-        public static final int design_bottom_sheet=0x7f080095;
-        public static final int design_menu_item_action_area=0x7f08009c;
-        public static final int design_menu_item_action_area_stub=0x7f08009b;
-        public static final int design_menu_item_text=0x7f08009a;
-        public static final int design_navigation_view=0x7f080099;
+        public static final int design_bottom_sheet=0x7f08009a;
+        public static final int design_menu_item_action_area=0x7f0800a1;
+        public static final int design_menu_item_action_area_stub=0x7f0800a0;
+        public static final int design_menu_item_text=0x7f08009f;
+        public static final int design_navigation_view=0x7f08009e;
         public static final int disableHome=0x7f080020;
+        public static final int drawer_layout=0x7f08008b;
         public static final int edit_query=0x7f08007e;
         public static final int end=0x7f080030;
-        public static final int end_padder=0x7f0800b3;
+        public static final int end_padder=0x7f0800b7;
         public static final int enterAlways=0x7f08003f;
         public static final int enterAlwaysCollapsed=0x7f080040;
-        public static final int etPass=0x7f08008e;
-        public static final int etusername=0x7f08008c;
+        public static final int etPass=0x7f080093;
+        public static final int etusername=0x7f080091;
         public static final int exitUntilCollapsed=0x7f080041;
         public static final int expand_activities_button=0x7f08005e;
         public static final int expanded_menu=0x7f080072;
+        public static final int fab=0x7f08008e;
         public static final int fill=0x7f080050;
         public static final int fill_horizontal=0x7f080051;
         public static final int fill_vertical=0x7f080048;
@@ -3026,32 +3041,40 @@ containing a value of this type.
         public static final int home=0x7f080005;
         public static final int homeAsUp=0x7f080021;
         public static final int icon=0x7f080062;
-        public static final int icon_group=0x7f0800b2;
+        public static final int icon_group=0x7f0800b6;
         public static final int ifRoom=0x7f08003a;
         public static final int image=0x7f08005f;
-        public static final int info=0x7f0800ae;
+        public static final int imageView=0x7f0800a3;
+        public static final int info=0x7f0800b2;
         public static final int italic=0x7f080059;
         public static final int item_touch_helper_previous_elevation=0x7f080000;
-        public static final int largeLabel=0x7f080091;
+        public static final int largeLabel=0x7f080096;
         public static final int left=0x7f080049;
         public static final int line1=0x7f080017;
         public static final int line3=0x7f080018;
+        public static final int linearLayout1=0x7f08008f;
         public static final int listMode=0x7f08001d;
-        public static final int listView1=0x7f08009e;
         public static final int list_item=0x7f080061;
-        public static final int masked=0x7f0800b6;
-        public static final int media_actions=0x7f0800a7;
-        public static final int message=0x7f0800b4;
+        public static final int masked=0x7f0800ba;
+        public static final int media_actions=0x7f0800ab;
+        public static final int message=0x7f0800b8;
         public static final int middle=0x7f080031;
         public static final int mini=0x7f080053;
         public static final int multiply=0x7f080028;
-        public static final int navigation_header_container=0x7f080098;
+        public static final int nav_camera=0x7f0800bb;
+        public static final int nav_gallery=0x7f0800bc;
+        public static final int nav_manage=0x7f0800be;
+        public static final int nav_send=0x7f0800c0;
+        public static final int nav_share=0x7f0800bf;
+        public static final int nav_slideshow=0x7f0800bd;
+        public static final int nav_view=0x7f08008c;
+        public static final int navigation_header_container=0x7f08009d;
         public static final int never=0x7f08003b;
         public static final int none=0x7f080022;
         public static final int normal=0x7f08001e;
-        public static final int notification_background=0x7f0800b0;
-        public static final int notification_main_column=0x7f0800aa;
-        public static final int notification_main_column_container=0x7f0800a9;
+        public static final int notification_background=0x7f0800b4;
+        public static final int notification_main_column=0x7f0800ae;
+        public static final int notification_main_column_container=0x7f0800ad;
         public static final int parallax=0x7f08004c;
         public static final int parentPanel=0x7f080065;
         public static final int parent_matrix=0x7f08000b;
@@ -3060,8 +3083,8 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f080007;
         public static final int radio=0x7f080075;
         public static final int right=0x7f08004a;
-        public static final int right_icon=0x7f0800af;
-        public static final int right_side=0x7f0800ab;
+        public static final int right_icon=0x7f0800b3;
+        public static final int right_side=0x7f0800af;
         public static final int save_image_matrix=0x7f08000c;
         public static final int save_non_transition_alpha=0x7f08000d;
         public static final int save_scale_type=0x7f08000e;
@@ -3086,9 +3109,9 @@ containing a value of this type.
         public static final int showCustom=0x7f080023;
         public static final int showHome=0x7f080024;
         public static final int showTitle=0x7f080025;
-        public static final int smallLabel=0x7f080090;
-        public static final int snackbar_action=0x7f080097;
-        public static final int snackbar_text=0x7f080096;
+        public static final int smallLabel=0x7f080095;
+        public static final int snackbar_action=0x7f08009c;
+        public static final int snackbar_text=0x7f08009b;
         public static final int snap=0x7f080043;
         public static final int spacer=0x7f080064;
         public static final int split_action_bar=0x7f080008;
@@ -3096,7 +3119,7 @@ containing a value of this type.
         public static final int src_in=0x7f08002b;
         public static final int src_over=0x7f08002c;
         public static final int start=0x7f08004b;
-        public static final int status_bar_latest_event_content=0x7f0800a6;
+        public static final int status_bar_latest_event_content=0x7f0800aa;
         public static final int submenuarrow=0x7f080076;
         public static final int submit_area=0x7f080087;
         public static final int tabMode=0x7f08001f;
@@ -3105,30 +3128,30 @@ containing a value of this type.
         public static final int text2=0x7f08001b;
         public static final int textSpacerNoButtons=0x7f08006a;
         public static final int textSpacerNoTitle=0x7f080069;
-        public static final int textView1=0x7f08008b;
-        public static final int textView2=0x7f08008d;
-        public static final int text_input_password_toggle=0x7f08009d;
+        public static final int textView=0x7f0800a4;
+        public static final int textView1=0x7f080090;
+        public static final int textView2=0x7f080092;
+        public static final int text_input_password_toggle=0x7f0800a2;
         public static final int textinput_counter=0x7f080014;
         public static final int textinput_error=0x7f080015;
-        public static final int time=0x7f0800ac;
+        public static final int time=0x7f0800b0;
         public static final int title=0x7f08001c;
         public static final int titleDividerNoCustom=0x7f080071;
         public static final int title_template=0x7f08006f;
+        public static final int toolbar=0x7f08008d;
         public static final int top=0x7f08003e;
         public static final int topPanel=0x7f08006e;
-        public static final int touch_outside=0x7f080094;
+        public static final int touch_outside=0x7f080099;
         public static final int transition_current_scene=0x7f08000f;
         public static final int transition_layout_save=0x7f080010;
         public static final int transition_position=0x7f080011;
         public static final int transition_scene_layoutid_cache=0x7f080012;
         public static final int transition_transform=0x7f080013;
-        public static final int txtName=0x7f08009f;
-        public static final int txtPasword=0x7f0800a0;
         public static final int uniform=0x7f08002d;
         public static final int up=0x7f080009;
         public static final int useLogo=0x7f080026;
         public static final int view_offset_helper=0x7f080016;
-        public static final int visible=0x7f0800b5;
+        public static final int visible=0x7f0800b9;
         public static final int withText=0x7f08003c;
         public static final int wrap_content=0x7f08002e;
     }
@@ -3172,23 +3195,23 @@ containing a value of this type.
         public static final int abc_search_view=0x7f040018;
         public static final int abc_select_dialog_material=0x7f040019;
         public static final int activity_main=0x7f04001a;
-        public static final int content_main=0x7f04001b;
-        public static final int design_bottom_navigation_item=0x7f04001c;
-        public static final int design_bottom_sheet_dialog=0x7f04001d;
-        public static final int design_layout_snackbar=0x7f04001e;
-        public static final int design_layout_snackbar_include=0x7f04001f;
-        public static final int design_layout_tab_icon=0x7f040020;
-        public static final int design_layout_tab_text=0x7f040021;
-        public static final int design_menu_item_action_area=0x7f040022;
-        public static final int design_navigation_item=0x7f040023;
-        public static final int design_navigation_item_header=0x7f040024;
-        public static final int design_navigation_item_separator=0x7f040025;
-        public static final int design_navigation_item_subheader=0x7f040026;
-        public static final int design_navigation_menu=0x7f040027;
-        public static final int design_navigation_menu_item=0x7f040028;
-        public static final int design_text_input_password_icon=0x7f040029;
-        public static final int employee_list=0x7f04002a;
-        public static final int listview_row=0x7f04002b;
+        public static final int app_bar_main=0x7f04001b;
+        public static final int content_main=0x7f04001c;
+        public static final int design_bottom_navigation_item=0x7f04001d;
+        public static final int design_bottom_sheet_dialog=0x7f04001e;
+        public static final int design_layout_snackbar=0x7f04001f;
+        public static final int design_layout_snackbar_include=0x7f040020;
+        public static final int design_layout_tab_icon=0x7f040021;
+        public static final int design_layout_tab_text=0x7f040022;
+        public static final int design_menu_item_action_area=0x7f040023;
+        public static final int design_navigation_item=0x7f040024;
+        public static final int design_navigation_item_header=0x7f040025;
+        public static final int design_navigation_item_separator=0x7f040026;
+        public static final int design_navigation_item_subheader=0x7f040027;
+        public static final int design_navigation_menu=0x7f040028;
+        public static final int design_navigation_menu_item=0x7f040029;
+        public static final int design_text_input_password_icon=0x7f04002a;
+        public static final int nav_header_main=0x7f04002b;
         public static final int notification_action=0x7f04002c;
         public static final int notification_action_tombstone=0x7f04002d;
         public static final int notification_media_action=0x7f04002e;
@@ -3211,7 +3234,8 @@ containing a value of this type.
         public static final int tooltip=0x7f04003f;
     }
     public static final class menu {
-        public static final int menu_main=0x7f0e0000;
+        public static final int activity_main_drawer=0x7f0e0000;
+        public static final int menu_main=0x7f0e0001;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -3248,11 +3272,13 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f09000e;
         public static final int abc_shareactionprovider_share_with_application=0x7f09000f;
         public static final int abc_toolbar_collapse_description=0x7f090010;
-        public static final int action_settings=0x7f090028;
+        public static final int action_settings=0x7f09002a;
         public static final int app_name=0x7f090027;
         public static final int appbar_scrolling_view_behavior=0x7f09001e;
         public static final int bottom_sheet_behavior=0x7f09001f;
         public static final int character_counter_pattern=0x7f090020;
+        public static final int navigation_drawer_close=0x7f090029;
+        public static final int navigation_drawer_open=0x7f090028;
         public static final int password_toggle_content_description=0x7f090021;
         public static final int path_password_eye=0x7f090022;
         public static final int path_password_eye_mask_strike_through=0x7f090023;
@@ -3660,35 +3686,35 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background HHMobileApp.HHMobileApp:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit HHMobileApp.HHMobileApp:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked HHMobileApp.HHMobileApp:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd HHMobileApp.HHMobileApp:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions HHMobileApp.HHMobileApp:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft HHMobileApp.HHMobileApp:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight HHMobileApp.HHMobileApp:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart HHMobileApp.HHMobileApp:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation HHMobileApp.HHMobileApp:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout HHMobileApp.HHMobileApp:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions HHMobileApp.HHMobileApp:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider HHMobileApp.HHMobileApp:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation HHMobileApp.HHMobileApp:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height HHMobileApp.HHMobileApp:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll HHMobileApp.HHMobileApp:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator HHMobileApp.HHMobileApp:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout HHMobileApp.HHMobileApp:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon HHMobileApp.HHMobileApp:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle HHMobileApp.HHMobileApp:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding HHMobileApp.HHMobileApp:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo HHMobileApp.HHMobileApp:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode HHMobileApp.HHMobileApp:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme HHMobileApp.HHMobileApp:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding HHMobileApp.HHMobileApp:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle HHMobileApp.HHMobileApp:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle HHMobileApp.HHMobileApp:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle HHMobileApp.HHMobileApp:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title HHMobileApp.HHMobileApp:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle HHMobileApp.HHMobileApp:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background HHmobileApp.HHmobileApp:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit HHmobileApp.HHmobileApp:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked HHmobileApp.HHmobileApp:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd HHmobileApp.HHmobileApp:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions HHmobileApp.HHmobileApp:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft HHmobileApp.HHmobileApp:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight HHmobileApp.HHmobileApp:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart HHmobileApp.HHmobileApp:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation HHmobileApp.HHmobileApp:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout HHmobileApp.HHmobileApp:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions HHmobileApp.HHmobileApp:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider HHmobileApp.HHmobileApp:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation HHmobileApp.HHmobileApp:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height HHmobileApp.HHmobileApp:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll HHmobileApp.HHmobileApp:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator HHmobileApp.HHmobileApp:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout HHmobileApp.HHmobileApp:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon HHmobileApp.HHmobileApp:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle HHmobileApp.HHmobileApp:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding HHmobileApp.HHmobileApp:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo HHmobileApp.HHmobileApp:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode HHmobileApp.HHmobileApp:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme HHmobileApp.HHmobileApp:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding HHmobileApp.HHmobileApp:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle HHmobileApp.HHmobileApp:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle HHmobileApp.HHmobileApp:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle HHmobileApp.HHmobileApp:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title HHmobileApp.HHmobileApp:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle HHmobileApp.HHmobileApp:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3731,17 +3757,17 @@ containing a value of this type.
             0x7f01006c
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#background}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:background
+          @attr name HHmobileApp.HHmobileApp:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3749,11 +3775,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:backgroundSplit
+          @attr name HHmobileApp.HHmobileApp:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3761,11 +3787,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:backgroundStacked
+          @attr name HHmobileApp.HHmobileApp:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3777,11 +3803,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetEnd
+          @attr name HHmobileApp.HHmobileApp:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3793,11 +3819,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetEndWithActions
+          @attr name HHmobileApp.HHmobileApp:contentInsetEndWithActions
         */
         public static final int ActionBar_contentInsetEndWithActions = 25;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3809,11 +3835,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetLeft
+          @attr name HHmobileApp.HHmobileApp:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3825,11 +3851,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetRight
+          @attr name HHmobileApp.HHmobileApp:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3841,11 +3867,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetStart
+          @attr name HHmobileApp.HHmobileApp:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3857,21 +3883,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetStartWithNavigation
+          @attr name HHmobileApp.HHmobileApp:contentInsetStartWithNavigation
         */
         public static final int ActionBar_contentInsetStartWithNavigation = 24;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:customNavigationLayout
+          @attr name HHmobileApp.HHmobileApp:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3889,21 +3915,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:displayOptions
+          @attr name HHmobileApp.HHmobileApp:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#divider}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:divider
+          @attr name HHmobileApp.HHmobileApp:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#elevation}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3915,11 +3941,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:elevation
+          @attr name HHmobileApp.HHmobileApp:elevation
         */
         public static final int ActionBar_elevation = 26;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#height}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3931,11 +3957,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:height
+          @attr name HHmobileApp.HHmobileApp:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3945,51 +3971,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:hideOnContentScroll
+          @attr name HHmobileApp.HHmobileApp:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:homeAsUpIndicator
+          @attr name HHmobileApp.HHmobileApp:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 28;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:homeLayout
+          @attr name HHmobileApp.HHmobileApp:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#icon}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:icon
+          @attr name HHmobileApp.HHmobileApp:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:indeterminateProgressStyle
+          @attr name HHmobileApp.HHmobileApp:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4001,21 +4027,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:itemPadding
+          @attr name HHmobileApp.HHmobileApp:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#logo}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:logo
+          @attr name HHmobileApp.HHmobileApp:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4029,21 +4055,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:navigationMode
+          @attr name HHmobileApp.HHmobileApp:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:popupTheme
+          @attr name HHmobileApp.HHmobileApp:popupTheme
         */
         public static final int ActionBar_popupTheme = 27;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4055,21 +4081,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:progressBarPadding
+          @attr name HHmobileApp.HHmobileApp:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:progressBarStyle
+          @attr name HHmobileApp.HHmobileApp:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4079,21 +4105,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:subtitle
+          @attr name HHmobileApp.HHmobileApp:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:subtitleTextStyle
+          @attr name HHmobileApp.HHmobileApp:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#title}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4103,17 +4129,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:title
+          @attr name HHmobileApp.HHmobileApp:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:titleTextStyle
+          @attr name HHmobileApp.HHmobileApp:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -4165,12 +4191,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background HHMobileApp.HHMobileApp:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit HHMobileApp.HHMobileApp:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout HHMobileApp.HHMobileApp:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height HHMobileApp.HHMobileApp:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle HHMobileApp.HHMobileApp:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle HHMobileApp.HHMobileApp:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background HHmobileApp.HHmobileApp:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit HHmobileApp.HHmobileApp:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout HHmobileApp.HHmobileApp:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height HHmobileApp.HHmobileApp:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle HHmobileApp.HHmobileApp:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle HHmobileApp.HHmobileApp:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -4184,17 +4210,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010017, 0x7f010027
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#background}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:background
+          @attr name HHmobileApp.HHmobileApp:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4202,21 +4228,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:backgroundSplit
+          @attr name HHmobileApp.HHmobileApp:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:closeItemLayout
+          @attr name HHmobileApp.HHmobileApp:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#height}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4228,27 +4254,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:height
+          @attr name HHmobileApp.HHmobileApp:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:subtitleTextStyle
+          @attr name HHmobileApp.HHmobileApp:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:titleTextStyle
+          @attr name HHmobileApp.HHmobileApp:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -4257,8 +4283,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable HHMobileApp.HHMobileApp:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount HHMobileApp.HHMobileApp:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable HHmobileApp.HHmobileApp:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount HHmobileApp.HHmobileApp:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -4267,17 +4293,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010028, 0x7f010029
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:expandActivityOverflowButtonDrawable
+          @attr name HHmobileApp.HHmobileApp:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -4287,7 +4313,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:initialActivityCount
+          @attr name HHmobileApp.HHmobileApp:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -4297,12 +4323,12 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout HHMobileApp.HHMobileApp:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout HHMobileApp.HHMobileApp:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout HHMobileApp.HHMobileApp:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout HHMobileApp.HHMobileApp:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_showTitle HHMobileApp.HHMobileApp:showTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout HHMobileApp.HHMobileApp:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout HHmobileApp.HHmobileApp:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout HHmobileApp.HHmobileApp:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout HHmobileApp.HHmobileApp:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout HHmobileApp.HHmobileApp:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_showTitle HHmobileApp.HHmobileApp:showTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout HHmobileApp.HHmobileApp:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -4323,47 +4349,47 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:buttonPanelSideLayout
+          @attr name HHmobileApp.HHmobileApp:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:listItemLayout
+          @attr name HHmobileApp.HHmobileApp:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:listLayout
+          @attr name HHmobileApp.HHmobileApp:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:multiChoiceItemLayout
+          @attr name HHmobileApp.HHmobileApp:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#showTitle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#showTitle}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -4373,17 +4399,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:showTitle
+          @attr name HHmobileApp.HHmobileApp:showTitle
         */
         public static final int AlertDialog_showTitle = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:singleChoiceItemLayout
+          @attr name HHmobileApp.HHmobileApp:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -4395,8 +4421,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
            <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation HHMobileApp.HHMobileApp:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded HHMobileApp.HHMobileApp:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation HHmobileApp.HHmobileApp:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded HHmobileApp.HHmobileApp:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_android_keyboardNavigationCluster
@@ -4427,7 +4453,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_touchscreenBlocksFocus = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#elevation}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4439,11 +4465,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:elevation
+          @attr name HHmobileApp.HHmobileApp:elevation
         */
         public static final int AppBarLayout_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#expanded}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4453,7 +4479,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:expanded
+          @attr name HHmobileApp.HHmobileApp:expanded
         */
         public static final int AppBarLayout_expanded = 4;
         /** Attributes that can be used with a AppBarLayoutStates.
@@ -4462,8 +4488,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed HHMobileApp.HHMobileApp:state_collapsed}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible HHMobileApp.HHMobileApp:state_collapsible}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed HHmobileApp.HHmobileApp:state_collapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible HHmobileApp.HHmobileApp:state_collapsible}</code></td><td></td></tr>
            </table>
            @see #AppBarLayoutStates_state_collapsed
            @see #AppBarLayoutStates_state_collapsible
@@ -4472,7 +4498,7 @@ containing a value of this type.
             0x7f010100, 0x7f010101
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#state_collapsed}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#state_collapsed}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -4482,11 +4508,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:state_collapsed
+          @attr name HHmobileApp.HHmobileApp:state_collapsed
         */
         public static final int AppBarLayoutStates_state_collapsed = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#state_collapsible}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#state_collapsible}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -4496,7 +4522,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:state_collapsible
+          @attr name HHmobileApp.HHmobileApp:state_collapsible
         */
         public static final int AppBarLayoutStates_state_collapsible = 1;
         /** Attributes that can be used with a AppBarLayout_Layout.
@@ -4505,8 +4531,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags HHMobileApp.HHMobileApp:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator HHMobileApp.HHMobileApp:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags HHmobileApp.HHmobileApp:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator HHmobileApp.HHmobileApp:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_Layout_layout_scrollFlags
            @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -4515,7 +4541,7 @@ containing a value of this type.
             0x7f010102, 0x7f010103
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
@@ -4531,17 +4557,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:layout_scrollFlags
+          @attr name HHmobileApp.HHmobileApp:layout_scrollFlags
         */
         public static final int AppBarLayout_Layout_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:layout_scrollInterpolator
+          @attr name HHmobileApp.HHmobileApp:layout_scrollInterpolator
         */
         public static final int AppBarLayout_Layout_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
@@ -4551,9 +4577,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_srcCompat HHMobileApp.HHMobileApp:srcCompat}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_tint HHMobileApp.HHMobileApp:tint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_tintMode HHMobileApp.HHMobileApp:tintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_srcCompat HHmobileApp.HHmobileApp:srcCompat}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_tint HHmobileApp.HHmobileApp:tint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_tintMode HHmobileApp.HHmobileApp:tintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
@@ -4570,17 +4596,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:srcCompat
+          @attr name HHmobileApp.HHmobileApp:srcCompat
         */
         public static final int AppCompatImageView_srcCompat = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tint}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
@@ -4591,11 +4617,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tint
+          @attr name HHmobileApp.HHmobileApp:tint
         */
         public static final int AppCompatImageView_tint = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tintMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tintMode}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
@@ -4612,7 +4638,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:tintMode
+          @attr name HHmobileApp.HHmobileApp:tintMode
         */
         public static final int AppCompatImageView_tintMode = 3;
         /** Attributes that can be used with a AppCompatSeekBar.
@@ -4622,9 +4648,9 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMark HHMobileApp.HHMobileApp:tickMark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint HHMobileApp.HHMobileApp:tickMarkTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode HHMobileApp.HHMobileApp:tickMarkTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMark HHmobileApp.HHmobileApp:tickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint HHmobileApp.HHmobileApp:tickMarkTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode HHmobileApp.HHmobileApp:tickMarkTintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatSeekBar_android_thumb
            @see #AppCompatSeekBar_tickMark
@@ -4641,17 +4667,17 @@ containing a value of this type.
         */
         public static final int AppCompatSeekBar_android_thumb = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tickMark}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tickMark}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:tickMark
+          @attr name HHmobileApp.HHmobileApp:tickMark
         */
         public static final int AppCompatSeekBar_tickMark = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tickMarkTint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tickMarkTint}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -4662,11 +4688,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tickMarkTint
+          @attr name HHmobileApp.HHmobileApp:tickMarkTint
         */
         public static final int AppCompatSeekBar_tickMarkTint = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tickMarkTintMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tickMarkTintMode}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -4683,7 +4709,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:tickMarkTintMode
+          @attr name HHmobileApp.HHmobileApp:tickMarkTintMode
         */
         public static final int AppCompatSeekBar_tickMarkTintMode = 3;
         /** Attributes that can be used with a AppCompatTextHelper.
@@ -4761,13 +4787,13 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize HHMobileApp.HHMobileApp:autoSizeMaxTextSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize HHMobileApp.HHMobileApp:autoSizeMinTextSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes HHMobileApp.HHMobileApp:autoSizePresetSizes}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity HHMobileApp.HHMobileApp:autoSizeStepGranularity}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeTextType HHMobileApp.HHMobileApp:autoSizeTextType}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_fontFamily HHMobileApp.HHMobileApp:fontFamily}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps HHMobileApp.HHMobileApp:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize HHmobileApp.HHmobileApp:autoSizeMaxTextSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize HHmobileApp.HHmobileApp:autoSizeMinTextSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes HHmobileApp.HHmobileApp:autoSizePresetSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity HHmobileApp.HHmobileApp:autoSizeStepGranularity}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeTextType HHmobileApp.HHmobileApp:autoSizeTextType}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_fontFamily HHmobileApp.HHmobileApp:fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps HHmobileApp.HHmobileApp:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_autoSizeMaxTextSize
@@ -4789,7 +4815,7 @@ containing a value of this type.
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#autoSizeMaxTextSize}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#autoSizeMaxTextSize}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -4801,11 +4827,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:autoSizeMaxTextSize
+          @attr name HHmobileApp.HHmobileApp:autoSizeMaxTextSize
         */
         public static final int AppCompatTextView_autoSizeMaxTextSize = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#autoSizeMinTextSize}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#autoSizeMinTextSize}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -4817,21 +4843,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:autoSizeMinTextSize
+          @attr name HHmobileApp.HHmobileApp:autoSizeMinTextSize
         */
         public static final int AppCompatTextView_autoSizeMinTextSize = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#autoSizePresetSizes}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#autoSizePresetSizes}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:autoSizePresetSizes
+          @attr name HHmobileApp.HHmobileApp:autoSizePresetSizes
         */
         public static final int AppCompatTextView_autoSizePresetSizes = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#autoSizeStepGranularity}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#autoSizeStepGranularity}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -4843,11 +4869,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:autoSizeStepGranularity
+          @attr name HHmobileApp.HHmobileApp:autoSizeStepGranularity
         */
         public static final int AppCompatTextView_autoSizeStepGranularity = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#autoSizeTextType}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#autoSizeTextType}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -4860,11 +4886,11 @@ containing a value of this type.
 <tr><td><code>none</code></td><td>0</td><td></td></tr>
 <tr><td><code>uniform</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:autoSizeTextType
+          @attr name HHmobileApp.HHmobileApp:autoSizeTextType
         */
         public static final int AppCompatTextView_autoSizeTextType = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fontFamily}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fontFamily}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -4874,18 +4900,18 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:fontFamily
+          @attr name HHmobileApp.HHmobileApp:fontFamily
         */
         public static final int AppCompatTextView_fontFamily = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name HHMobileApp.HHMobileApp:textAllCaps
+          @attr name HHmobileApp.HHmobileApp:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -4894,125 +4920,125 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarDivider HHMobileApp.HHMobileApp:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground HHMobileApp.HHMobileApp:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme HHMobileApp.HHMobileApp:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSize HHMobileApp.HHMobileApp:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle HHMobileApp.HHMobileApp:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarStyle HHMobileApp.HHMobileApp:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle HHMobileApp.HHMobileApp:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle HHMobileApp.HHMobileApp:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle HHMobileApp.HHMobileApp:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTheme HHMobileApp.HHMobileApp:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme HHMobileApp.HHMobileApp:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle HHMobileApp.HHMobileApp:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle HHMobileApp.HHMobileApp:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance HHMobileApp.HHMobileApp:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor HHMobileApp.HHMobileApp:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeBackground HHMobileApp.HHMobileApp:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle HHMobileApp.HHMobileApp:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable HHMobileApp.HHMobileApp:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable HHMobileApp.HHMobileApp:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable HHMobileApp.HHMobileApp:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable HHMobileApp.HHMobileApp:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable HHMobileApp.HHMobileApp:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle HHMobileApp.HHMobileApp:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable HHMobileApp.HHMobileApp:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable HHMobileApp.HHMobileApp:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground HHMobileApp.HHMobileApp:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeStyle HHMobileApp.HHMobileApp:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable HHMobileApp.HHMobileApp:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle HHMobileApp.HHMobileApp:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle HHMobileApp.HHMobileApp:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle HHMobileApp.HHMobileApp:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle HHMobileApp.HHMobileApp:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons HHMobileApp.HHMobileApp:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle HHMobileApp.HHMobileApp:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme HHMobileApp.HHMobileApp:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider HHmobileApp.HHmobileApp:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground HHmobileApp.HHmobileApp:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme HHmobileApp.HHmobileApp:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize HHmobileApp.HHmobileApp:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle HHmobileApp.HHmobileApp:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle HHmobileApp.HHmobileApp:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle HHmobileApp.HHmobileApp:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle HHmobileApp.HHmobileApp:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle HHmobileApp.HHmobileApp:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme HHmobileApp.HHmobileApp:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme HHmobileApp.HHmobileApp:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle HHmobileApp.HHmobileApp:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle HHmobileApp.HHmobileApp:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance HHmobileApp.HHmobileApp:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor HHmobileApp.HHmobileApp:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground HHmobileApp.HHmobileApp:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle HHmobileApp.HHmobileApp:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable HHmobileApp.HHmobileApp:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable HHmobileApp.HHmobileApp:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable HHmobileApp.HHmobileApp:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable HHmobileApp.HHmobileApp:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable HHmobileApp.HHmobileApp:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle HHmobileApp.HHmobileApp:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable HHmobileApp.HHmobileApp:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable HHmobileApp.HHmobileApp:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground HHmobileApp.HHmobileApp:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle HHmobileApp.HHmobileApp:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable HHmobileApp.HHmobileApp:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle HHmobileApp.HHmobileApp:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle HHmobileApp.HHmobileApp:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle HHmobileApp.HHmobileApp:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle HHmobileApp.HHmobileApp:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons HHmobileApp.HHmobileApp:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle HHmobileApp.HHmobileApp:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme HHmobileApp.HHmobileApp:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle HHMobileApp.HHMobileApp:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle HHMobileApp.HHMobileApp:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle HHMobileApp.HHMobileApp:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle HHMobileApp.HHMobileApp:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle HHMobileApp.HHMobileApp:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle HHMobileApp.HHMobileApp:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle HHMobileApp.HHMobileApp:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyle HHMobileApp.HHMobileApp:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall HHMobileApp.HHMobileApp:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkboxStyle HHMobileApp.HHMobileApp:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle HHMobileApp.HHMobileApp:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorAccent HHMobileApp.HHMobileApp:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating HHMobileApp.HHMobileApp:colorBackgroundFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal HHMobileApp.HHMobileApp:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlActivated HHMobileApp.HHMobileApp:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight HHMobileApp.HHMobileApp:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlNormal HHMobileApp.HHMobileApp:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorError HHMobileApp.HHMobileApp:colorError}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimary HHMobileApp.HHMobileApp:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark HHMobileApp.HHMobileApp:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal HHMobileApp.HHMobileApp:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_controlBackground HHMobileApp.HHMobileApp:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding HHMobileApp.HHMobileApp:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogTheme HHMobileApp.HHMobileApp:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal HHMobileApp.HHMobileApp:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerVertical HHMobileApp.HHMobileApp:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle HHMobileApp.HHMobileApp:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight HHMobileApp.HHMobileApp:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextBackground HHMobileApp.HHMobileApp:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextColor HHMobileApp.HHMobileApp:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextStyle HHMobileApp.HHMobileApp:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator HHMobileApp.HHMobileApp:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle HHMobileApp.HHMobileApp:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator HHMobileApp.HHMobileApp:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog HHMobileApp.HHMobileApp:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle HHMobileApp.HHMobileApp:listMenuViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle HHMobileApp.HHMobileApp:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight HHMobileApp.HHMobileApp:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge HHMobileApp.HHMobileApp:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall HHMobileApp.HHMobileApp:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft HHMobileApp.HHMobileApp:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight HHMobileApp.HHMobileApp:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelBackground HHMobileApp.HHMobileApp:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme HHMobileApp.HHMobileApp:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth HHMobileApp.HHMobileApp:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle HHMobileApp.HHMobileApp:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle HHMobileApp.HHMobileApp:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle HHMobileApp.HHMobileApp:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle HHMobileApp.HHMobileApp:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator HHMobileApp.HHMobileApp:ratingBarStyleIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall HHMobileApp.HHMobileApp:ratingBarStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_searchViewStyle HHMobileApp.HHMobileApp:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_seekBarStyle HHMobileApp.HHMobileApp:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground HHMobileApp.HHMobileApp:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless HHMobileApp.HHMobileApp:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle HHMobileApp.HHMobileApp:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerStyle HHMobileApp.HHMobileApp:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_switchStyle HHMobileApp.HHMobileApp:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu HHMobileApp.HHMobileApp:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem HHMobileApp.HHMobileApp:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary HHMobileApp.HHMobileApp:textAppearanceListItemSecondary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall HHMobileApp.HHMobileApp:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader HHMobileApp.HHMobileApp:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle HHMobileApp.HHMobileApp:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle HHMobileApp.HHMobileApp:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu HHMobileApp.HHMobileApp:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem HHMobileApp.HHMobileApp:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl HHMobileApp.HHMobileApp:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle HHMobileApp.HHMobileApp:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarStyle HHMobileApp.HHMobileApp:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor HHMobileApp.HHMobileApp:tooltipForegroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground HHMobileApp.HHMobileApp:tooltipFrameBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBar HHMobileApp.HHMobileApp:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay HHMobileApp.HHMobileApp:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay HHMobileApp.HHMobileApp:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor HHMobileApp.HHMobileApp:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor HHMobileApp.HHMobileApp:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor HHMobileApp.HHMobileApp:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor HHMobileApp.HHMobileApp:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor HHMobileApp.HHMobileApp:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor HHMobileApp.HHMobileApp:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowNoTitle HHMobileApp.HHMobileApp:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle HHmobileApp.HHmobileApp:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle HHmobileApp.HHmobileApp:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle HHmobileApp.HHmobileApp:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle HHmobileApp.HHmobileApp:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle HHmobileApp.HHmobileApp:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle HHmobileApp.HHmobileApp:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle HHmobileApp.HHmobileApp:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle HHmobileApp.HHmobileApp:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall HHmobileApp.HHmobileApp:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle HHmobileApp.HHmobileApp:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle HHmobileApp.HHmobileApp:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent HHmobileApp.HHmobileApp:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating HHmobileApp.HHmobileApp:colorBackgroundFloating}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal HHmobileApp.HHmobileApp:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated HHmobileApp.HHmobileApp:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight HHmobileApp.HHmobileApp:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal HHmobileApp.HHmobileApp:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorError HHmobileApp.HHmobileApp:colorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary HHmobileApp.HHmobileApp:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark HHmobileApp.HHmobileApp:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal HHmobileApp.HHmobileApp:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground HHmobileApp.HHmobileApp:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding HHmobileApp.HHmobileApp:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme HHmobileApp.HHmobileApp:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal HHmobileApp.HHmobileApp:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical HHmobileApp.HHmobileApp:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle HHmobileApp.HHmobileApp:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight HHmobileApp.HHmobileApp:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground HHmobileApp.HHmobileApp:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor HHmobileApp.HHmobileApp:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle HHmobileApp.HHmobileApp:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator HHmobileApp.HHmobileApp:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle HHmobileApp.HHmobileApp:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator HHmobileApp.HHmobileApp:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog HHmobileApp.HHmobileApp:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle HHmobileApp.HHmobileApp:listMenuViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle HHmobileApp.HHmobileApp:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight HHmobileApp.HHmobileApp:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge HHmobileApp.HHmobileApp:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall HHmobileApp.HHmobileApp:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft HHmobileApp.HHmobileApp:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight HHmobileApp.HHmobileApp:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground HHmobileApp.HHmobileApp:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme HHmobileApp.HHmobileApp:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth HHmobileApp.HHmobileApp:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle HHmobileApp.HHmobileApp:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle HHmobileApp.HHmobileApp:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle HHmobileApp.HHmobileApp:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle HHmobileApp.HHmobileApp:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator HHmobileApp.HHmobileApp:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall HHmobileApp.HHmobileApp:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle HHmobileApp.HHmobileApp:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle HHmobileApp.HHmobileApp:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground HHmobileApp.HHmobileApp:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless HHmobileApp.HHmobileApp:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle HHmobileApp.HHmobileApp:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle HHmobileApp.HHmobileApp:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle HHmobileApp.HHmobileApp:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu HHmobileApp.HHmobileApp:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem HHmobileApp.HHmobileApp:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary HHmobileApp.HHmobileApp:textAppearanceListItemSecondary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall HHmobileApp.HHmobileApp:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader HHmobileApp.HHmobileApp:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle HHmobileApp.HHmobileApp:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle HHmobileApp.HHmobileApp:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu HHmobileApp.HHmobileApp:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem HHmobileApp.HHmobileApp:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl HHmobileApp.HHmobileApp:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle HHmobileApp.HHmobileApp:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle HHmobileApp.HHmobileApp:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor HHmobileApp.HHmobileApp:tooltipForegroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground HHmobileApp.HHmobileApp:tooltipFrameBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar HHmobileApp.HHmobileApp:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay HHmobileApp.HHmobileApp:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay HHmobileApp.HHmobileApp:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor HHmobileApp.HHmobileApp:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor HHmobileApp.HHmobileApp:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor HHmobileApp.HHmobileApp:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor HHmobileApp.HHmobileApp:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor HHmobileApp.HHmobileApp:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor HHmobileApp.HHmobileApp:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle HHmobileApp.HHmobileApp:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -5167,37 +5193,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100af, 0x7f0100b0, 0x7f0100b1
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionBarDivider
+          @attr name HHmobileApp.HHmobileApp:actionBarDivider
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionBarItemBackground
+          @attr name HHmobileApp.HHmobileApp:actionBarItemBackground
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionBarPopupTheme
+          @attr name HHmobileApp.HHmobileApp:actionBarPopupTheme
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5217,111 +5243,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:actionBarSize
+          @attr name HHmobileApp.HHmobileApp:actionBarSize
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionBarSplitStyle
+          @attr name HHmobileApp.HHmobileApp:actionBarSplitStyle
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionBarStyle
+          @attr name HHmobileApp.HHmobileApp:actionBarStyle
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionBarTabBarStyle
+          @attr name HHmobileApp.HHmobileApp:actionBarTabBarStyle
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionBarTabStyle
+          @attr name HHmobileApp.HHmobileApp:actionBarTabStyle
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionBarTabTextStyle
+          @attr name HHmobileApp.HHmobileApp:actionBarTabTextStyle
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionBarTheme
+          @attr name HHmobileApp.HHmobileApp:actionBarTheme
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionBarWidgetTheme
+          @attr name HHmobileApp.HHmobileApp:actionBarWidgetTheme
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionButtonStyle
+          @attr name HHmobileApp.HHmobileApp:actionButtonStyle
         */
         public static final int AppCompatTheme_actionButtonStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionDropDownStyle
+          @attr name HHmobileApp.HHmobileApp:actionDropDownStyle
         */
         public static final int AppCompatTheme_actionDropDownStyle = 46;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionMenuTextAppearance
+          @attr name HHmobileApp.HHmobileApp:actionMenuTextAppearance
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5329,181 +5355,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionMenuTextColor
+          @attr name HHmobileApp.HHmobileApp:actionMenuTextColor
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeBackground
+          @attr name HHmobileApp.HHmobileApp:actionModeBackground
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeCloseButtonStyle
+          @attr name HHmobileApp.HHmobileApp:actionModeCloseButtonStyle
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeCloseDrawable
+          @attr name HHmobileApp.HHmobileApp:actionModeCloseDrawable
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeCopyDrawable
+          @attr name HHmobileApp.HHmobileApp:actionModeCopyDrawable
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeCutDrawable
+          @attr name HHmobileApp.HHmobileApp:actionModeCutDrawable
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeFindDrawable
+          @attr name HHmobileApp.HHmobileApp:actionModeFindDrawable
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModePasteDrawable
+          @attr name HHmobileApp.HHmobileApp:actionModePasteDrawable
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModePopupWindowStyle
+          @attr name HHmobileApp.HHmobileApp:actionModePopupWindowStyle
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeSelectAllDrawable
+          @attr name HHmobileApp.HHmobileApp:actionModeSelectAllDrawable
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeShareDrawable
+          @attr name HHmobileApp.HHmobileApp:actionModeShareDrawable
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeSplitBackground
+          @attr name HHmobileApp.HHmobileApp:actionModeSplitBackground
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeStyle
+          @attr name HHmobileApp.HHmobileApp:actionModeStyle
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionModeWebSearchDrawable
+          @attr name HHmobileApp.HHmobileApp:actionModeWebSearchDrawable
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionOverflowButtonStyle
+          @attr name HHmobileApp.HHmobileApp:actionOverflowButtonStyle
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionOverflowMenuStyle
+          @attr name HHmobileApp.HHmobileApp:actionOverflowMenuStyle
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:activityChooserViewStyle
+          @attr name HHmobileApp.HHmobileApp:activityChooserViewStyle
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:alertDialogButtonGroupStyle
+          @attr name HHmobileApp.HHmobileApp:alertDialogButtonGroupStyle
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 95;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5513,27 +5539,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:alertDialogCenterButtons
+          @attr name HHmobileApp.HHmobileApp:alertDialogCenterButtons
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 96;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:alertDialogStyle
+          @attr name HHmobileApp.HHmobileApp:alertDialogStyle
         */
         public static final int AppCompatTheme_alertDialogStyle = 94;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:alertDialogTheme
+          @attr name HHmobileApp.HHmobileApp:alertDialogTheme
         */
         public static final int AppCompatTheme_alertDialogTheme = 97;
         /**
@@ -5549,117 +5575,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:autoCompleteTextViewStyle
+          @attr name HHmobileApp.HHmobileApp:autoCompleteTextViewStyle
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:borderlessButtonStyle
+          @attr name HHmobileApp.HHmobileApp:borderlessButtonStyle
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:buttonBarButtonStyle
+          @attr name HHmobileApp.HHmobileApp:buttonBarButtonStyle
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:buttonBarNegativeButtonStyle
+          @attr name HHmobileApp.HHmobileApp:buttonBarNegativeButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:buttonBarNeutralButtonStyle
+          @attr name HHmobileApp.HHmobileApp:buttonBarNeutralButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 101;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:buttonBarPositiveButtonStyle
+          @attr name HHmobileApp.HHmobileApp:buttonBarPositiveButtonStyle
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:buttonBarStyle
+          @attr name HHmobileApp.HHmobileApp:buttonBarStyle
         */
         public static final int AppCompatTheme_buttonBarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:buttonStyle
+          @attr name HHmobileApp.HHmobileApp:buttonStyle
         */
         public static final int AppCompatTheme_buttonStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:buttonStyleSmall
+          @attr name HHmobileApp.HHmobileApp:buttonStyleSmall
         */
         public static final int AppCompatTheme_buttonStyleSmall = 104;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:checkboxStyle
+          @attr name HHmobileApp.HHmobileApp:checkboxStyle
         */
         public static final int AppCompatTheme_checkboxStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:checkedTextViewStyle
+          @attr name HHmobileApp.HHmobileApp:checkedTextViewStyle
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5670,11 +5696,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:colorAccent
+          @attr name HHmobileApp.HHmobileApp:colorAccent
         */
         public static final int AppCompatTheme_colorAccent = 86;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#colorBackgroundFloating}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#colorBackgroundFloating}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5685,11 +5711,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:colorBackgroundFloating
+          @attr name HHmobileApp.HHmobileApp:colorBackgroundFloating
         */
         public static final int AppCompatTheme_colorBackgroundFloating = 93;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5700,11 +5726,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:colorButtonNormal
+          @attr name HHmobileApp.HHmobileApp:colorButtonNormal
         */
         public static final int AppCompatTheme_colorButtonNormal = 90;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5715,11 +5741,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:colorControlActivated
+          @attr name HHmobileApp.HHmobileApp:colorControlActivated
         */
         public static final int AppCompatTheme_colorControlActivated = 88;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5730,11 +5756,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:colorControlHighlight
+          @attr name HHmobileApp.HHmobileApp:colorControlHighlight
         */
         public static final int AppCompatTheme_colorControlHighlight = 89;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5745,11 +5771,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:colorControlNormal
+          @attr name HHmobileApp.HHmobileApp:colorControlNormal
         */
         public static final int AppCompatTheme_colorControlNormal = 87;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#colorError}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#colorError}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5757,11 +5783,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:colorError
+          @attr name HHmobileApp.HHmobileApp:colorError
         */
         public static final int AppCompatTheme_colorError = 118;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5772,11 +5798,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:colorPrimary
+          @attr name HHmobileApp.HHmobileApp:colorPrimary
         */
         public static final int AppCompatTheme_colorPrimary = 84;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5787,11 +5813,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:colorPrimaryDark
+          @attr name HHmobileApp.HHmobileApp:colorPrimaryDark
         */
         public static final int AppCompatTheme_colorPrimaryDark = 85;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5802,21 +5828,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:colorSwitchThumbNormal
+          @attr name HHmobileApp.HHmobileApp:colorSwitchThumbNormal
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 91;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:controlBackground
+          @attr name HHmobileApp.HHmobileApp:controlBackground
         */
         public static final int AppCompatTheme_controlBackground = 92;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5828,51 +5854,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:dialogPreferredPadding
+          @attr name HHmobileApp.HHmobileApp:dialogPreferredPadding
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 44;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:dialogTheme
+          @attr name HHmobileApp.HHmobileApp:dialogTheme
         */
         public static final int AppCompatTheme_dialogTheme = 43;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:dividerHorizontal
+          @attr name HHmobileApp.HHmobileApp:dividerHorizontal
         */
         public static final int AppCompatTheme_dividerHorizontal = 57;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:dividerVertical
+          @attr name HHmobileApp.HHmobileApp:dividerVertical
         */
         public static final int AppCompatTheme_dividerVertical = 56;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:dropDownListViewStyle
+          @attr name HHmobileApp.HHmobileApp:dropDownListViewStyle
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5884,21 +5910,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:dropdownListPreferredItemHeight
+          @attr name HHmobileApp.HHmobileApp:dropdownListPreferredItemHeight
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 47;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:editTextBackground
+          @attr name HHmobileApp.HHmobileApp:editTextBackground
         */
         public static final int AppCompatTheme_editTextBackground = 64;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5906,81 +5932,81 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:editTextColor
+          @attr name HHmobileApp.HHmobileApp:editTextColor
         */
         public static final int AppCompatTheme_editTextColor = 63;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:editTextStyle
+          @attr name HHmobileApp.HHmobileApp:editTextStyle
         */
         public static final int AppCompatTheme_editTextStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:homeAsUpIndicator
+          @attr name HHmobileApp.HHmobileApp:homeAsUpIndicator
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 49;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:imageButtonStyle
+          @attr name HHmobileApp.HHmobileApp:imageButtonStyle
         */
         public static final int AppCompatTheme_imageButtonStyle = 65;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:listChoiceBackgroundIndicator
+          @attr name HHmobileApp.HHmobileApp:listChoiceBackgroundIndicator
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 83;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:listDividerAlertDialog
+          @attr name HHmobileApp.HHmobileApp:listDividerAlertDialog
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 45;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listMenuViewStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listMenuViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:listMenuViewStyle
+          @attr name HHmobileApp.HHmobileApp:listMenuViewStyle
         */
         public static final int AppCompatTheme_listMenuViewStyle = 115;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:listPopupWindowStyle
+          @attr name HHmobileApp.HHmobileApp:listPopupWindowStyle
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 76;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5992,11 +6018,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:listPreferredItemHeight
+          @attr name HHmobileApp.HHmobileApp:listPreferredItemHeight
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 70;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6008,11 +6034,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:listPreferredItemHeightLarge
+          @attr name HHmobileApp.HHmobileApp:listPreferredItemHeightLarge
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 72;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6024,11 +6050,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:listPreferredItemHeightSmall
+          @attr name HHmobileApp.HHmobileApp:listPreferredItemHeightSmall
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 71;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6040,11 +6066,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:listPreferredItemPaddingLeft
+          @attr name HHmobileApp.HHmobileApp:listPreferredItemPaddingLeft
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 73;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6056,31 +6082,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:listPreferredItemPaddingRight
+          @attr name HHmobileApp.HHmobileApp:listPreferredItemPaddingRight
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 74;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:panelBackground
+          @attr name HHmobileApp.HHmobileApp:panelBackground
         */
         public static final int AppCompatTheme_panelBackground = 80;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:panelMenuListTheme
+          @attr name HHmobileApp.HHmobileApp:panelMenuListTheme
         */
         public static final int AppCompatTheme_panelMenuListTheme = 82;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6092,221 +6118,221 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:panelMenuListWidth
+          @attr name HHmobileApp.HHmobileApp:panelMenuListWidth
         */
         public static final int AppCompatTheme_panelMenuListWidth = 81;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:popupMenuStyle
+          @attr name HHmobileApp.HHmobileApp:popupMenuStyle
         */
         public static final int AppCompatTheme_popupMenuStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:popupWindowStyle
+          @attr name HHmobileApp.HHmobileApp:popupWindowStyle
         */
         public static final int AppCompatTheme_popupWindowStyle = 62;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:radioButtonStyle
+          @attr name HHmobileApp.HHmobileApp:radioButtonStyle
         */
         public static final int AppCompatTheme_radioButtonStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:ratingBarStyle
+          @attr name HHmobileApp.HHmobileApp:ratingBarStyle
         */
         public static final int AppCompatTheme_ratingBarStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:ratingBarStyleIndicator
+          @attr name HHmobileApp.HHmobileApp:ratingBarStyleIndicator
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 110;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:ratingBarStyleSmall
+          @attr name HHmobileApp.HHmobileApp:ratingBarStyleSmall
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 111;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:searchViewStyle
+          @attr name HHmobileApp.HHmobileApp:searchViewStyle
         */
         public static final int AppCompatTheme_searchViewStyle = 69;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:seekBarStyle
+          @attr name HHmobileApp.HHmobileApp:seekBarStyle
         */
         public static final int AppCompatTheme_seekBarStyle = 112;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:selectableItemBackground
+          @attr name HHmobileApp.HHmobileApp:selectableItemBackground
         */
         public static final int AppCompatTheme_selectableItemBackground = 53;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:selectableItemBackgroundBorderless
+          @attr name HHmobileApp.HHmobileApp:selectableItemBackgroundBorderless
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 54;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:spinnerDropDownItemStyle
+          @attr name HHmobileApp.HHmobileApp:spinnerDropDownItemStyle
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 48;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:spinnerStyle
+          @attr name HHmobileApp.HHmobileApp:spinnerStyle
         */
         public static final int AppCompatTheme_spinnerStyle = 113;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:switchStyle
+          @attr name HHmobileApp.HHmobileApp:switchStyle
         */
         public static final int AppCompatTheme_switchStyle = 114;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textAppearanceLargePopupMenu
+          @attr name HHmobileApp.HHmobileApp:textAppearanceLargePopupMenu
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textAppearanceListItem
+          @attr name HHmobileApp.HHmobileApp:textAppearanceListItem
         */
         public static final int AppCompatTheme_textAppearanceListItem = 77;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textAppearanceListItemSecondary}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textAppearanceListItemSecondary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textAppearanceListItemSecondary
+          @attr name HHmobileApp.HHmobileApp:textAppearanceListItemSecondary
         */
         public static final int AppCompatTheme_textAppearanceListItemSecondary = 78;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textAppearanceListItemSmall
+          @attr name HHmobileApp.HHmobileApp:textAppearanceListItemSmall
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 79;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textAppearancePopupMenuHeader}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textAppearancePopupMenuHeader}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textAppearancePopupMenuHeader
+          @attr name HHmobileApp.HHmobileApp:textAppearancePopupMenuHeader
         */
         public static final int AppCompatTheme_textAppearancePopupMenuHeader = 42;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textAppearanceSearchResultSubtitle
+          @attr name HHmobileApp.HHmobileApp:textAppearanceSearchResultSubtitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 67;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textAppearanceSearchResultTitle
+          @attr name HHmobileApp.HHmobileApp:textAppearanceSearchResultTitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 66;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textAppearanceSmallPopupMenu
+          @attr name HHmobileApp.HHmobileApp:textAppearanceSmallPopupMenu
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6314,11 +6340,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textColorAlertDialogListItem
+          @attr name HHmobileApp.HHmobileApp:textColorAlertDialogListItem
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 98;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6326,31 +6352,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textColorSearchUrl
+          @attr name HHmobileApp.HHmobileApp:textColorSearchUrl
         */
         public static final int AppCompatTheme_textColorSearchUrl = 68;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:toolbarNavigationButtonStyle
+          @attr name HHmobileApp.HHmobileApp:toolbarNavigationButtonStyle
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:toolbarStyle
+          @attr name HHmobileApp.HHmobileApp:toolbarStyle
         */
         public static final int AppCompatTheme_toolbarStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tooltipForegroundColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tooltipForegroundColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6358,21 +6384,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:tooltipForegroundColor
+          @attr name HHmobileApp.HHmobileApp:tooltipForegroundColor
         */
         public static final int AppCompatTheme_tooltipForegroundColor = 117;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tooltipFrameBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tooltipFrameBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:tooltipFrameBackground
+          @attr name HHmobileApp.HHmobileApp:tooltipFrameBackground
         */
         public static final int AppCompatTheme_tooltipFrameBackground = 116;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6382,11 +6408,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:windowActionBar
+          @attr name HHmobileApp.HHmobileApp:windowActionBar
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6396,11 +6422,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:windowActionBarOverlay
+          @attr name HHmobileApp.HHmobileApp:windowActionBarOverlay
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6410,11 +6436,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:windowActionModeOverlay
+          @attr name HHmobileApp.HHmobileApp:windowActionModeOverlay
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6429,11 +6455,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:windowFixedHeightMajor
+          @attr name HHmobileApp.HHmobileApp:windowFixedHeightMajor
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6448,11 +6474,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:windowFixedHeightMinor
+          @attr name HHmobileApp.HHmobileApp:windowFixedHeightMinor
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6467,11 +6493,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:windowFixedWidthMajor
+          @attr name HHmobileApp.HHmobileApp:windowFixedWidthMajor
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6486,11 +6512,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:windowFixedWidthMinor
+          @attr name HHmobileApp.HHmobileApp:windowFixedWidthMinor
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6505,11 +6531,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:windowMinWidthMajor
+          @attr name HHmobileApp.HHmobileApp:windowMinWidthMajor
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6524,11 +6550,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:windowMinWidthMinor
+          @attr name HHmobileApp.HHmobileApp:windowMinWidthMinor
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6538,7 +6564,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:windowNoTitle
+          @attr name HHmobileApp.HHmobileApp:windowNoTitle
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
         /** Attributes that can be used with a BottomNavigationView.
@@ -6547,11 +6573,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomNavigationView_elevation HHMobileApp.HHMobileApp:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemBackground HHMobileApp.HHMobileApp:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemIconTint HHMobileApp.HHMobileApp:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemTextColor HHMobileApp.HHMobileApp:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_menu HHMobileApp.HHMobileApp:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_elevation HHmobileApp.HHmobileApp:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemBackground HHmobileApp.HHmobileApp:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemIconTint HHmobileApp.HHmobileApp:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemTextColor HHmobileApp.HHmobileApp:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_menu HHmobileApp.HHmobileApp:menu}</code></td><td></td></tr>
            </table>
            @see #BottomNavigationView_elevation
            @see #BottomNavigationView_itemBackground
@@ -6564,7 +6590,7 @@ containing a value of this type.
             0x7f01012d
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#elevation}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#elevation}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -6576,21 +6602,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:elevation
+          @attr name HHmobileApp.HHmobileApp:elevation
         */
         public static final int BottomNavigationView_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#itemBackground}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:itemBackground
+          @attr name HHmobileApp.HHmobileApp:itemBackground
         */
         public static final int BottomNavigationView_itemBackground = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#itemIconTint}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -6601,11 +6627,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:itemIconTint
+          @attr name HHmobileApp.HHmobileApp:itemIconTint
         */
         public static final int BottomNavigationView_itemIconTint = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#itemTextColor}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -6616,17 +6642,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:itemTextColor
+          @attr name HHmobileApp.HHmobileApp:itemTextColor
         */
         public static final int BottomNavigationView_itemTextColor = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#menu}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#menu}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:menu
+          @attr name HHmobileApp.HHmobileApp:menu
         */
         public static final int BottomNavigationView_menu = 1;
         /** Attributes that can be used with a BottomSheetBehavior_Layout.
@@ -6635,9 +6661,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable HHMobileApp.HHMobileApp:behavior_hideable}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight HHMobileApp.HHMobileApp:behavior_peekHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed HHMobileApp.HHMobileApp:behavior_skipCollapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable HHmobileApp.HHmobileApp:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight HHmobileApp.HHmobileApp:behavior_peekHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed HHmobileApp.HHmobileApp:behavior_skipCollapsed}</code></td><td></td></tr>
            </table>
            @see #BottomSheetBehavior_Layout_behavior_hideable
            @see #BottomSheetBehavior_Layout_behavior_peekHeight
@@ -6647,7 +6673,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010104, 0x7f010105, 0x7f010106
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#behavior_hideable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#behavior_hideable}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -6657,11 +6683,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:behavior_hideable
+          @attr name HHmobileApp.HHmobileApp:behavior_hideable
         */
         public static final int BottomSheetBehavior_Layout_behavior_hideable = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#behavior_peekHeight}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#behavior_peekHeight}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -6681,11 +6707,11 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>auto</code></td><td>-1</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:behavior_peekHeight
+          @attr name HHmobileApp.HHmobileApp:behavior_peekHeight
         */
         public static final int BottomSheetBehavior_Layout_behavior_peekHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#behavior_skipCollapsed}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#behavior_skipCollapsed}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -6695,7 +6721,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:behavior_skipCollapsed
+          @attr name HHmobileApp.HHmobileApp:behavior_skipCollapsed
         */
         public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -6704,7 +6730,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking HHMobileApp.HHMobileApp:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking HHmobileApp.HHmobileApp:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -6712,7 +6738,7 @@ containing a value of this type.
             0x7f0100b2
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -6722,7 +6748,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:allowStacking
+          @attr name HHmobileApp.HHmobileApp:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -6731,22 +6757,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity HHMobileApp.HHMobileApp:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance HHMobileApp.HHMobileApp:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim HHMobileApp.HHMobileApp:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity HHMobileApp.HHMobileApp:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin HHMobileApp.HHMobileApp:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom HHMobileApp.HHMobileApp:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd HHMobileApp.HHMobileApp:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart HHMobileApp.HHMobileApp:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop HHMobileApp.HHMobileApp:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance HHMobileApp.HHMobileApp:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration HHMobileApp.HHMobileApp:scrimAnimationDuration}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger HHMobileApp.HHMobileApp:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim HHMobileApp.HHMobileApp:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title HHMobileApp.HHMobileApp:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled HHMobileApp.HHMobileApp:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId HHMobileApp.HHMobileApp:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity HHmobileApp.HHmobileApp:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance HHmobileApp.HHmobileApp:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim HHmobileApp.HHmobileApp:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity HHmobileApp.HHmobileApp:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin HHmobileApp.HHmobileApp:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom HHmobileApp.HHmobileApp:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd HHmobileApp.HHmobileApp:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart HHmobileApp.HHmobileApp:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop HHmobileApp.HHmobileApp:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance HHmobileApp.HHmobileApp:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration HHmobileApp.HHmobileApp:scrimAnimationDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger HHmobileApp.HHmobileApp:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim HHmobileApp.HHmobileApp:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title HHmobileApp.HHmobileApp:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled HHmobileApp.HHmobileApp:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId HHmobileApp.HHmobileApp:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -6772,7 +6798,7 @@ containing a value of this type.
             0x7f010112, 0x7f010113, 0x7f010114, 0x7f010115
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6793,21 +6819,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:collapsedTitleGravity
+          @attr name HHmobileApp.HHmobileApp:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 13;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:collapsedTitleTextAppearance
+          @attr name HHmobileApp.HHmobileApp:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6818,11 +6844,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentScrim
+          @attr name HHmobileApp.HHmobileApp:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6843,11 +6869,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:expandedTitleGravity
+          @attr name HHmobileApp.HHmobileApp:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 14;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6859,11 +6885,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:expandedTitleMargin
+          @attr name HHmobileApp.HHmobileApp:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6875,11 +6901,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:expandedTitleMarginBottom
+          @attr name HHmobileApp.HHmobileApp:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6891,11 +6917,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:expandedTitleMarginEnd
+          @attr name HHmobileApp.HHmobileApp:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6907,11 +6933,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:expandedTitleMarginStart
+          @attr name HHmobileApp.HHmobileApp:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6923,21 +6949,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:expandedTitleMarginTop
+          @attr name HHmobileApp.HHmobileApp:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:expandedTitleTextAppearance
+          @attr name HHmobileApp.HHmobileApp:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#scrimAnimationDuration}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#scrimAnimationDuration}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6947,11 +6973,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:scrimAnimationDuration
+          @attr name HHmobileApp.HHmobileApp:scrimAnimationDuration
         */
         public static final int CollapsingToolbarLayout_scrimAnimationDuration = 12;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#scrimVisibleHeightTrigger}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#scrimVisibleHeightTrigger}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6963,11 +6989,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:scrimVisibleHeightTrigger
+          @attr name HHmobileApp.HHmobileApp:scrimVisibleHeightTrigger
         */
         public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger = 11;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6978,11 +7004,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:statusBarScrim
+          @attr name HHmobileApp.HHmobileApp:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#title}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6992,11 +7018,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:title
+          @attr name HHmobileApp.HHmobileApp:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7006,17 +7032,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:titleEnabled
+          @attr name HHmobileApp.HHmobileApp:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 15;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:toolbarId
+          @attr name HHmobileApp.HHmobileApp:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CollapsingToolbarLayout_Layout.
@@ -7025,8 +7051,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode HHMobileApp.HHMobileApp:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier HHMobileApp.HHMobileApp:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode HHmobileApp.HHmobileApp:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier HHmobileApp.HHmobileApp:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_Layout_layout_collapseMode
            @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -7035,7 +7061,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010116, 0x7f010117
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -7049,11 +7075,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:layout_collapseMode
+          @attr name HHmobileApp.HHmobileApp:layout_collapseMode
         */
         public static final int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -7063,7 +7089,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:layout_collapseParallaxMultiplier
+          @attr name HHmobileApp.HHmobileApp:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a ColorStateListItem.
@@ -7072,7 +7098,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ColorStateListItem_alpha HHMobileApp.HHMobileApp:alpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorStateListItem_alpha HHmobileApp.HHmobileApp:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
            </table>
@@ -7084,7 +7110,7 @@ containing a value of this type.
             0x010101a5, 0x0101031f, 0x7f0100b3
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#alpha}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#alpha}
           attribute's value can be found in the {@link #ColorStateListItem} array.
 
 
@@ -7094,7 +7120,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:alpha
+          @attr name HHmobileApp.HHmobileApp:alpha
         */
         public static final int ColorStateListItem_alpha = 2;
         /**
@@ -7116,8 +7142,8 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint HHMobileApp.HHMobileApp:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode HHMobileApp.HHMobileApp:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint HHmobileApp.HHmobileApp:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode HHmobileApp.HHmobileApp:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -7133,7 +7159,7 @@ containing a value of this type.
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -7144,11 +7170,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:buttonTint
+          @attr name HHmobileApp.HHmobileApp:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -7165,7 +7191,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:buttonTintMode
+          @attr name HHmobileApp.HHmobileApp:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -7174,8 +7200,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines HHMobileApp.HHMobileApp:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground HHMobileApp.HHMobileApp:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines HHmobileApp.HHmobileApp:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground HHmobileApp.HHmobileApp:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -7184,23 +7210,23 @@ containing a value of this type.
             0x7f010118, 0x7f010119
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#keylines}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:keylines
+          @attr name HHmobileApp.HHmobileApp:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:statusBarBackground
+          @attr name HHmobileApp.HHmobileApp:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_Layout.
@@ -7210,12 +7236,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor HHMobileApp.HHMobileApp:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity HHMobileApp.HHMobileApp:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior HHMobileApp.HHMobileApp:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges HHMobileApp.HHMobileApp:layout_dodgeInsetEdges}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge HHMobileApp.HHMobileApp:layout_insetEdge}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline HHMobileApp.HHMobileApp:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor HHmobileApp.HHmobileApp:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity HHmobileApp.HHmobileApp:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior HHmobileApp.HHmobileApp:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges HHmobileApp.HHmobileApp:layout_dodgeInsetEdges}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge HHmobileApp.HHmobileApp:layout_insetEdge}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline HHmobileApp.HHmobileApp:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_Layout_android_layout_gravity
            @see #CoordinatorLayout_Layout_layout_anchor
@@ -7236,17 +7262,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_Layout_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:layout_anchor
+          @attr name HHmobileApp.HHmobileApp:layout_anchor
         */
         public static final int CoordinatorLayout_Layout_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -7271,11 +7297,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:layout_anchorGravity
+          @attr name HHmobileApp.HHmobileApp:layout_anchorGravity
         */
         public static final int CoordinatorLayout_Layout_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -7285,11 +7311,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:layout_behavior
+          @attr name HHmobileApp.HHmobileApp:layout_behavior
         */
         public static final int CoordinatorLayout_Layout_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout_dodgeInsetEdges}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout_dodgeInsetEdges}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -7308,11 +7334,11 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 <tr><td><code>all</code></td><td>0x77</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:layout_dodgeInsetEdges
+          @attr name HHmobileApp.HHmobileApp:layout_dodgeInsetEdges
         */
         public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout_insetEdge}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout_insetEdge}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -7330,11 +7356,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:layout_insetEdge
+          @attr name HHmobileApp.HHmobileApp:layout_insetEdge
         */
         public static final int CoordinatorLayout_Layout_layout_insetEdge = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -7344,7 +7370,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:layout_keyline
+          @attr name HHmobileApp.HHmobileApp:layout_keyline
         */
         public static final int CoordinatorLayout_Layout_layout_keyline = 3;
         /** Attributes that can be used with a DesignTheme.
@@ -7353,9 +7379,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme HHMobileApp.HHMobileApp:bottomSheetDialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetStyle HHMobileApp.HHMobileApp:bottomSheetStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_textColorError HHMobileApp.HHMobileApp:textColorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme HHmobileApp.HHmobileApp:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle HHmobileApp.HHmobileApp:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError HHmobileApp.HHmobileApp:textColorError}</code></td><td></td></tr>
            </table>
            @see #DesignTheme_bottomSheetDialogTheme
            @see #DesignTheme_bottomSheetStyle
@@ -7365,27 +7391,27 @@ containing a value of this type.
             0x7f010120, 0x7f010121, 0x7f010122
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#bottomSheetDialogTheme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#bottomSheetDialogTheme}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:bottomSheetDialogTheme
+          @attr name HHmobileApp.HHmobileApp:bottomSheetDialogTheme
         */
         public static final int DesignTheme_bottomSheetDialogTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#bottomSheetStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#bottomSheetStyle}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:bottomSheetStyle
+          @attr name HHmobileApp.HHmobileApp:bottomSheetStyle
         */
         public static final int DesignTheme_bottomSheetStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textColorError}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textColorError}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -7393,7 +7419,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:textColorError
+          @attr name HHmobileApp.HHmobileApp:textColorError
         */
         public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -7402,14 +7428,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength HHMobileApp.HHMobileApp:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength HHMobileApp.HHMobileApp:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength HHMobileApp.HHMobileApp:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color HHMobileApp.HHMobileApp:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize HHMobileApp.HHMobileApp:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars HHMobileApp.HHMobileApp:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars HHMobileApp.HHMobileApp:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness HHMobileApp.HHMobileApp:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength HHmobileApp.HHmobileApp:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength HHmobileApp.HHmobileApp:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength HHmobileApp.HHmobileApp:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color HHmobileApp.HHmobileApp:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize HHmobileApp.HHmobileApp:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars HHmobileApp.HHmobileApp:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars HHmobileApp.HHmobileApp:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness HHmobileApp.HHmobileApp:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -7425,7 +7451,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100ba, 0x7f0100bb, 0x7f0100bc, 0x7f0100bd
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7437,11 +7463,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:arrowHeadLength
+          @attr name HHmobileApp.HHmobileApp:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7453,11 +7479,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:arrowShaftLength
+          @attr name HHmobileApp.HHmobileApp:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#barLength}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7469,11 +7495,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:barLength
+          @attr name HHmobileApp.HHmobileApp:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#color}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7484,11 +7510,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:color
+          @attr name HHmobileApp.HHmobileApp:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7500,11 +7526,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:drawableSize
+          @attr name HHmobileApp.HHmobileApp:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7516,11 +7542,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:gapBetweenBars
+          @attr name HHmobileApp.HHmobileApp:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7530,11 +7556,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:spinBars
+          @attr name HHmobileApp.HHmobileApp:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#thickness}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7546,7 +7572,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:thickness
+          @attr name HHmobileApp.HHmobileApp:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -7555,14 +7581,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint HHMobileApp.HHMobileApp:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode HHMobileApp.HHMobileApp:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth HHMobileApp.HHMobileApp:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation HHMobileApp.HHMobileApp:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize HHMobileApp.HHMobileApp:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ HHMobileApp.HHMobileApp:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor HHMobileApp.HHMobileApp:rippleColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_useCompatPadding HHMobileApp.HHMobileApp:useCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint HHmobileApp.HHmobileApp:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode HHmobileApp.HHmobileApp:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth HHmobileApp.HHmobileApp:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation HHmobileApp.HHmobileApp:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize HHmobileApp.HHmobileApp:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ HHmobileApp.HHmobileApp:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor HHmobileApp.HHmobileApp:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding HHmobileApp.HHmobileApp:useCompatPadding}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -7578,7 +7604,7 @@ containing a value of this type.
             0x7f010124, 0x7f010125, 0x7f010126, 0x7f010127
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7589,11 +7615,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:backgroundTint
+          @attr name HHmobileApp.HHmobileApp:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7610,11 +7636,11 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:backgroundTintMode
+          @attr name HHmobileApp.HHmobileApp:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7626,11 +7652,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:borderWidth
+          @attr name HHmobileApp.HHmobileApp:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#elevation}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7642,11 +7668,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:elevation
+          @attr name HHmobileApp.HHmobileApp:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7660,11 +7686,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:fabSize
+          @attr name HHmobileApp.HHmobileApp:fabSize
         */
         public static final int FloatingActionButton_fabSize = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7676,11 +7702,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:pressedTranslationZ
+          @attr name HHmobileApp.HHmobileApp:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7691,11 +7717,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:rippleColor
+          @attr name HHmobileApp.HHmobileApp:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#useCompatPadding}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#useCompatPadding}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7705,7 +7731,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:useCompatPadding
+          @attr name HHmobileApp.HHmobileApp:useCompatPadding
         */
         public static final int FloatingActionButton_useCompatPadding = 7;
         /** Attributes that can be used with a FloatingActionButton_Behavior_Layout.
@@ -7714,7 +7740,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide HHMobileApp.HHMobileApp:behavior_autoHide}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide HHmobileApp.HHmobileApp:behavior_autoHide}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
          */
@@ -7722,7 +7748,7 @@ containing a value of this type.
             0x7f010128
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#behavior_autoHide}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#behavior_autoHide}
           attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
 
 
@@ -7732,7 +7758,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:behavior_autoHide
+          @attr name HHmobileApp.HHmobileApp:behavior_autoHide
         */
         public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
         /** Attributes that can be used with a FontFamily.
@@ -7741,12 +7767,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderAuthority HHMobileApp.HHMobileApp:fontProviderAuthority}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderCerts HHMobileApp.HHMobileApp:fontProviderCerts}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy HHMobileApp.HHMobileApp:fontProviderFetchStrategy}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout HHMobileApp.HHMobileApp:fontProviderFetchTimeout}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderPackage HHMobileApp.HHMobileApp:fontProviderPackage}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderQuery HHMobileApp.HHMobileApp:fontProviderQuery}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderAuthority HHmobileApp.HHmobileApp:fontProviderAuthority}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderCerts HHmobileApp.HHmobileApp:fontProviderCerts}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy HHmobileApp.HHmobileApp:fontProviderFetchStrategy}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout HHmobileApp.HHmobileApp:fontProviderFetchTimeout}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderPackage HHmobileApp.HHmobileApp:fontProviderPackage}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderQuery HHmobileApp.HHmobileApp:fontProviderQuery}</code></td><td></td></tr>
            </table>
            @see #FontFamily_fontProviderAuthority
            @see #FontFamily_fontProviderCerts
@@ -7760,7 +7786,7 @@ containing a value of this type.
             0x7f010155, 0x7f010156
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fontProviderAuthority}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fontProviderAuthority}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -7770,21 +7796,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:fontProviderAuthority
+          @attr name HHmobileApp.HHmobileApp:fontProviderAuthority
         */
         public static final int FontFamily_fontProviderAuthority = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fontProviderCerts}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fontProviderCerts}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:fontProviderCerts
+          @attr name HHmobileApp.HHmobileApp:fontProviderCerts
         */
         public static final int FontFamily_fontProviderCerts = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fontProviderFetchStrategy}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fontProviderFetchStrategy}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -7797,11 +7823,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>blocking</code></td><td>0</td><td></td></tr>
 <tr><td><code>async</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:fontProviderFetchStrategy
+          @attr name HHmobileApp.HHmobileApp:fontProviderFetchStrategy
         */
         public static final int FontFamily_fontProviderFetchStrategy = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fontProviderFetchTimeout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fontProviderFetchTimeout}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -7819,11 +7845,11 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>forever</code></td><td>-1</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:fontProviderFetchTimeout
+          @attr name HHmobileApp.HHmobileApp:fontProviderFetchTimeout
         */
         public static final int FontFamily_fontProviderFetchTimeout = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fontProviderPackage}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fontProviderPackage}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -7833,11 +7859,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:fontProviderPackage
+          @attr name HHmobileApp.HHmobileApp:fontProviderPackage
         */
         public static final int FontFamily_fontProviderPackage = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fontProviderQuery}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fontProviderQuery}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -7847,7 +7873,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:fontProviderQuery
+          @attr name HHmobileApp.HHmobileApp:fontProviderQuery
         */
         public static final int FontFamily_fontProviderQuery = 2;
         /** Attributes that can be used with a FontFamilyFont.
@@ -7859,9 +7885,9 @@ containing a value of this type.
            <tr><td><code>{@link #FontFamilyFont_android_font android:font}</code></td><td></td></tr>
            <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #FontFamilyFont_android_fontWeight android:fontWeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamilyFont_font HHMobileApp.HHMobileApp:font}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamilyFont_fontStyle HHMobileApp.HHMobileApp:fontStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamilyFont_fontWeight HHMobileApp.HHMobileApp:fontWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamilyFont_font HHmobileApp.HHmobileApp:font}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamilyFont_fontStyle HHmobileApp.HHmobileApp:fontStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamilyFont_fontWeight HHmobileApp.HHmobileApp:fontWeight}</code></td><td></td></tr>
            </table>
            @see #FontFamilyFont_android_font
            @see #FontFamilyFont_android_fontStyle
@@ -7893,17 +7919,17 @@ containing a value of this type.
         */
         public static final int FontFamilyFont_android_fontWeight = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#font}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#font}
           attribute's value can be found in the {@link #FontFamilyFont} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:font
+          @attr name HHmobileApp.HHmobileApp:font
         */
         public static final int FontFamilyFont_font = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fontStyle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fontStyle}
           attribute's value can be found in the {@link #FontFamilyFont} array.
 
 
@@ -7916,11 +7942,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>italic</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:fontStyle
+          @attr name HHmobileApp.HHmobileApp:fontStyle
         */
         public static final int FontFamilyFont_fontStyle = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fontWeight}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fontWeight}
           attribute's value can be found in the {@link #FontFamilyFont} array.
 
 
@@ -7930,7 +7956,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:fontWeight
+          @attr name HHmobileApp.HHmobileApp:fontWeight
         */
         public static final int FontFamilyFont_fontWeight = 5;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -7941,7 +7967,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding HHMobileApp.HHMobileApp:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding HHmobileApp.HHmobileApp:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -7963,7 +7989,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -7973,7 +7999,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:foregroundInsidePadding
+          @attr name HHmobileApp.HHmobileApp:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -7987,10 +8013,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider HHMobileApp.HHMobileApp:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding HHMobileApp.HHMobileApp:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild HHMobileApp.HHMobileApp:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers HHMobileApp.HHMobileApp:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider HHmobileApp.HHmobileApp:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding HHmobileApp.HHmobileApp:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild HHmobileApp.HHmobileApp:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers HHmobileApp.HHmobileApp:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -8038,17 +8064,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#divider}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:divider
+          @attr name HHmobileApp.HHmobileApp:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8060,11 +8086,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:dividerPadding
+          @attr name HHmobileApp.HHmobileApp:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8074,11 +8100,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:measureWithLargestChild
+          @attr name HHmobileApp.HHmobileApp:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8093,7 +8119,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:showDividers
+          @attr name HHmobileApp.HHmobileApp:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -8232,10 +8258,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout HHMobileApp.HHMobileApp:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass HHMobileApp.HHMobileApp:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass HHMobileApp.HHMobileApp:actionViewClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_alphabeticModifiers HHMobileApp.HHMobileApp:alphabeticModifiers}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout HHmobileApp.HHmobileApp:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass HHmobileApp.HHmobileApp:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass HHmobileApp.HHmobileApp:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_alphabeticModifiers HHmobileApp.HHmobileApp:alphabeticModifiers}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -8249,12 +8275,12 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_contentDescription HHMobileApp.HHMobileApp:contentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_iconTint HHMobileApp.HHMobileApp:iconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_iconTintMode HHMobileApp.HHMobileApp:iconTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_numericModifiers HHMobileApp.HHMobileApp:numericModifiers}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction HHMobileApp.HHMobileApp:showAsAction}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_tooltipText HHMobileApp.HHMobileApp:tooltipText}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_contentDescription HHmobileApp.HHmobileApp:contentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_iconTint HHmobileApp.HHmobileApp:iconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_iconTintMode HHmobileApp.HHmobileApp:iconTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_numericModifiers HHmobileApp.HHmobileApp:numericModifiers}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction HHmobileApp.HHmobileApp:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_tooltipText HHmobileApp.HHmobileApp:tooltipText}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -8289,17 +8315,17 @@ containing a value of this type.
             0x7f0100c8, 0x7f0100c9, 0x7f0100ca
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:actionLayout
+          @attr name HHmobileApp.HHmobileApp:actionLayout
         */
         public static final int MenuItem_actionLayout = 16;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8309,11 +8335,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:actionProviderClass
+          @attr name HHmobileApp.HHmobileApp:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 18;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8323,11 +8349,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:actionViewClass
+          @attr name HHmobileApp.HHmobileApp:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 17;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#alphabeticModifiers}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#alphabeticModifiers}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8344,7 +8370,7 @@ containing a value of this type.
 <tr><td><code>SYM</code></td><td>0x4</td><td></td></tr>
 <tr><td><code>FUNCTION</code></td><td>0x8</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:alphabeticModifiers
+          @attr name HHmobileApp.HHmobileApp:alphabeticModifiers
         */
         public static final int MenuItem_alphabeticModifiers = 13;
         /**
@@ -8426,7 +8452,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentDescription}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentDescription}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8436,11 +8462,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentDescription
+          @attr name HHmobileApp.HHmobileApp:contentDescription
         */
         public static final int MenuItem_contentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#iconTint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#iconTint}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8451,11 +8477,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:iconTint
+          @attr name HHmobileApp.HHmobileApp:iconTint
         */
         public static final int MenuItem_iconTint = 21;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#iconTintMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#iconTintMode}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8472,11 +8498,11 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:iconTintMode
+          @attr name HHmobileApp.HHmobileApp:iconTintMode
         */
         public static final int MenuItem_iconTintMode = 22;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#numericModifiers}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#numericModifiers}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8493,11 +8519,11 @@ containing a value of this type.
 <tr><td><code>SYM</code></td><td>0x4</td><td></td></tr>
 <tr><td><code>FUNCTION</code></td><td>0x8</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:numericModifiers
+          @attr name HHmobileApp.HHmobileApp:numericModifiers
         */
         public static final int MenuItem_numericModifiers = 14;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8513,11 +8539,11 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:showAsAction
+          @attr name HHmobileApp.HHmobileApp:showAsAction
         */
         public static final int MenuItem_showAsAction = 15;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tooltipText}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tooltipText}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8527,7 +8553,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tooltipText
+          @attr name HHmobileApp.HHmobileApp:tooltipText
         */
         public static final int MenuItem_tooltipText = 20;
         /** Attributes that can be used with a MenuView.
@@ -8543,8 +8569,8 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing HHMobileApp.HHMobileApp:preserveIconSpacing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_subMenuArrow HHMobileApp.HHMobileApp:subMenuArrow}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing HHmobileApp.HHmobileApp:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_subMenuArrow HHmobileApp.HHmobileApp:subMenuArrow}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -8604,7 +8630,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -8614,17 +8640,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:preserveIconSpacing
+          @attr name HHmobileApp.HHmobileApp:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#subMenuArrow}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#subMenuArrow}
           attribute's value can be found in the {@link #MenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:subMenuArrow
+          @attr name HHmobileApp.HHmobileApp:subMenuArrow
         */
         public static final int MenuView_subMenuArrow = 8;
         /** Attributes that can be used with a NavigationView.
@@ -8636,13 +8662,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation HHMobileApp.HHMobileApp:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout HHMobileApp.HHMobileApp:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground HHMobileApp.HHMobileApp:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint HHMobileApp.HHMobileApp:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance HHMobileApp.HHMobileApp:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor HHMobileApp.HHMobileApp:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu HHMobileApp.HHMobileApp:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation HHmobileApp.HHmobileApp:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout HHmobileApp.HHmobileApp:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground HHmobileApp.HHmobileApp:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint HHmobileApp.HHmobileApp:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance HHmobileApp.HHmobileApp:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor HHmobileApp.HHmobileApp:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu HHmobileApp.HHmobileApp:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -8679,7 +8705,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#elevation}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8691,31 +8717,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:elevation
+          @attr name HHmobileApp.HHmobileApp:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:headerLayout
+          @attr name HHmobileApp.HHmobileApp:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:itemBackground
+          @attr name HHmobileApp.HHmobileApp:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8726,21 +8752,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:itemIconTint
+          @attr name HHmobileApp.HHmobileApp:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:itemTextAppearance
+          @attr name HHmobileApp.HHmobileApp:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8751,17 +8777,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:itemTextColor
+          @attr name HHmobileApp.HHmobileApp:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#menu}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:menu
+          @attr name HHmobileApp.HHmobileApp:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -8772,7 +8798,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor HHMobileApp.HHMobileApp:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor HHmobileApp.HHmobileApp:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupAnimationStyle
            @see #PopupWindow_android_popupBackground
@@ -8794,7 +8820,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -8804,7 +8830,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:overlapAnchor
+          @attr name HHmobileApp.HHmobileApp:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 2;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -8813,7 +8839,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor HHMobileApp.HHMobileApp:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor HHmobileApp.HHmobileApp:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -8821,7 +8847,7 @@ containing a value of this type.
             0x7f0100ce
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -8831,7 +8857,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:state_above_anchor
+          @attr name HHmobileApp.HHmobileApp:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecycleListView.
@@ -8840,8 +8866,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons HHMobileApp.HHMobileApp:paddingBottomNoButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecycleListView_paddingTopNoTitle HHMobileApp.HHMobileApp:paddingTopNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons HHmobileApp.HHmobileApp:paddingBottomNoButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecycleListView_paddingTopNoTitle HHmobileApp.HHmobileApp:paddingTopNoTitle}</code></td><td></td></tr>
            </table>
            @see #RecycleListView_paddingBottomNoButtons
            @see #RecycleListView_paddingTopNoTitle
@@ -8850,7 +8876,7 @@ containing a value of this type.
             0x7f0100cf, 0x7f0100d0
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#paddingBottomNoButtons}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#paddingBottomNoButtons}
           attribute's value can be found in the {@link #RecycleListView} array.
 
 
@@ -8862,11 +8888,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:paddingBottomNoButtons
+          @attr name HHmobileApp.HHmobileApp:paddingBottomNoButtons
         */
         public static final int RecycleListView_paddingBottomNoButtons = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#paddingTopNoTitle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#paddingTopNoTitle}
           attribute's value can be found in the {@link #RecycleListView} array.
 
 
@@ -8878,7 +8904,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:paddingTopNoTitle
+          @attr name HHmobileApp.HHmobileApp:paddingTopNoTitle
         */
         public static final int RecycleListView_paddingTopNoTitle = 1;
         /** Attributes that can be used with a RecyclerView.
@@ -8889,15 +8915,15 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollEnabled HHMobileApp.HHMobileApp:fastScrollEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable HHMobileApp.HHMobileApp:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable HHMobileApp.HHMobileApp:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable HHMobileApp.HHMobileApp:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable HHMobileApp.HHMobileApp:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager HHMobileApp.HHMobileApp:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout HHMobileApp.HHMobileApp:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount HHMobileApp.HHMobileApp:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd HHMobileApp.HHMobileApp:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollEnabled HHmobileApp.HHmobileApp:fastScrollEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable HHmobileApp.HHmobileApp:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable HHmobileApp.HHmobileApp:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable HHmobileApp.HHmobileApp:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable HHmobileApp.HHmobileApp:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager HHmobileApp.HHmobileApp:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout HHmobileApp.HHmobileApp:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount HHmobileApp.HHmobileApp:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd HHmobileApp.HHmobileApp:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_descendantFocusability
            @see #RecyclerView_android_orientation
@@ -8929,7 +8955,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fastScrollEnabled}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fastScrollEnabled}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8939,51 +8965,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:fastScrollEnabled
+          @attr name HHmobileApp.HHmobileApp:fastScrollEnabled
         */
         public static final int RecyclerView_fastScrollEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fastScrollHorizontalThumbDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fastScrollHorizontalThumbDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:fastScrollHorizontalThumbDrawable
+          @attr name HHmobileApp.HHmobileApp:fastScrollHorizontalThumbDrawable
         */
         public static final int RecyclerView_fastScrollHorizontalThumbDrawable = 9;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fastScrollHorizontalTrackDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fastScrollHorizontalTrackDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:fastScrollHorizontalTrackDrawable
+          @attr name HHmobileApp.HHmobileApp:fastScrollHorizontalTrackDrawable
         */
         public static final int RecyclerView_fastScrollHorizontalTrackDrawable = 10;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fastScrollVerticalThumbDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fastScrollVerticalThumbDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:fastScrollVerticalThumbDrawable
+          @attr name HHmobileApp.HHmobileApp:fastScrollVerticalThumbDrawable
         */
         public static final int RecyclerView_fastScrollVerticalThumbDrawable = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fastScrollVerticalTrackDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fastScrollVerticalTrackDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:fastScrollVerticalTrackDrawable
+          @attr name HHmobileApp.HHmobileApp:fastScrollVerticalTrackDrawable
         */
         public static final int RecyclerView_fastScrollVerticalTrackDrawable = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8993,11 +9019,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:layoutManager
+          @attr name HHmobileApp.HHmobileApp:layoutManager
         */
         public static final int RecyclerView_layoutManager = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9007,11 +9033,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:reverseLayout
+          @attr name HHmobileApp.HHmobileApp:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9021,11 +9047,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:spanCount
+          @attr name HHmobileApp.HHmobileApp:spanCount
         */
         public static final int RecyclerView_spanCount = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9035,7 +9061,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:stackFromEnd
+          @attr name HHmobileApp.HHmobileApp:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 5;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -9044,7 +9070,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground HHMobileApp.HHMobileApp:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground HHmobileApp.HHmobileApp:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -9052,7 +9078,7 @@ containing a value of this type.
             0x7f010130
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -9060,7 +9086,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name HHMobileApp.HHMobileApp:insetForeground
+          @attr name HHmobileApp.HHmobileApp:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Layout.
@@ -9069,7 +9095,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop HHMobileApp.HHMobileApp:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop HHmobileApp.HHmobileApp:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Layout_behavior_overlapTop
          */
@@ -9077,7 +9103,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010131
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
 
 
@@ -9089,7 +9115,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:behavior_overlapTop
+          @attr name HHmobileApp.HHmobileApp:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -9102,19 +9128,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon HHMobileApp.HHMobileApp:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon HHMobileApp.HHMobileApp:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint HHMobileApp.HHMobileApp:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon HHMobileApp.HHMobileApp:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault HHMobileApp.HHMobileApp:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout HHMobileApp.HHMobileApp:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground HHMobileApp.HHMobileApp:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint HHMobileApp.HHMobileApp:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon HHMobileApp.HHMobileApp:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon HHMobileApp.HHMobileApp:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground HHMobileApp.HHMobileApp:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout HHMobileApp.HHMobileApp:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon HHMobileApp.HHMobileApp:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon HHmobileApp.HHmobileApp:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon HHmobileApp.HHmobileApp:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint HHmobileApp.HHmobileApp:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon HHmobileApp.HHmobileApp:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault HHmobileApp.HHmobileApp:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout HHmobileApp.HHmobileApp:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground HHmobileApp.HHmobileApp:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint HHmobileApp.HHmobileApp:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon HHmobileApp.HHmobileApp:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon HHmobileApp.HHmobileApp:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground HHmobileApp.HHmobileApp:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout HHmobileApp.HHmobileApp:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon HHmobileApp.HHmobileApp:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -9166,27 +9192,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:closeIcon
+          @attr name HHmobileApp.HHmobileApp:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:commitIcon
+          @attr name HHmobileApp.HHmobileApp:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9196,21 +9222,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:defaultQueryHint
+          @attr name HHmobileApp.HHmobileApp:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:goIcon
+          @attr name HHmobileApp.HHmobileApp:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9220,31 +9246,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:iconifiedByDefault
+          @attr name HHmobileApp.HHmobileApp:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#layout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:layout
+          @attr name HHmobileApp.HHmobileApp:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:queryBackground
+          @attr name HHmobileApp.HHmobileApp:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9254,57 +9280,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:queryHint
+          @attr name HHmobileApp.HHmobileApp:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:searchHintIcon
+          @attr name HHmobileApp.HHmobileApp:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:searchIcon
+          @attr name HHmobileApp.HHmobileApp:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:submitBackground
+          @attr name HHmobileApp.HHmobileApp:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:suggestionRowLayout
+          @attr name HHmobileApp.HHmobileApp:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:voiceIcon
+          @attr name HHmobileApp.HHmobileApp:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SnackbarLayout.
@@ -9314,8 +9340,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation HHMobileApp.HHMobileApp:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth HHMobileApp.HHMobileApp:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation HHmobileApp.HHmobileApp:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth HHmobileApp.HHmobileApp:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -9331,7 +9357,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#elevation}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -9343,11 +9369,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:elevation
+          @attr name HHmobileApp.HHmobileApp:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -9359,7 +9385,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:maxActionInlineWidth
+          @attr name HHmobileApp.HHmobileApp:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -9372,7 +9398,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme HHMobileApp.HHMobileApp:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme HHmobileApp.HHmobileApp:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -9409,13 +9435,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:popupTheme
+          @attr name HHmobileApp.HHmobileApp:popupTheme
         */
         public static final int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -9427,17 +9453,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText HHMobileApp.HHMobileApp:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack HHMobileApp.HHMobileApp:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth HHMobileApp.HHMobileApp:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding HHMobileApp.HHMobileApp:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance HHMobileApp.HHMobileApp:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding HHMobileApp.HHMobileApp:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTint HHMobileApp.HHMobileApp:thumbTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTintMode HHMobileApp.HHMobileApp:thumbTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track HHMobileApp.HHMobileApp:track}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTint HHMobileApp.HHMobileApp:trackTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTintMode HHMobileApp.HHMobileApp:trackTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText HHmobileApp.HHmobileApp:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack HHmobileApp.HHmobileApp:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth HHmobileApp.HHmobileApp:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding HHmobileApp.HHmobileApp:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance HHmobileApp.HHmobileApp:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding HHmobileApp.HHmobileApp:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTint HHmobileApp.HHmobileApp:thumbTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTintMode HHmobileApp.HHmobileApp:thumbTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track HHmobileApp.HHmobileApp:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTint HHmobileApp.HHmobileApp:trackTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTintMode HHmobileApp.HHmobileApp:trackTintMode}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -9479,7 +9505,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#showText}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9489,11 +9515,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:showText
+          @attr name HHmobileApp.HHmobileApp:showText
         */
         public static final int SwitchCompat_showText = 13;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9503,11 +9529,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:splitTrack
+          @attr name HHmobileApp.HHmobileApp:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 12;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9519,11 +9545,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:switchMinWidth
+          @attr name HHmobileApp.HHmobileApp:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 10;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9535,21 +9561,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:switchPadding
+          @attr name HHmobileApp.HHmobileApp:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 11;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:switchTextAppearance
+          @attr name HHmobileApp.HHmobileApp:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9561,11 +9587,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:thumbTextPadding
+          @attr name HHmobileApp.HHmobileApp:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#thumbTint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#thumbTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9576,11 +9602,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:thumbTint
+          @attr name HHmobileApp.HHmobileApp:thumbTint
         */
         public static final int SwitchCompat_thumbTint = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#thumbTintMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#thumbTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9597,21 +9623,21 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:thumbTintMode
+          @attr name HHmobileApp.HHmobileApp:thumbTintMode
         */
         public static final int SwitchCompat_thumbTintMode = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#track}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:track
+          @attr name HHmobileApp.HHmobileApp:track
         */
         public static final int SwitchCompat_track = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#trackTint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#trackTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9622,11 +9648,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:trackTint
+          @attr name HHmobileApp.HHmobileApp:trackTint
         */
         public static final int SwitchCompat_trackTint = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#trackTintMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#trackTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9643,7 +9669,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:trackTintMode
+          @attr name HHmobileApp.HHmobileApp:trackTintMode
         */
         public static final int SwitchCompat_trackTintMode = 7;
         /** Attributes that can be used with a TabItem.
@@ -9687,22 +9713,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground HHMobileApp.HHMobileApp:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart HHMobileApp.HHMobileApp:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity HHMobileApp.HHMobileApp:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor HHMobileApp.HHMobileApp:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight HHMobileApp.HHMobileApp:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth HHMobileApp.HHMobileApp:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth HHMobileApp.HHMobileApp:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode HHMobileApp.HHMobileApp:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding HHMobileApp.HHMobileApp:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom HHMobileApp.HHMobileApp:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd HHMobileApp.HHMobileApp:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart HHMobileApp.HHMobileApp:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop HHMobileApp.HHMobileApp:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor HHMobileApp.HHMobileApp:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance HHMobileApp.HHMobileApp:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor HHMobileApp.HHMobileApp:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground HHmobileApp.HHmobileApp:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart HHmobileApp.HHmobileApp:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity HHmobileApp.HHmobileApp:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor HHmobileApp.HHmobileApp:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight HHmobileApp.HHmobileApp:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth HHmobileApp.HHmobileApp:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth HHmobileApp.HHmobileApp:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode HHmobileApp.HHmobileApp:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding HHmobileApp.HHmobileApp:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom HHmobileApp.HHmobileApp:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd HHmobileApp.HHmobileApp:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart HHmobileApp.HHmobileApp:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop HHmobileApp.HHmobileApp:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor HHmobileApp.HHmobileApp:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance HHmobileApp.HHmobileApp:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor HHmobileApp.HHmobileApp:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -9728,17 +9754,17 @@ containing a value of this type.
             0x7f01013f, 0x7f010140, 0x7f010141, 0x7f010142
         };
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:tabBackground
+          @attr name HHmobileApp.HHmobileApp:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9750,11 +9776,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabContentStart
+          @attr name HHmobileApp.HHmobileApp:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9767,11 +9793,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:tabGravity
+          @attr name HHmobileApp.HHmobileApp:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9782,11 +9808,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabIndicatorColor
+          @attr name HHmobileApp.HHmobileApp:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9798,11 +9824,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabIndicatorHeight
+          @attr name HHmobileApp.HHmobileApp:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9814,11 +9840,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabMaxWidth
+          @attr name HHmobileApp.HHmobileApp:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9830,11 +9856,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabMinWidth
+          @attr name HHmobileApp.HHmobileApp:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9847,11 +9873,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:tabMode
+          @attr name HHmobileApp.HHmobileApp:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9863,11 +9889,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabPadding
+          @attr name HHmobileApp.HHmobileApp:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9879,11 +9905,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabPaddingBottom
+          @attr name HHmobileApp.HHmobileApp:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9895,11 +9921,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabPaddingEnd
+          @attr name HHmobileApp.HHmobileApp:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9911,11 +9937,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabPaddingStart
+          @attr name HHmobileApp.HHmobileApp:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9927,11 +9953,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabPaddingTop
+          @attr name HHmobileApp.HHmobileApp:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9942,21 +9968,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabSelectedTextColor
+          @attr name HHmobileApp.HHmobileApp:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:tabTextAppearance
+          @attr name HHmobileApp.HHmobileApp:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9967,7 +9993,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:tabTextColor
+          @attr name HHmobileApp.HHmobileApp:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -9987,8 +10013,8 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_fontFamily HHMobileApp.HHMobileApp:fontFamily}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps HHMobileApp.HHMobileApp:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_fontFamily HHmobileApp.HHmobileApp:fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps HHmobileApp.HHmobileApp:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_fontFamily
            @see #TextAppearance_android_shadowColor
@@ -10077,7 +10103,7 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#fontFamily}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#fontFamily}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
@@ -10087,18 +10113,18 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:fontFamily
+          @attr name HHmobileApp.HHmobileApp:fontFamily
         */
         public static final int TextAppearance_fontFamily = 12;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name HHMobileApp.HHMobileApp:textAllCaps
+          @attr name HHmobileApp.HHmobileApp:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 11;
         /** Attributes that can be used with a TextInputLayout.
@@ -10109,20 +10135,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled HHMobileApp.HHMobileApp:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength HHMobileApp.HHMobileApp:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance HHMobileApp.HHMobileApp:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance HHMobileApp.HHMobileApp:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled HHMobileApp.HHMobileApp:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance HHMobileApp.HHMobileApp:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled HHMobileApp.HHMobileApp:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintEnabled HHMobileApp.HHMobileApp:hintEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance HHMobileApp.HHMobileApp:hintTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription HHMobileApp.HHMobileApp:passwordToggleContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable HHMobileApp.HHMobileApp:passwordToggleDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled HHMobileApp.HHMobileApp:passwordToggleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTint HHMobileApp.HHMobileApp:passwordToggleTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode HHMobileApp.HHMobileApp:passwordToggleTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled HHmobileApp.HHmobileApp:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength HHmobileApp.HHmobileApp:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance HHmobileApp.HHmobileApp:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance HHmobileApp.HHmobileApp:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled HHmobileApp.HHmobileApp:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance HHmobileApp.HHmobileApp:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled HHmobileApp.HHmobileApp:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled HHmobileApp.HHmobileApp:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance HHmobileApp.HHmobileApp:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription HHmobileApp.HHmobileApp:passwordToggleContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable HHmobileApp.HHmobileApp:passwordToggleDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled HHmobileApp.HHmobileApp:passwordToggleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTint HHmobileApp.HHmobileApp:passwordToggleTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode HHmobileApp.HHmobileApp:passwordToggleTintMode}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -10160,7 +10186,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10170,11 +10196,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:counterEnabled
+          @attr name HHmobileApp.HHmobileApp:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10184,31 +10210,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:counterMaxLength
+          @attr name HHmobileApp.HHmobileApp:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:counterOverflowTextAppearance
+          @attr name HHmobileApp.HHmobileApp:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:counterTextAppearance
+          @attr name HHmobileApp.HHmobileApp:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10218,21 +10244,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:errorEnabled
+          @attr name HHmobileApp.HHmobileApp:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:errorTextAppearance
+          @attr name HHmobileApp.HHmobileApp:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10242,11 +10268,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:hintAnimationEnabled
+          @attr name HHmobileApp.HHmobileApp:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#hintEnabled}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#hintEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10256,21 +10282,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:hintEnabled
+          @attr name HHmobileApp.HHmobileApp:hintEnabled
         */
         public static final int TextInputLayout_hintEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:hintTextAppearance
+          @attr name HHmobileApp.HHmobileApp:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#passwordToggleContentDescription}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#passwordToggleContentDescription}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10280,21 +10306,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:passwordToggleContentDescription
+          @attr name HHmobileApp.HHmobileApp:passwordToggleContentDescription
         */
         public static final int TextInputLayout_passwordToggleContentDescription = 13;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#passwordToggleDrawable}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#passwordToggleDrawable}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:passwordToggleDrawable
+          @attr name HHmobileApp.HHmobileApp:passwordToggleDrawable
         */
         public static final int TextInputLayout_passwordToggleDrawable = 12;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#passwordToggleEnabled}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#passwordToggleEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10304,11 +10330,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:passwordToggleEnabled
+          @attr name HHmobileApp.HHmobileApp:passwordToggleEnabled
         */
         public static final int TextInputLayout_passwordToggleEnabled = 11;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#passwordToggleTint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#passwordToggleTint}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10319,11 +10345,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:passwordToggleTint
+          @attr name HHmobileApp.HHmobileApp:passwordToggleTint
         */
         public static final int TextInputLayout_passwordToggleTint = 14;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#passwordToggleTintMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#passwordToggleTintMode}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10339,7 +10365,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:passwordToggleTintMode
+          @attr name HHmobileApp.HHmobileApp:passwordToggleTintMode
         */
         public static final int TextInputLayout_passwordToggleTintMode = 15;
         /** Attributes that can be used with a Toolbar.
@@ -10350,33 +10376,33 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_buttonGravity HHMobileApp.HHMobileApp:buttonGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription HHMobileApp.HHMobileApp:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon HHMobileApp.HHMobileApp:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd HHMobileApp.HHMobileApp:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions HHMobileApp.HHMobileApp:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft HHMobileApp.HHMobileApp:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight HHMobileApp.HHMobileApp:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart HHMobileApp.HHMobileApp:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation HHMobileApp.HHMobileApp:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo HHMobileApp.HHMobileApp:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription HHMobileApp.HHMobileApp:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight HHMobileApp.HHMobileApp:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription HHMobileApp.HHMobileApp:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon HHMobileApp.HHMobileApp:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme HHMobileApp.HHMobileApp:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle HHMobileApp.HHMobileApp:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance HHMobileApp.HHMobileApp:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor HHMobileApp.HHMobileApp:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title HHMobileApp.HHMobileApp:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargin HHMobileApp.HHMobileApp:titleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom HHMobileApp.HHMobileApp:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd HHMobileApp.HHMobileApp:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart HHMobileApp.HHMobileApp:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop HHMobileApp.HHMobileApp:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins HHMobileApp.HHMobileApp:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance HHMobileApp.HHMobileApp:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor HHMobileApp.HHMobileApp:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_buttonGravity HHmobileApp.HHmobileApp:buttonGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription HHmobileApp.HHmobileApp:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon HHmobileApp.HHmobileApp:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd HHmobileApp.HHmobileApp:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions HHmobileApp.HHmobileApp:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft HHmobileApp.HHmobileApp:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight HHmobileApp.HHmobileApp:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart HHmobileApp.HHmobileApp:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation HHmobileApp.HHmobileApp:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo HHmobileApp.HHmobileApp:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription HHmobileApp.HHmobileApp:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight HHmobileApp.HHmobileApp:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription HHmobileApp.HHmobileApp:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon HHmobileApp.HHmobileApp:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme HHmobileApp.HHmobileApp:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle HHmobileApp.HHmobileApp:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance HHmobileApp.HHmobileApp:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor HHmobileApp.HHmobileApp:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title HHmobileApp.HHmobileApp:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargin HHmobileApp.HHmobileApp:titleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom HHmobileApp.HHmobileApp:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd HHmobileApp.HHmobileApp:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart HHmobileApp.HHmobileApp:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop HHmobileApp.HHmobileApp:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins HHmobileApp.HHmobileApp:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance HHmobileApp.HHmobileApp:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor HHmobileApp.HHmobileApp:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -10431,7 +10457,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#buttonGravity}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#buttonGravity}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10444,11 +10470,11 @@ containing a value of this type.
 <tr><td><code>top</code></td><td>0x30</td><td></td></tr>
 <tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:buttonGravity
+          @attr name HHmobileApp.HHmobileApp:buttonGravity
         */
         public static final int Toolbar_buttonGravity = 21;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10458,21 +10484,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:collapseContentDescription
+          @attr name HHmobileApp.HHmobileApp:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 23;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:collapseIcon
+          @attr name HHmobileApp.HHmobileApp:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 22;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10484,11 +10510,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetEnd
+          @attr name HHmobileApp.HHmobileApp:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10500,11 +10526,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetEndWithActions
+          @attr name HHmobileApp.HHmobileApp:contentInsetEndWithActions
         */
         public static final int Toolbar_contentInsetEndWithActions = 10;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10516,11 +10542,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetLeft
+          @attr name HHmobileApp.HHmobileApp:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10532,11 +10558,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetRight
+          @attr name HHmobileApp.HHmobileApp:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10548,11 +10574,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetStart
+          @attr name HHmobileApp.HHmobileApp:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10564,21 +10590,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:contentInsetStartWithNavigation
+          @attr name HHmobileApp.HHmobileApp:contentInsetStartWithNavigation
         */
         public static final int Toolbar_contentInsetStartWithNavigation = 9;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#logo}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:logo
+          @attr name HHmobileApp.HHmobileApp:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10588,11 +10614,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:logoDescription
+          @attr name HHmobileApp.HHmobileApp:logoDescription
         */
         public static final int Toolbar_logoDescription = 26;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10604,11 +10630,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:maxButtonHeight
+          @attr name HHmobileApp.HHmobileApp:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 20;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10618,31 +10644,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:navigationContentDescription
+          @attr name HHmobileApp.HHmobileApp:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 25;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:navigationIcon
+          @attr name HHmobileApp.HHmobileApp:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 24;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:popupTheme
+          @attr name HHmobileApp.HHmobileApp:popupTheme
         */
         public static final int Toolbar_popupTheme = 11;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10652,21 +10678,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:subtitle
+          @attr name HHmobileApp.HHmobileApp:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:subtitleTextAppearance
+          @attr name HHmobileApp.HHmobileApp:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 13;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10677,11 +10703,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:subtitleTextColor
+          @attr name HHmobileApp.HHmobileApp:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 28;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#title}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10691,11 +10717,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:title
+          @attr name HHmobileApp.HHmobileApp:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleMargin}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleMargin}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10707,11 +10733,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:titleMargin
+          @attr name HHmobileApp.HHmobileApp:titleMargin
         */
         public static final int Toolbar_titleMargin = 14;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10723,11 +10749,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:titleMarginBottom
+          @attr name HHmobileApp.HHmobileApp:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 18;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10739,11 +10765,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:titleMarginEnd
+          @attr name HHmobileApp.HHmobileApp:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 16;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10755,11 +10781,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:titleMarginStart
+          @attr name HHmobileApp.HHmobileApp:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 15;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10771,11 +10797,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:titleMarginTop
+          @attr name HHmobileApp.HHmobileApp:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 17;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10787,21 +10813,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:titleMargins
+          @attr name HHmobileApp.HHmobileApp:titleMargins
         */
         public static final int Toolbar_titleMargins = 19;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:titleTextAppearance
+          @attr name HHmobileApp.HHmobileApp:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 12;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10812,7 +10838,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:titleTextColor
+          @attr name HHmobileApp.HHmobileApp:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 27;
         /** Attributes that can be used with a View.
@@ -10823,9 +10849,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd HHMobileApp.HHMobileApp:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart HHMobileApp.HHMobileApp:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme HHMobileApp.HHMobileApp:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd HHmobileApp.HHmobileApp:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart HHmobileApp.HHmobileApp:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme HHmobileApp.HHmobileApp:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -10850,7 +10876,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -10862,11 +10888,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:paddingEnd
+          @attr name HHmobileApp.HHmobileApp:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -10878,17 +10904,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:paddingStart
+          @attr name HHmobileApp.HHmobileApp:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#theme}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name HHMobileApp.HHMobileApp:theme
+          @attr name HHmobileApp.HHmobileApp:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -10898,8 +10924,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint HHMobileApp.HHMobileApp:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode HHMobileApp.HHMobileApp:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint HHmobileApp.HHmobileApp:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode HHmobileApp.HHmobileApp:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -10915,7 +10941,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -10926,11 +10952,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name HHMobileApp.HHMobileApp:backgroundTint
+          @attr name HHmobileApp.HHmobileApp:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link HHMobileApp.HHMobileApp.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link HHmobileApp.HHmobileApp.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -10947,7 +10973,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name HHMobileApp.HHMobileApp:backgroundTintMode
+          @attr name HHmobileApp.HHmobileApp:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

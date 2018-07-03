@@ -1,2 +1,2 @@
 android.app.Application
-HHMobileApp.HHMobileApp
+HHmobileApp.HHmobileApp

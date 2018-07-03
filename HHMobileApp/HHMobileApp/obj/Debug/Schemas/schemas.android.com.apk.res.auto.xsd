@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>7/2/2018 8:35:59 PM</xs:documentation>
+    <xs:documentation>7/3/2018 11:48:44 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -323,6 +323,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -382,6 +384,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -551,6 +555,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -564,6 +574,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -630,7 +641,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -638,10 +648,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -655,10 +663,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -1023,6 +1028,8 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/navigation_drawer_close" />
+            <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -1159,6 +1166,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -1172,6 +1185,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -1238,7 +1252,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -1246,10 +1259,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -1263,10 +1274,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -1711,6 +1719,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -1724,6 +1738,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -1790,7 +1805,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -1798,10 +1812,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -1815,10 +1827,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -2240,6 +2249,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -2253,6 +2268,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -2319,7 +2335,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -2327,10 +2342,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -2344,10 +2357,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -3093,6 +3103,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -3106,6 +3122,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -3172,7 +3189,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -3180,10 +3196,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -3197,10 +3211,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -3622,6 +3633,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -3635,6 +3652,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -3701,7 +3719,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -3709,10 +3726,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -3726,10 +3741,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -4094,6 +4106,8 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/navigation_drawer_close" />
+            <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -4230,6 +4244,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -4243,6 +4263,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -4309,7 +4330,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -4317,10 +4337,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -4334,10 +4352,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -4742,6 +4757,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -4801,6 +4818,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -4938,6 +4957,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -4997,6 +5018,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -5193,6 +5216,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -5206,6 +5235,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -5272,7 +5302,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -5280,10 +5309,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -5297,10 +5324,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -5722,6 +5746,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -5735,6 +5765,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -5801,7 +5832,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -5809,10 +5839,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -5826,10 +5854,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -6299,6 +6324,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -6358,6 +6385,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -6495,6 +6524,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -6554,6 +6585,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -6691,6 +6724,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -6750,6 +6785,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -6887,6 +6924,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -6946,6 +6985,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -7083,6 +7124,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -7142,6 +7185,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -7296,6 +7341,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -7309,6 +7360,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -7375,7 +7427,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -7383,10 +7434,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -7400,10 +7449,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -7883,6 +7929,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -7896,6 +7948,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -7962,7 +8015,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -7970,10 +8022,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -7987,10 +8037,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -8412,6 +8459,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -8425,6 +8478,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -8491,7 +8545,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -8499,10 +8552,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -8516,10 +8567,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -8941,6 +8989,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -8954,6 +9008,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -9020,7 +9075,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -9028,10 +9082,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -9045,10 +9097,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -9470,6 +9519,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -9483,6 +9538,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -9549,7 +9605,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -9557,10 +9612,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -9574,10 +9627,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -10041,6 +10091,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -10054,6 +10110,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -10120,7 +10177,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -10128,10 +10184,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -10145,10 +10199,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -10570,6 +10621,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -10583,6 +10640,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -10649,7 +10707,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -10657,10 +10714,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -10674,10 +10729,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -11183,6 +11235,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -11196,6 +11254,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -11262,7 +11321,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -11270,10 +11328,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -11287,10 +11343,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -11697,6 +11750,8 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/navigation_drawer_close" />
+            <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -11932,6 +11987,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -11945,6 +12006,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -12039,7 +12101,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -12047,10 +12108,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -12064,10 +12123,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -12532,6 +12588,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -12545,6 +12607,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -12611,7 +12674,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -12619,10 +12681,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -12636,10 +12696,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -13244,6 +13301,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -13257,6 +13320,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -13323,7 +13387,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -13331,10 +13394,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -13348,10 +13409,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -13956,6 +14014,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -13969,6 +14033,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -14035,7 +14100,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -14043,10 +14107,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -14060,10 +14122,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -14485,6 +14544,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -14498,6 +14563,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -14564,7 +14630,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -14572,10 +14637,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -14589,10 +14652,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -14957,6 +15017,8 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/navigation_drawer_close" />
+            <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -15048,6 +15110,8 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/navigation_drawer_close" />
+            <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -15167,6 +15231,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -15226,6 +15292,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -15363,6 +15431,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -15422,6 +15492,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -15618,6 +15690,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -15631,6 +15709,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -15697,7 +15776,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -15705,10 +15783,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -15722,10 +15798,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -16090,6 +16163,8 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/navigation_drawer_close" />
+            <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -16226,6 +16301,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -16239,6 +16320,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -16305,7 +16387,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -16313,10 +16394,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -16330,10 +16409,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -16698,6 +16774,8 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/navigation_drawer_close" />
+            <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -16834,6 +16912,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -16847,6 +16931,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -16913,7 +16998,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -16921,10 +17005,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -16938,10 +17020,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -17601,6 +17680,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -17660,6 +17741,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -17814,6 +17897,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -17827,6 +17916,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -17893,7 +17983,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -17901,10 +17990,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -17918,10 +18005,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -18286,6 +18370,8 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/navigation_drawer_close" />
+            <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
             <xs:enumeration value="@string/path_password_eye_mask_strike_through" />
@@ -18657,6 +18743,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -18716,6 +18804,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -18870,6 +18960,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -18883,6 +18979,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -18949,7 +19046,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -18957,10 +19053,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -18974,10 +19068,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -19399,6 +19490,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -19412,6 +19509,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -19478,7 +19576,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -19486,10 +19583,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -19503,10 +19598,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -20098,6 +20190,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -20111,6 +20209,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -20177,7 +20276,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -20185,10 +20283,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -20202,10 +20298,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -20810,6 +20903,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -20823,6 +20922,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -20889,7 +20989,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -20897,10 +20996,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -20914,10 +21011,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -21351,6 +21445,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -21364,6 +21464,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -21430,7 +21531,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -21438,10 +21538,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -21455,10 +21553,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -22063,6 +22158,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -22076,6 +22177,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -22142,7 +22244,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -22150,10 +22251,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -22167,10 +22266,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -22575,6 +22671,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -22634,6 +22732,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -22771,6 +22871,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -22830,6 +22932,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -22984,6 +23088,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -22997,6 +23107,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -23063,7 +23174,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -23071,10 +23181,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -23088,10 +23196,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -23513,6 +23618,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -23526,6 +23637,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -23592,7 +23704,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -23600,10 +23711,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -23617,10 +23726,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -24025,6 +24131,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -24084,6 +24192,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -24419,6 +24529,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -24478,6 +24590,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -24615,6 +24729,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -24674,6 +24790,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -24811,6 +24929,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -24870,6 +24990,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -25022,6 +25144,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -25081,6 +25205,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -25218,6 +25344,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -25277,6 +25405,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -25414,6 +25544,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -25473,6 +25605,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -25610,6 +25744,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -25669,6 +25805,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -25806,6 +25944,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -25865,6 +26005,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -26202,6 +26344,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -26215,6 +26363,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -26281,7 +26430,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -26289,10 +26437,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -26306,10 +26452,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -26897,6 +27040,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -26956,6 +27101,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -27349,6 +27496,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -27408,6 +27557,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -27545,6 +27696,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -27604,6 +27757,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -27741,6 +27896,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -27800,6 +27957,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -27937,6 +28096,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -27996,6 +28157,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -28133,6 +28296,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -28192,6 +28357,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -28329,6 +28496,8 @@
             <xs:enumeration value="@dimen/abc_text_size_subtitle_material_toolbar" />
             <xs:enumeration value="@dimen/abc_text_size_title_material" />
             <xs:enumeration value="@dimen/abc_text_size_title_material_toolbar" />
+            <xs:enumeration value="@dimen/activity_horizontal_margin" />
+            <xs:enumeration value="@dimen/activity_vertical_margin" />
             <xs:enumeration value="@dimen/compat_button_inset_horizontal_material" />
             <xs:enumeration value="@dimen/compat_button_inset_vertical_material" />
             <xs:enumeration value="@dimen/compat_button_padding_horizontal_material" />
@@ -28388,6 +28557,8 @@
             <xs:enumeration value="@dimen/item_touch_helper_max_drag_scroll_per_frame" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_max_velocity" />
             <xs:enumeration value="@dimen/item_touch_helper_swipe_escape_velocity" />
+            <xs:enumeration value="@dimen/nav_header_height" />
+            <xs:enumeration value="@dimen/nav_header_vertical_spacing" />
             <xs:enumeration value="@dimen/notification_action_icon_size" />
             <xs:enumeration value="@dimen/notification_action_text_size" />
             <xs:enumeration value="@dimen/notification_big_circle_margin" />
@@ -28542,6 +28713,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -28555,6 +28732,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -28621,7 +28799,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -28629,10 +28806,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -28646,10 +28821,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -29254,6 +29426,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -29267,6 +29445,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -29333,7 +29512,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -29341,10 +29519,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -29358,10 +29534,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -29783,6 +29956,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -29796,6 +29975,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -29862,7 +30042,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -29870,10 +30049,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -29887,10 +30064,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
@@ -30556,6 +30730,12 @@
             <xs:enumeration value="@drawable/design_ic_visibility_off" />
             <xs:enumeration value="@drawable/design_password_eye" />
             <xs:enumeration value="@drawable/design_snackbar_background" />
+            <xs:enumeration value="@drawable/ic_menu_camera" />
+            <xs:enumeration value="@drawable/ic_menu_gallery" />
+            <xs:enumeration value="@drawable/ic_menu_manage" />
+            <xs:enumeration value="@drawable/ic_menu_send" />
+            <xs:enumeration value="@drawable/ic_menu_share" />
+            <xs:enumeration value="@drawable/ic_menu_slideshow" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -30569,6 +30749,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@drawable/side_nav_bar" />
             <xs:enumeration value="@drawable/tooltip_frame_dark" />
             <xs:enumeration value="@drawable/tooltip_frame_light" />
             <xs:enumeration value="@mipmap/ic_launcher" />
@@ -30635,7 +30816,6 @@
             <xs:enumeration value="@android:drawable/ic_menu_agenda" />
             <xs:enumeration value="@android:drawable/ic_menu_always_landscape_portrait" />
             <xs:enumeration value="@android:drawable/ic_menu_call" />
-            <xs:enumeration value="@android:drawable/ic_menu_camera" />
             <xs:enumeration value="@android:drawable/ic_menu_close_clear_cancel" />
             <xs:enumeration value="@android:drawable/ic_menu_compass" />
             <xs:enumeration value="@android:drawable/ic_menu_crop" />
@@ -30643,10 +30823,8 @@
             <xs:enumeration value="@android:drawable/ic_menu_delete" />
             <xs:enumeration value="@android:drawable/ic_menu_directions" />
             <xs:enumeration value="@android:drawable/ic_menu_edit" />
-            <xs:enumeration value="@android:drawable/ic_menu_gallery" />
             <xs:enumeration value="@android:drawable/ic_menu_help" />
             <xs:enumeration value="@android:drawable/ic_menu_info_details" />
-            <xs:enumeration value="@android:drawable/ic_menu_manage" />
             <xs:enumeration value="@android:drawable/ic_menu_mapmode" />
             <xs:enumeration value="@android:drawable/ic_menu_month" />
             <xs:enumeration value="@android:drawable/ic_menu_more" />
@@ -30660,10 +30838,7 @@
             <xs:enumeration value="@android:drawable/ic_menu_rotate" />
             <xs:enumeration value="@android:drawable/ic_menu_save" />
             <xs:enumeration value="@android:drawable/ic_menu_search" />
-            <xs:enumeration value="@android:drawable/ic_menu_send" />
             <xs:enumeration value="@android:drawable/ic_menu_set_as" />
-            <xs:enumeration value="@android:drawable/ic_menu_share" />
-            <xs:enumeration value="@android:drawable/ic_menu_slideshow" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_alphabetically" />
             <xs:enumeration value="@android:drawable/ic_menu_sort_by_size" />
             <xs:enumeration value="@android:drawable/ic_menu_today" />
