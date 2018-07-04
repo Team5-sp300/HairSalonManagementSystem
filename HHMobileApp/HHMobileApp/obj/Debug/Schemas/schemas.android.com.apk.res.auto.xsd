@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>7/3/2018 11:48:44 PM</xs:documentation>
+    <xs:documentation>7/4/2018 1:13:13 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -561,6 +561,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -1172,6 +1173,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -1725,6 +1727,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -2255,6 +2258,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -3109,6 +3113,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -3639,6 +3644,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -4250,6 +4256,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -5222,6 +5229,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -5752,6 +5760,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -7347,6 +7356,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -7935,6 +7945,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -8465,6 +8476,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -8995,6 +9007,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -9525,6 +9538,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -10097,6 +10111,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -10627,6 +10642,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -11241,6 +11257,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -11993,6 +12010,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -12594,6 +12612,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -13307,6 +13326,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -14020,6 +14040,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -14550,6 +14571,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -15696,6 +15718,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -16307,6 +16330,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -16918,6 +16942,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -17903,6 +17928,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -18966,6 +18992,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -19496,6 +19523,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -20196,6 +20224,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -20909,6 +20938,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -21451,6 +21481,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -22164,6 +22195,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -23094,6 +23126,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -23624,6 +23657,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -26350,6 +26384,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -28719,6 +28754,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -29432,6 +29468,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -29962,6 +29999,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />
@@ -30736,6 +30774,7 @@
             <xs:enumeration value="@drawable/ic_menu_send" />
             <xs:enumeration value="@drawable/ic_menu_share" />
             <xs:enumeration value="@drawable/ic_menu_slideshow" />
+            <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/navigation_empty_icon" />
             <xs:enumeration value="@drawable/notification_action_background" />
             <xs:enumeration value="@drawable/notification_bg" />

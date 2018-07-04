@@ -2244,26 +2244,29 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F010009
-			public const int ic_launcher_foreground = 2130771977;
-			
-			// aapt resource value: 0x7F010003
-			public const int ic_menu_camera = 2130771971;
+			// aapt resource value: 0x7F010010
+			public const int ic_launcher_foreground = 2130771984;
 			
 			// aapt resource value: 0x7F010004
-			public const int ic_menu_gallery = 2130771972;
+			public const int ic_menu_camera = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int ic_menu_manage = 2130771973;
+			public const int ic_menu_gallery = 2130771973;
 			
 			// aapt resource value: 0x7F010006
-			public const int ic_menu_send = 2130771974;
+			public const int ic_menu_manage = 2130771974;
 			
 			// aapt resource value: 0x7F010007
-			public const int ic_menu_share = 2130771975;
+			public const int ic_menu_send = 2130771975;
 			
 			// aapt resource value: 0x7F010008
-			public const int ic_menu_slideshow = 2130771976;
+			public const int ic_menu_share = 2130771976;
+			
+			// aapt resource value: 0x7F010009
+			public const int ic_menu_slideshow = 2130771977;
+			
+			// aapt resource value: 0x7F010002
+			public const int Logo = 2130771970;
 			
 			// aapt resource value: 0x7F09005C
 			public const int navigation_empty_icon = 2131296348;
@@ -2304,8 +2307,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010002
-			public const int side_nav_bar = 2130771970;
+			// aapt resource value: 0x7F010003
+			public const int side_nav_bar = 2130771971;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
@@ -2407,9 +2410,6 @@ namespace HHmobileApp
 			
 			// aapt resource value: 0x7F0C0011
 			public const int action_mode_close_button = 2131492881;
-			
-			// aapt resource value: 0x7F020020
-			public const int action_settings = 2130837536;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -2513,9 +2513,6 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C002F
 			public const int expand_activities_button = 2131492911;
 			
-			// aapt resource value: 0x7F020005
-			public const int fab = 2130837509;
-			
 			// aapt resource value: 0x7F0C0031
 			public const int fill = 2131492913;
 			
@@ -2543,6 +2540,9 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F020012
 			public const int imageView = 2130837522;
 			
+			// aapt resource value: 0x7F020006
+			public const int imageView1 = 2130837510;
+			
 			// aapt resource value: 0x7F0C000C
 			public const int info = 2131492876;
 			
@@ -2564,8 +2564,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C000F
 			public const int line3 = 2131492879;
 			
-			// aapt resource value: 0x7F020006
-			public const int linearLayout1 = 2130837510;
+			// aapt resource value: 0x7F020005
+			public const int linearLayout1 = 2130837509;
 			
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
@@ -2592,22 +2592,16 @@ namespace HHmobileApp
 			public const int navigation_header_container = 2131492935;
 			
 			// aapt resource value: 0x7F020014
-			public const int nav_camera = 2130837524;
+			public const int nav_bookings = 2130837524;
 			
 			// aapt resource value: 0x7F020015
-			public const int nav_gallery = 2130837525;
+			public const int nav_clients = 2130837525;
 			
-			// aapt resource value: 0x7F020017
-			public const int nav_manage = 2130837527;
-			
-			// aapt resource value: 0x7F020019
-			public const int nav_send = 2130837529;
-			
-			// aapt resource value: 0x7F020018
-			public const int nav_share = 2130837528;
+			// aapt resource value: 0x7F020013
+			public const int nav_home = 2130837523;
 			
 			// aapt resource value: 0x7F020016
-			public const int nav_slideshow = 2130837526;
+			public const int nav_settings = 2130837526;
 			
 			// aapt resource value: 0x7F020003
 			public const int nav_view = 2130837507;
@@ -2776,9 +2770,6 @@ namespace HHmobileApp
 			
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
-			
-			// aapt resource value: 0x7F020013
-			public const int textView = 2130837523;
 			
 			// aapt resource value: 0x7F020007
 			public const int textView1 = 2130837511;

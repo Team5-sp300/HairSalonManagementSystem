@@ -20,9 +20,6 @@ namespace HHmobileApp
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;
-
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
             drawer.AddDrawerListener(toggle);
@@ -51,16 +48,16 @@ namespace HHmobileApp
             return true;
         }
 
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            int id = item.ItemId;
-            if (id == Resource.Id.action_settings)
-            {
-                return true;
-            }
+        //public override bool OnOptionsItemSelected(IMenuItem item)
+        //{
+        //    int id = item.ItemId;
+        //    if (id == Resource.Id.action_settings)
+        //    {
+        //        return true;
+        //    }
 
-            return base.OnOptionsItemSelected(item);
-        }
+        //    return base.OnOptionsItemSelected(item);
+        //}
 
         private void FabOnClick(object sender, EventArgs eventArgs)
         {
@@ -73,30 +70,23 @@ namespace HHmobileApp
         {
             int id = item.ItemId;
 
-            if (id == Resource.Id.nav_camera)
+            if (id == Resource.Id.nav_home)
             {
                 // Handle the camera action
             }
-            else if (id == Resource.Id.nav_gallery)
+            else if (id == Resource.Id.nav_bookings)
             {
 
             }
-            else if (id == Resource.Id.nav_slideshow)
+            else if (id == Resource.Id.nav_clients)
             {
 
             }
-            else if (id == Resource.Id.nav_manage)
+            else if (id == Resource.Id.nav_settings)
             {
 
             }
-            else if (id == Resource.Id.nav_share)
-            {
-
-            }
-            else if (id == Resource.Id.nav_send)
-            {
-
-            }
+        
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             drawer.CloseDrawer(GravityCompat.Start);

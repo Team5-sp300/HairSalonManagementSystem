@@ -7,7 +7,13 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main"
-    android:id="@+id/linearLayout1">
+    android:id="@+id/linearLayout1"
+    android:background="#ffffff">
+    <ImageView
+        android:src="@drawable/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1" />
     <TextView
         android:text="Username"
         android:layout_width="match_parent"
