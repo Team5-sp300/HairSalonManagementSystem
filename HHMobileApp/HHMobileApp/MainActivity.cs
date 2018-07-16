@@ -5,6 +5,7 @@ using System.Net;
 using System.Text;
 using Android;
 using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
@@ -91,7 +92,8 @@ namespace HHmobileApp
             {
                 if (loginDetails[i].name.Equals(textName.Text) && loginDetails[i].password.Equals(textPassword.Text))
                 {
-                    SetContentView(Resource.Layout.home_main);
+                    var intent = new Intent(this, typeof(HomeActivity));
+                    StartActivity(intent);
                 }
                 else {
                     textView.Visibility = ViewStates.Visible;
@@ -107,11 +109,13 @@ namespace HHmobileApp
 
             if (id == Resource.Id.nav_home)
             {
-                SetContentView(Resource.Layout.home_main);
+                var intent = new Intent(this, typeof(HomeActivity));
+                StartActivity(intent);
             }
             else if (id == Resource.Id.nav_bookings)
             {
-                SetContentView(Resource.Layout.booking_main);
+                var intent = new Intent(this, typeof(BookingActivity));
+                StartActivity(intent);
             }
             else if (id == Resource.Id.nav_clients)
             {
@@ -121,7 +125,6 @@ namespace HHmobileApp
             {
 
             }
-
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
            // drawer.CloseDrawer(GravityCompat.Start);

@@ -55,7 +55,9 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookingActivity.cs" />
     <Compile Include="loginDetails.cs" />
+    <Compile Include="HomeActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,6 +132,16 @@
   <ItemGroup>
     <AndroidResource Include="Resources\layout\booking_main.axml">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\home_activity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\booking_activity.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
