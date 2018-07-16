@@ -81,7 +81,8 @@ namespace HHmobileApp
             }
             else if (id == Resource.Id.nav_clients)
             {
-
+                var intent = new Intent(this, typeof(ClientActivity));
+                StartActivity(intent);
             }
             else if (id == Resource.Id.nav_settings)
             {

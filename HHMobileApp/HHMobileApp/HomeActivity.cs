@@ -85,7 +85,8 @@ namespace HHmobileApp
             }
             else if (id == Resource.Id.nav_clients)
             {
-
+                var intent = new Intent(this, typeof(ClientActivity));
+                StartActivity(intent);
             }
             else if (id == Resource.Id.nav_settings)
             {
@@ -101,7 +102,8 @@ namespace HHmobileApp
 
         private void button_click(object sender, EventArgs e)
         {
-            SetContentView(Resource.Layout.login_main);
+            var intent = new Intent(this, typeof(LoginActivity));
+            StartActivity(intent);
         }
 
     }

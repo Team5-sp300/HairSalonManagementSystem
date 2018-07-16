@@ -18,31 +18,13 @@ using Newtonsoft.Json;
 namespace HHmobileApp
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
+    public class MainActivity : AppCompatActivity
     {
-        List<loginDetails> loginDetails;
-        EditText textName;
-        EditText textPassword;
-        TextView textView;
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.activity_main);
-            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
-
-            DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
-            drawer.AddDrawerListener(toggle);
-            toggle.SyncState();
-
-            NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
-            navigationView.SetNavigationItemSelectedListener(this);
-
-            Button btn = FindViewById<Button>(Resource.Id.btninsert);
-            btn.Click += button_click;
-
+            var intent = new Intent(this, typeof(LoginActivity));
+            StartActivity(intent);
         }
 
         public override void OnBackPressed()
@@ -56,79 +38,6 @@ namespace HHmobileApp
             {
                 base.OnBackPressed();
             }
-        }
-
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
-            return true;
-        }
-
-        private void FabOnClick(object sender, EventArgs eventArgs)
-        {
-            View view = (View)sender;
-            Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
-        }
-
-        private void button_click(object sender, EventArgs e)
-        {
-            WebClient client = new WebClient();
-            Uri uri = new Uri("http://10.0.0.169/Retrieve.php");
-            client.DownloadDataAsync(uri);
-            client.DownloadDataCompleted += download;
-        }
-
-
-        private void download(object sender, DownloadDataCompletedEventArgs e)
-        {
-            textName = FindViewById<EditText>(Resource.Id.etusername);
-            textPassword = FindViewById<EditText>(Resource.Id.etPass);
-            textView = FindViewById<TextView>(Resource.Id.textError);
-
-            string json = Encoding.UTF8.GetString(e.Result);
-            loginDetails = JsonConvert.DeserializeObject<List<loginDetails>>(json);
-            for (int i = 0; i < loginDetails.Count; i++)
-            {
-                if (loginDetails[i].name.Equals(textName.Text) && loginDetails[i].password.Equals(textPassword.Text))
-                {
-                    var intent = new Intent(this, typeof(HomeActivity));
-                    StartActivity(intent);
-                }
-                else {
-                    textView.Visibility = ViewStates.Visible;
-                }
-            }
-           
-        }
-
-
-        public bool OnNavigationItemSelected(IMenuItem item)
-        {
-            int id = item.ItemId;
-
-            if (id == Resource.Id.nav_home)
-            {
-                var intent = new Intent(this, typeof(HomeActivity));
-                StartActivity(intent);
-            }
-            else if (id == Resource.Id.nav_bookings)
-            {
-                var intent = new Intent(this, typeof(BookingActivity));
-                StartActivity(intent);
-            }
-            else if (id == Resource.Id.nav_clients)
-            {
-
-            }
-            else if (id == Resource.Id.nav_settings)
-            {
-
-            }
-
-            DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-           // drawer.CloseDrawer(GravityCompat.Start);
-            return true;
         }
     }
 }
