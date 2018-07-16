@@ -50,7 +50,7 @@ namespace HHmobileApp
         private void button_click(object sender, EventArgs e)
         {
             WebClient client = new WebClient();
-            Uri uri = new Uri("http://10.0.0.169/Retrieve.php");
+            Uri uri = new Uri("http://10.0.0.169/login.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download;
         }
