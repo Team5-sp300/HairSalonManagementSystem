@@ -9,6 +9,10 @@
     tools:showIn="@layout/app_bar_main"
     android:id="@+id/linearLayout1"
     android:background="#ffffff">
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <ImageView
         android:src="@drawable/Logo"
         android:layout_width="match_parent"
@@ -45,5 +49,7 @@
         android:text="Sign in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btninsert" />
+        android:id="@+id/btninsert"
+        android:background="@layout/button_border_settings"
+        android:textColor="#3399ff" />
 </LinearLayout>

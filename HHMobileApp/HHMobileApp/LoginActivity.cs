@@ -29,6 +29,9 @@ namespace HHmobileApp
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.login_main);
+            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
 

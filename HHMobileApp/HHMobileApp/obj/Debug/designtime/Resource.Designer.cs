@@ -3014,13 +3014,16 @@ namespace HHmobileApp
 			public const int booking_main = 2130903046;
 			
 			// aapt resource value: 0x7F030007
-			public const int clients_activity = 2130903047;
+			public const int button_border_settings = 2130903047;
 			
 			// aapt resource value: 0x7F030008
-			public const int clients_main = 2130903048;
+			public const int clients_activity = 2130903048;
 			
 			// aapt resource value: 0x7F030009
-			public const int client_listview_row = 2130903049;
+			public const int clients_main = 2130903049;
+			
+			// aapt resource value: 0x7F030010
+			public const int client_listview_row = 2130903056;
 			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
@@ -3064,17 +3067,17 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
 			
-			// aapt resource value: 0x7F030010
-			public const int home_activity = 2130903056;
-			
 			// aapt resource value: 0x7F030011
-			public const int home_main = 2130903057;
+			public const int home_activity = 2130903057;
 			
 			// aapt resource value: 0x7F030012
-			public const int login_main = 2130903058;
+			public const int home_main = 2130903058;
 			
 			// aapt resource value: 0x7F030013
-			public const int nav_header_main = 2130903059;
+			public const int login_main = 2130903059;
+			
+			// aapt resource value: 0x7F030014
+			public const int nav_header_main = 2130903060;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;

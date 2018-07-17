@@ -22,7 +22,9 @@
         android:text="Add Contanct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnaddcontact" />
+        android:id="@+id/btnaddcontact"
+        android:background="@layout/button_border_settings"
+        android:textColor="#3399ff" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"
