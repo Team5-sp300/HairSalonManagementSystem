@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>7/16/2018 11:23:39 PM</xs:documentation>
+    <xs:documentation>7/17/2018 1:37:28 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -42,6 +42,7 @@
             <xs:enumeration value="@layout/app_bar_main" />
             <xs:enumeration value="@layout/booking_activity" />
             <xs:enumeration value="@layout/booking_main" />
+            <xs:enumeration value="@layout/client_listview_row" />
             <xs:enumeration value="@layout/clients_activity" />
             <xs:enumeration value="@layout/clients_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
@@ -60,6 +61,7 @@
             <xs:enumeration value="@layout/design_text_input_password_icon" />
             <xs:enumeration value="@layout/home_activity" />
             <xs:enumeration value="@layout/home_main" />
+            <xs:enumeration value="@layout/listview_row" />
             <xs:enumeration value="@layout/login_main" />
             <xs:enumeration value="@layout/nav_header_main" />
             <xs:enumeration value="@layout/notification_action" />
@@ -149,6 +151,7 @@
             <xs:enumeration value="@layout/app_bar_main" />
             <xs:enumeration value="@layout/booking_activity" />
             <xs:enumeration value="@layout/booking_main" />
+            <xs:enumeration value="@layout/client_listview_row" />
             <xs:enumeration value="@layout/clients_activity" />
             <xs:enumeration value="@layout/clients_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
@@ -167,6 +170,7 @@
             <xs:enumeration value="@layout/design_text_input_password_icon" />
             <xs:enumeration value="@layout/home_activity" />
             <xs:enumeration value="@layout/home_main" />
+            <xs:enumeration value="@layout/listview_row" />
             <xs:enumeration value="@layout/login_main" />
             <xs:enumeration value="@layout/nav_header_main" />
             <xs:enumeration value="@layout/notification_action" />
@@ -256,6 +260,7 @@
             <xs:enumeration value="@layout/app_bar_main" />
             <xs:enumeration value="@layout/booking_activity" />
             <xs:enumeration value="@layout/booking_main" />
+            <xs:enumeration value="@layout/client_listview_row" />
             <xs:enumeration value="@layout/clients_activity" />
             <xs:enumeration value="@layout/clients_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
@@ -274,6 +279,7 @@
             <xs:enumeration value="@layout/design_text_input_password_icon" />
             <xs:enumeration value="@layout/home_activity" />
             <xs:enumeration value="@layout/home_main" />
+            <xs:enumeration value="@layout/listview_row" />
             <xs:enumeration value="@layout/login_main" />
             <xs:enumeration value="@layout/nav_header_main" />
             <xs:enumeration value="@layout/notification_action" />
@@ -363,6 +369,7 @@
             <xs:enumeration value="@layout/app_bar_main" />
             <xs:enumeration value="@layout/booking_activity" />
             <xs:enumeration value="@layout/booking_main" />
+            <xs:enumeration value="@layout/client_listview_row" />
             <xs:enumeration value="@layout/clients_activity" />
             <xs:enumeration value="@layout/clients_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
@@ -381,6 +388,7 @@
             <xs:enumeration value="@layout/design_text_input_password_icon" />
             <xs:enumeration value="@layout/home_activity" />
             <xs:enumeration value="@layout/home_main" />
+            <xs:enumeration value="@layout/listview_row" />
             <xs:enumeration value="@layout/login_main" />
             <xs:enumeration value="@layout/nav_header_main" />
             <xs:enumeration value="@layout/notification_action" />

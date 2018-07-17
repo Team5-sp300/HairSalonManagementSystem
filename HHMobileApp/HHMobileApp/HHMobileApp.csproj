@@ -55,9 +55,11 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientDetails.cs" />
     <Compile Include="BookingListAdapter.cs" />
     <Compile Include="ClientActivity.cs" />
     <Compile Include="BookingActivity.cs" />
+    <Compile Include="ClientListAdapter.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="BookingDetails.cs" />
     <Compile Include="loginDetails.cs" />
@@ -162,7 +164,12 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\listview_row.axml">
+    <AndroidResource Include="Resources\layout\booking_listview_row.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\client_listview_row.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

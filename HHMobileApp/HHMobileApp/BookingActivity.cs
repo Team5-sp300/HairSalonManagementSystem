@@ -22,7 +22,6 @@ namespace HHmobileApp
     {
         List<BookingDetails> items;
         ListView listview;
-        BookingDetails bookingDetails;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

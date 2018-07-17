@@ -20,7 +20,10 @@ namespace HHmobileApp
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar")]
     public class ClientActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
-    
+
+        List<ClientDetails> items;
+        ListView listview;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -41,6 +44,13 @@ namespace HHmobileApp
 
             NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.SetNavigationItemSelectedListener(this);
+
+            listview = FindViewById<ListView>(Resource.Id.clientlistview);
+
+            WebClient client = new WebClient();
+            Uri uri = new Uri("http://10.0.0.169/getClients.php");
+            client.DownloadDataAsync(uri);
+            client.DownloadDataCompleted += download;
 
         }
 
@@ -93,6 +103,18 @@ namespace HHmobileApp
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             // drawer.CloseDrawer(GravityCompat.Start);
             return true;
+        }
+
+        private void download(object sender, DownloadDataCompletedEventArgs e)
+        {
+            RunOnUiThread(() =>
+            {
+                string json = Encoding.UTF8.GetString(e.Result);
+                items = JsonConvert.DeserializeObject<List<ClientDetails>>(json);
+                ClientListAdapter adapter = new ClientListAdapter(this, items);
+                listview.Adapter = adapter;
+            });
+
         }
     }
 }

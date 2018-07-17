@@ -44,7 +44,7 @@ namespace HHmobileApp
 
             if (row == null)
             {
-                row = LayoutInflater.From(context).Inflate(Resource.Layout.listview_row, null, false);
+                row = LayoutInflater.From(context).Inflate(Resource.Layout.booking_listview_row, null, false);
             }
 
             TextView txtname = row.FindViewById<TextView>(Resource.Id.txtName);
