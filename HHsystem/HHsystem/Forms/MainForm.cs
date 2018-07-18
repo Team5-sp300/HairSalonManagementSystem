@@ -166,5 +166,15 @@ namespace HHsystem
         {
             new LoginForm().Show();
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            customTabControl2.SelectedIndex = 0;
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            customTabControl2.SelectedIndex = 1;
+        }
     }
 }
