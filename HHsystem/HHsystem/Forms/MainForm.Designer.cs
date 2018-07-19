@@ -332,7 +332,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(614, 400);
+            this.tabPage7.Size = new System.Drawing.Size(614, 381);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -465,6 +465,7 @@
             this.button8.TabIndex = 10;
             this.button8.Text = "Create Staff";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // dataGridView1
             // 

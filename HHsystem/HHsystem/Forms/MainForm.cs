@@ -176,5 +176,10 @@ namespace HHsystem
         {
             customTabControl2.SelectedIndex = 1;
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            new AddEmployeeForm().Show();
+        }
     }
 }

@@ -126,7 +126,13 @@ namespace HHsystem.Controllers
             }
             return loginDetails;
         }
-
+        
+        public void addEmployee(string name, string email, string phone, string password)
+        {
+            //string command = "Call addEmployee";   needs editing
+            //connection();
+            //cmd = new MySqlCommand(command, conn);
+        }
 
         public void backup()
         {
