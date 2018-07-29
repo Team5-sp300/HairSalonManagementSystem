@@ -31,3 +31,4 @@ C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\MySql.Data.dll
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\MySqlBackup.dll
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\Google.Protobuf.xml
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.csproj.CopyComplete
+C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.AddClientForm.resources

@@ -7,22 +7,22 @@ using System.Windows.Forms;
 
 namespace HHsystem.Controllers
 {
-    class EmployeeController
+    class ClientController
     {
         DatabaseManager manager = new DatabaseManager();
-
-
-        public void add(string username, string phone, string email, string password)
+        
+        public void add(string name, string surname, string phone, string email)
         {
-            if (username == "" || phone == "" || email == "" || password == "")
+            if (name == "" || surname == "" || phone == "" || email == "")
             {
                 MessageBox.Show("Please fill out all the fields.");
             }
             else
             {
-                manager.addEmployee(username,email,phone,password);
-                MessageBox.Show("New employee has been added.");
+                manager.addClient(name, surname, phone, email);
+                MessageBox.Show("New client has been added.");
             }
         }
+
     }
 }

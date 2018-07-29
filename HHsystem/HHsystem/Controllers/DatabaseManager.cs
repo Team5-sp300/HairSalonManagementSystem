@@ -129,9 +129,24 @@ namespace HHsystem.Controllers
         
         public void addEmployee(string name, string email, string phone, string password)
         {
-            //string command = "Call addEmployee";   needs editing
-            //connection();
-            //cmd = new MySqlCommand(command, conn);
+            string command = "CALL addEmployee('" + name + "', " + email + "', " + phone + "', " + password + "')";
+            connection();
+            MessageBox.Show(command);
+            cmd = new MySqlCommand(command, conn);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+        }
+
+        public void addClient(string name, string surname, string phone, string email)
+        {
+            string command = "CALL addClient('" + name + "', " + surname + "', " + phone + "', " + email + "')";
+            connection();
+            MessageBox.Show(command);
+            cmd = new MySqlCommand(command, conn);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
         }
 
         public void backup()
