@@ -498,20 +498,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Andrew\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\HSMS\\HairSalonManagementSystem\\HHMobileApp\\HHmobileApp\\HHmobileApp.csproj",
+      "projectUniqueName": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHMobileApp\\HHmobileApp\\HHmobileApp.csproj",
       "projectName": "HHmobileApp",
-      "projectPath": "C:\\HSMS\\HairSalonManagementSystem\\HHMobileApp\\HHmobileApp\\HHmobileApp.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\HSMS\\HairSalonManagementSystem\\HHMobileApp\\HHmobileApp\\obj\\",
+      "projectPath": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHMobileApp\\HHmobileApp\\HHmobileApp.csproj",
+      "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHMobileApp\\HHmobileApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

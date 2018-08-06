@@ -27,7 +27,7 @@ namespace HHmobileApp
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.clients_activity);
+            SetContentView(Resource.Layout.client_activity);
 
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
@@ -51,6 +51,9 @@ namespace HHmobileApp
             Uri uri = new Uri("http://10.0.0.169/getClients.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download;
+
+            Button btn = FindViewById<Button>(Resource.Id.btnaddcontact);
+            btn.Click += button_click;
 
         }
 
@@ -115,6 +118,12 @@ namespace HHmobileApp
                 listview.Adapter = adapter;
             });
 
+        }
+
+        private void button_click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(ClientInsert));
+            StartActivity(intent);
         }
     }
 }

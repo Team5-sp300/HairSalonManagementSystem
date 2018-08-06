@@ -46,21 +46,13 @@ namespace HHmobileApp
 
             listview = FindViewById<ListView>(Resource.Id.listView1);
 
-
-            //items = new List<BookingDetails>();
-
-            //items.Add(new BookingDetails() { name = "Andrew", time = "16:00" });
-            //items.Add(new BookingDetails() { name = "Eric", time = "12:00" });
-            //items.Add(new BookingDetails() { name = "JP", time = "01:00" });
-            //items.Add(new BookingDetails() { name = "Nick", time = "06:00" });
-
-            //BookingListAdapter adapter = new BookingListAdapter(this, items);
-            //listview.Adapter = adapter;
-
             WebClient client = new WebClient();
             Uri uri = new Uri("http://10.0.0.169/getBookings.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download;
+
+            Button btn = FindViewById<Button>(Resource.Id.btnaddbooking);
+            btn.Click += button_click;
         }
 
         public override void OnBackPressed()
@@ -124,6 +116,12 @@ namespace HHmobileApp
                 listview.Adapter = adapter;
             });
 
+        }
+
+        private void button_click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(BookingInsert));
+            StartActivity(intent);
         }
     }
 }
