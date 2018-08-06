@@ -140,12 +140,11 @@ namespace HHsystem.Controllers
 
         public void addClient(string name, string surname, string phone, string email)
         {
-            string command = "CALL addClient('" + name + "', " + surname + "', " + phone + "', " + email + "')";
+            string command = "CALL insertClient(" +name+", " + surname + ", " + phone + ", " + email + ")";
             connection();
             MessageBox.Show(command);
             cmd = new MySqlCommand(command, conn);
             cmd.ExecuteNonQuery();
-
             conn.Close();
         }
 
