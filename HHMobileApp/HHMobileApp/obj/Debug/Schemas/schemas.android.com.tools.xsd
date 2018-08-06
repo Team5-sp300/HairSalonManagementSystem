@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>8/6/2018 5:32:17 PM</xs:documentation>
+    <xs:documentation>8/6/2018 8:12:07 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -45,9 +45,10 @@
             <xs:enumeration value="@layout/booking_listview_row" />
             <xs:enumeration value="@layout/booking_main" />
             <xs:enumeration value="@layout/button_border_settings" />
+            <xs:enumeration value="@layout/client_activity" />
+            <xs:enumeration value="@layout/client_insert" />
             <xs:enumeration value="@layout/client_listview_row" />
-            <xs:enumeration value="@layout/clients_activity" />
-            <xs:enumeration value="@layout/clients_main" />
+            <xs:enumeration value="@layout/client_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -156,9 +157,10 @@
             <xs:enumeration value="@layout/booking_listview_row" />
             <xs:enumeration value="@layout/booking_main" />
             <xs:enumeration value="@layout/button_border_settings" />
+            <xs:enumeration value="@layout/client_activity" />
+            <xs:enumeration value="@layout/client_insert" />
             <xs:enumeration value="@layout/client_listview_row" />
-            <xs:enumeration value="@layout/clients_activity" />
-            <xs:enumeration value="@layout/clients_main" />
+            <xs:enumeration value="@layout/client_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -267,9 +269,10 @@
             <xs:enumeration value="@layout/booking_listview_row" />
             <xs:enumeration value="@layout/booking_main" />
             <xs:enumeration value="@layout/button_border_settings" />
+            <xs:enumeration value="@layout/client_activity" />
+            <xs:enumeration value="@layout/client_insert" />
             <xs:enumeration value="@layout/client_listview_row" />
-            <xs:enumeration value="@layout/clients_activity" />
-            <xs:enumeration value="@layout/clients_main" />
+            <xs:enumeration value="@layout/client_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />
@@ -378,9 +381,10 @@
             <xs:enumeration value="@layout/booking_listview_row" />
             <xs:enumeration value="@layout/booking_main" />
             <xs:enumeration value="@layout/button_border_settings" />
+            <xs:enumeration value="@layout/client_activity" />
+            <xs:enumeration value="@layout/client_insert" />
             <xs:enumeration value="@layout/client_listview_row" />
-            <xs:enumeration value="@layout/clients_activity" />
-            <xs:enumeration value="@layout/clients_main" />
+            <xs:enumeration value="@layout/client_main" />
             <xs:enumeration value="@layout/design_bottom_navigation_item" />
             <xs:enumeration value="@layout/design_bottom_sheet_dialog" />
             <xs:enumeration value="@layout/design_layout_snackbar" />

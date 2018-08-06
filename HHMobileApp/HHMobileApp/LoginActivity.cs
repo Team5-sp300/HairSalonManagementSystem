@@ -34,7 +34,6 @@ namespace HHmobileApp
 
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
-
         }
 
         public override void OnBackPressed()

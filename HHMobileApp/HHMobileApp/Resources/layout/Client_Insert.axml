@@ -33,37 +33,34 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/etusername" />
+                android:id="@+id/etFname" />
             <TextView
                 android:text="Last Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2" />
             <EditText
-                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/etPass" />
+                android:id="@+id/etLname" />
             <TextView
                 android:text="Conact Number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2" />
             <EditText
-                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/etPass" />
+                android:id="@+id/etNumber" />
             <TextView
                 android:text="Email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2" />
             <EditText
-                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/etPass" />
+                android:id="@+id/etEmail" />
             <Button
                 android:text="Accept"
                 android:layout_width="match_parent"
