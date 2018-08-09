@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>8/9/2018 12:28:42 PM</xs:documentation>
+    <xs:documentation>8/9/2018 6:45:08 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -46,6 +46,7 @@
             <xs:enumeration value="@layout/booking_main" />
             <xs:enumeration value="@layout/button_border_settings" />
             <xs:enumeration value="@layout/client_activity" />
+            <xs:enumeration value="@layout/client_details" />
             <xs:enumeration value="@layout/client_insert" />
             <xs:enumeration value="@layout/client_listview_row" />
             <xs:enumeration value="@layout/client_main" />
@@ -158,6 +159,7 @@
             <xs:enumeration value="@layout/booking_main" />
             <xs:enumeration value="@layout/button_border_settings" />
             <xs:enumeration value="@layout/client_activity" />
+            <xs:enumeration value="@layout/client_details" />
             <xs:enumeration value="@layout/client_insert" />
             <xs:enumeration value="@layout/client_listview_row" />
             <xs:enumeration value="@layout/client_main" />
@@ -270,6 +272,7 @@
             <xs:enumeration value="@layout/booking_main" />
             <xs:enumeration value="@layout/button_border_settings" />
             <xs:enumeration value="@layout/client_activity" />
+            <xs:enumeration value="@layout/client_details" />
             <xs:enumeration value="@layout/client_insert" />
             <xs:enumeration value="@layout/client_listview_row" />
             <xs:enumeration value="@layout/client_main" />
@@ -382,6 +385,7 @@
             <xs:enumeration value="@layout/booking_main" />
             <xs:enumeration value="@layout/button_border_settings" />
             <xs:enumeration value="@layout/client_activity" />
+            <xs:enumeration value="@layout/client_details" />
             <xs:enumeration value="@layout/client_insert" />
             <xs:enumeration value="@layout/client_listview_row" />
             <xs:enumeration value="@layout/client_main" />

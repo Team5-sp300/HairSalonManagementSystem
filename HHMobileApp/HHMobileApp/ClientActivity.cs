@@ -37,15 +37,11 @@ namespace HHmobileApp
             drawer.AddDrawerListener(toggle);
             toggle.SyncState();
 
-            DrawerLayout drawer1 = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            ActionBarDrawerToggle toggle1 = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
-            drawer.AddDrawerListener(toggle);
-            toggle.SyncState();
-
             NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.SetNavigationItemSelectedListener(this);
 
             listview = FindViewById<ListView>(Resource.Id.clientlistview);
+            listview.ItemClick += Listview_ItemClick;
 
             WebClient client = new WebClient();
             Uri uri = new Uri("http://10.0.0.169/getClients.php");
@@ -56,6 +52,7 @@ namespace HHmobileApp
             btn.Click += button_click;
 
         }
+
 
         public override void OnBackPressed()
         {
@@ -116,6 +113,7 @@ namespace HHmobileApp
                 items = JsonConvert.DeserializeObject<List<ClientDetails>>(json);
                 ClientListAdapter adapter = new ClientListAdapter(this, items);
                 listview.Adapter = adapter;
+                Console.Write(items[1].id);
             });
 
         }
@@ -125,6 +123,17 @@ namespace HHmobileApp
             var intent = new Intent(this, typeof(ClientInsert));
             StartActivity(intent);
         }
+
+        private void Listview_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            var intent = new Intent(this, typeof(ClientInformatin));
+            intent.PutExtra("fname", items[e.Position].fname);
+            intent.PutExtra("lname", items[e.Position].lname);
+            intent.PutExtra("number", items[e.Position].number);
+            intent.PutExtra("email", items[e.Position].email);
+            StartActivity(intent);
+        }
+
     }
 }
 

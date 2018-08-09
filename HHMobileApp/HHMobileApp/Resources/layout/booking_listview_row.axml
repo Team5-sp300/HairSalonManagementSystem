@@ -3,13 +3,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<!--<TextView
-       android:text="Date"
-       android:textAppearance="?android:attr/textAppearanceSmall"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:id="@+id/txtDate"
-       android:gravity="center" />-->
+    <TextView
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDate" />
     <TextView
         android:text="Time"
         android:textAppearance="?android:attr/textAppearanceLarge"

@@ -14,7 +14,10 @@ namespace HHmobileApp
 {
     class ClientDetails
     {
+        public string id { get; set; }
         public string fname { get; set; }
         public string lname { get; set; }
+        public string number { get; set; }
+        public string email { get; set; }
     }
 }

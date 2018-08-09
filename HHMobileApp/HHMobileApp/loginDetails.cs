@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace HHmobileApp
 {
-    class loginDetails
+    class LoginDetails
     {
         public string name { get; set; }
         public string password { get; set; }

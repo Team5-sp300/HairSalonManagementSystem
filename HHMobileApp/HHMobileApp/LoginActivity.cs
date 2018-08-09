@@ -20,7 +20,7 @@ namespace HHmobileApp
     [Activity(Label = "Login", Theme = "@style/AppTheme.NoActionBar")]
     public class LoginActivity : AppCompatActivity
     {
-        List<loginDetails> loginDetails;
+        List<LoginDetails> loginDetails;
         EditText textName;
         EditText textPassword;
         TextView textView;
@@ -65,12 +65,13 @@ namespace HHmobileApp
             textView = FindViewById<TextView>(Resource.Id.textError);
 
             string json = Encoding.UTF8.GetString(e.Result);
-            loginDetails = JsonConvert.DeserializeObject<List<loginDetails>>(json);
+            loginDetails = JsonConvert.DeserializeObject<List<LoginDetails>>(json);
             for (int i = 0; i < loginDetails.Count; i++)
             {
                 if (loginDetails[i].name.Equals(textName.Text) && loginDetails[i].password.Equals(textPassword.Text))
                 {
                     var intent = new Intent(this, typeof(HomeActivity));
+                    intent.PutExtra("Username", textName.Text);
                     StartActivity(intent);
                 }
                 else

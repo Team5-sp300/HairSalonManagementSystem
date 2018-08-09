@@ -46,6 +46,10 @@ namespace HHmobileApp
             Button btn = FindViewById<Button>(Resource.Id.btnsignout);
             btn.Click += button_click;
 
+            TextView greeting = FindViewById<TextView>(Resource.Id.txtWelcome);
+            greeting.Text ="Welcome \n"+ Intent.GetStringExtra("Username");
+
+
         }
 
         public override void OnBackPressed()

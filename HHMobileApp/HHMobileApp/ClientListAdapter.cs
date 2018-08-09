@@ -38,6 +38,7 @@ namespace HHmobileApp
             get { return items[position]; }
         }
 
+
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             View row = convertView;

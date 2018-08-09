@@ -60,11 +60,12 @@
     <Compile Include="BookingListAdapter.cs" />
     <Compile Include="ClientActivity.cs" />
     <Compile Include="BookingActivity.cs" />
+    <Compile Include="ClientInformatin.cs" />
     <Compile Include="ClientListAdapter.cs" />
     <Compile Include="ClientInsert.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="BookingDetails.cs" />
-    <Compile Include="loginDetails.cs" />
+    <Compile Include="LoginDetails.cs" />
     <Compile Include="HomeActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -185,6 +186,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\booking_insert.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\client_details.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
