@@ -15,7 +15,7 @@ using Android.Widget;
 
 namespace HHmobileApp
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar")]
+    [Activity(Label = "Insert Client", Theme = "@style/AppTheme.NoActionBar")]
     class ClientInsert : AppCompatActivity
     {
         private EditText txtFname;

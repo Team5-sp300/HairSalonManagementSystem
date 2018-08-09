@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView1" />
     <Button
-        android:text="Add Booking"
+        android:text="+ Add Booking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnaddbooking"

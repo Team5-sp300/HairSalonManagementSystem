@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView1" />
     <Button
-        android:text="Add Contanct"
+        android:text="+ Add Contanct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnaddcontact"

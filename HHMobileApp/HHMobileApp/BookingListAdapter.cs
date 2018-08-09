@@ -50,6 +50,9 @@ namespace HHmobileApp
             TextView txtname = row.FindViewById<TextView>(Resource.Id.txtName);
             txtname.Text = items[position].name;
 
+            //TextView txtdate = row.FindViewById<TextView>(Resource.Id.txtDate);
+            //txtdate.Text = items[position].time;
+
             TextView txttime = row.FindViewById<TextView>(Resource.Id.txtTime);
             txttime.Text = items[position].time;
 

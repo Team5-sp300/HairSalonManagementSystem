@@ -17,7 +17,7 @@ using Newtonsoft.Json;
 
 namespace HHmobileApp
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar")]
+    [Activity(Label = "Home", Theme = "@style/AppTheme.NoActionBar")]
     public class HomeActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
     

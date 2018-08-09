@@ -2435,17 +2435,17 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C001A
 			public const int bottom = 2131492890;
 			
-			// aapt resource value: 0x7F020014
-			public const int btnaddbooking = 2130837524;
-			
-			// aapt resource value: 0x7F020022
-			public const int btnaddcontact = 2130837538;
-			
-			// aapt resource value: 0x7F020011
-			public const int btninsert = 2130837521;
+			// aapt resource value: 0x7F020016
+			public const int btnaddbooking = 2130837526;
 			
 			// aapt resource value: 0x7F020024
-			public const int btnsignout = 2130837540;
+			public const int btnaddcontact = 2130837540;
+			
+			// aapt resource value: 0x7F020013
+			public const int btninsert = 2130837523;
+			
+			// aapt resource value: 0x7F020026
+			public const int btnsignout = 2130837542;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2462,8 +2462,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0008
 			public const int chronometer = 2131492872;
 			
-			// aapt resource value: 0x7F020023
-			public const int clientlistview = 2130837539;
+			// aapt resource value: 0x7F020025
+			public const int clientlistview = 2130837541;
 			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
@@ -2513,23 +2513,35 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C002E
 			public const int end_padder = 2131492910;
 			
-			// aapt resource value: 0x7F020019
-			public const int etEmail = 2130837529;
+			// aapt resource value: 0x7F020008
+			public const int etCname = 2130837512;
 			
-			// aapt resource value: 0x7F020016
-			public const int etFname = 2130837526;
+			// aapt resource value: 0x7F020011
+			public const int etDate = 2130837521;
 			
-			// aapt resource value: 0x7F020017
-			public const int etLname = 2130837527;
-			
-			// aapt resource value: 0x7F020018
-			public const int etNumber = 2130837528;
+			// aapt resource value: 0x7F020021
+			public const int etEmail = 2130837537;
 			
 			// aapt resource value: 0x7F020010
-			public const int etPass = 2130837520;
+			public const int etEname = 2130837520;
 			
-			// aapt resource value: 0x7F020008
-			public const int etusername = 2130837512;
+			// aapt resource value: 0x7F020018
+			public const int etFname = 2130837528;
+			
+			// aapt resource value: 0x7F020019
+			public const int etLname = 2130837529;
+			
+			// aapt resource value: 0x7F020020
+			public const int etNumber = 2130837536;
+			
+			// aapt resource value: 0x7F020029
+			public const int etPass = 2130837545;
+			
+			// aapt resource value: 0x7F020012
+			public const int etTime = 2130837522;
+			
+			// aapt resource value: 0x7F020028
+			public const int etusername = 2130837544;
 			
 			// aapt resource value: 0x7F0C0030
 			public const int expanded_menu = 2131492912;
@@ -2561,8 +2573,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020026
-			public const int imageView = 2130837542;
+			// aapt resource value: 0x7F020030
+			public const int imageView = 2130837552;
 			
 			// aapt resource value: 0x7F020006
 			public const int imageView1 = 2130837510;
@@ -2594,8 +2606,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
 			
-			// aapt resource value: 0x7F020015
-			public const int listView1 = 2130837525;
+			// aapt resource value: 0x7F020017
+			public const int listView1 = 2130837527;
 			
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
@@ -2618,17 +2630,17 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
 			
-			// aapt resource value: 0x7F020028
-			public const int nav_bookings = 2130837544;
+			// aapt resource value: 0x7F020032
+			public const int nav_bookings = 2130837554;
 			
-			// aapt resource value: 0x7F020029
-			public const int nav_clients = 2130837545;
+			// aapt resource value: 0x7F020033
+			public const int nav_clients = 2130837555;
 			
-			// aapt resource value: 0x7F020027
-			public const int nav_home = 2130837543;
+			// aapt resource value: 0x7F020031
+			public const int nav_home = 2130837553;
 			
-			// aapt resource value: 0x7F020030
-			public const int nav_settings = 2130837552;
+			// aapt resource value: 0x7F020034
+			public const int nav_settings = 2130837556;
 			
 			// aapt resource value: 0x7F020003
 			public const int nav_view = 2130837507;
@@ -2786,8 +2798,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0018
 			public const int text2 = 2131492888;
 			
-			// aapt resource value: 0x7F020025
-			public const int textError = 2130837541;
+			// aapt resource value: 0x7F020027
+			public const int textError = 2130837543;
 			
 			// aapt resource value: 0x7F0C007E
 			public const int textinput_counter = 2131492990;
@@ -2849,17 +2861,17 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C008B
 			public const int transition_transform = 2131493003;
 			
-			// aapt resource value: 0x7F020020
-			public const int txtfname = 2130837536;
+			// aapt resource value: 0x7F020022
+			public const int txtfname = 2130837538;
 			
-			// aapt resource value: 0x7F020021
-			public const int txtlname = 2130837537;
+			// aapt resource value: 0x7F020023
+			public const int txtlname = 2130837539;
 			
-			// aapt resource value: 0x7F020013
-			public const int txtName = 2130837523;
+			// aapt resource value: 0x7F020015
+			public const int txtName = 2130837525;
 			
-			// aapt resource value: 0x7F020012
-			public const int txtTime = 2130837522;
+			// aapt resource value: 0x7F020014
+			public const int txtTime = 2130837524;
 			
 			// aapt resource value: 0x7F0C008C
 			public const int uniform = 2131493004;

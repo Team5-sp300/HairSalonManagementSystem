@@ -26,34 +26,41 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <TextView
-                android:text="First Name"
+                android:text="Customer Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView1" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/etusername" />
+                android:id="@+id/etCname" />
             <TextView
-                android:text="Last Name"
+                android:text="Employee Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2" />
             <EditText
-                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/etPass" />
+                android:id="@+id/etEname" />
             <TextView
-                android:text="Password"
+                android:text="Appointment Date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2" />
             <EditText
-                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/etPass" />
+                android:id="@+id/etDate" />
+            <TextView
+                android:text="Appointment Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etTime" />
             <Button
                 android:text="Accept"
                 android:layout_width="match_parent"
