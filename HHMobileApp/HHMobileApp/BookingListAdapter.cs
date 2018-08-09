@@ -48,7 +48,7 @@ namespace HHmobileApp
             }
 
             TextView txtname = row.FindViewById<TextView>(Resource.Id.txtName);
-            txtname.Text = items[position].name;
+            txtname.Text = items[position].cusomter;
 
             TextView txtdate = row.FindViewById<TextView>(Resource.Id.txtDate);
             txtdate.Text = items[position].date;

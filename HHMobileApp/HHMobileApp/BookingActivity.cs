@@ -35,16 +35,12 @@ namespace HHmobileApp
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
             drawer.AddDrawerListener(toggle);
             toggle.SyncState();
-
-            DrawerLayout drawer1 = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            ActionBarDrawerToggle toggle1 = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
-            drawer.AddDrawerListener(toggle);
-            toggle.SyncState();
-
+      
             NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.SetNavigationItemSelectedListener(this);
 
             listview = FindViewById<ListView>(Resource.Id.listView1);
+            listview.ItemClick += Listview_ItemClick;
 
             WebClient client = new WebClient();
             Uri uri = new Uri("http://10.0.0.169/getBookings.php");
@@ -54,6 +50,7 @@ namespace HHmobileApp
             Button btn = FindViewById<Button>(Resource.Id.btnaddbooking);
             btn.Click += button_click;
         }
+
 
         public override void OnBackPressed()
         {
@@ -121,6 +118,16 @@ namespace HHmobileApp
         private void button_click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(BookingInsert));
+            StartActivity(intent);
+        }
+
+        private void Listview_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            var intent = new Intent(this, typeof(BookingInformatin));
+            intent.PutExtra("cname", items[e.Position].cusomter);
+            intent.PutExtra("ename", items[e.Position].employee);
+            intent.PutExtra("date", items[e.Position].date);
+            intent.PutExtra("time", items[e.Position].time);
             StartActivity(intent);
         }
     }

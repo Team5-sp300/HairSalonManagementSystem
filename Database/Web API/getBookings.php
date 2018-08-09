@@ -16,7 +16,7 @@ $contacts = array();
 if ($result->num_rows > 0) {
 
       while($row = mysqli_fetch_assoc($result)) {
-          $contact = array("name" => $row['(SELECT CustomerName FROM Customer WHERE Booking.CustomerID=Customer.CustomerID)'],"date" => $row['AppointmentDate'],"time" => $row['AppointmentTime']);
+          $contact = array("cusomter" => $row['(SELECT CustomerName FROM Customer WHERE Booking.CustomerID=Customer.CustomerID)'],"employee" => $row['(SELECT EmployeeName FROM Employee WHERE Booking.EmployeeID=Employee.EmployeeID)'],"date" => $row['AppointmentDate'],"time" => $row['AppointmentTime']);
 
           //Add the contact to the contacts array
           array_push($contacts, $contact);

@@ -62,6 +62,7 @@ C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobil
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\R.txt
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\uploadflags.txt
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\res\layout\client_details.xml
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\res\layout\booking_details.xml
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\bin\Debug\Mono.Android.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\bin\Debug\mscorlib.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\bin\Debug\System.Core.pdb
@@ -116,6 +117,5 @@ C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobil
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\android\assets\System.Web.Services.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\android\assets\System.Xml.Linq.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\android\assets\System.Xml.pdb
-C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\HHmobileApp.csprojAssemblyReference.cache
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\bin\Debug\HHmobileApp.dll
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\linksrc\HHmobileApp.dll.mdb

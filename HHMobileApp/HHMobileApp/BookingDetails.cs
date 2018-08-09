@@ -14,7 +14,8 @@ namespace HHmobileApp
 {
     class BookingDetails
     {
-        public string name { get; set; }
+        public string cusomter { get; set; }
+        public string employee { get; set; }
         public string date { get; set; }
         public string time { get; set; }
     }
