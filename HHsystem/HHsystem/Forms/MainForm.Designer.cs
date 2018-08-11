@@ -49,6 +49,8 @@
             this.button11 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.customTabControl2 = new HHsystem.CustomTabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.customWeeklyScheduler1 = new HHsystem.Componets.WeeklyScheduler();
@@ -56,7 +58,6 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button7 = new System.Windows.Forms.Button();
@@ -285,10 +286,11 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.comboBox1);
             this.tabPage2.Controls.Add(this.customTabControl2);
             this.tabPage2.Controls.Add(this.button18);
             this.tabPage2.Controls.Add(this.button17);
-            this.tabPage2.Controls.Add(this.button10);
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -296,6 +298,30 @@
             this.tabPage2.Size = new System.Drawing.Size(622, 491);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(477, 30);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 25);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "View:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(214, 34);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(204, 21);
+            this.comboBox1.TabIndex = 15;
+            this.comboBox1.TabStop = false;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // customTabControl2
             // 
@@ -375,20 +401,6 @@
             this.button17.TabIndex = 12;
             this.button17.UseVisualStyleBackColor = false;
             this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.White;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button10.Location = new System.Drawing.Point(376, 22);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(131, 45);
-            this.button10.TabIndex = 11;
-            this.button10.Text = "Test";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button6
             // 
@@ -568,7 +580,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
@@ -576,6 +587,7 @@
             this.customTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.customTabControl2.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
@@ -614,7 +626,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.BindingSource bindingSource2;
-        private System.Windows.Forms.Button button10;
         private Componets.WeeklyScheduler customWeeklyScheduler1;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button button11;
@@ -631,6 +642,8 @@
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label4;
     }
 }
 

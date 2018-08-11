@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,9 @@ namespace HHsystem
         {
             InitializeComponent();
             populateTable();
+            addAdppointments();
+            populateWeeks();
+            comboBox1.SelectedIndex = 0;
         }
 
         public void populateTable()
@@ -40,6 +44,14 @@ namespace HHsystem
             catch (Exception)
             {
             }
+        }
+
+        public void addAdppointments() {
+            appointments = new String[] { "06/08", "07/08", "14/08" };
+            time = new String[] { "9:00", "13:00", "15:00" };
+            name = new String[] { "Mary", "Sarah", "Emma" };
+            duration = new int[] { 2, 2, 1 };
+            customWeeklyScheduler1.addAppointment(appointments, time, name, duration);
         }
 
         public void populateBookingTable()
@@ -71,16 +83,22 @@ namespace HHsystem
             dataGridView3.DataSource = bindingSource2;
         }
 
+        public void populateWeeks()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                DateTime startOfWeek = DateTime.Today.AddDays(
+          (int)CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek -
+          (int)DateTime.Today.DayOfWeek + 1 + i * 7);
+                var endDate = startOfWeek.AddDays(7);
+                comboBox1.Items.Add(startOfWeek.ToString("dd/MM") + "-" + endDate.ToString("dd/MM"));
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -143,15 +161,6 @@ namespace HHsystem
             this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
         }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            appointments = new String[] { "02/07", "04/07", "02/07" };
-            time = new String[] { "9:00", "13:00", "15:00" };
-            name = new String[] { "Mary", "Sarah", "Emma" };
-            duration = new int[] { 2, 2, 1 };
-            customWeeklyScheduler1.addAppointment(appointments, time, name, duration);
-        }
-
         private void button13_Click(object sender, EventArgs e)
         {
             manager.backup();
@@ -185,6 +194,11 @@ namespace HHsystem
         private void button7_Click(object sender, EventArgs e)
         {
             new AddClientForm().Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            customWeeklyScheduler1.setWeekNo(comboBox1.SelectedIndex);
         }
     }
 }

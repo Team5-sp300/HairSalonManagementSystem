@@ -11,6 +11,12 @@ namespace HHsystem.Componets
 {
     class WeeklyScheduler : Panel
     {
+        String[] date;
+        String[] time;
+        String[] description;
+            int[] duration;
+
+
         public WeeklyScheduler()
         {
             rows = 9;
@@ -18,24 +24,36 @@ namespace HHsystem.Componets
             Initialize();
         }
 
-        public void addAppointment(String[] date, String[] time, String[] description,int [] duration)
+        public void addAppointment(String[] date, String[] time, String[] description, int[] duration)
         {
-            int k = 0;
+           this.date=new String[date.Length];
+            this.time = new String[date.Length];
+            this.description= new String[date.Length];
+            this.duration= new int[date.Length];
+            Array.Copy(date, this.date,  date.Length);
+            Array.Copy(time, this.time,  time.Length);
+            Array.Copy(description, this.description, description.Length);
+            Array.Copy(duration, this.duration, duration.Length);
+            addAppointments();
+        }
 
+        public void addAppointments() {
+            int k = 0;
             for (int j = 0; j < date.Length; j++)
             {
-                for (int i = 0; i < dates.Count; i++)
+                for (int i = 0; i < dates.Length; i++)
                 {
-                    if (date[j].Equals(dates[i].ToString("dd/MM")))
+
+                    if (date[j].Equals(dates[i]))
                     {
                         for (int m = 0; m < times.Length; m++)
                         {
                             if (time[j].Equals(times[m]))
                             {
-                                if ( duration[j] == 2)
+                                if (duration[j] == 2)
                                 {
                                     k = i + 1;
-                                    cells[i+1, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
+                                    cells[i + 1, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m + 1].BackColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
                                     cells[k, m + 1].BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -55,22 +73,78 @@ namespace HHsystem.Componets
             }
         }
 
+
+        //  public void getCurrentDate()
+        //  {
+        //      int weekNo = weeknum;
+        //      DateTime startOfWeek = DateTime.Today.AddDays(
+        //(int)CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek -
+        //(int)DateTime.Today.DayOfWeek+1+ weekNo);
+
+        //      var startDate = DateTime.Today;
+        //      var endDate = startDate.AddDays(7);
+        //      var numDays = (int)((endDate - startDate).TotalDays);
+        //      dates = Enumerable.Range(0, numDays).Select(x => startOfWeek.AddDays(x)).ToList();
+        //  }
+
         public void getCurrentDate()
         {
+            int weekNo = weeknum;
             DateTime startOfWeek = DateTime.Today.AddDays(
       (int)CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek -
-      (int)DateTime.Today.DayOfWeek);
-
-            var startDate = DateTime.Today;
-            var endDate = startDate.AddDays(7);
-            var numDays = (int)((endDate - startDate).TotalDays);
-            dates = Enumerable.Range(0, numDays).Select(x => startOfWeek.AddDays(x)).ToList();
+      (int)DateTime.Today.DayOfWeek + 1 + weekNo);
+            for (int i = 0; i < dates.Length; i++)
+            {
+                dates[i] = startOfWeek.AddDays(i).ToString("dd/MM");
+            }
         }
+
+
+        public void setWeekNo(int number)
+        {
+            weeknum = number*7;
+            getCurrentDate();
+            setHeaders();
+            setCells();
+            addAppointments();
+        }
+
+        public void setHeaders()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                headers[i+1].Text = dates[i];
+
+            }
+        }
+
+        public void setCells()
+        {
+            for (int j = 1; j <= rows; j++)
+            {
+                for (int i = 1; i <= colums; i++)
+                {
+                    cells[i, j].BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                    cells[i, j].Text ="";
+                    if (i % 2 == 1)
+                    {
+                        cells[i, j].BackColor = System.Drawing.SystemColors.ButtonFace;
+                    }
+                    else
+                    {
+                        cells[i, j].BackColor = System.Drawing.Color.White;
+                    }
+                }
+            }
+        }
+
+
+
 
         private void Initialize()
         {
+  
             getCurrentDate();
-            cells = new Label[20, 20];
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Name = "mainPanel";
             this.Size = new System.Drawing.Size(600, 400);
@@ -99,6 +173,8 @@ namespace HHsystem.Componets
                     }
                     else if (j == 0 && i != 0)
                     {
+                        //headers = null;
+                        //headers = new Label[7];
                         header = new Label();
                         header.BackColor = System.Drawing.SystemColors.ButtonHighlight;
                         // header.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -107,11 +183,12 @@ namespace HHsystem.Componets
                         header.Name = "Header" + i;
                         header.Size = new System.Drawing.Size(yInterval, xheader);
                         header.Text = days[i];
-                        header.Text = dates[k++].ToString("ddd dd/MM");
+                        header.Text = dates[k++];
                         header.Font = new System.Drawing.Font("Arial", 11.25F);
                         header.TextAlign = ContentAlignment.TopCenter;
                         header.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-                        this.Controls.Add(this.header);
+                        headers[i] = header;
+                        this.Controls.Add(this.headers[i]);
                     }
                     else if (i == 0 && j != 0)
                     {
@@ -166,8 +243,11 @@ namespace HHsystem.Componets
         private int yheader, xheader;
         private int yInterval, xInterval;
         private int rows, colums;
-        private Label[,] cells;
-        private List<DateTime> dates;
+        private Label[,] cells = new Label[20, 20];
+        private Label[] headers = new Label[7];
+        //private List<DateTime> dates;
+        private int weeknum = 0;
+        private string[] dates = new string[7];
         //private String[] appointments;
         //private String[] time;
     }
