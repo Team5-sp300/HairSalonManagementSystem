@@ -13,14 +13,18 @@ namespace HHsystem.Forms
 {
     public partial class AddEmployeeForm : Form
     {
+        private int id;
+
         public AddEmployeeForm()
         {
             InitializeComponent();
+            Random rnd = new Random();
+            id = rnd.Next(1, 101); ;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new EmployeeController().add(getEmployeeName(),getEmployeeEmail(), getEmployeePhone(), getEmployeePassword());
+            new EmployeeController().add(getEmployeeUname(),getEmployeeFname(), getEmployeeLname(),getEmployeeEmail(), getEmployeePhone(), getEmployeePassword());
             this.Dispose();
         }
 
@@ -29,9 +33,19 @@ namespace HHsystem.Forms
             this.Dispose();
         }
 
-        public string getEmployeeName()
+        public string getEmployeeUname()
         {
-            return nametxt.Text;
+            return usernametxt.Text;
+        }
+
+        public string getEmployeeFname()
+        {
+            return fnametxt.Text;
+        }
+
+        public string getEmployeeLname()
+        {
+            return lnametxt.Text;
         }
 
         public string getEmployeeEmail()
@@ -47,6 +61,18 @@ namespace HHsystem.Forms
         public string getEmployeePassword()
         {
             return passwordtxt.Text;
+        }
+
+        private void nametxt_TextChanged(object sender, EventArgs e)
+        {
+            fnametxt = sender as TextBox;
+            usernametxt.Text =fnametxt.Text + lnametxt.Text+ id;
+        }
+
+        private void lnameTxt_TextChanged(object sender, EventArgs e)
+        {
+            lnametxt = sender as TextBox;
+            usernametxt.Text = fnametxt.Text + lnametxt.Text + id;
         }
     }
 }

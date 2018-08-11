@@ -12,15 +12,15 @@ namespace HHsystem.Controllers
         DatabaseManager manager = new DatabaseManager();
 
 
-        public void add(string username, string phone, string email, string password)
+        public void add(string uname, string fname, string lname, string phone, string email, string password)
         {
-            if (username == "" || phone == "" || email == "" || password == "")
+            if (uname == "" || phone == "" || email == "" || password == "")
             {
                 MessageBox.Show("Please fill out all the fields.");
             }
             else
             {
-                manager.addEmployee(username,email,phone,password);
+                manager.addEmployee(uname, fname, lname, email,phone,password);
                 MessageBox.Show("New employee has been added.");
             }
         }

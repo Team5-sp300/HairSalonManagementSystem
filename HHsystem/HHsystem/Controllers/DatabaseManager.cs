@@ -127,12 +127,18 @@ namespace HHsystem.Controllers
             return loginDetails;
         }
         
-        public void addEmployee(string name, string email, string phone, string password)
+        public void addEmployee(string uname, string fname, string lname, string email, string phone, string password)
         {
-            string command = "CALL addEmployee('" + name + "', " + email + "', " + phone + "', " + password + "')";
+            string command = "CALL insertEmployee(?username,?fname,?lname,?email,?phone,?password)";
             connection();
             MessageBox.Show(command);
             cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?username", uname);
+            cmd.Parameters.AddWithValue("?fname", fname);
+            cmd.Parameters.AddWithValue("?lname", lname);
+            cmd.Parameters.AddWithValue("?email", email);
+            cmd.Parameters.AddWithValue("?phone", phone);
+            cmd.Parameters.AddWithValue("?password", password);
             cmd.ExecuteNonQuery();
 
             conn.Close();
