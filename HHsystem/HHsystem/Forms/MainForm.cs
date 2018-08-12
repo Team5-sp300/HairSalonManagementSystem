@@ -26,7 +26,8 @@ namespace HHsystem
             populateTable();
             addAdppointments();
             populateWeeks();
-            comboBox1.SelectedIndex = 0;
+            populateNames();
+            
         }
 
         public void populateTable()
@@ -85,6 +86,16 @@ namespace HHsystem
                 var endDate = startOfWeek.AddDays(7);
                 comboBox1.Items.Add(startOfWeek.ToString("dd/MM") + "-" + endDate.ToString("dd/MM"));
             }
+            comboBox1.SelectedIndex = 0;
+        }
+
+        public void populateNames()
+        {
+            for (int i = 0; i < manager.getClientDetails().GetLength(0); i++)
+            {   
+                comboBox2.Items.Add(manager.getClientDetails()[i,1]+" "+ manager.getClientDetails()[i, 2]);
+            }
+            comboBox2.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -193,12 +204,44 @@ namespace HHsystem
             customWeeklyScheduler1.setWeekNo(comboBox1.SelectedIndex);
         }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int arraySize = manager.getClientDetails().GetLength(0);
+            string[,] clientDetails = new string[arraySize, 5];
+            Array.Copy(manager.getClientDetails(), clientDetails, clientDetails.Length);
+            for (int i = 0; i < clientDetails.GetLength(0); i++)
+            {
+                string name = clientDetails[i, 1] + " " + clientDetails[i, 2];
+                if (name.Equals(comboBox2.SelectedItem))
+                {
+                    cnametxt.Text = name;
+                    cphonetxt.Text = clientDetails[i, 3];
+                    cemail.Text = clientDetails[i, 4];
+                    table = new DataTable();
+                    manager.getBooking(clientDetails[i, 0]).Fill(table);
+                    bindingSource.DataSource = table;
+                    dataGridView7.DataSource = bindingSource;
+                    table.Columns[0].ColumnName = "Stylist";
+                }
+            }
+        }
+
         private void button15_Click(object sender, EventArgs e)
         {
             //this.Width = 1000;
             //this.Height = 800;
             this.WindowState = FormWindowState.Maximized;
             customWeeklyScheduler1.redraws(this.Width-200, this.Height-205);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            customTabControl4.SelectedIndex = 1;
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            customTabControl4.SelectedIndex = 0;
         }
     }
 }

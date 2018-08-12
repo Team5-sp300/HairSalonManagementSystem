@@ -68,6 +68,28 @@ namespace HHsystem.Controllers
             return adapter;
         }
 
+        public MySqlDataAdapter getBooking(string id)
+        {
+            try
+            {
+                string command = "Call getBookingHistory("+id+")";
+                connection();
+                //cmd.Parameters.AddWithValue("?id", id);
+                cmd = new MySqlCommand(command, conn);
+                adapter = new MySqlDataAdapter
+                {
+                    SelectCommand = cmd
+                };
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                //throw;
+            }
+            return adapter;
+        }
+
         public string[,] getBookingDetails()
         {
             string[,] bookingDetails = null;
@@ -106,6 +128,7 @@ namespace HHsystem.Controllers
             return bookingDetails;
         }
 
+
         public MySqlDataAdapter getClients()
         {
             try
@@ -127,6 +150,85 @@ namespace HHsystem.Controllers
                 //throw;
             }
             return adapter;
+        }
+
+        public string[,] getClientDetails()
+        {
+            string[,] clientDetails = null;
+            string command = "Call getCustomer";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            MySqlDataReader result = cmd.ExecuteReader();
+
+            int i = 0;
+            int arrySize = 0;
+
+            if (result != null)
+            {
+                while (result.Read())
+                {
+                    arrySize++;
+                }
+
+                result.Close();
+
+                clientDetails = new string[arrySize, 5];
+
+                cmd = new MySqlCommand(command, conn);
+                result = cmd.ExecuteReader();
+
+                while (result.Read())
+
+                {
+                    clientDetails[i, 0] = result[0].ToString();
+                    clientDetails[i, 1] = result[1].ToString();
+                    clientDetails[i, 2] = result[2].ToString();
+                    clientDetails[i, 3] = result[3].ToString();
+                    clientDetails[i, 4] = result[4].ToString();
+                    i++;
+                }
+            }
+            return clientDetails;
+        }
+
+        public string[,] getClientDetails(string fname,string lname)
+        {
+            string[,] clientDetails = null;
+            string command = "Call getCustomerDetails(?fname,?lname)";
+            connection();
+            cmd.Parameters.AddWithValue("?fname", fname);
+            cmd.Parameters.AddWithValue("?lname", lname);
+            cmd = new MySqlCommand(command, conn);
+            MySqlDataReader result = cmd.ExecuteReader();
+
+            int i = 0;
+            int arrySize = 0;
+
+            if (result != null)
+            {
+                while (result.Read())
+                {
+                    arrySize++;
+                }
+
+                result.Close();
+
+                clientDetails = new string[arrySize, 4];
+
+                cmd = new MySqlCommand(command, conn);
+                result = cmd.ExecuteReader();
+
+                while (result.Read())
+
+                {
+                    clientDetails[i, 0] = result[0].ToString();
+                    clientDetails[i, 1] = result[1].ToString();
+                    clientDetails[i, 2] = result[2].ToString();
+                    clientDetails[i, 3] = result[3].ToString();
+                    i++;
+                }
+            }
+            return clientDetails;
         }
 
         public string[,] login()
