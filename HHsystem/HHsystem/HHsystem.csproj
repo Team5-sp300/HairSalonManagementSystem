@@ -100,6 +100,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Componets\CustomWeeklyScheduler.resx">
+      <DependentUpon>CustomWeeklyScheduler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddClientForm.resx">
       <DependentUpon>AddClientForm.cs</DependentUpon>
     </EmbeddedResource>

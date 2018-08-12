@@ -301,10 +301,11 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(477, 30);
+            this.label4.Location = new System.Drawing.Point(450, 34);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 25);
             this.label4.TabIndex = 12;
@@ -312,6 +313,8 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -325,6 +328,9 @@
             // 
             // customTabControl2
             // 
+            this.customTabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.customTabControl2.Controls.Add(this.tabPage6);
             this.customTabControl2.Controls.Add(this.tabPage7);
             this.customTabControl2.Location = new System.Drawing.Point(0, 88);
@@ -346,10 +352,10 @@
             // 
             // customWeeklyScheduler1
             // 
-            this.customWeeklyScheduler1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.customWeeklyScheduler1.Location = new System.Drawing.Point(7, 0);
+            this.customWeeklyScheduler1.BackColor = System.Drawing.Color.White;
+            this.customWeeklyScheduler1.Location = new System.Drawing.Point(3, 3);
             this.customWeeklyScheduler1.Name = "customWeeklyScheduler1";
-            this.customWeeklyScheduler1.Size = new System.Drawing.Size(600, 400);
+            this.customWeeklyScheduler1.Size = new System.Drawing.Size(608, 400);
             this.customWeeklyScheduler1.TabIndex = 10;
             // 
             // tabPage7
@@ -365,6 +371,9 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -373,16 +382,17 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.Size = new System.Drawing.Size(598, 391);
+            this.dataGridView2.Size = new System.Drawing.Size(598, 361);
             this.dataGridView2.TabIndex = 15;
             // 
             // button18
             // 
+            this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button18.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.Location = new System.Drawing.Point(535, 23);
+            this.button18.Location = new System.Drawing.Point(508, 27);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(40, 40);
             this.button18.TabIndex = 13;
@@ -391,11 +401,12 @@
             // 
             // button17
             // 
+            this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button17.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.Location = new System.Drawing.Point(576, 23);
+            this.button17.Location = new System.Drawing.Point(549, 27);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(40, 40);
             this.button17.TabIndex = 12;
@@ -443,6 +454,9 @@
             // 
             // dataGridView3
             // 
+            this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -482,6 +496,9 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -532,6 +549,7 @@
             this.button15.TabIndex = 17;
             this.button15.Text = "Change Resolution";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 

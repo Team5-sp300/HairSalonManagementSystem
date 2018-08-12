@@ -18,12 +18,8 @@ namespace HHsystem
     {
 
         DatabaseManager manager = new DatabaseManager();
-        DataTable table;
-        private String[] appointments;
-        private String[] time;
-        private String[] name;
-        private int[] duration;
-
+        DataTable table;  
+   
         public MainForm()
         {
             InitializeComponent();
@@ -47,11 +43,6 @@ namespace HHsystem
         }
 
         public void addAdppointments() {
-            appointments = new String[] { "13/08", "15/08", "21/08" };
-            time = new String[] { "9:00", "13:00", "15:00" };
-            name = new String[] { "Mary", "Sarah", "Emma" };
-            duration = new int[] { 2, 2, 1 };
-          //  customWeeklyScheduler1.setAppointment(appointments, time, name, duration);
             customWeeklyScheduler1.setAppointment(manager.getBookingDetails());
         }
 
@@ -200,6 +191,13 @@ namespace HHsystem
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             customWeeklyScheduler1.setWeekNo(comboBox1.SelectedIndex);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            this.Width = 1000;
+            this.Height = 800;
+            customWeeklyScheduler1.redraws(800, 600);
         }
     }
 }

@@ -11,11 +11,14 @@ namespace HHsystem.Componets
 {
     class WeeklyScheduler : Panel
     {
+      
 
         public WeeklyScheduler()
         {
             rows = 9;
             colums = 5;
+            width = 600;
+            height=400;
             Initialize();
         }
 
@@ -40,7 +43,7 @@ namespace HHsystem.Componets
             addAppointments();
         }
 
-        public void addAppointments()
+        private void addAppointments()
         {
             int k = 0;
             for (int j = 0; j < bookingDetails.GetLength(0); j++)
@@ -103,7 +106,7 @@ namespace HHsystem.Componets
         {
             for (int i = 0; i < 5; i++)
             {
-                headers[i + 1].Text = dates[i];
+                headersColumm[i + 1].Text = dates[i];
 
             }
         }
@@ -128,16 +131,37 @@ namespace HHsystem.Componets
             }
         }
 
+        public void redraws(int wth,int hght)
+        {
+            width = wth;
+            height = hght;
+            for (int i = 0; i < cells.GetLength(0); i++)
+            {
 
+                for (int j = 0; j < cells.GetLength(1); j++)
+                {
+                    Controls.Remove(this.cells[i, j]);
+                }
+            }
 
+            for (int i = 0; i < headersColumm.Length; i++)
+            {
+                Controls.Remove(headersColumm[i]);
+            }
+
+            for (int i = 0; i < headersRow.Length; i++)
+            {
+                Controls.Remove(headersRow[i]);
+            }
+            Initialize();
+            addAppointments();
+        }
 
         private void Initialize()
         {
-
             getCurrentDate();
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Name = "mainPanel";
-            this.Size = new System.Drawing.Size(600, 400);
+            this.Size = new System.Drawing.Size(width, height);
             y = (this.Width) / (colums + 1);
             x = (this.Height) / (rows + 1);
             yheader = (int)(y * 0.5);
@@ -160,14 +184,12 @@ namespace HHsystem.Componets
                         header.Location = new System.Drawing.Point(0, 0);
                         header.Size = new System.Drawing.Size(yheader, xheader);
                         this.Controls.Add(this.header);
+                        headersRow[0]=header;
                     }
                     else if (j == 0 && i != 0)
                     {
-                        //headers = null;
-                        //headers = new Label[7];
                         header = new Label();
                         header.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-                        // header.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                         header.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                         header.Location = new System.Drawing.Point(((i * yInterval) - yheader - (int)errorCorrection), j * xInterval);
                         header.Name = "Header" + i;
@@ -177,8 +199,8 @@ namespace HHsystem.Componets
                         header.Font = new System.Drawing.Font("Arial", 11.25F);
                         header.TextAlign = ContentAlignment.TopCenter;
                         header.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-                        headers[i] = header;
-                        this.Controls.Add(this.headers[i]);
+                        headersColumm[i] = header;
+                        this.Controls.Add(this.headersColumm[i]);
                     }
                     else if (i == 0 && j != 0)
                     {
@@ -194,6 +216,7 @@ namespace HHsystem.Componets
                         header.TextAlign = ContentAlignment.TopLeft;
                         header.Font = new System.Drawing.Font("Arial", 11.25F);
                         header.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+                        headersRow[j] = header;
                         this.Controls.Add(this.header);
                     }
                     else
@@ -224,7 +247,8 @@ namespace HHsystem.Componets
             }
         }
 
-
+        private int width;
+        private int height;
         private Label header;
         private Label cell;
         private String[] days = new String[] { "", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun" };
@@ -234,7 +258,8 @@ namespace HHsystem.Componets
         private int yInterval, xInterval;
         private int rows, colums;
         private Label[,] cells = new Label[20, 20];
-        private Label[] headers = new Label[7];
+        private Label[] headersColumm = new Label[7];
+        private Label[] headersRow = new Label[10];
         //private List<DateTime> dates;
         private int weeknum = 0;
         private string[] dates = new string[7];
