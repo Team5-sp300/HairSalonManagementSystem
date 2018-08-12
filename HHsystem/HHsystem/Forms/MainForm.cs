@@ -195,9 +195,10 @@ namespace HHsystem
 
         private void button15_Click(object sender, EventArgs e)
         {
-            this.Width = 1000;
-            this.Height = 800;
-            customWeeklyScheduler1.redraws(800, 600);
+            //this.Width = 1000;
+            //this.Height = 800;
+            this.WindowState = FormWindowState.Maximized;
+            customWeeklyScheduler1.redraws(this.Width-200, this.Height-205);
         }
     }
 }
