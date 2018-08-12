@@ -47,11 +47,12 @@ namespace HHsystem
         }
 
         public void addAdppointments() {
-            appointments = new String[] { "06/08", "07/08", "14/08" };
+            appointments = new String[] { "13/08", "15/08", "21/08" };
             time = new String[] { "9:00", "13:00", "15:00" };
             name = new String[] { "Mary", "Sarah", "Emma" };
             duration = new int[] { 2, 2, 1 };
-            customWeeklyScheduler1.addAppointment(appointments, time, name, duration);
+          //  customWeeklyScheduler1.setAppointment(appointments, time, name, duration);
+            customWeeklyScheduler1.setAppointment(manager.getBookingDetails());
         }
 
         public void populateBookingTable()
@@ -104,7 +105,7 @@ namespace HHsystem
         {
             customTabControl1.SelectedIndex = 1;
             this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            label3.Text = "Appointment";
+            label3.Text = "Appointments";
 
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;

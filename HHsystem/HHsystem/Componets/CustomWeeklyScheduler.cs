@@ -11,11 +11,6 @@ namespace HHsystem.Componets
 {
     class WeeklyScheduler : Panel
     {
-        String[] date;
-        String[] time;
-        String[] description;
-            int[] duration;
-
 
         public WeeklyScheduler()
         {
@@ -24,47 +19,56 @@ namespace HHsystem.Componets
             Initialize();
         }
 
-        public void addAppointment(String[] date, String[] time, String[] description, int[] duration)
+        public void setAppointment(String[] date, String[] time, String[] description, int[] duration)
         {
-           this.date=new String[date.Length];
-            this.time = new String[date.Length];
-            this.description= new String[date.Length];
-            this.duration= new int[date.Length];
-            Array.Copy(date, this.date,  date.Length);
-            Array.Copy(time, this.time,  time.Length);
-            Array.Copy(description, this.description, description.Length);
-            Array.Copy(duration, this.duration, duration.Length);
+            bookingDetails = new string[date.Length, 4];
+            for (int i = 0; i < date.Length; i++)
+            {
+                bookingDetails[i, 0] = description[i];
+                bookingDetails[i, 1] = date[i];
+                bookingDetails[i, 2] = time[i];
+                bookingDetails[i, 3] = duration[i].ToString();
+            }
+
             addAppointments();
         }
 
-        public void addAppointments() {
+        public void setAppointment(string[,] bookingDetails)
+        {
+            this.bookingDetails = new string[bookingDetails.GetLength(0), bookingDetails.GetLength(1)];
+            Array.Copy(bookingDetails, this.bookingDetails, bookingDetails.Length);
+            addAppointments();
+        }
+
+        public void addAppointments()
+        {
             int k = 0;
-            for (int j = 0; j < date.Length; j++)
+            for (int j = 0; j < bookingDetails.GetLength(0); j++)
             {
                 for (int i = 0; i < dates.Length; i++)
                 {
 
-                    if (date[j].Equals(dates[i]))
+                    if (bookingDetails[j, 1].Equals(dates[i]))
                     {
                         for (int m = 0; m < times.Length; m++)
                         {
-                            if (time[j].Equals(times[m]))
+                            if (bookingDetails[j, 2].Equals(times[m]))
                             {
-                                if (duration[j] == 2)
+                                if (Int32.Parse(bookingDetails[j, 3]) == 2)
                                 {
                                     k = i + 1;
                                     cells[i + 1, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m + 1].BackColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
                                     cells[k, m + 1].BorderStyle = System.Windows.Forms.BorderStyle.None;
-                                    cells[k, m].Text = time[j] + " \n" + description[j];
+                                    cells[k, m].Text = bookingDetails[j, 2] + " \n" + bookingDetails[j, 0];
                                 }
                                 else
                                 {
                                     k = i + 1;
                                     cells[k, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
-                                    cells[k, m].Text = time[j] + " \n" + description[j];
+                                    cells[k, m].Text = bookingDetails[j, 2] + " \n" + bookingDetails[j, 0];
                                 }
                             }
                         }
@@ -72,20 +76,6 @@ namespace HHsystem.Componets
                 }
             }
         }
-
-
-        //  public void getCurrentDate()
-        //  {
-        //      int weekNo = weeknum;
-        //      DateTime startOfWeek = DateTime.Today.AddDays(
-        //(int)CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek -
-        //(int)DateTime.Today.DayOfWeek+1+ weekNo);
-
-        //      var startDate = DateTime.Today;
-        //      var endDate = startDate.AddDays(7);
-        //      var numDays = (int)((endDate - startDate).TotalDays);
-        //      dates = Enumerable.Range(0, numDays).Select(x => startOfWeek.AddDays(x)).ToList();
-        //  }
 
         public void getCurrentDate()
         {
@@ -102,7 +92,7 @@ namespace HHsystem.Componets
 
         public void setWeekNo(int number)
         {
-            weeknum = number*7;
+            weeknum = number * 7;
             getCurrentDate();
             setHeaders();
             setCells();
@@ -113,7 +103,7 @@ namespace HHsystem.Componets
         {
             for (int i = 0; i < 5; i++)
             {
-                headers[i+1].Text = dates[i];
+                headers[i + 1].Text = dates[i];
 
             }
         }
@@ -125,7 +115,7 @@ namespace HHsystem.Componets
                 for (int i = 1; i <= colums; i++)
                 {
                     cells[i, j].BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-                    cells[i, j].Text ="";
+                    cells[i, j].Text = "";
                     if (i % 2 == 1)
                     {
                         cells[i, j].BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -143,7 +133,7 @@ namespace HHsystem.Componets
 
         private void Initialize()
         {
-  
+
             getCurrentDate();
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Name = "mainPanel";
@@ -248,6 +238,7 @@ namespace HHsystem.Componets
         //private List<DateTime> dates;
         private int weeknum = 0;
         private string[] dates = new string[7];
+        string[,] bookingDetails;
         //private String[] appointments;
         //private String[] time;
     }

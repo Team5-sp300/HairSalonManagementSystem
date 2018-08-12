@@ -68,6 +68,44 @@ namespace HHsystem.Controllers
             return adapter;
         }
 
+        public string[,] getBookingDetails()
+        {
+            string[,] bookingDetails = null;
+            string command = "Call getBookingDetails";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            MySqlDataReader result = cmd.ExecuteReader();
+
+            int i = 0;
+            int arrySize = 0;
+
+            if (result != null)
+            {
+                while (result.Read())
+                {
+                    arrySize++;
+                }
+
+                result.Close();
+
+                bookingDetails = new string[arrySize, 4];
+
+                cmd = new MySqlCommand(command, conn);
+                result = cmd.ExecuteReader();
+
+                while (result.Read())
+
+                {
+                    bookingDetails[i, 0] = result[0].ToString();
+                    bookingDetails[i, 1] = result[1].ToString();
+                    bookingDetails[i, 2] = result[2].ToString();
+                    bookingDetails[i, 3] = result[3].ToString();
+                    i++;
+                }
+            }
+            return bookingDetails;
+        }
+
         public MySqlDataAdapter getClients()
         {
             try
@@ -126,6 +164,7 @@ namespace HHsystem.Controllers
             }
             return loginDetails;
         }
+
         
         public void addEmployee(string uname, string fname, string lname, string email, string phone, string password)
         {
