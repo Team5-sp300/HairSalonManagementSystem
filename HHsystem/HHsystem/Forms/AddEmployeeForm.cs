@@ -19,7 +19,7 @@ namespace HHsystem.Forms
         {
             InitializeComponent();
             Random rnd = new Random();
-            id = rnd.Next(1, 101); ;
+            id = rnd.Next(100, 1000); ;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -66,13 +66,39 @@ namespace HHsystem.Forms
         private void nametxt_TextChanged(object sender, EventArgs e)
         {
             fnametxt = sender as TextBox;
-            usernametxt.Text =fnametxt.Text + lnametxt.Text+ id;
+            if (fnametxt.Text.Length >= 3 && lnametxt.Text.Length >= 3)
+            {
+                usernametxt.Text = fnametxt.Text.Substring(0, 3) + lnametxt.Text.Substring(0, 3) + id;
+            }
+            else if (fnametxt.Text.Length >= 3 && lnametxt.Text=="")
+            {
+                usernametxt.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
+            }
+           else if(lnametxt.Text == ""){
+                usernametxt.Text = fnametxt.Text + lnametxt.Text + id;
+            }
+            else if (lnametxt.Text != "")
+            {
+                usernametxt.Text = fnametxt.Text+ lnametxt.Text.Substring(0, 3) + id;
+            }
         }
 
         private void lnameTxt_TextChanged(object sender, EventArgs e)
         {
             lnametxt = sender as TextBox;
-            usernametxt.Text = fnametxt.Text + lnametxt.Text + id;
+
+            if (fnametxt.Text.Length >= 3 && lnametxt.Text.Length >= 3)
+            {
+                usernametxt.Text = fnametxt.Text.Substring(0, 3) + lnametxt.Text.Substring(0, 3) + id;
+            }
+            else if (lnametxt.Text.Length >= 3 && fnametxt.Text == "")
+            {
+                usernametxt.Text = fnametxt.Text + lnametxt.Text.Substring(0, 3) + id;
+            }
+            else if (fnametxt.Text != "")
+            {
+                usernametxt.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
+            }
         }
     }
 }
