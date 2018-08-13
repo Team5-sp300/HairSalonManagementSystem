@@ -17,7 +17,8 @@ namespace HHmobileApp
     public class ClientInformatin : AppCompatActivity
     {
 
-        List<ClientDetails> items;
+        List<string> items;
+        ListView listview;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -27,17 +28,17 @@ namespace HHmobileApp
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
-            TextView fname = FindViewById<TextView>(Resource.Id.textView3);
-            fname.Text = Intent.GetStringExtra("fname");
+            listview = FindViewById<ListView>(Resource.Id.listView1);
 
-            TextView lname = FindViewById<TextView>(Resource.Id.textView5);
-            lname.Text = Intent.GetStringExtra("lname");
+            items = new List<string>();
+            items.Add(Intent.GetStringExtra("fname"));
+            items.Add(Intent.GetStringExtra("lname"));
+            items.Add(Intent.GetStringExtra("number"));
+            items.Add(Intent.GetStringExtra("email"));
 
-            TextView number = FindViewById<TextView>(Resource.Id.textView7);
-            number.Text = Intent.GetStringExtra("number");
+            ClientDetailsListAdapter adapter = new ClientDetailsListAdapter(this, items);
+            listview.Adapter = adapter;
 
-            TextView email = FindViewById<TextView>(Resource.Id.textView9);
-            email.Text = Intent.GetStringExtra("email");
         }
     }
 }

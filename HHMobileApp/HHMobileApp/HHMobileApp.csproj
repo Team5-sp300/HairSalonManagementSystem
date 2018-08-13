@@ -61,7 +61,9 @@
     <Compile Include="ClientActivity.cs" />
     <Compile Include="BookingActivity.cs" />
     <Compile Include="BookingInformatin.cs" />
+    <Compile Include="BookingDetailsListAdapter.cs" />
     <Compile Include="ClientInformatin.cs" />
+    <Compile Include="ClientDetailsListAdapter.cs" />
     <Compile Include="ClientListAdapter.cs" />
     <Compile Include="ClientInsert.cs" />
     <Compile Include="LoginActivity.cs" />
@@ -198,6 +200,11 @@
   <ItemGroup>
     <AndroidResource Include="Resources\layout\booking_details.axml">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\details_listview_row.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
