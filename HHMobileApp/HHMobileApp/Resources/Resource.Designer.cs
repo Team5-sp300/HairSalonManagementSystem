@@ -2591,14 +2591,14 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f0800a5
 			public const int etNumber = 2131230885;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int etPass = 2131230909;
+			// aapt resource value: 0x7f0800bc
+			public const int etPass = 2131230908;
 			
 			// aapt resource value: 0x7f08009c
 			public const int etTime = 2131230876;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int etusername = 2131230908;
+			// aapt resource value: 0x7f0800bb
+			public const int etusername = 2131230907;
 			
 			// aapt resource value: 0x7f080041
 			public const int exitUntilCollapsed = 2131230785;
@@ -2891,8 +2891,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f08001b
 			public const int text2 = 2131230747;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int textError = 2131230907;
+			// aapt resource value: 0x7f0800bd
+			public const int textError = 2131230909;
 			
 			// aapt resource value: 0x7f08006a
 			public const int textSpacerNoButtons = 2131230826;

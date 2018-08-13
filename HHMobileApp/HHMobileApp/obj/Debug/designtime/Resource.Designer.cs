@@ -2534,14 +2534,14 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F020028
 			public const int etNumber = 2130837544;
 			
-			// aapt resource value: 0x7F020038
-			public const int etPass = 2130837560;
+			// aapt resource value: 0x7F020037
+			public const int etPass = 2130837559;
 			
 			// aapt resource value: 0x7F020019
 			public const int etTime = 2130837529;
 			
-			// aapt resource value: 0x7F020037
-			public const int etusername = 2130837559;
+			// aapt resource value: 0x7F020036
+			public const int etusername = 2130837558;
 			
 			// aapt resource value: 0x7F0C0030
 			public const int expanded_menu = 2131492912;
@@ -2798,8 +2798,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0018
 			public const int text2 = 2131492888;
 			
-			// aapt resource value: 0x7F020036
-			public const int textError = 2130837558;
+			// aapt resource value: 0x7F020038
+			public const int textError = 2130837560;
 			
 			// aapt resource value: 0x7F0C007E
 			public const int textinput_counter = 2131492990;

@@ -3037,9 +3037,9 @@ containing a value of this type.
         public static int etFname=0x7f0800a3;
         public static int etLname=0x7f0800a4;
         public static int etNumber=0x7f0800a5;
-        public static int etPass=0x7f0800bd;
+        public static int etPass=0x7f0800bc;
         public static int etTime=0x7f08009c;
-        public static int etusername=0x7f0800bc;
+        public static int etusername=0x7f0800bb;
         public static int exitUntilCollapsed=0x7f080041;
         public static int expand_activities_button=0x7f08005e;
         public static int expanded_menu=0x7f080072;
@@ -3137,7 +3137,7 @@ containing a value of this type.
         public static int tag_transition_group=0x7f080019;
         public static int text=0x7f08001a;
         public static int text2=0x7f08001b;
-        public static int textError=0x7f0800bb;
+        public static int textError=0x7f0800bd;
         public static int textSpacerNoButtons=0x7f08006a;
         public static int textSpacerNoTitle=0x7f080069;
         public static int textView1=0x7f08008e;

@@ -13,38 +13,47 @@
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <TextView
-        android:text="Invalid Username/Password"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#db1111"
-        android:id="@+id/textError"
-        android:gravity="center"
-        android:visibility="invisible" />
-    <TextView
-        android:text="Username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etusername" />
-    <TextView
-        android:text="Password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2" />
-    <EditText
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etPass" />
-    <Button
-        android:text="Sign in"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btninsert"
-        android:background="@layout/button_border_settings"
-        android:textColor="#3399ff" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etusername" />
+            <TextView
+                android:text="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPass" />
+            <TextView
+                android:text="Invalid Username/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#db1111"
+                android:id="@+id/textError"
+                android:gravity="center"
+                android:visibility="invisible" />
+            <Button
+                android:text="Sign in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btninsert"
+                android:background="@layout/button_border_settings"
+                android:textColor="#3399ff" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

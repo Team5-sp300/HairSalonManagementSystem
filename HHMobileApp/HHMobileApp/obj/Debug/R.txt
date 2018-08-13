@@ -821,9 +821,9 @@ int id etEname 0x7f08009a
 int id etFname 0x7f0800a3
 int id etLname 0x7f0800a4
 int id etNumber 0x7f0800a5
-int id etPass 0x7f0800bd
+int id etPass 0x7f0800bc
 int id etTime 0x7f08009c
-int id etusername 0x7f0800bc
+int id etusername 0x7f0800bb
 int id exitUntilCollapsed 0x7f080041
 int id expand_activities_button 0x7f08005e
 int id expanded_menu 0x7f080072
@@ -921,7 +921,7 @@ int id tabMode 0x7f08001f
 int id tag_transition_group 0x7f080019
 int id text 0x7f08001a
 int id text2 0x7f08001b
-int id textError 0x7f0800bb
+int id textError 0x7f0800bd
 int id textSpacerNoButtons 0x7f08006a
 int id textSpacerNoTitle 0x7f080069
 int id textView1 0x7f08008e
