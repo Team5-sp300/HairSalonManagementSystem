@@ -35,7 +35,7 @@ namespace HHsystem.Controllers
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
                 mail.From = new MailAddress("SP300Test@gmail.com");
-                mail.To.Add("eric_odding@hotmail.com, swabe@live.co.za");
+                mail.To.Add("swabe@live.co.za");
                 mail.Subject = "Confirmation of Appointment for";
                 //mail.Body = "Dear " + client + "\n\n" +
                 //    "We hereby confirm your appointment at Heydt of Hair Design as follows:\n\n" +
@@ -50,7 +50,7 @@ namespace HHsystem.Controllers
                     body = reader.ReadToEnd();
                     
                 }
-                body = body.Replace("?@client", employee);
+                body = body.Replace("?@client", client);
                 body =body.Replace("?@employee", employee);
                 body=body.Replace("?@date", date);
                 body=body.Replace("?@time", time);
