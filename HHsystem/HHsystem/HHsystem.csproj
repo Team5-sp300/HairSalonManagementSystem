@@ -72,8 +72,15 @@
     </Compile>
     <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\DatabaseManager.cs" />
+    <Compile Include="Controllers\EmailController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Forms\AddBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddBookingForm.Designer.cs">
+      <DependentUpon>AddBookingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +109,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Componets\CustomWeeklyScheduler.resx">
       <DependentUpon>CustomWeeklyScheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddBookingForm.resx">
+      <DependentUpon>AddBookingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddClientForm.resx">
       <DependentUpon>AddClientForm.cs</DependentUpon>

@@ -243,5 +243,10 @@ namespace HHsystem
         {
             customTabControl4.SelectedIndex = 0;
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            new AddBookingForm().Show();
+        }
     }
 }

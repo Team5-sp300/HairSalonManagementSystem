@@ -45,6 +45,46 @@ namespace HHsystem.Controllers
             return adapter;
         }
 
+        public string[,] getEmployeeDetails()
+        {
+            string[,] employeeDetails = null;
+            string command = "Call getEmployee";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            MySqlDataReader result = cmd.ExecuteReader();
+
+            int i = 0;
+            int arrySize = 0;
+
+            if (result != null)
+            {
+                while (result.Read())
+                {
+                    arrySize++;
+                }
+
+                result.Close();
+
+                employeeDetails = new string[arrySize, 6];
+
+                cmd = new MySqlCommand(command, conn);
+                result = cmd.ExecuteReader();
+
+                while (result.Read())
+
+                {
+                    employeeDetails[i, 0] = result[0].ToString();
+                    employeeDetails[i, 1] = result[1].ToString();
+                    employeeDetails[i, 2] = result[2].ToString();
+                    employeeDetails[i, 3] = result[3].ToString();
+                    employeeDetails[i, 4] = result[4].ToString();
+                    employeeDetails[i, 5] = result[5].ToString();
+                    i++;
+                }
+            }
+            return employeeDetails;
+        }
+
         public MySqlDataAdapter getBooking()
         {
             try
@@ -190,7 +230,7 @@ namespace HHsystem.Controllers
             }
             return clientDetails;
         }
-
+                
         public string[,] getClientDetails(string fname,string lname)
         {
             string[,] clientDetails = null;
