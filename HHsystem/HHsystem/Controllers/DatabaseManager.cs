@@ -108,13 +108,36 @@ namespace HHsystem.Controllers
             return adapter;
         }
 
-        public MySqlDataAdapter getBooking(string id)
+        public MySqlDataAdapter getBookingHistory(string id)
         {
             try
             {
                 string command = "Call getBookingHistory("+id+")";
                 connection();
-                //cmd.Parameters.AddWithValue("?id", id);
+               cmd.Parameters.AddWithValue("?id", id).ToString();
+                cmd = new MySqlCommand(command, conn);
+                adapter = new MySqlDataAdapter
+                {
+                    SelectCommand = cmd
+                };
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                //throw;
+            }
+            conn.Close();
+            return adapter;
+        }
+
+        public MySqlDataAdapter getBookingSchedule(string username)
+        {
+            try
+            {
+                string command = "Call getBookingSchedule (?username)";
+                connection();
+                cmd.Parameters.AddWithValue("?username", username);
                 cmd = new MySqlCommand(command, conn);
                 adapter = new MySqlDataAdapter
                 {

@@ -34,7 +34,7 @@ C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.Add
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.AddClientForm.resources
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.AddEmployeeForm.resources
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Componets.WeeklyScheduler.resources
-C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.csprojAssemblyReference.cache
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Componets.WeeklyScheduler.resources
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.AddBookingForm.resources
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.AddBookingForm.resources
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.csprojAssemblyReference.cache

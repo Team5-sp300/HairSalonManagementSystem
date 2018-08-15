@@ -27,7 +27,7 @@ namespace HHsystem
             addAdppointments();
             populateWeeks();
             populateNames();
-            
+            populateEmployees();
         }
 
         public void populateTable()
@@ -96,6 +96,15 @@ namespace HHsystem
                 comboBox2.Items.Add(manager.getClientDetails()[i,1]+" "+ manager.getClientDetails()[i, 2]);
             }
             comboBox2.SelectedIndex = 0;
+        }
+
+        public void populateEmployees()
+        {
+            for (int i = 0; i < manager.getEmployeeDetails().GetLength(0); i++)
+            {
+                comboBox3.Items.Add(manager.getEmployeeDetails()[i, 1] + " " + manager.getEmployeeDetails()[i, 2]);
+            }
+            comboBox3.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -218,18 +227,38 @@ namespace HHsystem
                     cphonetxt.Text = clientDetails[i, 3];
                     cemail.Text = clientDetails[i, 4];
                     table = new DataTable();
-                    manager.getBooking(clientDetails[i, 0]).Fill(table);
-                    bindingSource.DataSource = table;
-                    dataGridView7.DataSource = bindingSource;
+                    manager.getBookingHistory(clientDetails[i, 0]).Fill(table);
+                    bindingSource3.DataSource = table;
+                    dataGridView7.DataSource = bindingSource3;
                     table.Columns[0].ColumnName = "Stylist";
                 }
             }
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //this.Width = 1000;
-            //this.Height = 800;
+            int arraySize = manager.getEmployeeDetails().GetLength(0);
+            string[,] employeeDetails = new string[arraySize, 6];
+            Array.Copy(manager.getEmployeeDetails(), employeeDetails, employeeDetails.Length);
+            for (int i = 0; i < employeeDetails.GetLength(0); i++)
+            {
+                string name = employeeDetails[i, 1] + " " + employeeDetails[i, 2];
+                if (name.Equals(comboBox3.SelectedItem))
+                {
+                    enametxt.Text = name;
+                    ephonetxt.Text = employeeDetails[i, 4];
+                    eemail.Text = employeeDetails[i, 5];
+                    table = new DataTable();
+                    string test = employeeDetails[i, 0];
+                    manager.getBooking().Fill(table);
+                    bindingSource4.DataSource = table;
+                    dataGridView8.DataSource = bindingSource4;
+                }
+            }
+        }
+
+            private void button15_Click(object sender, EventArgs e)
+        {
             this.WindowState = FormWindowState.Maximized;
             customWeeklyScheduler1.redraws(this.Width-200, this.Height-205);
         }
@@ -248,5 +277,18 @@ namespace HHsystem
         {
             new AddBookingForm().Show();
         }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            customTabControl5.SelectedIndex = 0;
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            customTabControl5.SelectedIndex = 1;
+        }
+
+     
+        }
     }
-}
+
