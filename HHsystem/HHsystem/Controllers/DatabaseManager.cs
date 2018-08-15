@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -115,11 +116,11 @@ namespace HHsystem.Controllers
             try
             {
                 
-                string command = "Call getBookingHistory("+id+")";
+                string command = "Call getBookingHistory (?id)";
                 connection();
-            //    cmd.Parameters["?id"].Value = id;
-              //   cmd.Parameters.AddWithValue("?id", id).ToString();
                 cmd = new MySqlCommand(command, conn);
+                cmd.Parameters.AddWithValue("?id", id);
+
                 adapter = new MySqlDataAdapter
                 {
                     SelectCommand = cmd
@@ -138,12 +139,11 @@ namespace HHsystem.Controllers
         {
             try
             {
-                string command = "Call getEmployeeSchedule(AndrewSchwabe1)";
+                string command = "Call getEmployeeSchedule (?username)";
                 connection();
-                cmd.Parameters.AddWithValue("?username", "AndrewSchwabe1");
-                //cmd.Parameters["?username"].Value = "AndrewSchwabe1";
                 cmd = new MySqlCommand(command, conn);
-               // cmd.ExecuteNonQuery();
+                cmd.Parameters.AddWithValue("?username", id);
+
                 adapter = new MySqlDataAdapter
                 {
                     SelectCommand = cmd

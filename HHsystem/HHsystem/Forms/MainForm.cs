@@ -249,9 +249,10 @@ namespace HHsystem
                     ephonetxt.Text = employeeDetails[i, 4];
                     eemail.Text = employeeDetails[i, 5];
                     table = new DataTable();
-                    //manager.getEmployeeSchedule(employeeDetails[i, 0]).Fill(table);
+                    manager.getEmployeeSchedule(employeeDetails[i, 0]).Fill(table);
                     bindingSource4.DataSource = table;
                     dataGridView8.DataSource = bindingSource4;
+                    table.Columns[0].ColumnName = "Clients";
                 }
             }
         }
