@@ -88,7 +88,7 @@ namespace HHsystem.Componets
       (int)DateTime.Today.DayOfWeek + 1 + weekNo);
             for (int i = 0; i < dates.Length; i++)
             {
-                dates[i] = startOfWeek.AddDays(i).ToString("dd/MM");
+                dates[i] = startOfWeek.AddDays(i).ToString("ddd dd/MM");
             }
         }
 

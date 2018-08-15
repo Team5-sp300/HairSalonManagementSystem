@@ -78,13 +78,13 @@ namespace HHsystem
 
         public void populateWeeks()
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 24; i++)
             {
                 DateTime startOfWeek = DateTime.Today.AddDays(
           (int)CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek -
           (int)DateTime.Today.DayOfWeek + 1 + i * 7);
-                var endDate = startOfWeek.AddDays(7);
-                comboBox1.Items.Add(startOfWeek.ToString("dd/MM") + "-" + endDate.ToString("dd/MM"));
+                var endDate = startOfWeek.AddDays(6);
+                comboBox1.Items.Add(startOfWeek.ToString("ddd dd MMMM") + " - " + endDate.ToString("ddd dd MMMM"));
             }
             comboBox1.SelectedIndex = 0;
         }
