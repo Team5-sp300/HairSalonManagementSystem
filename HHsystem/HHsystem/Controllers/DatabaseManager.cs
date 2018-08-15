@@ -19,7 +19,7 @@ namespace HHsystem.Controllers
 
         public void connection()
         {
-            conn = new MySqlConnection("Server=localhost; database=HairSalon; UID=root; password=;SslMode=none;AllowUserVariables=True");
+            conn = new MySqlConnection("Server=localhost; database=HairSalon; UID=root; password=;SslMode=none;Allow User Variables=True");
             conn.Open();
         }
 
@@ -84,7 +84,6 @@ namespace HHsystem.Controllers
                     i++;
                 }
             }
-            conn.Close();
             return employeeDetails;
         }
 
@@ -108,7 +107,6 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
-            conn.Close();
             return adapter;
         }
 
@@ -116,10 +114,11 @@ namespace HHsystem.Controllers
         {
             try
             {
+                
                 string command = "Call getBookingHistory("+id+")";
                 connection();
             //    cmd.Parameters["?id"].Value = id;
-                //  cmd.Parameters.AddWithValue("?id", id).ToString();
+              //   cmd.Parameters.AddWithValue("?id", id).ToString();
                 cmd = new MySqlCommand(command, conn);
                 adapter = new MySqlDataAdapter
                 {
@@ -132,20 +131,19 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
-            conn.Close();
             return adapter;
         }
 
-        public MySqlDataAdapter getEmployeeSchedule()
+        public MySqlDataAdapter getEmployeeSchedule(string id)
         {
             try
             {
-            
-                string command = "Call getEmployeeSchedule(?username)";
+                string command = "Call getEmployeeSchedule(AndrewSchwabe1)";
                 connection();
                 cmd.Parameters.AddWithValue("?username", "AndrewSchwabe1");
                 //cmd.Parameters["?username"].Value = "AndrewSchwabe1";
                 cmd = new MySqlCommand(command, conn);
+               // cmd.ExecuteNonQuery();
                 adapter = new MySqlDataAdapter
                 {
                     SelectCommand = cmd
@@ -157,7 +155,7 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
-            conn.Close();
+       
             return adapter;
         }
 
