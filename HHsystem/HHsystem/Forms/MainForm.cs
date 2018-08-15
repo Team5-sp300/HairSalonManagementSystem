@@ -249,8 +249,7 @@ namespace HHsystem
                     ephonetxt.Text = employeeDetails[i, 4];
                     eemail.Text = employeeDetails[i, 5];
                     table = new DataTable();
-                    string test = employeeDetails[i, 0];
-                    manager.getBooking().Fill(table);
+                    //manager.getEmployeeSchedule().Fill(table);
                     bindingSource4.DataSource = table;
                     dataGridView8.DataSource = bindingSource4;
                 }
@@ -287,8 +286,6 @@ namespace HHsystem
         {
             customTabControl5.SelectedIndex = 1;
         }
-
-     
-        }
+    }
     }
 

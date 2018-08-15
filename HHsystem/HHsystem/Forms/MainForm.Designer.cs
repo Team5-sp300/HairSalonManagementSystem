@@ -93,6 +93,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.label18 = new System.Windows.Forms.Label();
             this.enametxt = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -104,7 +105,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.button24 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -118,7 +118,7 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
+            this.button10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -141,6 +141,7 @@
             this.tabPage4.SuspendLayout();
             this.customTabControl5.SuspendLayout();
             this.tabPage13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage5.SuspendLayout();
@@ -151,7 +152,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -913,6 +913,22 @@
             this.label17.TabIndex = 21;
             this.label17.Text = "Schedule";
             // 
+            // dataGridView8
+            // 
+            this.dataGridView8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView8.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView8.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView8.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView8.Location = new System.Drawing.Point(61, 206);
+            this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.ReadOnly = true;
+            this.dataGridView8.RowHeadersVisible = false;
+            this.dataGridView8.Size = new System.Drawing.Size(516, 160);
+            this.dataGridView8.TabIndex = 20;
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -1022,8 +1038,8 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.button24);
             this.tabPage5.Controls.Add(this.button10);
+            this.tabPage5.Controls.Add(this.button24);
             this.tabPage5.Controls.Add(this.button25);
             this.tabPage5.Controls.Add(this.button26);
             this.tabPage5.Controls.Add(this.button19);
@@ -1052,21 +1068,6 @@
             this.button24.Text = "Delete";
             this.button24.UseVisualStyleBackColor = false;
             // 
-            // button10
-            // 
-            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.AutoSize = true;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.button10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button10.Location = new System.Drawing.Point(530, 22);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(77, 45);
-            this.button10.TabIndex = 12;
-            this.button10.Text = "Staff";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
             // button25
             // 
             this.button25.BackColor = System.Drawing.Color.White;
@@ -1091,7 +1092,7 @@
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(77, 45);
             this.button26.TabIndex = 22;
-            this.button26.Text = "Calendar";
+            this.button26.Text = "Clients Table";
             this.button26.UseVisualStyleBackColor = true;
             // 
             // button19
@@ -1105,7 +1106,7 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(77, 45);
             this.button19.TabIndex = 21;
-            this.button19.Text = "Overview";
+            this.button19.Text = "Booking Table";
             this.button19.UseVisualStyleBackColor = true;
             // 
             // customTabControl3
@@ -1245,21 +1246,19 @@
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // dataGridView8
+            // button10
             // 
-            this.dataGridView8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView8.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView8.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView8.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(61, 206);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.ReadOnly = true;
-            this.dataGridView8.RowHeadersVisible = false;
-            this.dataGridView8.Size = new System.Drawing.Size(516, 160);
-            this.dataGridView8.TabIndex = 20;
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.button10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button10.Location = new System.Drawing.Point(531, 22);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(77, 45);
+            this.button10.TabIndex = 28;
+            this.button10.Text = "Staff Table";
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -1278,6 +1277,7 @@
             this.Controls.Add(this.customTabControl1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
@@ -1307,10 +1307,10 @@
             this.customTabControl5.ResumeLayout(false);
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.tabPage14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
             this.customTabControl3.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
@@ -1318,7 +1318,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.tabPage10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1372,7 +1371,6 @@
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.DataGridView dataGridView6;
@@ -1415,6 +1413,7 @@
         private System.Windows.Forms.BindingSource bindingSource3;
         private System.Windows.Forms.BindingSource bindingSource4;
         private System.Windows.Forms.DataGridView dataGridView8;
+        private System.Windows.Forms.Button button10;
     }
 }
 

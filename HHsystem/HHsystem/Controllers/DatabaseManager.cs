@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,7 @@ namespace HHsystem.Controllers
 
         public void connection()
         {
-            conn = new MySqlConnection("Server=localhost; database=HairSalon; UID=root; password=;SslMode=none");
+            conn = new MySqlConnection("Server=localhost; database=HairSalon; UID=root; password=;SslMode=none;AllowUserVariables=True");
             conn.Open();
         }
 
@@ -42,6 +43,7 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 throw;
             }
+            conn.Close();
             return adapter;
         }
 
@@ -82,6 +84,7 @@ namespace HHsystem.Controllers
                     i++;
                 }
             }
+            conn.Close();
             return employeeDetails;
         }
 
@@ -105,6 +108,7 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
+            conn.Close();
             return adapter;
         }
 
@@ -114,7 +118,8 @@ namespace HHsystem.Controllers
             {
                 string command = "Call getBookingHistory("+id+")";
                 connection();
-               cmd.Parameters.AddWithValue("?id", id).ToString();
+            //    cmd.Parameters["?id"].Value = id;
+                //  cmd.Parameters.AddWithValue("?id", id).ToString();
                 cmd = new MySqlCommand(command, conn);
                 adapter = new MySqlDataAdapter
                 {
@@ -131,13 +136,15 @@ namespace HHsystem.Controllers
             return adapter;
         }
 
-        public MySqlDataAdapter getBookingSchedule(string username)
+        public MySqlDataAdapter getEmployeeSchedule()
         {
             try
             {
-                string command = "Call getBookingSchedule (?username)";
+            
+                string command = "Call getEmployeeSchedule(?username)";
                 connection();
-                cmd.Parameters.AddWithValue("?username", username);
+                cmd.Parameters.AddWithValue("?username", "AndrewSchwabe1");
+                //cmd.Parameters["?username"].Value = "AndrewSchwabe1";
                 cmd = new MySqlCommand(command, conn);
                 adapter = new MySqlDataAdapter
                 {
@@ -150,6 +157,7 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
+            conn.Close();
             return adapter;
         }
 
