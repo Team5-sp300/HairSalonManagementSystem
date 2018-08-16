@@ -84,6 +84,11 @@ namespace HHmobileApp
                 var intent = new Intent(this, typeof(HomeActivity));
                 StartActivity(intent);
             }
+            else if (id == Resource.Id.nav_schedule)
+            {
+                var intent = new Intent(this, typeof(ScheduleActivity));
+                StartActivity(intent);
+            }
             else if (id == Resource.Id.nav_bookings)
             {
                 var intent = new Intent(this, typeof(BookingActivity));
@@ -98,7 +103,6 @@ namespace HHmobileApp
             {
 
             }
-
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             // drawer.CloseDrawer(GravityCompat.Start);

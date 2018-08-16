@@ -55,6 +55,9 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ScheduleListAdapter.cs" />
+    <Compile Include="ScheduleDetails.cs" />
+    <Compile Include="ScheduleActivity.cs" />
     <Compile Include="BookingInsert.cs" />
     <Compile Include="ClientDetails.cs" />
     <Compile Include="BookingListAdapter.cs" />
@@ -205,6 +208,24 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\details_listview_row.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\schedule_activity.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\schedule_main.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\schedule_listview_row.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

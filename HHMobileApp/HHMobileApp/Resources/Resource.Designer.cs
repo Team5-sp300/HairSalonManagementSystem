@@ -2684,14 +2684,14 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800cf
-			public const int masked = 2131230927;
+			// aapt resource value: 0x7f0800d0
+			public const int masked = 2131230928;
 			
 			// aapt resource value: 0x7f0800c0
 			public const int media_actions = 2131230912;
 			
-			// aapt resource value: 0x7f0800cd
-			public const int message = 2131230925;
+			// aapt resource value: 0x7f0800ce
+			public const int message = 2131230926;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2702,17 +2702,20 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f080028
 			public const int multiply = 2131230760;
 			
+			// aapt resource value: 0x7f0800d3
+			public const int nav_bookings = 2131230931;
+			
+			// aapt resource value: 0x7f0800d4
+			public const int nav_clients = 2131230932;
+			
 			// aapt resource value: 0x7f0800d1
-			public const int nav_bookings = 2131230929;
+			public const int nav_home = 2131230929;
 			
 			// aapt resource value: 0x7f0800d2
-			public const int nav_clients = 2131230930;
+			public const int nav_schedule = 2131230930;
 			
-			// aapt resource value: 0x7f0800d0
-			public const int nav_home = 2131230928;
-			
-			// aapt resource value: 0x7f0800d3
-			public const int nav_settings = 2131230931;
+			// aapt resource value: 0x7f0800d5
+			public const int nav_settings = 2131230933;
 			
 			// aapt resource value: 0x7f08008c
 			public const int nav_view = 2131230860;
@@ -2966,6 +2969,9 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f0800b4
 			public const int txtWelcome = 2131230900;
 			
+			// aapt resource value: 0x7f0800cd
+			public const int txtduration = 2131230925;
+			
 			// aapt resource value: 0x7f0800a0
 			public const int txtfname = 2131230880;
 			
@@ -2990,8 +2996,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800ce
-			public const int visible = 2131230926;
+			// aapt resource value: 0x7f0800cf
+			public const int visible = 2131230927;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -3275,19 +3281,28 @@ namespace HHmobileApp
 			public const int notification_template_part_time = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int select_dialog_item_material = 2130968649;
+			public const int schedule_activity = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int select_dialog_multichoice_material = 2130968650;
+			public const int schedule_listview_row = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int select_dialog_singlechoice_material = 2130968651;
+			public const int schedule_main = 2130968651;
 			
 			// aapt resource value: 0x7f04004c
-			public const int support_simple_spinner_dropdown_item = 2130968652;
+			public const int select_dialog_item_material = 2130968652;
 			
 			// aapt resource value: 0x7f04004d
-			public const int tooltip = 2130968653;
+			public const int select_dialog_multichoice_material = 2130968653;
+			
+			// aapt resource value: 0x7f04004e
+			public const int select_dialog_singlechoice_material = 2130968654;
+			
+			// aapt resource value: 0x7f04004f
+			public const int support_simple_spinner_dropdown_item = 2130968655;
+			
+			// aapt resource value: 0x7f040050
+			public const int tooltip = 2130968656;
 			
 			static Layout()
 			{

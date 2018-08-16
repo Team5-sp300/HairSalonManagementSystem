@@ -3068,16 +3068,17 @@ containing a value of this type.
         public static int listMode=0x7f08001d;
         public static int listView1=0x7f08008e;
         public static int list_item=0x7f080061;
-        public static int masked=0x7f0800cf;
+        public static int masked=0x7f0800d0;
         public static int media_actions=0x7f0800c0;
-        public static int message=0x7f0800cd;
+        public static int message=0x7f0800ce;
         public static int middle=0x7f080031;
         public static int mini=0x7f080053;
         public static int multiply=0x7f080028;
-        public static int nav_bookings=0x7f0800d1;
-        public static int nav_clients=0x7f0800d2;
-        public static int nav_home=0x7f0800d0;
-        public static int nav_settings=0x7f0800d3;
+        public static int nav_bookings=0x7f0800d3;
+        public static int nav_clients=0x7f0800d4;
+        public static int nav_home=0x7f0800d1;
+        public static int nav_schedule=0x7f0800d2;
+        public static int nav_settings=0x7f0800d5;
         public static int nav_view=0x7f08008c;
         public static int navigation_header_container=0x7f0800ac;
         public static int never=0x7f08003b;
@@ -3162,6 +3163,7 @@ containing a value of this type.
         public static int txtName=0x7f08009a;
         public static int txtTime=0x7f080099;
         public static int txtWelcome=0x7f0800b4;
+        public static int txtduration=0x7f0800cd;
         public static int txtfname=0x7f0800a0;
         public static int txtlname=0x7f0800a1;
         public static int txtnameid=0x7f0800b2;
@@ -3170,7 +3172,7 @@ containing a value of this type.
         public static int up=0x7f080009;
         public static int useLogo=0x7f080026;
         public static int view_offset_helper=0x7f080016;
-        public static int visible=0x7f0800ce;
+        public static int visible=0x7f0800cf;
         public static int withText=0x7f08003c;
         public static int wrap_content=0x7f08002e;
     }
@@ -3260,11 +3262,14 @@ containing a value of this type.
         public static int notification_template_media_custom=0x7f040046;
         public static int notification_template_part_chronometer=0x7f040047;
         public static int notification_template_part_time=0x7f040048;
-        public static int select_dialog_item_material=0x7f040049;
-        public static int select_dialog_multichoice_material=0x7f04004a;
-        public static int select_dialog_singlechoice_material=0x7f04004b;
-        public static int support_simple_spinner_dropdown_item=0x7f04004c;
-        public static int tooltip=0x7f04004d;
+        public static int schedule_activity=0x7f040049;
+        public static int schedule_listview_row=0x7f04004a;
+        public static int schedule_main=0x7f04004b;
+        public static int select_dialog_item_material=0x7f04004c;
+        public static int select_dialog_multichoice_material=0x7f04004d;
+        public static int select_dialog_singlechoice_material=0x7f04004e;
+        public static int support_simple_spinner_dropdown_item=0x7f04004f;
+        public static int tooltip=0x7f040050;
     }
     public static final class menu {
         public static int activity_main_drawer=0x7f0e0000;
