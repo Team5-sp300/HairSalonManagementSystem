@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace HHsystem.Forms
 {
-    public partial class AddBookingForm : Form
+    public partial class SettingForm : Form
     {
         DatabaseManager manager = new DatabaseManager();
 
-        public AddBookingForm()
+        public SettingForm()
         {
             InitializeComponent();
             populateClients();

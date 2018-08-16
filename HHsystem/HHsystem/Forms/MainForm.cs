@@ -44,7 +44,7 @@ namespace HHsystem
         }
 
         public void addAdppointments() {
-            customWeeklyScheduler1.setAppointment(manager.getBookingDetails());
+            customWeeklyScheduler.setAppointment(manager.getBookingDetails());
         }
 
         public void populateBookingTable()
@@ -53,6 +53,7 @@ namespace HHsystem
             manager.getBooking().Fill(table);
             bindingSource1.DataSource = table;
             dataGridView2.DataSource = bindingSource1;
+            dataGridView6.DataSource = bindingSource1;
             table.Columns[0].ColumnName = "Booking ID";
             table.Columns[1].ColumnName = "Client Name";
             table.Columns[2].ColumnName = "Employee Name";
@@ -65,6 +66,7 @@ namespace HHsystem
             manager.getEmployee().Fill(table);
             bindingSource.DataSource = table;
             dataGridView1.DataSource = bindingSource;
+            dataGridView4.DataSource = bindingSource;
         }
 
 
@@ -74,6 +76,7 @@ namespace HHsystem
             manager.getClients().Fill(table);
             bindingSource2.DataSource = table;
             dataGridView3.DataSource = bindingSource2;
+            dataGridView5.DataSource = bindingSource2;
         }
 
         public void populateWeeks()
@@ -190,12 +193,12 @@ namespace HHsystem
 
         private void button17_Click(object sender, EventArgs e)
         {
-            customTabControl2.SelectedIndex = 0;
+            bookingTabControl.SelectedIndex = 0;
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
-            customTabControl2.SelectedIndex = 1;
+            bookingTabControl.SelectedIndex = 1;
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -210,7 +213,7 @@ namespace HHsystem
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            customWeeklyScheduler1.setWeekNo(comboBox1.SelectedIndex);
+            customWeeklyScheduler.setWeekNo(comboBox1.SelectedIndex);
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -260,32 +263,52 @@ namespace HHsystem
             private void button15_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            customWeeklyScheduler1.redraws(this.Width-200, this.Height-205);
+            customWeeklyScheduler.redraws(this.Width-200, this.Height-205);
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            customTabControl4.SelectedIndex = 1;
+            clientTabControl.SelectedIndex = 1;
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
-            customTabControl4.SelectedIndex = 0;
+            clientTabControl.SelectedIndex = 0;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            new AddBookingForm().Show();
+            new SettingForm().Show();
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
-            customTabControl5.SelectedIndex = 0;
+            staffTabControl.SelectedIndex = 0;
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
-            customTabControl5.SelectedIndex = 1;
+            staffTabControl.SelectedIndex = 1;
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            managementTabControl.SelectedIndex = 0;
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            managementTabControl.SelectedIndex = 1;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            managementTabControl.SelectedIndex = 2;
+        }
+
+        private void settingsBtn_Click(object sender, EventArgs e)
+        {
+            managementTabControl.SelectedIndex = 3;
         }
     }
     }

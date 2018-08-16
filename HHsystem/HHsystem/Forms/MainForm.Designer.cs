@@ -53,9 +53,9 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.customTabControl2 = new HHsystem.CustomTabControl();
+            this.bookingTabControl = new HHsystem.CustomTabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.customWeeklyScheduler1 = new HHsystem.Componets.WeeklyScheduler();
+            this.customWeeklyScheduler = new HHsystem.Componets.WeeklyScheduler();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button18 = new System.Windows.Forms.Button();
@@ -66,7 +66,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button16 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
-            this.customTabControl4 = new HHsystem.CustomTabControl();
+            this.clientTabControl = new HHsystem.CustomTabControl();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -87,7 +87,7 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.customTabControl5 = new HHsystem.CustomTabControl();
+            this.staffTabControl = new HHsystem.CustomTabControl();
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -104,21 +104,25 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button8 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.settingsBtn = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.customTabControl3 = new HHsystem.CustomTabControl();
+            this.managementTabControl = new HHsystem.CustomTabControl();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -128,30 +132,31 @@
             this.customTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.customTabControl2.SuspendLayout();
+            this.bookingTabControl.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage3.SuspendLayout();
-            this.customTabControl4.SuspendLayout();
+            this.clientTabControl.SuspendLayout();
             this.tabPage11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             this.tabPage12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage4.SuspendLayout();
-            this.customTabControl5.SuspendLayout();
+            this.staffTabControl.SuspendLayout();
             this.tabPage13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage5.SuspendLayout();
-            this.customTabControl3.SuspendLayout();
+            this.managementTabControl.SuspendLayout();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.tabPage15.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -354,7 +359,7 @@
             this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.customTabControl2);
+            this.tabPage2.Controls.Add(this.bookingTabControl);
             this.tabPage2.Controls.Add(this.button18);
             this.tabPage2.Controls.Add(this.button17);
             this.tabPage2.Controls.Add(this.button6);
@@ -392,22 +397,22 @@
             this.comboBox1.TabStop = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // customTabControl2
+            // bookingTabControl
             // 
-            this.customTabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.bookingTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customTabControl2.Controls.Add(this.tabPage6);
-            this.customTabControl2.Controls.Add(this.tabPage7);
-            this.customTabControl2.Location = new System.Drawing.Point(0, 88);
-            this.customTabControl2.Name = "customTabControl2";
-            this.customTabControl2.SelectedIndex = 0;
-            this.customTabControl2.Size = new System.Drawing.Size(622, 407);
-            this.customTabControl2.TabIndex = 14;
+            this.bookingTabControl.Controls.Add(this.tabPage6);
+            this.bookingTabControl.Controls.Add(this.tabPage7);
+            this.bookingTabControl.Location = new System.Drawing.Point(0, 88);
+            this.bookingTabControl.Name = "bookingTabControl";
+            this.bookingTabControl.SelectedIndex = 0;
+            this.bookingTabControl.Size = new System.Drawing.Size(622, 407);
+            this.bookingTabControl.TabIndex = 14;
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.customWeeklyScheduler1);
+            this.tabPage6.Controls.Add(this.customWeeklyScheduler);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -416,16 +421,16 @@
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // customWeeklyScheduler1
+            // customWeeklyScheduler
             // 
-            this.customWeeklyScheduler1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.customWeeklyScheduler.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customWeeklyScheduler1.BackColor = System.Drawing.Color.White;
-            this.customWeeklyScheduler1.Location = new System.Drawing.Point(3, 3);
-            this.customWeeklyScheduler1.Name = "customWeeklyScheduler1";
-            this.customWeeklyScheduler1.Size = new System.Drawing.Size(608, 400);
-            this.customWeeklyScheduler1.TabIndex = 10;
+            this.customWeeklyScheduler.BackColor = System.Drawing.Color.White;
+            this.customWeeklyScheduler.Location = new System.Drawing.Point(3, 3);
+            this.customWeeklyScheduler.Name = "customWeeklyScheduler";
+            this.customWeeklyScheduler.Size = new System.Drawing.Size(608, 400);
+            this.customWeeklyScheduler.TabIndex = 10;
             // 
             // tabPage7
             // 
@@ -502,7 +507,7 @@
             this.tabPage3.Controls.Add(this.comboBox2);
             this.tabPage3.Controls.Add(this.button16);
             this.tabPage3.Controls.Add(this.button20);
-            this.tabPage3.Controls.Add(this.customTabControl4);
+            this.tabPage3.Controls.Add(this.clientTabControl);
             this.tabPage3.Controls.Add(this.button7);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -567,18 +572,18 @@
             this.button20.UseVisualStyleBackColor = false;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
-            // customTabControl4
+            // clientTabControl
             // 
-            this.customTabControl4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.clientTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customTabControl4.Controls.Add(this.tabPage11);
-            this.customTabControl4.Controls.Add(this.tabPage12);
-            this.customTabControl4.Location = new System.Drawing.Point(0, 88);
-            this.customTabControl4.Name = "customTabControl4";
-            this.customTabControl4.SelectedIndex = 0;
-            this.customTabControl4.Size = new System.Drawing.Size(626, 407);
-            this.customTabControl4.TabIndex = 20;
+            this.clientTabControl.Controls.Add(this.tabPage11);
+            this.clientTabControl.Controls.Add(this.tabPage12);
+            this.clientTabControl.Location = new System.Drawing.Point(0, 88);
+            this.clientTabControl.Name = "clientTabControl";
+            this.clientTabControl.SelectedIndex = 0;
+            this.clientTabControl.Size = new System.Drawing.Size(626, 407);
+            this.clientTabControl.TabIndex = 20;
             // 
             // tabPage11
             // 
@@ -772,7 +777,7 @@
             this.tabPage4.Controls.Add(this.comboBox3);
             this.tabPage4.Controls.Add(this.button21);
             this.tabPage4.Controls.Add(this.button22);
-            this.tabPage4.Controls.Add(this.customTabControl5);
+            this.tabPage4.Controls.Add(this.staffTabControl);
             this.tabPage4.Controls.Add(this.button8);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
@@ -837,18 +842,18 @@
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
-            // customTabControl5
+            // staffTabControl
             // 
-            this.customTabControl5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.staffTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customTabControl5.Controls.Add(this.tabPage13);
-            this.customTabControl5.Controls.Add(this.tabPage14);
-            this.customTabControl5.Location = new System.Drawing.Point(0, 88);
-            this.customTabControl5.Name = "customTabControl5";
-            this.customTabControl5.SelectedIndex = 0;
-            this.customTabControl5.Size = new System.Drawing.Size(626, 407);
-            this.customTabControl5.TabIndex = 21;
+            this.staffTabControl.Controls.Add(this.tabPage13);
+            this.staffTabControl.Controls.Add(this.tabPage14);
+            this.staffTabControl.Location = new System.Drawing.Point(0, 88);
+            this.staffTabControl.Name = "staffTabControl";
+            this.staffTabControl.SelectedIndex = 0;
+            this.staffTabControl.Size = new System.Drawing.Size(626, 407);
+            this.staffTabControl.TabIndex = 21;
             // 
             // tabPage13
             // 
@@ -1038,13 +1043,13 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.settingsBtn);
             this.tabPage5.Controls.Add(this.button10);
             this.tabPage5.Controls.Add(this.button24);
             this.tabPage5.Controls.Add(this.button25);
             this.tabPage5.Controls.Add(this.button26);
             this.tabPage5.Controls.Add(this.button19);
-            this.tabPage5.Controls.Add(this.customTabControl3);
-            this.tabPage5.Controls.Add(this.button15);
+            this.tabPage5.Controls.Add(this.managementTabControl);
             this.tabPage5.Controls.Add(this.button14);
             this.tabPage5.Controls.Add(this.button13);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
@@ -1054,6 +1059,35 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // settingsBtn
+            // 
+            this.settingsBtn.BackColor = System.Drawing.Color.White;
+            this.settingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsBtn.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsBtn.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.settingsBtn.Location = new System.Drawing.Point(20, 275);
+            this.settingsBtn.Name = "settingsBtn";
+            this.settingsBtn.Size = new System.Drawing.Size(131, 45);
+            this.settingsBtn.TabIndex = 29;
+            this.settingsBtn.Text = "Settings";
+            this.settingsBtn.UseVisualStyleBackColor = false;
+            this.settingsBtn.Click += new System.EventHandler(this.settingsBtn_Click);
+            // 
+            // button10
+            // 
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.button10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button10.Location = new System.Drawing.Point(531, 22);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(77, 45);
+            this.button10.TabIndex = 28;
+            this.button10.Text = "Staff Table";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button24
             // 
@@ -1094,6 +1128,7 @@
             this.button26.TabIndex = 22;
             this.button26.Text = "Clients Table";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // button19
             // 
@@ -1108,20 +1143,22 @@
             this.button19.TabIndex = 21;
             this.button19.Text = "Booking Table";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
-            // customTabControl3
+            // managementTabControl
             // 
-            this.customTabControl3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.managementTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customTabControl3.Controls.Add(this.tabPage8);
-            this.customTabControl3.Controls.Add(this.tabPage9);
-            this.customTabControl3.Controls.Add(this.tabPage10);
-            this.customTabControl3.Location = new System.Drawing.Point(157, 62);
-            this.customTabControl3.Name = "customTabControl3";
-            this.customTabControl3.SelectedIndex = 0;
-            this.customTabControl3.Size = new System.Drawing.Size(459, 429);
-            this.customTabControl3.TabIndex = 19;
+            this.managementTabControl.Controls.Add(this.tabPage8);
+            this.managementTabControl.Controls.Add(this.tabPage9);
+            this.managementTabControl.Controls.Add(this.tabPage10);
+            this.managementTabControl.Controls.Add(this.tabPage15);
+            this.managementTabControl.Location = new System.Drawing.Point(157, 62);
+            this.managementTabControl.Name = "managementTabControl";
+            this.managementTabControl.SelectedIndex = 0;
+            this.managementTabControl.Size = new System.Drawing.Size(459, 429);
+            this.managementTabControl.TabIndex = 19;
             // 
             // tabPage8
             // 
@@ -1204,13 +1241,47 @@
             this.dataGridView4.Size = new System.Drawing.Size(439, 387);
             this.dataGridView4.TabIndex = 24;
             // 
+            // tabPage15
+            // 
+            this.tabPage15.Controls.Add(this.label21);
+            this.tabPage15.Controls.Add(this.label19);
+            this.tabPage15.Controls.Add(this.button15);
+            this.tabPage15.Location = new System.Drawing.Point(4, 22);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage15.Size = new System.Drawing.Size(451, 403);
+            this.tabPage15.TabIndex = 3;
+            this.tabPage15.Text = "tabPage15";
+            this.tabPage15.UseVisualStyleBackColor = true;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label21.Location = new System.Drawing.Point(31, 38);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(350, 2);
+            this.label21.TabIndex = 12;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label19.Location = new System.Drawing.Point(3, 3);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(76, 25);
+            this.label19.TabIndex = 12;
+            this.label19.Text = "Settings";
+            // 
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.White;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button15.Location = new System.Drawing.Point(20, 275);
+            this.button15.Location = new System.Drawing.Point(154, 140);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(131, 45);
             this.button15.TabIndex = 17;
@@ -1246,20 +1317,6 @@
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // button10
-            // 
-            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.button10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button10.Location = new System.Drawing.Point(531, 22);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(77, 45);
-            this.button10.TabIndex = 28;
-            this.button10.Text = "Staff Table";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1290,13 +1347,13 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.customTabControl2.ResumeLayout(false);
+            this.bookingTabControl.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.customTabControl4.ResumeLayout(false);
+            this.clientTabControl.ResumeLayout(false);
             this.tabPage11.ResumeLayout(false);
             this.tabPage11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
@@ -1304,20 +1361,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.customTabControl5.ResumeLayout(false);
+            this.staffTabControl.ResumeLayout(false);
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.tabPage14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage5.ResumeLayout(false);
-            this.customTabControl3.ResumeLayout(false);
+            this.managementTabControl.ResumeLayout(false);
             this.tabPage8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.tabPage9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.tabPage10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.tabPage15.ResumeLayout(false);
+            this.tabPage15.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1347,7 +1406,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.BindingSource bindingSource2;
-        private Componets.WeeklyScheduler customWeeklyScheduler1;
+        private Componets.WeeklyScheduler customWeeklyScheduler;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label2;
@@ -1358,13 +1417,13 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button17;
-        private CustomTabControl customTabControl2;
+        private CustomTabControl bookingTabControl;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
-        private CustomTabControl customTabControl3;
+        private CustomTabControl managementTabControl;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.TabPage tabPage10;
@@ -1385,7 +1444,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button20;
-        private CustomTabControl customTabControl4;
+        private CustomTabControl clientTabControl;
         private System.Windows.Forms.TabPage tabPage11;
         private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.DataGridView dataGridView7;
@@ -1393,7 +1452,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private CustomTabControl customTabControl5;
+        private CustomTabControl staffTabControl;
         private System.Windows.Forms.TabPage tabPage13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
@@ -1414,6 +1473,10 @@
         private System.Windows.Forms.BindingSource bindingSource4;
         private System.Windows.Forms.DataGridView dataGridView8;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button settingsBtn;
+        private System.Windows.Forms.TabPage tabPage15;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label21;
     }
 }
 

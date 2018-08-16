@@ -1,6 +1,6 @@
 ﻿namespace HHsystem.Forms
 {
-    partial class AddBookingForm
+    partial class SettingForm
     {
         /// <summary>
         /// Required designer variable.
