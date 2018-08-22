@@ -157,7 +157,9 @@
             // 
             // dateTimePicker
             // 
+            this.dateTimePicker.CustomFormat = "";
             this.dateTimePicker.Location = new System.Drawing.Point(31, 190);
+            this.dateTimePicker.MinDate = new System.DateTime(2018, 8, 22, 0, 0, 0, 0);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(180, 20);
             this.dateTimePicker.TabIndex = 60;
@@ -186,7 +188,7 @@
             this.timeminutescombobox.Size = new System.Drawing.Size(44, 21);
             this.timeminutescombobox.TabIndex = 63;
             // 
-            // AddBookingForm
+            // SettingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,7 +211,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "AddBookingForm";
+            this.Name = "SettingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.ResumeLayout(false);

@@ -21,6 +21,15 @@ namespace HHsystem.Forms
             populateClients();
             populateEmployees();
             populateTimes();
+            populateServices();
+            setDateTimePicker();
+        }
+
+        public void setDateTimePicker()
+        {
+            dateTimePicker.Format = DateTimePickerFormat.Custom;
+            dateTimePicker.CustomFormat = "dd/MM/yyyy";
+            dateTimePicker.MinDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
         }
 
         public void populateClients()
@@ -47,12 +56,21 @@ namespace HHsystem.Forms
             {
                 timehourscombobox.Items.Add(i);
             }
-            for (int j = 00; j <= 60; j+= 15)
+            for (int j = 00; j < 60; j+= 15)
             {
                 timeminutescombobox.Items.Add(j);
             }
             timehourscombobox.SelectedIndex = 0;
             timeminutescombobox.SelectedIndex = 0;
+        }
+
+        public void populateServices()
+        {
+            for (int i = 0; i < manager.getServiceDetails().GetLength(0); i++)
+            {
+                servicecombobox.Items.Add(manager.getServiceDetails()[i, 1]);
+            }
+            servicecombobox.SelectedIndex = 0;
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
@@ -90,11 +108,14 @@ namespace HHsystem.Forms
             EmailController email = new EmailController();
             String[,] clients = manager.getClientDetails();
 
-            string[] name = getClientName().Split(new char[0]);
+            string[] clientname = getClientName().Split(new char[0]);
+            string[] employeename = getEmployeeName().Split(new char[0]);
+
+            manager.addBooking(clientname[0], clientname[1], employeename[0], employeename[1], getDate(), getTime(), getService());
 
             for (int i = 0; i < clients.Length; i++)
             {
-                if (clients[i,1].ToString() == name[0] && clients[i,2].ToString() == name[1])
+                if (clients[i,1].ToString() == clientname[0] && clients[i,2].ToString() == clientname[1])
                 {
                     email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime());
                     break;

@@ -197,6 +197,43 @@ namespace HHsystem.Controllers
             return bookingDetails;
         }
 
+        public string[,] getServiceDetails()
+        {
+            string[,] serviceDetails = null;
+            string command = "Call getService";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            MySqlDataReader result = cmd.ExecuteReader();
+
+            int i = 0;
+            int arrySize = 0;
+
+            if (result != null)
+            {
+                while (result.Read())
+                {
+                    arrySize++;
+                }
+
+                result.Close();
+
+                serviceDetails = new string[arrySize, 4];
+
+                cmd = new MySqlCommand(command, conn);
+                result = cmd.ExecuteReader();
+
+                while (result.Read())
+
+                {
+                    serviceDetails[i, 0] = result[0].ToString();
+                    serviceDetails[i, 1] = result[1].ToString();
+                    serviceDetails[i, 2] = result[2].ToString();
+                    i++;
+                }
+            }
+            return serviceDetails;
+        }
+
 
         public MySqlDataAdapter getClients()
         {
@@ -354,12 +391,34 @@ namespace HHsystem.Controllers
             conn.Close();
         }
 
-        public void addClient(string name, string surname, string phone, string email)
+        public void addBooking(string cfname, string clname, string efname, string elname, string adate, string atime, string service)
         {
-            string command = "CALL insertClient(" +name+", " + surname + ", " + phone + ", " + email + ")";
+            string command = "CALL insertBooking(?cfname,?clname,?efname,?elname,?adate,?atime,?service)";
             connection();
             MessageBox.Show(command);
             cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?cfname", cfname);
+            cmd.Parameters.AddWithValue("?clname", clname);
+            cmd.Parameters.AddWithValue("?efname", efname);
+            cmd.Parameters.AddWithValue("?elname", elname);
+            cmd.Parameters.AddWithValue("?adate", adate);
+            cmd.Parameters.AddWithValue("?atime", atime);
+            cmd.Parameters.AddWithValue("?service", service);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+        }
+
+        public void addClient(string name, string surname, string phone, string email)
+        {
+            string command = "CALL insertClient(?fname, ?lname, ?email, ?phone)";
+            connection();
+            MessageBox.Show(command);
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?fname", name);
+            cmd.Parameters.AddWithValue("?lname", surname);
+            cmd.Parameters.AddWithValue("?email", phone);
+            cmd.Parameters.AddWithValue("?phone", email);
             cmd.ExecuteNonQuery();
             conn.Close();
         }

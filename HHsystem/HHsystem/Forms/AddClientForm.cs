@@ -36,7 +36,7 @@ namespace HHsystem.Forms
 
         public string getClientSurname()
         {
-            return passwordtxt.Text;
+            return surnametxt.Text;
         }
 
         public string getClientEmail()

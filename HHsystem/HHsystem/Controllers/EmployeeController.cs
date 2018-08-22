@@ -14,13 +14,13 @@ namespace HHsystem.Controllers
 
         public void add(string uname, string fname, string lname, string phone, string email, string password)
         {
-            if (uname == "" || phone == "" || email == "" || password == "")
+            if (uname == "" || fname == "" || lname == "" || phone == "" || email == "" || password == "")
             {
                 MessageBox.Show("Please fill out all the fields.");
             }
             else
             {
-                manager.addEmployee(uname, fname, lname, email,phone,password);
+                manager.addEmployee(uname, fname, lname, email, phone, password);
                 MessageBox.Show("New employee has been added.");
             }
         }

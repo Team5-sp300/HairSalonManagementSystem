@@ -68,18 +68,18 @@ namespace HHsystem.Forms
             fnametxt = sender as TextBox;
             if (fnametxt.Text.Length >= 3 && lnametxt.Text.Length >= 3)
             {
-                usernametxt.Text = fnametxt.Text.Substring(0, 3) + lnametxt.Text.Substring(0, 3) + id;
+                usernamelbl.Text = fnametxt.Text.Substring(0, 3) + lnametxt.Text.Substring(0, 3) + id;
             }
             else if (fnametxt.Text.Length >= 3 && lnametxt.Text=="")
             {
-                usernametxt.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
+                usernamelbl.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
             }
            else if(lnametxt.Text == ""){
-                usernametxt.Text = fnametxt.Text + lnametxt.Text + id;
+                usernamelbl.Text = fnametxt.Text + lnametxt.Text + id;
             }
             else if (lnametxt.Text != "")
             {
-                usernametxt.Text = fnametxt.Text+ lnametxt.Text.Substring(0, 3) + id;
+                usernamelbl.Text = fnametxt.Text+ lnametxt.Text.Substring(0, 3) + id;
             }
         }
 
@@ -89,15 +89,15 @@ namespace HHsystem.Forms
 
             if (fnametxt.Text.Length >= 3 && lnametxt.Text.Length >= 3)
             {
-                usernametxt.Text = fnametxt.Text.Substring(0, 3) + lnametxt.Text.Substring(0, 3) + id;
+                usernamelbl.Text = fnametxt.Text.Substring(0, 3) + lnametxt.Text.Substring(0, 3) + id;
             }
             else if (lnametxt.Text.Length >= 3 && fnametxt.Text == "")
             {
-                usernametxt.Text = fnametxt.Text + lnametxt.Text.Substring(0, 3) + id;
+                usernamelbl.Text = fnametxt.Text + lnametxt.Text.Substring(0, 3) + id;
             }
             else if (fnametxt.Text != "")
             {
-                usernametxt.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
+                usernamelbl.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
             }
         }
     }

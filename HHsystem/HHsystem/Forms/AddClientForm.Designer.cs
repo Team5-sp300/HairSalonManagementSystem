@@ -30,11 +30,11 @@
         {
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_add = new System.Windows.Forms.Button();
-            this.passwordtxt = new System.Windows.Forms.TextBox();
+            this.emailtxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.phonetxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.emailtxt = new System.Windows.Forms.TextBox();
+            this.surnametxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.nametxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,15 +70,14 @@
             this.btn_add.UseVisualStyleBackColor = false;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
-            // passwordtxt
+            // emailtxt
             // 
-            this.passwordtxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.passwordtxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.passwordtxt.Location = new System.Drawing.Point(31, 263);
-            this.passwordtxt.Name = "passwordtxt";
-            this.passwordtxt.PasswordChar = '*';
-            this.passwordtxt.Size = new System.Drawing.Size(180, 20);
-            this.passwordtxt.TabIndex = 33;
+            this.emailtxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.emailtxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.emailtxt.Location = new System.Drawing.Point(31, 263);
+            this.emailtxt.Name = "emailtxt";
+            this.emailtxt.Size = new System.Drawing.Size(180, 20);
+            this.emailtxt.TabIndex = 33;
             // 
             // label6
             // 
@@ -107,14 +106,14 @@
             this.label5.TabIndex = 40;
             this.label5.Text = "Phone Number";
             // 
-            // emailtxt
+            // surnametxt
             // 
-            this.emailtxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.emailtxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.emailtxt.Location = new System.Drawing.Point(31, 161);
-            this.emailtxt.Name = "emailtxt";
-            this.emailtxt.Size = new System.Drawing.Size(180, 20);
-            this.emailtxt.TabIndex = 31;
+            this.surnametxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.surnametxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.surnametxt.Location = new System.Drawing.Point(31, 161);
+            this.surnametxt.Name = "surnametxt";
+            this.surnametxt.Size = new System.Drawing.Size(180, 20);
+            this.surnametxt.TabIndex = 31;
             // 
             // label2
             // 
@@ -174,11 +173,11 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_add);
-            this.Controls.Add(this.passwordtxt);
+            this.Controls.Add(this.emailtxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.phonetxt);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.emailtxt);
+            this.Controls.Add(this.surnametxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.nametxt);
             this.Controls.Add(this.label1);
@@ -196,11 +195,11 @@
 
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.Button btn_add;
-        private System.Windows.Forms.TextBox passwordtxt;
+        private System.Windows.Forms.TextBox emailtxt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox phonetxt;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox emailtxt;
+        private System.Windows.Forms.TextBox surnametxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox nametxt;
         private System.Windows.Forms.Label label1;

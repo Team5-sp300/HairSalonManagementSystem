@@ -35,7 +35,7 @@ namespace HHsystem.Controllers
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
                 mail.From = new MailAddress("SP300Test@gmail.com");
-                mail.To.Add("swabe@live.co.za");
+                mail.To.Add("eric_odding@hotmail.com");  //swabe@live.co.za , eric_odding@hotmail.com
                 mail.Subject = "Confirmation of Appointment for";
                 //mail.Body = "Dear " + client + "\n\n" +
                 //    "We hereby confirm your appointment at Heydt of Hair Design as follows:\n\n" +
@@ -45,7 +45,7 @@ namespace HHsystem.Controllers
                 //    "If you wish to change your appointment, please contact us again.\n\n" + 
                 //    "Kind regards\n" +
                 //    "Heydt of Hair";
-                using (StreamReader reader = File.OpenText("C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\basic.html"))
+                using (StreamReader reader = File.OpenText("..\\..\\..\\..\\basic.html"))
                 {
                     body = reader.ReadToEnd();
                     
@@ -62,6 +62,7 @@ namespace HHsystem.Controllers
 
                 SmtpServer.Send(mail);
                 MessageBox.Show("Confirmation Sent to " + toAddess);
+                SmtpServer.Dispose();
             }
             catch (Exception ex)
             {
