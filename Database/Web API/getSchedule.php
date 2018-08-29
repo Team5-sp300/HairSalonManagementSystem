@@ -12,7 +12,7 @@ if (isset($_POST['username'])) {
     }
 
 
-    $sql = "call getBookingSchedule('$username')";
+    $sql = "call getEmployeeSchedule('$username')";
     $result = $con->query($sql);
 
     $contacts = array();
@@ -20,7 +20,7 @@ if (isset($_POST['username'])) {
     if ($result->num_rows > 0) {
 
         while ($row = mysqli_fetch_assoc($result)) {
-            $contact = array("cusomter" => $row['(SELECT CustomerName FROM Customer WHERE Booking.CustomerID=Customer.CustomerID)'], "date" => $row['AppointmentDate'], "time" => $row['AppointmentTime'],"length" => $row['AppointmentDuration']);
+            $contact = array("cusomter" => $row['(SELECT CustomerName FROM Customer WHERE Booking.CustomerID=Customer.CustomerID)'], "date" => $row['AppointmentDate'], "time" => $row['AppointmentTime'],"length" => $row['(SELECT ServiceDuration FROM Service WHERE Service.ServiceID=Booking.ServiceID)']);
 
             //Add the contact to the contacts array
             array_push($contacts, $contact);

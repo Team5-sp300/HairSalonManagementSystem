@@ -2468,14 +2468,14 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f08003d
 			public const int bottom = 2131230781;
 			
-			// aapt resource value: 0x7f08009b
-			public const int btnaddbooking = 2131230875;
+			// aapt resource value: 0x7f08008e
+			public const int btnaddbooking = 2131230862;
 			
 			// aapt resource value: 0x7f0800a2
 			public const int btnaddcontact = 2131230882;
 			
-			// aapt resource value: 0x7f080097
-			public const int btninsert = 2131230871;
+			// aapt resource value: 0x7f080098
+			public const int btninsert = 2131230872;
 			
 			// aapt resource value: 0x7f0800b5
 			public const int btnsignout = 2131230901;
@@ -2570,17 +2570,17 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f080040
 			public const int enterAlwaysCollapsed = 2131230784;
 			
-			// aapt resource value: 0x7f080092
-			public const int etCname = 2131230866;
+			// aapt resource value: 0x7f080093
+			public const int etCname = 2131230867;
 			
-			// aapt resource value: 0x7f080095
-			public const int etDate = 2131230869;
+			// aapt resource value: 0x7f080096
+			public const int etDate = 2131230870;
 			
 			// aapt resource value: 0x7f08009f
 			public const int etEmail = 2131230879;
 			
-			// aapt resource value: 0x7f080094
-			public const int etEname = 2131230868;
+			// aapt resource value: 0x7f080095
+			public const int etEname = 2131230869;
 			
 			// aapt resource value: 0x7f08009c
 			public const int etFname = 2131230876;
@@ -2594,8 +2594,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f0800b7
 			public const int etPass = 2131230903;
 			
-			// aapt resource value: 0x7f080096
-			public const int etTime = 2131230870;
+			// aapt resource value: 0x7f080097
+			public const int etTime = 2131230871;
 			
 			// aapt resource value: 0x7f0800b6
 			public const int etusername = 2131230902;
@@ -2648,8 +2648,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f0800b9
 			public const int imageView = 2131230905;
 			
-			// aapt resource value: 0x7f080090
-			public const int imageView1 = 2131230864;
+			// aapt resource value: 0x7f080091
+			public const int imageView1 = 2131230865;
 			
 			// aapt resource value: 0x7f0800c7
 			public const int info = 2131230919;
@@ -2672,14 +2672,14 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f080018
 			public const int line3 = 2131230744;
 			
-			// aapt resource value: 0x7f08008f
-			public const int linearLayout1 = 2131230863;
+			// aapt resource value: 0x7f080090
+			public const int linearLayout1 = 2131230864;
 			
 			// aapt resource value: 0x7f08001d
 			public const int listMode = 2131230749;
 			
-			// aapt resource value: 0x7f08008e
-			public const int listView1 = 2131230862;
+			// aapt resource value: 0x7f08008f
+			public const int listView1 = 2131230863;
 			
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
@@ -2903,11 +2903,11 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
 			
-			// aapt resource value: 0x7f080091
-			public const int textView1 = 2131230865;
+			// aapt resource value: 0x7f080092
+			public const int textView1 = 2131230866;
 			
-			// aapt resource value: 0x7f080093
-			public const int textView2 = 2131230867;
+			// aapt resource value: 0x7f080094
+			public const int textView2 = 2131230868;
 			
 			// aapt resource value: 0x7f0800b1
 			public const int text_input_password_toggle = 2131230897;
@@ -2957,14 +2957,14 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f080013
 			public const int transition_transform = 2131230739;
 			
-			// aapt resource value: 0x7f080098
-			public const int txtDate = 2131230872;
+			// aapt resource value: 0x7f080099
+			public const int txtDate = 2131230873;
+			
+			// aapt resource value: 0x7f08009b
+			public const int txtName = 2131230875;
 			
 			// aapt resource value: 0x7f08009a
-			public const int txtName = 2131230874;
-			
-			// aapt resource value: 0x7f080099
-			public const int txtTime = 2131230873;
+			public const int txtTime = 2131230874;
 			
 			// aapt resource value: 0x7f0800b4
 			public const int txtWelcome = 2131230900;
