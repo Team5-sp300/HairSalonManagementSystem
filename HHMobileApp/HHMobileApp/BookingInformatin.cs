@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
+using System.Net;
 using System.Text;
 
 using Android.App;
@@ -38,6 +40,27 @@ namespace HHmobileApp
 
             BookingDetailsListAdapter adapter = new BookingDetailsListAdapter(this, items);
             listview.Adapter = adapter;
+
+            Button btn = FindViewById<Button>(Resource.Id.btncancelbooking);
+            btn.Click += button_click;
+        }
+
+        private void button_click(object sender, EventArgs e)
+        {
+            WebClient client = new WebClient();
+            Uri uri = new Uri("http://10.0.0.169/cancelBooking.php");
+            NameValueCollection parameter = new NameValueCollection();
+
+            parameter.Add("id", Intent.GetStringExtra("id"));
+       
+            client.UploadValuesCompleted += Client_UploadValuesCompleted;
+            client.UploadValuesAsync(uri, parameter);
+        }
+
+        private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
+        {
+            var intent = new Intent(this, typeof(BookingActivity));
+            StartActivity(intent);
         }
     }
 }

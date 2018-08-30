@@ -130,6 +130,7 @@ namespace HHmobileApp
         private void Listview_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
             var intent = new Intent(this, typeof(BookingInformatin));
+            intent.PutExtra("id", items[e.Position].id);
             intent.PutExtra("cname", items[e.Position].cusomter);
             intent.PutExtra("ename", items[e.Position].employee);
             intent.PutExtra("date", items[e.Position].date);

@@ -11,7 +11,7 @@
         android:text="Cancel Booking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnaddbooking"
+        android:id="@+id/btncancelbooking"
         android:background="@layout/button_border_settings"
         android:textColor="#3399ff" />
     <ListView
