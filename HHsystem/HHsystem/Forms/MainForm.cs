@@ -18,8 +18,8 @@ namespace HHsystem
     {
 
         DatabaseManager manager = new DatabaseManager();
-        DataTable table;  
-   
+        DataTable table;
+
         public MainForm()
         {
             InitializeComponent();
@@ -43,7 +43,8 @@ namespace HHsystem
             }
         }
 
-        public void addAdppointments() {
+        public void addAdppointments()
+        {
             customWeeklyScheduler.setAppointment(manager.getBookingDetails());
         }
 
@@ -95,8 +96,8 @@ namespace HHsystem
         public void populateNames()
         {
             for (int i = 0; i < manager.getClientDetails().GetLength(0); i++)
-            {   
-                comboBox2.Items.Add(manager.getClientDetails()[i,1]+" "+ manager.getClientDetails()[i, 2]);
+            {
+                comboBox2.Items.Add(manager.getClientDetails()[i, 1] + " " + manager.getClientDetails()[i, 2]);
             }
             comboBox2.SelectedIndex = 0;
         }
@@ -260,10 +261,10 @@ namespace HHsystem
             }
         }
 
-            private void button15_Click(object sender, EventArgs e)
+        private void button15_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            customWeeklyScheduler.redraws(this.Width-200, this.Height-205);
+            customWeeklyScheduler.redraws(this.Width - 200, this.Height - 205);
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -310,6 +311,36 @@ namespace HHsystem
         {
             managementTabControl.SelectedIndex = 3;
         }
-    }
-    }
 
+        private void button25_Click(object sender, EventArgs e)
+        {
+            if (managementTabControl.SelectedIndex.Equals(1))
+            {
+                int selectedrowindex = dataGridView5.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView5.Rows[selectedrowindex];
+                string i = selectedRow.Cells[0].Value.ToString();
+                string fname = selectedRow.Cells[1].Value.ToString();
+                string lname = selectedRow.Cells[2].Value.ToString();
+                string phone = selectedRow.Cells[3].Value.ToString();
+                string email = selectedRow.Cells[4].Value.ToString();
+                manager.updateClient(i, fname, lname, phone, email);
+            }
+            else if (managementTabControl.SelectedIndex.Equals(2))
+            {
+                int selectedrowindex = dataGridView4.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView4.Rows[selectedrowindex];
+                string username = selectedRow.Cells[0].Value.ToString();
+                string fname = selectedRow.Cells[1].Value.ToString();
+                string lname = selectedRow.Cells[2].Value.ToString();
+                string phone = selectedRow.Cells[4].Value.ToString();
+                string email = selectedRow.Cells[5].Value.ToString();
+                manager.updateEmployee(username, fname, lname, phone, email);
+            }
+
+            else
+            {
+                MessageBox.Show("Not Implemented");
+            }
+        }
+    }
+}

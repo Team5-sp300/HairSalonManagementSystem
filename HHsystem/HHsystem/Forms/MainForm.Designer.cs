@@ -107,7 +107,7 @@
             this.settingsBtn = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.managementTabControl = new HHsystem.CustomTabControl();
@@ -456,6 +456,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(598, 361);
             this.dataGridView2.TabIndex = 15;
             // 
@@ -754,6 +755,7 @@
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
             this.dataGridView3.RowHeadersVisible = false;
+            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView3.Size = new System.Drawing.Size(590, 350);
             this.dataGridView3.TabIndex = 11;
             // 
@@ -1024,6 +1026,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(590, 350);
             this.dataGridView1.TabIndex = 7;
             // 
@@ -1046,7 +1049,7 @@
             this.tabPage5.Controls.Add(this.settingsBtn);
             this.tabPage5.Controls.Add(this.button10);
             this.tabPage5.Controls.Add(this.button24);
-            this.tabPage5.Controls.Add(this.button25);
+            this.tabPage5.Controls.Add(this.btnUpdate);
             this.tabPage5.Controls.Add(this.button26);
             this.tabPage5.Controls.Add(this.button19);
             this.tabPage5.Controls.Add(this.managementTabControl);
@@ -1102,18 +1105,19 @@
             this.button24.Text = "Delete";
             this.button24.UseVisualStyleBackColor = false;
             // 
-            // button25
+            // btnUpdate
             // 
-            this.button25.BackColor = System.Drawing.Color.White;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button25.Location = new System.Drawing.Point(20, 173);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(131, 45);
-            this.button25.TabIndex = 26;
-            this.button25.Text = "Update";
-            this.button25.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnUpdate.Location = new System.Drawing.Point(20, 173);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(131, 45);
+            this.btnUpdate.TabIndex = 26;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -1209,8 +1213,8 @@
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView5.Location = new System.Drawing.Point(6, 8);
             this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
             this.dataGridView5.RowHeadersVisible = false;
+            this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView5.Size = new System.Drawing.Size(439, 387);
             this.dataGridView5.TabIndex = 25;
             // 
@@ -1234,10 +1238,10 @@
             this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView4.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(9, 6);
+            this.dataGridView4.Location = new System.Drawing.Point(6, 8);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
             this.dataGridView4.RowHeadersVisible = false;
+            this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView4.Size = new System.Drawing.Size(439, 387);
             this.dataGridView4.TabIndex = 24;
             // 
@@ -1428,7 +1432,7 @@
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button19;

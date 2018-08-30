@@ -28,7 +28,7 @@ namespace HHsystem.Forms
         public void setDateTimePicker()
         {
             dateTimePicker.Format = DateTimePickerFormat.Custom;
-            dateTimePicker.CustomFormat = "dd/MM/yyyy";
+            dateTimePicker.CustomFormat = "dd/MM";
             dateTimePicker.MinDate = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
         }
 
@@ -117,7 +117,7 @@ namespace HHsystem.Forms
             {
                 if (clients[i,1].ToString() == clientname[0] && clients[i,2].ToString() == clientname[1])
                 {
-                    email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime());
+                    //email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime());
                     break;
                 }
             }            

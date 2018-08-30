@@ -423,6 +423,37 @@ namespace HHsystem.Controllers
             conn.Close();
         }
 
+        public void updateClient(string id,string name, string surname, string phone, string email)
+        {
+            string command = "CALL updateClient(?id,?fname, ?lname, ?email, ?phone)";
+            connection();
+            MessageBox.Show("Updated");
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?id", id);
+            cmd.Parameters.AddWithValue("?fname", name);
+            cmd.Parameters.AddWithValue("?lname", surname);
+            cmd.Parameters.AddWithValue("?email", phone);
+            cmd.Parameters.AddWithValue("?phone", email);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+
+        public void updateEmployee(string username, string name, string surname, string phone, string email)
+        {
+            string command = "CALL updateEmployee(?id, ?fname, ?lname, ?email, ?phone)";
+            connection();
+            MessageBox.Show("Updated");
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?id", username);
+            cmd.Parameters.AddWithValue("?fname", name);
+            cmd.Parameters.AddWithValue("?lname", surname);
+            cmd.Parameters.AddWithValue("?email", phone);
+            cmd.Parameters.AddWithValue("?phone", email);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
         public void backup()
         {
             string constring = "server=localhost;user=root;pwd=qwerty;database=test;";
