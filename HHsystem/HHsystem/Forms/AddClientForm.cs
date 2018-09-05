@@ -20,6 +20,10 @@ namespace HHsystem.Forms
 
         private void btn_add_Click(object sender, EventArgs e)
         {
+            //if (getClientName() == "")                
+            //{
+
+            //}
             new ClientController().add(getClientName(), getClientSurname(), getClientEmail(), getClientPhone());
             this.Dispose();
         }

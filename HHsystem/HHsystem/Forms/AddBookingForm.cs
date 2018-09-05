@@ -34,18 +34,24 @@ namespace HHsystem.Forms
 
         public void populateClients()
         {
-            for (int i = 0; i < manager.getClientDetails().GetLength(0); i++)
+            int length = manager.getClientDetails().GetLength(0);
+            string[,] clientDetails = new string[length, 5];
+            Array.Copy(manager.getClientDetails(), clientDetails, clientDetails.Length);
+            for (int i = 0; i < length; i++)
             {
-                clientcombobox.Items.Add(manager.getClientDetails()[i, 1] + " " + manager.getClientDetails()[i, 2]);
+                clientcombobox.Items.Add(clientDetails[i, 1] + " " + clientDetails[i, 2]);
             }
             clientcombobox.SelectedIndex = 0;
         }
 
         public void populateEmployees()
         {
-            for (int i = 0; i < manager.getEmployeeDetails().GetLength(0); i++)
+            int length = manager.getEmployeeDetails().GetLength(0);
+            string[,] employeeDetails = new string[length, 6];
+            Array.Copy(manager.getEmployeeDetails(), employeeDetails, employeeDetails.Length);
+            for (int i = 0; i < length; i++)
             {
-                employeecombobox.Items.Add(manager.getEmployeeDetails()[i, 1] + " " + manager.getEmployeeDetails()[i, 2]);
+                employeecombobox.Items.Add(employeeDetails[i,1] + " " + employeeDetails[i,2]);
             }
             employeecombobox.SelectedIndex = 0;
         }
@@ -54,11 +60,27 @@ namespace HHsystem.Forms
         {
             for (int i = 8; i < 17; i++)
             {
-                timehourscombobox.Items.Add(i);
+                if (i.ToString().Length < 2)
+                {
+                    timehourscombobox.Items.Add("0" + i);
+                }
+                else
+                {
+                    timehourscombobox.Items.Add(i);
+                }
+                
             }
             for (int j = 00; j < 60; j+= 15)
             {
-                timeminutescombobox.Items.Add(j);
+                if (j == 00)
+                {
+                    timeminutescombobox.Items.Add("00");
+                } 
+                else
+                {
+                    timeminutescombobox.Items.Add(j);
+                }
+                
             }
             timehourscombobox.SelectedIndex = 0;
             timeminutescombobox.SelectedIndex = 0;
@@ -66,9 +88,12 @@ namespace HHsystem.Forms
 
         public void populateServices()
         {
-            for (int i = 0; i < manager.getServiceDetails().GetLength(0); i++)
+            int length = manager.getServiceDetails().GetLength(0);
+            string[,] serviceDetails = new string[length, 3];
+            Array.Copy(manager.getServiceDetails(), serviceDetails, serviceDetails.Length);
+            for (int i = 0; i < length; i++)
             {
-                servicecombobox.Items.Add(manager.getServiceDetails()[i, 1]);
+                servicecombobox.Items.Add(serviceDetails[i, 1]);
             }
             servicecombobox.SelectedIndex = 0;
         }
@@ -122,6 +147,11 @@ namespace HHsystem.Forms
                 }
             }            
             this.Dispose();
+        }
+
+        private void SettingForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

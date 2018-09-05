@@ -217,7 +217,7 @@ namespace HHsystem.Controllers
 
                 result.Close();
 
-                serviceDetails = new string[arrySize, 4];
+                serviceDetails = new string[arrySize, 3];
 
                 cmd = new MySqlCommand(command, conn);
                 result = cmd.ExecuteReader();
