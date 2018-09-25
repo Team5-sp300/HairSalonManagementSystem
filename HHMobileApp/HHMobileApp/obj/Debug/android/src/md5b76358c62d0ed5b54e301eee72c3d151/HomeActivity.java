@@ -13,7 +13,6 @@ public class HomeActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onBackPressed:()V:GetOnBackPressedHandler\n" +
-			"n_onCreateOptionsMenu:(Landroid/view/Menu;)Z:GetOnCreateOptionsMenu_Landroid_view_Menu_Handler\n" +
 			"n_onNavigationItemSelected:(Landroid/view/MenuItem;)Z:GetOnNavigationItemSelected_Landroid_view_MenuItem_Handler:Android.Support.Design.Widget.NavigationView/IOnNavigationItemSelectedListenerInvoker, Xamarin.Android.Support.Design\n" +
 			"";
 		mono.android.Runtime.register ("HHmobileApp.HomeActivity, HHmobileApp", HomeActivity.class, __md_methods);
@@ -42,14 +41,6 @@ public class HomeActivity
 	}
 
 	private native void n_onBackPressed ();
-
-
-	public boolean onCreateOptionsMenu (android.view.Menu p0)
-	{
-		return n_onCreateOptionsMenu (p0);
-	}
-
-	private native boolean n_onCreateOptionsMenu (android.view.Menu p0);
 
 
 	public boolean onNavigationItemSelected (android.view.MenuItem p0)

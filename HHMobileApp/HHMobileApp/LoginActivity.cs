@@ -24,6 +24,7 @@ namespace HHmobileApp
         EditText textName;
         EditText textPassword;
         TextView textView;
+        CheckBox checkbox;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,6 +35,8 @@ namespace HHmobileApp
 
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
+
+            checkbox= FindViewById<CheckBox>(Resource.Id.cbRemeberMe);
         }
 
         public override void OnBackPressed()
@@ -48,7 +51,7 @@ namespace HHmobileApp
                 base.OnBackPressed();
             }
         }
-   
+
         private void button_click(object sender, EventArgs e)
         {
             WebClient client = new WebClient();
@@ -72,14 +75,18 @@ namespace HHmobileApp
                 {
                     var intent = new Intent(this, typeof(HomeActivity));
                     intent.PutExtra("Username", textName.Text);
+                    if (checkbox.Checked) {
+                        ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+                        ISharedPreferencesEditor edit = pref.Edit();
+                        edit.PutString("Username", textName.Text);
+                        edit.PutString("Password", textPassword.Text);
+                        edit.Apply();
+                    }
                     StartActivity(intent);
                 }
-                else
-                {
-                    textView.Visibility = ViewStates.Visible;
-                }
-            }
 
+            }
+            textView.Visibility = ViewStates.Visible;
         }
     }
 }

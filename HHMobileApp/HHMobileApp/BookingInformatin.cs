@@ -10,6 +10,7 @@ using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.V7.App;
+using Android.Support.V7.Widget;
 using Android.Views;
 using Android.Widget;
 
@@ -29,6 +30,7 @@ namespace HHmobileApp
 
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
+            toolbar.MenuItemClick += Menu_Clicked;
 
             listview = FindViewById<ListView>(Resource.Id.listView1);
 
@@ -43,6 +45,22 @@ namespace HHmobileApp
 
             Button btn = FindViewById<Button>(Resource.Id.btncancelbooking);
             btn.Click += button_click;
+
+        }
+
+        private void Menu_Clicked(object sender, Android.Support.V7.Widget.Toolbar.MenuItemClickEventArgs e)
+        {
+            if (e.Item.ItemId == Resource.Id.action_back)
+            {
+                var intent = new Intent(this, typeof(BookingActivity));
+                StartActivity(intent);
+            }
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
+            return true;
         }
 
         private void button_click(object sender, EventArgs e)
@@ -56,6 +74,8 @@ namespace HHmobileApp
             client.UploadValuesCompleted += Client_UploadValuesCompleted;
             client.UploadValuesAsync(uri, parameter);
         }
+
+      
 
         private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
         {

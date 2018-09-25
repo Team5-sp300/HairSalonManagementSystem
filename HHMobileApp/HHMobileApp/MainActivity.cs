@@ -20,11 +20,46 @@ namespace HHmobileApp
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
+        string username;
+        string password;
+        List<LoginDetails> loginDetails;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            var intent = new Intent(this, typeof(LoginActivity));
-            StartActivity(intent);
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            username = pref.GetString("Username", String.Empty);
+            password = pref.GetString("Password", String.Empty);
+
+            if (username == String.Empty || password == String.Empty)
+            {
+                var intent = new Intent(this, typeof(LoginActivity));
+                StartActivity(intent);
+            }
+            else
+            {
+                WebClient client = new WebClient();
+                Uri uri = new Uri("http://10.0.0.169/login.php");
+                client.DownloadDataAsync(uri);
+                client.DownloadDataCompleted += download;
+            }
+        }
+
+        private void download(object sender, DownloadDataCompletedEventArgs e)
+        {
+
+            string json = Encoding.UTF8.GetString(e.Result);
+            loginDetails = JsonConvert.DeserializeObject<List<LoginDetails>>(json);
+            for (int i = 0; i < loginDetails.Count; i++)
+            {
+                if (loginDetails[i].name.Equals(username) && loginDetails[i].password.Equals(password))
+                {
+                    var intent = new Intent(this, typeof(HomeActivity));
+                    StartActivity(intent);
+                }
+
+            }
+
         }
 
         public override void OnBackPressed()

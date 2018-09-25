@@ -65,11 +65,11 @@ namespace HHmobileApp
             }
         }
 
-        public override bool OnCreateOptionsMenu(IMenu menu)
-        {
-            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
-            return true;
-        }
+        //public override bool OnCreateOptionsMenu(IMenu menu)
+        //{
+        //    MenuInflater.Inflate(Resource.Menu.menu_main, menu);
+        //    return true;
+        //}
 
 
 
@@ -111,6 +111,10 @@ namespace HHmobileApp
 
         private void button_click(object sender, EventArgs e)
         {
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            ISharedPreferencesEditor edit = pref.Edit();
+            edit.Clear();
+            edit.Apply();
             var intent = new Intent(this, typeof(LoginActivity));
             StartActivity(intent);
         }

@@ -27,6 +27,7 @@ namespace HHmobileApp
 
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
+            toolbar.MenuItemClick += Menu_Clicked;
 
             listview = FindViewById<ListView>(Resource.Id.listView1);
 
@@ -40,5 +41,21 @@ namespace HHmobileApp
             listview.Adapter = adapter;
 
         }
+
+        private void Menu_Clicked(object sender, Android.Support.V7.Widget.Toolbar.MenuItemClickEventArgs e)
+        {
+            if (e.Item.ItemId == Resource.Id.action_back)
+            {
+                var intent = new Intent(this, typeof(BookingActivity));
+                StartActivity(intent);
+            }
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
+            return true;
+        }
+
     }
 }

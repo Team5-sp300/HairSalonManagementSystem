@@ -2363,6 +2363,9 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0005
 			public const int actions = 2131492869;
 			
+			// aapt resource value: 0x7F020043
+			public const int action_back = 2130837571;
+			
 			// aapt resource value: 0x7F0C0002
 			public const int action_bar = 2131492866;
 			
@@ -2455,6 +2458,9 @@ namespace HHmobileApp
 			
 			// aapt resource value: 0x7F0C001C
 			public const int cancel_action = 2131492892;
+			
+			// aapt resource value: 0x7F020035
+			public const int cbRemeberMe = 2130837557;
 			
 			// aapt resource value: 0x7F0C001D
 			public const int center = 2131492893;
@@ -2576,8 +2582,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020035
-			public const int imageView = 2130837557;
+			// aapt resource value: 0x7F020036
+			public const int imageView = 2130837558;
 			
 			// aapt resource value: 0x7F020008
 			public const int imageView1 = 2130837512;
@@ -2633,20 +2639,20 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
 			
-			// aapt resource value: 0x7F020039
-			public const int nav_bookings = 2130837561;
-			
 			// aapt resource value: 0x7F020040
-			public const int nav_clients = 2130837568;
-			
-			// aapt resource value: 0x7F020037
-			public const int nav_home = 2130837559;
-			
-			// aapt resource value: 0x7F020038
-			public const int nav_schedule = 2130837560;
+			public const int nav_bookings = 2130837568;
 			
 			// aapt resource value: 0x7F020041
-			public const int nav_settings = 2130837569;
+			public const int nav_clients = 2130837569;
+			
+			// aapt resource value: 0x7F020038
+			public const int nav_home = 2130837560;
+			
+			// aapt resource value: 0x7F020039
+			public const int nav_schedule = 2130837561;
+			
+			// aapt resource value: 0x7F020042
+			public const int nav_settings = 2130837570;
 			
 			// aapt resource value: 0x7F020003
 			public const int nav_view = 2130837507;
@@ -2870,8 +2876,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F020016
 			public const int txtDate = 2130837526;
 			
-			// aapt resource value: 0x7F020036
-			public const int txtduration = 2130837558;
+			// aapt resource value: 0x7F020037
+			public const int txtduration = 2130837559;
 			
 			// aapt resource value: 0x7F020024
 			public const int txtfname = 2130837540;

@@ -29,6 +29,7 @@ namespace HHmobileApp
             SetContentView(Resource.Layout.client_insert);
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
+            toolbar.MenuItemClick += Menu_Clicked;
 
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
@@ -38,6 +39,22 @@ namespace HHmobileApp
             txtNumber = FindViewById<EditText>(Resource.Id.etNumber);
             txtEmail = FindViewById<EditText>(Resource.Id.etEmail);
         }
+
+        private void Menu_Clicked(object sender, Android.Support.V7.Widget.Toolbar.MenuItemClickEventArgs e)
+        {
+            if (e.Item.ItemId == Resource.Id.action_back)
+            {
+                var intent = new Intent(this, typeof(BookingActivity));
+                StartActivity(intent);
+            }
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
+            return true;
+        }
+
 
         private void button_click(object sender, EventArgs e)
         {
