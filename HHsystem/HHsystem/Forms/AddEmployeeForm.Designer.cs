@@ -44,6 +44,18 @@
             this.lnametxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.usernametxt = new System.Windows.Forms.TextBox();
+            this.pictureBoxUserName = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFirstName = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSurname = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEmail = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPhone = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFirstName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSurname)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -94,6 +106,7 @@
             this.emailtxt.Name = "emailtxt";
             this.emailtxt.Size = new System.Drawing.Size(180, 20);
             this.emailtxt.TabIndex = 3;
+            this.emailtxt.TextChanged += new System.EventHandler(this.emailtxt_TextChanged);
             // 
             // label2
             // 
@@ -112,6 +125,7 @@
             this.phonetxt.Name = "phonetxt";
             this.phonetxt.Size = new System.Drawing.Size(180, 20);
             this.phonetxt.TabIndex = 4;
+            this.phonetxt.TextChanged += new System.EventHandler(this.phonetxt_TextChanged);
             // 
             // label5
             // 
@@ -131,6 +145,7 @@
             this.passwordtxt.PasswordChar = '*';
             this.passwordtxt.Size = new System.Drawing.Size(180, 20);
             this.passwordtxt.TabIndex = 5;
+            this.passwordtxt.TextChanged += new System.EventHandler(this.passwordtxt_TextChanged);
             // 
             // label6
             // 
@@ -205,6 +220,64 @@
             this.usernametxt.Name = "usernametxt";
             this.usernametxt.Size = new System.Drawing.Size(180, 20);
             this.usernametxt.TabIndex = 33;
+            this.usernametxt.TextChanged += new System.EventHandler(this.usernametxt_TextChanged);
+            // 
+            // pictureBoxUserName
+            // 
+            this.pictureBoxUserName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxUserName.ErrorImage = null;
+            this.pictureBoxUserName.InitialImage = null;
+            this.pictureBoxUserName.Location = new System.Drawing.Point(216, 74);
+            this.pictureBoxUserName.Name = "pictureBoxUserName";
+            this.pictureBoxUserName.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxUserName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxUserName.TabIndex = 34;
+            this.pictureBoxUserName.TabStop = false;
+            // 
+            // pictureBoxFirstName
+            // 
+            this.pictureBoxFirstName.Location = new System.Drawing.Point(216, 120);
+            this.pictureBoxFirstName.Name = "pictureBoxFirstName";
+            this.pictureBoxFirstName.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxFirstName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxFirstName.TabIndex = 35;
+            this.pictureBoxFirstName.TabStop = false;
+            // 
+            // pictureBoxSurname
+            // 
+            this.pictureBoxSurname.Location = new System.Drawing.Point(216, 166);
+            this.pictureBoxSurname.Name = "pictureBoxSurname";
+            this.pictureBoxSurname.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxSurname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSurname.TabIndex = 36;
+            this.pictureBoxSurname.TabStop = false;
+            // 
+            // pictureBoxEmail
+            // 
+            this.pictureBoxEmail.Location = new System.Drawing.Point(216, 215);
+            this.pictureBoxEmail.Name = "pictureBoxEmail";
+            this.pictureBoxEmail.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEmail.TabIndex = 37;
+            this.pictureBoxEmail.TabStop = false;
+            // 
+            // pictureBoxPhone
+            // 
+            this.pictureBoxPhone.Location = new System.Drawing.Point(216, 266);
+            this.pictureBoxPhone.Name = "pictureBoxPhone";
+            this.pictureBoxPhone.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPhone.TabIndex = 38;
+            this.pictureBoxPhone.TabStop = false;
+            // 
+            // pictureBoxPassword
+            // 
+            this.pictureBoxPassword.Location = new System.Drawing.Point(217, 317);
+            this.pictureBoxPassword.Name = "pictureBoxPassword";
+            this.pictureBoxPassword.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPassword.TabIndex = 39;
+            this.pictureBoxPassword.TabStop = false;
             // 
             // AddEmployeeForm
             // 
@@ -213,6 +286,12 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(248, 422);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBoxPassword);
+            this.Controls.Add(this.pictureBoxPhone);
+            this.Controls.Add(this.pictureBoxEmail);
+            this.Controls.Add(this.pictureBoxSurname);
+            this.Controls.Add(this.pictureBoxFirstName);
+            this.Controls.Add(this.pictureBoxUserName);
             this.Controls.Add(this.usernametxt);
             this.Controls.Add(this.lnametxt);
             this.Controls.Add(this.label8);
@@ -233,6 +312,12 @@
             this.Name = "AddEmployeeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFirstName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSurname)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +341,11 @@
         private System.Windows.Forms.TextBox lnametxt;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox usernametxt;
+        private System.Windows.Forms.PictureBox pictureBoxUserName;
+        private System.Windows.Forms.PictureBox pictureBoxFirstName;
+        private System.Windows.Forms.PictureBox pictureBoxSurname;
+        private System.Windows.Forms.PictureBox pictureBoxEmail;
+        private System.Windows.Forms.PictureBox pictureBoxPhone;
+        private System.Windows.Forms.PictureBox pictureBoxPassword;
     }
 }
