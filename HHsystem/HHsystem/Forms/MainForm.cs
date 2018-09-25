@@ -68,6 +68,7 @@ namespace HHsystem
             bindingSource.DataSource = table;
             dataGridView1.DataSource = bindingSource;
             dataGridView4.DataSource = bindingSource;
+            dataGridView4.Refresh();
         }
 
 
@@ -335,6 +336,45 @@ namespace HHsystem
                 string phone = selectedRow.Cells[4].Value.ToString();
                 string email = selectedRow.Cells[5].Value.ToString();
                 manager.updateEmployee(username, fname, lname, phone, email);
+            }
+
+            else
+            {
+                MessageBox.Show("Not Implemented");
+            }
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            if (managementTabControl.SelectedIndex.Equals(1))
+            {
+                int selectedrowindex = dataGridView5.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView5.Rows[selectedrowindex];
+                string i = selectedRow.Cells[0].Value.ToString();
+                //manager.updateClient(i);
+            }
+            else if (managementTabControl.SelectedIndex.Equals(2))
+            {
+                int selectedrowindex = dataGridView4.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView4.Rows[selectedrowindex];
+                string username = selectedRow.Cells[0].Value.ToString();
+
+                DialogResult result = MessageBox.Show("Do you want to permanently Delete this?", "Warning",
+                MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    manager.deleteEmployee(username);
+                    populateEmployeeTable();
+                }
+                else if (result == DialogResult.No)
+                {
+                    manager.voidEmployee(username);
+                    populateEmployeeTable();
+                }
+                else if (result == DialogResult.Cancel)
+                {
+                    //code for Cancel
+                }               
             }
 
             else

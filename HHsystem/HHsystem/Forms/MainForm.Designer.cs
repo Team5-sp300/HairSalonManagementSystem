@@ -1104,6 +1104,7 @@
             this.button24.TabIndex = 27;
             this.button24.Text = "Delete";
             this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // btnUpdate
             // 

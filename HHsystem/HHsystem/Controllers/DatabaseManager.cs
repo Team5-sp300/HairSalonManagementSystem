@@ -454,6 +454,26 @@ namespace HHsystem.Controllers
             conn.Close();
         }
 
+        public void voidEmployee(string username)
+        {
+            string command = "CALL voidEmployee(?id)";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?id", username);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        public void deleteEmployee(string username)
+        {
+            string command = "CALL deleteEmployee(?id)";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?id", username);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
         public void backup()
         {
             string constring = "server=localhost;user=root;pwd=qwerty;database=test;";
