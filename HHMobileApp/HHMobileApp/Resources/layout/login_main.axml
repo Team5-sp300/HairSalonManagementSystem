@@ -8,7 +8,9 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_main"
     android:id="@+id/linearLayout1"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
@@ -20,35 +22,32 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <TextView
-                android:text="Username"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView1"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/etusername"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp" />
-            <TextView
-                android:text="Password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Username" />
             <EditText
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/etPass"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp" />
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Password" />
+            <CheckBox
+                android:text="Remember Me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbRemeberMe"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center" />
             <TextView
                 android:text="Invalid Username/Password"
                 android:layout_width="match_parent"
@@ -64,17 +63,8 @@
                 android:id="@+id/btninsert"
                 android:background="@layout/button_border_settings"
                 android:textColor="#3399ff"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp" />
-            <CheckBox
-                android:text="Remember Me"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/cbRemeberMe"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:gravity="center" />
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
