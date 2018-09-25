@@ -130,28 +130,103 @@ namespace HHsystem.Forms
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            EmailController email = new EmailController();
-            String[,] clients = manager.getClientDetails();
-
-            string[] clientname = getClientName().Split(new char[0]);
-            string[] employeename = getEmployeeName().Split(new char[0]);
-
-            manager.addBooking(clientname[0], clientname[1], employeename[0], employeename[1], getDate(), getTime(), getService());
-
-            for (int i = 0; i < clients.Length; i++)
+            if (employeecombobox.Text.Length > 0 && clientcombobox.Text.Length > 0 && DateTime.Compare(dateTimePicker.Value, new DateTime()) >= 0
+                && timehourscombobox.Text.Length > 0 && timeminutescombobox.Text.Length > 0 && servicecombobox.Text.Length > 0)
             {
-                if (clients[i,1].ToString() == clientname[0] && clients[i,2].ToString() == clientname[1])
+                EmailController email = new EmailController();
+                String[,] clients = manager.getClientDetails();
+
+                string[] clientname = getClientName().Split(new char[0]);
+                string[] employeename = getEmployeeName().Split(new char[0]);
+
+                manager.addBooking(clientname[0], clientname[1], employeename[0], employeename[1], getDate(), getTime(), getService());
+
+                for (int i = 0; i < clients.Length; i++)
                 {
-                    //email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime());
-                    break;
+                    if (clients[i, 1].ToString() == clientname[0] && clients[i, 2].ToString() == clientname[1])
+                    {
+                        //email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime());
+                        break;
+                    }
                 }
-            }            
-            this.Dispose();
+                this.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("Please choose valid options.");
+            }
         }
 
-        private void SettingForm_Load(object sender, EventArgs e)
+        private void employeecombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (employeecombobox.Text.Length > 0)
+            {
+                pictureBoxEmployee.Image = Properties.Resources.valid;
+            }
+            else
+            {
+                pictureBoxEmployee.Image = Properties.Resources.invalid;
+            }
+        }
 
+        private void clientcombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (clientcombobox.Text.Length > 0)
+            {
+                pictureBoxClient.Image = Properties.Resources.valid;
+            }
+            else
+            {
+                pictureBoxClient.Image = Properties.Resources.invalid;
+            }
+        }
+
+        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            if (DateTime.Compare(dateTimePicker.Value, new DateTime()) >= 0)
+            {
+                pictureBoxDate.Image = Properties.Resources.valid;
+            }
+            else
+            {
+                pictureBoxDate.Image = Properties.Resources.invalid;
+            }
+        }
+
+        private void timehourscombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (timehourscombobox.Text.Length > 0)
+            {
+                pictureBoxTime.Image = Properties.Resources.valid;
+            }
+            else
+            {
+                pictureBoxTime.Image = Properties.Resources.invalid;
+            }
+        }
+
+        private void timeminutescombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (timeminutescombobox.Text.Length > 0)
+            {
+                pictureBoxTime.Image = Properties.Resources.valid;
+            }
+            else
+            {
+                pictureBoxTime.Image = Properties.Resources.invalid;
+            }
+        }
+
+        private void servicecombobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (servicecombobox.Text.Length > 0)
+            {
+                pictureBoxService.Image = Properties.Resources.valid;
+            }
+            else
+            {
+                pictureBoxService.Image = Properties.Resources.invalid;
+            }
         }
     }
 }

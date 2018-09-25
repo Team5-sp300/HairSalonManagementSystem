@@ -43,6 +43,16 @@
             this.servicecombobox = new System.Windows.Forms.ComboBox();
             this.timehourscombobox = new System.Windows.Forms.ComboBox();
             this.timeminutescombobox = new System.Windows.Forms.ComboBox();
+            this.pictureBoxEmployee = new System.Windows.Forms.PictureBox();
+            this.pictureBoxClient = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDate = new System.Windows.Forms.PictureBox();
+            this.pictureBoxTime = new System.Windows.Forms.PictureBox();
+            this.pictureBoxService = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxService)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_cancel
@@ -146,6 +156,7 @@
             this.employeecombobox.Name = "employeecombobox";
             this.employeecombobox.Size = new System.Drawing.Size(180, 21);
             this.employeecombobox.TabIndex = 58;
+            this.employeecombobox.SelectedIndexChanged += new System.EventHandler(this.employeecombobox_SelectedIndexChanged);
             // 
             // clientcombobox
             // 
@@ -154,6 +165,7 @@
             this.clientcombobox.Name = "clientcombobox";
             this.clientcombobox.Size = new System.Drawing.Size(180, 21);
             this.clientcombobox.TabIndex = 59;
+            this.clientcombobox.SelectedIndexChanged += new System.EventHandler(this.clientcombobox_SelectedIndexChanged);
             // 
             // dateTimePicker
             // 
@@ -163,6 +175,7 @@
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(180, 20);
             this.dateTimePicker.TabIndex = 60;
+            this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // servicecombobox
             // 
@@ -171,6 +184,7 @@
             this.servicecombobox.Name = "servicecombobox";
             this.servicecombobox.Size = new System.Drawing.Size(180, 21);
             this.servicecombobox.TabIndex = 61;
+            this.servicecombobox.SelectedIndexChanged += new System.EventHandler(this.servicecombobox_SelectedIndexChanged);
             // 
             // timehourscombobox
             // 
@@ -179,6 +193,7 @@
             this.timehourscombobox.Name = "timehourscombobox";
             this.timehourscombobox.Size = new System.Drawing.Size(44, 21);
             this.timehourscombobox.TabIndex = 62;
+            this.timehourscombobox.SelectedIndexChanged += new System.EventHandler(this.timehourscombobox_SelectedIndexChanged);
             // 
             // timeminutescombobox
             // 
@@ -187,6 +202,67 @@
             this.timeminutescombobox.Name = "timeminutescombobox";
             this.timeminutescombobox.Size = new System.Drawing.Size(44, 21);
             this.timeminutescombobox.TabIndex = 63;
+            this.timeminutescombobox.SelectedIndexChanged += new System.EventHandler(this.timeminutescombobox_SelectedIndexChanged);
+            // 
+            // pictureBoxEmployee
+            // 
+            this.pictureBoxEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxEmployee.ErrorImage = null;
+            this.pictureBoxEmployee.InitialImage = null;
+            this.pictureBoxEmployee.Location = new System.Drawing.Point(217, 89);
+            this.pictureBoxEmployee.Name = "pictureBoxEmployee";
+            this.pictureBoxEmployee.Size = new System.Drawing.Size(20, 21);
+            this.pictureBoxEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEmployee.TabIndex = 64;
+            this.pictureBoxEmployee.TabStop = false;
+            // 
+            // pictureBoxClient
+            // 
+            this.pictureBoxClient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxClient.ErrorImage = null;
+            this.pictureBoxClient.InitialImage = null;
+            this.pictureBoxClient.Location = new System.Drawing.Point(217, 139);
+            this.pictureBoxClient.Name = "pictureBoxClient";
+            this.pictureBoxClient.Size = new System.Drawing.Size(20, 21);
+            this.pictureBoxClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxClient.TabIndex = 65;
+            this.pictureBoxClient.TabStop = false;
+            // 
+            // pictureBoxDate
+            // 
+            this.pictureBoxDate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxDate.ErrorImage = null;
+            this.pictureBoxDate.InitialImage = null;
+            this.pictureBoxDate.Location = new System.Drawing.Point(217, 190);
+            this.pictureBoxDate.Name = "pictureBoxDate";
+            this.pictureBoxDate.Size = new System.Drawing.Size(20, 21);
+            this.pictureBoxDate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxDate.TabIndex = 66;
+            this.pictureBoxDate.TabStop = false;
+            // 
+            // pictureBoxTime
+            // 
+            this.pictureBoxTime.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxTime.ErrorImage = null;
+            this.pictureBoxTime.InitialImage = null;
+            this.pictureBoxTime.Location = new System.Drawing.Point(217, 241);
+            this.pictureBoxTime.Name = "pictureBoxTime";
+            this.pictureBoxTime.Size = new System.Drawing.Size(20, 21);
+            this.pictureBoxTime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxTime.TabIndex = 67;
+            this.pictureBoxTime.TabStop = false;
+            // 
+            // pictureBoxService
+            // 
+            this.pictureBoxService.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxService.ErrorImage = null;
+            this.pictureBoxService.InitialImage = null;
+            this.pictureBoxService.Location = new System.Drawing.Point(217, 292);
+            this.pictureBoxService.Name = "pictureBoxService";
+            this.pictureBoxService.Size = new System.Drawing.Size(20, 21);
+            this.pictureBoxService.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxService.TabIndex = 68;
+            this.pictureBoxService.TabStop = false;
             // 
             // SettingForm
             // 
@@ -195,6 +271,11 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(248, 412);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBoxService);
+            this.Controls.Add(this.pictureBoxTime);
+            this.Controls.Add(this.pictureBoxDate);
+            this.Controls.Add(this.pictureBoxClient);
+            this.Controls.Add(this.pictureBoxEmployee);
             this.Controls.Add(this.timeminutescombobox);
             this.Controls.Add(this.timehourscombobox);
             this.Controls.Add(this.servicecombobox);
@@ -214,7 +295,11 @@
             this.Name = "SettingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.SettingForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxService)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +321,10 @@
         private System.Windows.Forms.ComboBox servicecombobox;
         private System.Windows.Forms.ComboBox timehourscombobox;
         private System.Windows.Forms.ComboBox timeminutescombobox;
+        private System.Windows.Forms.PictureBox pictureBoxEmployee;
+        private System.Windows.Forms.PictureBox pictureBoxClient;
+        private System.Windows.Forms.PictureBox pictureBoxDate;
+        private System.Windows.Forms.PictureBox pictureBoxTime;
+        private System.Windows.Forms.PictureBox pictureBoxService;
     }
 }

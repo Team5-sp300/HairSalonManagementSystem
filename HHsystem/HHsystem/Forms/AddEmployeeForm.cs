@@ -15,18 +15,37 @@ namespace HHsystem.Forms
     public partial class AddEmployeeForm : Form
     {
         private int id;
+        private bool nameValid;
+        private bool surnameValid;
+        private bool emailValid;
+        private bool phoneValid;
+        private bool usernameValid;
+        private bool passwordValid;
 
         public AddEmployeeForm()
         {
             InitializeComponent();
             Random rnd = new Random();
             id = rnd.Next(100, 1000);
-        }
+            nameValid = false;
+            surnameValid = false;
+            emailValid = false;
+            phoneValid = false;
+            usernameValid = false;
+            passwordValid = false;
+    }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new EmployeeController().add(getEmployeeUname(),getEmployeeFname(), getEmployeeLname(),getEmployeeEmail(), getEmployeePhone(), getEmployeePassword());
-            this.Dispose();
+            if (nameValid && surnameValid && emailValid && phoneValid && usernameValid && passwordValid)
+            {
+                new EmployeeController().add(getEmployeeUname(), getEmployeeFname(), getEmployeeLname(), getEmployeeEmail(), getEmployeePhone(), getEmployeePassword());
+                this.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("Please enter valid details.");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -83,13 +102,15 @@ namespace HHsystem.Forms
                 usernametxt.Text = fnametxt.Text+ lnametxt.Text.Substring(0, 3) + id;
             }
 
-            if (fnametxt.Text.Length > 0 )
+            if (getEmployeeFname().Length > 0 )
             {
                 pictureBoxFirstName.Image = Properties.Resources.valid;
+                nameValid = true;
             }
             else
             {
                 pictureBoxFirstName.Image = Properties.Resources.invalid;
+                nameValid = false;
             }
         }
 
@@ -110,25 +131,29 @@ namespace HHsystem.Forms
                 usernametxt.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
             }
 
-            if (fnametxt.Text.Length > 0)
+            if (getEmployeeLname().Length > 0)
             {
                 pictureBoxSurname.Image = Properties.Resources.valid;
+                surnameValid = true;
             }
             else
             {
                 pictureBoxSurname.Image = Properties.Resources.invalid;
+                surnameValid = false;
             }
         }
 
         private void usernametxt_TextChanged(object sender, EventArgs e)
         {
-            if (usernametxt.Text.Length >= 8)
+            if (getEmployeeUname().Length >= 8)
             {
                 pictureBoxUserName.Image = Properties.Resources.valid;
+                usernameValid = true;
             }
             else
             {
                 pictureBoxUserName.Image = Properties.Resources.invalid;
+                usernameValid = false;
             }            
         }
 
@@ -136,45 +161,52 @@ namespace HHsystem.Forms
         {
             string expresion;
             expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
-            if (Regex.IsMatch(emailtxt.Text, expresion) && emailtxt.Text.Length > 0)
+            if (Regex.IsMatch(getEmployeeEmail(), expresion) && getEmployeeEmail().Length > 0)
             {
-                if (Regex.Replace(emailtxt.Text, expresion, string.Empty).Length == 0)
+                if (Regex.Replace(getEmployeeEmail(), expresion, string.Empty).Length == 0)
                 {
                     pictureBoxEmail.Image = Properties.Resources.valid;
+                    emailValid = true;
                 }
                 else
                 {
                     pictureBoxEmail.Image = Properties.Resources.invalid;
+                    emailValid = false;
                 }
             }
             else
             {
                 pictureBoxEmail.Image = Properties.Resources.invalid;
+                emailValid = false;
             }
         }
 
         private void phonetxt_TextChanged(object sender, EventArgs e)
         {
             Regex nonNumericRegex = new Regex(@"\D");
-            if (!nonNumericRegex.IsMatch(phonetxt.Text) && phonetxt.Text.Length > 0)
+            if (!nonNumericRegex.IsMatch(getEmployeePhone()) && getEmployeePhone().Length > 0)
             {
                 pictureBoxPhone.Image = Properties.Resources.valid;
+                phoneValid = true;
             }
             else 
             {
                 pictureBoxPhone.Image = Properties.Resources.invalid;
+                phoneValid = false;
             }
         }
 
         private void passwordtxt_TextChanged(object sender, EventArgs e)
         {
-            if (passwordtxt.Text.Length >= 8)
+            if (getEmployeePassword().Length >= 8)
             {
                 pictureBoxPassword.Image = Properties.Resources.valid;
+                passwordValid = true;
             }
             else
             {
                 pictureBoxPassword.Image = Properties.Resources.invalid;
+                passwordValid = false;
             }
         }
     }

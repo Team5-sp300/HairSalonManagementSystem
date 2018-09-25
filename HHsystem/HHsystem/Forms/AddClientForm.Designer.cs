@@ -40,6 +40,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBoxName = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSurname = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPhone = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEmail = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSurname)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmail)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_cancel
@@ -78,6 +86,7 @@
             this.emailtxt.Name = "emailtxt";
             this.emailtxt.Size = new System.Drawing.Size(180, 20);
             this.emailtxt.TabIndex = 33;
+            this.emailtxt.TextChanged += new System.EventHandler(this.emailtxt_TextChanged);
             // 
             // label6
             // 
@@ -96,6 +105,7 @@
             this.phonetxt.Name = "phonetxt";
             this.phonetxt.Size = new System.Drawing.Size(180, 20);
             this.phonetxt.TabIndex = 32;
+            this.phonetxt.TextChanged += new System.EventHandler(this.phonetxt_TextChanged);
             // 
             // label5
             // 
@@ -114,6 +124,7 @@
             this.surnametxt.Name = "surnametxt";
             this.surnametxt.Size = new System.Drawing.Size(180, 20);
             this.surnametxt.TabIndex = 31;
+            this.surnametxt.TextChanged += new System.EventHandler(this.surnametxt_TextChanged);
             // 
             // label2
             // 
@@ -132,6 +143,7 @@
             this.nametxt.Name = "nametxt";
             this.nametxt.Size = new System.Drawing.Size(180, 20);
             this.nametxt.TabIndex = 30;
+            this.nametxt.TextChanged += new System.EventHandler(this.nametxt_TextChanged);
             // 
             // label1
             // 
@@ -163,6 +175,54 @@
             this.label7.Size = new System.Drawing.Size(200, 2);
             this.label7.TabIndex = 42;
             // 
+            // pictureBoxName
+            // 
+            this.pictureBoxName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxName.ErrorImage = null;
+            this.pictureBoxName.InitialImage = null;
+            this.pictureBoxName.Location = new System.Drawing.Point(216, 110);
+            this.pictureBoxName.Name = "pictureBoxName";
+            this.pictureBoxName.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxName.TabIndex = 43;
+            this.pictureBoxName.TabStop = false;
+            // 
+            // pictureBoxSurname
+            // 
+            this.pictureBoxSurname.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxSurname.ErrorImage = null;
+            this.pictureBoxSurname.InitialImage = null;
+            this.pictureBoxSurname.Location = new System.Drawing.Point(217, 161);
+            this.pictureBoxSurname.Name = "pictureBoxSurname";
+            this.pictureBoxSurname.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxSurname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSurname.TabIndex = 44;
+            this.pictureBoxSurname.TabStop = false;
+            // 
+            // pictureBoxPhone
+            // 
+            this.pictureBoxPhone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxPhone.ErrorImage = null;
+            this.pictureBoxPhone.InitialImage = null;
+            this.pictureBoxPhone.Location = new System.Drawing.Point(217, 212);
+            this.pictureBoxPhone.Name = "pictureBoxPhone";
+            this.pictureBoxPhone.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxPhone.TabIndex = 45;
+            this.pictureBoxPhone.TabStop = false;
+            // 
+            // pictureBoxEmail
+            // 
+            this.pictureBoxEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxEmail.ErrorImage = null;
+            this.pictureBoxEmail.InitialImage = null;
+            this.pictureBoxEmail.Location = new System.Drawing.Point(217, 263);
+            this.pictureBoxEmail.Name = "pictureBoxEmail";
+            this.pictureBoxEmail.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxEmail.TabIndex = 46;
+            this.pictureBoxEmail.TabStop = false;
+            // 
             // AddClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,6 +230,10 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(248, 383);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBoxEmail);
+            this.Controls.Add(this.pictureBoxPhone);
+            this.Controls.Add(this.pictureBoxSurname);
+            this.Controls.Add(this.pictureBoxName);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_add);
@@ -186,6 +250,10 @@
             this.Name = "AddClientForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSurname)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +273,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBoxName;
+        private System.Windows.Forms.PictureBox pictureBoxSurname;
+        private System.Windows.Forms.PictureBox pictureBoxPhone;
+        private System.Windows.Forms.PictureBox pictureBoxEmail;
     }
 }

@@ -150,10 +150,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\invalid.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\valid.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
