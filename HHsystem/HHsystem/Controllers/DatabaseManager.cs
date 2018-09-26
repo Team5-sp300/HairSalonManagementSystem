@@ -464,6 +464,18 @@ namespace HHsystem.Controllers
             conn.Close();
         }
 
+        public void voidClient(string username)
+        {
+            string command = "CALL voidCustomer(?id)";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?id", username);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+
+
         public void deleteEmployee(string username)
         {
             string command = "CALL deleteEmployee(?id)";
@@ -473,6 +485,17 @@ namespace HHsystem.Controllers
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+
+        public void deleteClient(string username)
+        {
+            string command = "CALL deleteCustomer(?id)";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?id", username);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
 
         public void backup()
         {

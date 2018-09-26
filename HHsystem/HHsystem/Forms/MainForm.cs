@@ -117,6 +117,7 @@ namespace HHsystem
             Application.Exit();
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
             customTabControl1.SelectedIndex = 1;
@@ -280,7 +281,7 @@ namespace HHsystem
 
         private void button6_Click(object sender, EventArgs e)
         {
-            new SettingForm().Show();
+            new SettingForm(this).Show();
         }
 
         private void button22_Click(object sender, EventArgs e)
@@ -350,8 +351,25 @@ namespace HHsystem
             {
                 int selectedrowindex = dataGridView5.SelectedCells[0].RowIndex;
                 DataGridViewRow selectedRow = dataGridView5.Rows[selectedrowindex];
-                string i = selectedRow.Cells[0].Value.ToString();
-                //manager.updateClient(i);
+                string username = selectedRow.Cells[0].Value.ToString();
+
+                DialogResult result = MessageBox.Show("Do you want to permanently delete this?", "Warning",
+                MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    manager.deleteClient(username);
+                    populateClientTable();
+                    populateBookingTable();
+                }
+                else if (result == DialogResult.No)
+                {
+                    manager.voidClient(username);
+                    populateClientTable();
+                }
+                else if (result == DialogResult.Cancel)
+                {
+                    //code for Cancel
+                }
             }
             else if (managementTabControl.SelectedIndex.Equals(2))
             {
@@ -359,7 +377,7 @@ namespace HHsystem
                 DataGridViewRow selectedRow = dataGridView4.Rows[selectedrowindex];
                 string username = selectedRow.Cells[0].Value.ToString();
 
-                DialogResult result = MessageBox.Show("Do you want to permanently Delete this?", "Warning",
+                DialogResult result = MessageBox.Show("Do you want to permanently delete this?", "Warning",
                 MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
@@ -374,7 +392,7 @@ namespace HHsystem
                 else if (result == DialogResult.Cancel)
                 {
                     //code for Cancel
-                }               
+                }
             }
 
             else
@@ -382,5 +400,7 @@ namespace HHsystem
                 MessageBox.Show("Not Implemented");
             }
         }
+
+
     }
 }

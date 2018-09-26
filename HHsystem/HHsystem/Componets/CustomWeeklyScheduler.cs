@@ -57,7 +57,7 @@ namespace HHsystem.Componets
                         {
                             if (bookingDetails[j, 2].Equals(times[m]))
                             {
-                                if (Int32.Parse(bookingDetails[j, 3]) == 2)
+                                if (Int32.Parse(bookingDetails[j, 3]) == 90)
                                 {
                                     k = i + 1;
                                     cells[i + 1, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -66,7 +66,7 @@ namespace HHsystem.Componets
                                     cells[k, m + 1].BorderStyle = System.Windows.Forms.BorderStyle.None;
                                     cells[k, m].Text = bookingDetails[j, 2] + " \n" + bookingDetails[j, 0];
                                 }
-                                else
+                                else if(Int32.Parse(bookingDetails[j, 3]) == 60)
                                 {
                                     k = i + 1;
                                     cells[k, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -252,7 +252,7 @@ namespace HHsystem.Componets
         private Label header;
         private Label cell;
         private String[] days = new String[] { "", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun" };
-        private String[] times = new String[] { "", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00" };
+        private String[] times = new String[] { "", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00" };
         private int y, x;
         private int yheader, xheader;
         private int yInterval, xInterval;

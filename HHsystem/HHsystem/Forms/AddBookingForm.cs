@@ -14,8 +14,9 @@ namespace HHsystem.Forms
     public partial class SettingForm : Form
     {
         DatabaseManager manager = new DatabaseManager();
+        MainForm main;
 
-        public SettingForm()
+        public SettingForm(MainForm main)
         {
             InitializeComponent();
             populateClients();
@@ -23,6 +24,7 @@ namespace HHsystem.Forms
             populateTimes();
             populateServices();
             setDateTimePicker();
+            this.main = main;
         }
 
         public void setDateTimePicker()
@@ -149,6 +151,8 @@ namespace HHsystem.Forms
                         break;
                     }
                 }
+                main.addAdppointments();
+                main.populateBookingTable();
                 this.Dispose();
             }
             else
