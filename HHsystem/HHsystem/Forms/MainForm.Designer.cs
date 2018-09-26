@@ -51,6 +51,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.bookingTabControl = new HHsystem.CustomTabControl();
@@ -165,7 +166,7 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(18, 553);
+            this.button1.Location = new System.Drawing.Point(18, 913);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 27);
             this.button1.TabIndex = 3;
@@ -181,7 +182,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 598);
+            this.panel1.Size = new System.Drawing.Size(160, 958);
             this.panel1.TabIndex = 4;
             // 
             // label6
@@ -199,7 +200,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 11.25F);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.Location = new System.Drawing.Point(469, 25);
+            this.button2.Location = new System.Drawing.Point(949, 25);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(77, 45);
             this.button2.TabIndex = 7;
@@ -214,7 +215,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.Location = new System.Drawing.Point(387, 25);
+            this.button3.Location = new System.Drawing.Point(867, 25);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(77, 45);
             this.button3.TabIndex = 8;
@@ -229,7 +230,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial", 11.25F);
             this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button4.Location = new System.Drawing.Point(549, 25);
+            this.button4.Location = new System.Drawing.Point(1029, 25);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(77, 45);
             this.button4.TabIndex = 10;
@@ -244,7 +245,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Arial", 11.25F);
             this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button5.Location = new System.Drawing.Point(628, 25);
+            this.button5.Location = new System.Drawing.Point(1108, 25);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(77, 45);
             this.button5.TabIndex = 9;
@@ -259,7 +260,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Location = new System.Drawing.Point(181, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(603, 2);
+            this.label1.Size = new System.Drawing.Size(1083, 2);
             this.label1.TabIndex = 7;
             // 
             // label3
@@ -280,7 +281,7 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Arial", 11.25F);
             this.button12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button12.Location = new System.Drawing.Point(708, 25);
+            this.button12.Location = new System.Drawing.Point(1188, 25);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(77, 45);
             this.button12.TabIndex = 11;
@@ -301,7 +302,7 @@
             this.customTabControl1.Location = new System.Drawing.Point(169, 81);
             this.customTabControl1.Name = "customTabControl1";
             this.customTabControl1.SelectedIndex = 0;
-            this.customTabControl1.Size = new System.Drawing.Size(630, 517);
+            this.customTabControl1.Size = new System.Drawing.Size(1110, 877);
             this.customTabControl1.TabIndex = 6;
             // 
             // tabPage1
@@ -312,7 +313,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(622, 491);
+            this.tabPage1.Size = new System.Drawing.Size(1102, 851);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -338,7 +339,7 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button11.Location = new System.Drawing.Point(452, 22);
+            this.button11.Location = new System.Drawing.Point(932, 22);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(131, 45);
             this.button11.TabIndex = 16;
@@ -351,12 +352,13 @@
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.Location = new System.Drawing.Point(3, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(616, 485);
+            this.label2.Size = new System.Drawing.Size(1096, 845);
             this.label2.TabIndex = 15;
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.comboBox4);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.comboBox1);
             this.tabPage2.Controls.Add(this.bookingTabControl);
@@ -366,9 +368,27 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(622, 491);
+            this.tabPage2.Size = new System.Drawing.Size(1102, 851);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "5 days",
+            "6 days",
+            "7 days"});
+            this.comboBox4.Location = new System.Drawing.Point(720, 34);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(93, 21);
+            this.comboBox4.TabIndex = 19;
+            this.comboBox4.TabStop = false;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged_1);
             // 
             // label4
             // 
@@ -376,7 +396,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(450, 34);
+            this.label4.Location = new System.Drawing.Point(930, 34);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 25);
             this.label4.TabIndex = 12;
@@ -390,9 +410,9 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(214, 34);
+            this.comboBox1.Location = new System.Drawing.Point(287, 34);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(204, 21);
+            this.comboBox1.Size = new System.Drawing.Size(410, 21);
             this.comboBox1.TabIndex = 15;
             this.comboBox1.TabStop = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -407,7 +427,7 @@
             this.bookingTabControl.Location = new System.Drawing.Point(0, 88);
             this.bookingTabControl.Name = "bookingTabControl";
             this.bookingTabControl.SelectedIndex = 0;
-            this.bookingTabControl.Size = new System.Drawing.Size(622, 407);
+            this.bookingTabControl.Size = new System.Drawing.Size(1102, 767);
             this.bookingTabControl.TabIndex = 14;
             // 
             // tabPage6
@@ -416,7 +436,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(614, 381);
+            this.tabPage6.Size = new System.Drawing.Size(1094, 741);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -429,7 +449,7 @@
             this.customWeeklyScheduler.BackColor = System.Drawing.Color.White;
             this.customWeeklyScheduler.Location = new System.Drawing.Point(3, 3);
             this.customWeeklyScheduler.Name = "customWeeklyScheduler";
-            this.customWeeklyScheduler.Size = new System.Drawing.Size(608, 400);
+            this.customWeeklyScheduler.Size = new System.Drawing.Size(1088, 760);
             this.customWeeklyScheduler.TabIndex = 10;
             // 
             // tabPage7
@@ -438,7 +458,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(614, 381);
+            this.tabPage7.Size = new System.Drawing.Size(1094, 741);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -457,7 +477,7 @@
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(598, 361);
+            this.dataGridView2.Size = new System.Drawing.Size(1078, 721);
             this.dataGridView2.TabIndex = 15;
             // 
             // button18
@@ -467,7 +487,7 @@
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.Location = new System.Drawing.Point(508, 27);
+            this.button18.Location = new System.Drawing.Point(988, 27);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(40, 40);
             this.button18.TabIndex = 13;
@@ -481,7 +501,7 @@
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.Location = new System.Drawing.Point(549, 27);
+            this.button17.Location = new System.Drawing.Point(1029, 27);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(40, 40);
             this.button17.TabIndex = 12;
@@ -513,7 +533,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(622, 491);
+            this.tabPage3.Size = new System.Drawing.Size(1102, 851);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -524,7 +544,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(450, 34);
+            this.label9.Location = new System.Drawing.Point(930, 34);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 25);
             this.label9.TabIndex = 21;
@@ -538,9 +558,9 @@
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(201, 34);
+            this.comboBox2.Location = new System.Drawing.Point(345, 34);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(212, 21);
+            this.comboBox2.Size = new System.Drawing.Size(420, 21);
             this.comboBox2.TabIndex = 16;
             this.comboBox2.TabStop = false;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
@@ -552,7 +572,7 @@
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.Location = new System.Drawing.Point(508, 27);
+            this.button16.Location = new System.Drawing.Point(988, 27);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(40, 40);
             this.button16.TabIndex = 23;
@@ -566,7 +586,7 @@
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button20.Image = ((System.Drawing.Image)(resources.GetObject("button20.Image")));
-            this.button20.Location = new System.Drawing.Point(549, 27);
+            this.button20.Location = new System.Drawing.Point(1029, 27);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(40, 40);
             this.button20.TabIndex = 22;
@@ -583,7 +603,7 @@
             this.clientTabControl.Location = new System.Drawing.Point(0, 88);
             this.clientTabControl.Name = "clientTabControl";
             this.clientTabControl.SelectedIndex = 0;
-            this.clientTabControl.Size = new System.Drawing.Size(626, 407);
+            this.clientTabControl.Size = new System.Drawing.Size(1106, 767);
             this.clientTabControl.TabIndex = 20;
             // 
             // tabPage11
@@ -602,7 +622,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(618, 381);
+            this.tabPage11.Size = new System.Drawing.Size(1098, 741);
             this.tabPage11.TabIndex = 0;
             this.tabPage11.Text = "tabPage11";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -614,7 +634,7 @@
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label13.Location = new System.Drawing.Point(67, 165);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(500, 2);
+            this.label13.Size = new System.Drawing.Size(980, 2);
             this.label13.TabIndex = 23;
             // 
             // label11
@@ -624,7 +644,7 @@
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label11.Location = new System.Drawing.Point(67, 30);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(500, 2);
+            this.label11.Size = new System.Drawing.Size(980, 2);
             this.label11.TabIndex = 12;
             // 
             // label12
@@ -662,7 +682,7 @@
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.ReadOnly = true;
             this.dataGridView7.RowHeadersVisible = false;
-            this.dataGridView7.Size = new System.Drawing.Size(516, 160);
+            this.dataGridView7.Size = new System.Drawing.Size(996, 520);
             this.dataGridView7.TabIndex = 20;
             // 
             // label5
@@ -737,7 +757,7 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(618, 381);
+            this.tabPage12.Size = new System.Drawing.Size(1098, 741);
             this.tabPage12.TabIndex = 1;
             this.tabPage12.Text = "tabPage12";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -751,12 +771,12 @@
             this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(16, 19);
+            this.dataGridView3.Location = new System.Drawing.Point(6, 6);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
             this.dataGridView3.RowHeadersVisible = false;
             this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView3.Size = new System.Drawing.Size(590, 350);
+            this.dataGridView3.Size = new System.Drawing.Size(1078, 721);
             this.dataGridView3.TabIndex = 11;
             // 
             // button7
@@ -784,7 +804,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(622, 491);
+            this.tabPage4.Size = new System.Drawing.Size(1102, 851);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -795,7 +815,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label24.Location = new System.Drawing.Point(450, 34);
+            this.label24.Location = new System.Drawing.Point(930, 34);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(55, 25);
             this.label24.TabIndex = 25;
@@ -809,9 +829,9 @@
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(201, 34);
+            this.comboBox3.Location = new System.Drawing.Point(345, 34);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(212, 21);
+            this.comboBox3.Size = new System.Drawing.Size(420, 21);
             this.comboBox3.TabIndex = 24;
             this.comboBox3.TabStop = false;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
@@ -823,7 +843,7 @@
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
-            this.button21.Location = new System.Drawing.Point(508, 27);
+            this.button21.Location = new System.Drawing.Point(988, 27);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(40, 40);
             this.button21.TabIndex = 27;
@@ -837,7 +857,7 @@
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
-            this.button22.Location = new System.Drawing.Point(549, 27);
+            this.button22.Location = new System.Drawing.Point(1029, 27);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(40, 40);
             this.button22.TabIndex = 26;
@@ -854,7 +874,7 @@
             this.staffTabControl.Location = new System.Drawing.Point(0, 88);
             this.staffTabControl.Name = "staffTabControl";
             this.staffTabControl.SelectedIndex = 0;
-            this.staffTabControl.Size = new System.Drawing.Size(626, 407);
+            this.staffTabControl.Size = new System.Drawing.Size(1106, 767);
             this.staffTabControl.TabIndex = 21;
             // 
             // tabPage13
@@ -873,7 +893,7 @@
             this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(618, 381);
+            this.tabPage13.Size = new System.Drawing.Size(1098, 741);
             this.tabPage13.TabIndex = 0;
             this.tabPage13.Text = "tabPage13";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -885,7 +905,7 @@
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label14.Location = new System.Drawing.Point(67, 165);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(500, 2);
+            this.label14.Size = new System.Drawing.Size(980, 2);
             this.label14.TabIndex = 23;
             // 
             // label15
@@ -895,7 +915,7 @@
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label15.Location = new System.Drawing.Point(67, 30);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(500, 2);
+            this.label15.Size = new System.Drawing.Size(980, 2);
             this.label15.TabIndex = 12;
             // 
             // label16
@@ -933,7 +953,7 @@
             this.dataGridView8.Name = "dataGridView8";
             this.dataGridView8.ReadOnly = true;
             this.dataGridView8.RowHeadersVisible = false;
-            this.dataGridView8.Size = new System.Drawing.Size(516, 160);
+            this.dataGridView8.Size = new System.Drawing.Size(996, 520);
             this.dataGridView8.TabIndex = 20;
             // 
             // label18
@@ -1008,7 +1028,7 @@
             this.tabPage14.Location = new System.Drawing.Point(4, 22);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(618, 381);
+            this.tabPage14.Size = new System.Drawing.Size(1098, 741);
             this.tabPage14.TabIndex = 1;
             this.tabPage14.Text = "tabPage14";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -1022,12 +1042,12 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 19);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(590, 350);
+            this.dataGridView1.Size = new System.Drawing.Size(1078, 721);
             this.dataGridView1.TabIndex = 7;
             // 
             // button8
@@ -1058,7 +1078,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(622, 491);
+            this.tabPage5.Size = new System.Drawing.Size(1102, 851);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1084,7 +1104,7 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Arial", 11.25F);
             this.button10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button10.Location = new System.Drawing.Point(531, 22);
+            this.button10.Location = new System.Drawing.Point(1011, 22);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(77, 45);
             this.button10.TabIndex = 28;
@@ -1127,7 +1147,7 @@
             this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button26.Font = new System.Drawing.Font("Arial", 11.25F);
             this.button26.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button26.Location = new System.Drawing.Point(450, 22);
+            this.button26.Location = new System.Drawing.Point(930, 22);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(77, 45);
             this.button26.TabIndex = 22;
@@ -1142,7 +1162,7 @@
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button19.Location = new System.Drawing.Point(369, 21);
+            this.button19.Location = new System.Drawing.Point(849, 21);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(77, 45);
             this.button19.TabIndex = 21;
@@ -1162,7 +1182,7 @@
             this.managementTabControl.Location = new System.Drawing.Point(157, 62);
             this.managementTabControl.Name = "managementTabControl";
             this.managementTabControl.SelectedIndex = 0;
-            this.managementTabControl.Size = new System.Drawing.Size(459, 429);
+            this.managementTabControl.Size = new System.Drawing.Size(939, 789);
             this.managementTabControl.TabIndex = 19;
             // 
             // tabPage8
@@ -1171,7 +1191,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(451, 403);
+            this.tabPage8.Size = new System.Drawing.Size(931, 763);
             this.tabPage8.TabIndex = 0;
             this.tabPage8.Text = "tabPage8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1189,7 +1209,7 @@
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.ReadOnly = true;
             this.dataGridView6.RowHeadersVisible = false;
-            this.dataGridView6.Size = new System.Drawing.Size(439, 387);
+            this.dataGridView6.Size = new System.Drawing.Size(919, 747);
             this.dataGridView6.TabIndex = 25;
             // 
             // tabPage9
@@ -1198,7 +1218,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(451, 403);
+            this.tabPage9.Size = new System.Drawing.Size(931, 763);
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "tabPage9";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -1216,7 +1236,7 @@
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersVisible = false;
             this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView5.Size = new System.Drawing.Size(439, 387);
+            this.dataGridView5.Size = new System.Drawing.Size(919, 747);
             this.dataGridView5.TabIndex = 25;
             // 
             // tabPage10
@@ -1225,7 +1245,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(451, 403);
+            this.tabPage10.Size = new System.Drawing.Size(931, 763);
             this.tabPage10.TabIndex = 2;
             this.tabPage10.Text = "tabPage10";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -1243,7 +1263,7 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersVisible = false;
             this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView4.Size = new System.Drawing.Size(439, 387);
+            this.dataGridView4.Size = new System.Drawing.Size(919, 747);
             this.dataGridView4.TabIndex = 24;
             // 
             // tabPage15
@@ -1254,7 +1274,7 @@
             this.tabPage15.Location = new System.Drawing.Point(4, 22);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(451, 403);
+            this.tabPage15.Size = new System.Drawing.Size(931, 763);
             this.tabPage15.TabIndex = 3;
             this.tabPage15.Text = "tabPage15";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -1327,7 +1347,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(798, 598);
+            this.ClientSize = new System.Drawing.Size(1278, 958);
             this.ControlBox = false;
             this.Controls.Add(this.button12);
             this.Controls.Add(this.label3);
@@ -1482,6 +1502,7 @@
         private System.Windows.Forms.TabPage tabPage15;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }
 

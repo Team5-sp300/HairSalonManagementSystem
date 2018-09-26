@@ -28,6 +28,8 @@ namespace HHsystem
             populateWeeks();
             populateNames();
             populateEmployees();
+            customWeeklyScheduler.redrawScheduler(this.Width - 200, this.Height - 205);
+            comboBox4.SelectedIndex = 0;
         }
 
         public void populateTable()
@@ -266,7 +268,7 @@ namespace HHsystem
         private void button15_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            customWeeklyScheduler.redraws(this.Width - 200, this.Height - 205);
+            customWeeklyScheduler.redrawScheduler(this.Width - 200, this.Height - 205);
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -401,6 +403,14 @@ namespace HHsystem
             }
         }
 
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            customWeeklyScheduler.setColums(comboBox4.SelectedIndex+4);
+        }
 
+        private void comboBox4_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            customWeeklyScheduler.setColums(comboBox4.SelectedIndex + 5);
+        }
     }
 }

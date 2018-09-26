@@ -17,10 +17,15 @@ namespace HHsystem.Componets
         {
             rows = 9;
             colums = 5;
-            width = 600;
-            height=400;
+            width = 1000;
+            height=760;
             Initialize();
         }
+
+        public void setColums(int cols) {
+            this.colums = cols;
+            redrawScheduler(width,height);
+        } 
 
         public void setAppointment(String[] date, String[] time, String[] description, int[] duration)
         {
@@ -48,14 +53,14 @@ namespace HHsystem.Componets
             int k = 0;
             for (int j = 0; j < bookingDetails.GetLength(0); j++)
             {
-                for (int i = 0; i < dates.Length; i++)
+                for (int i = 0; i < colums; i++)
                 {
 
                     if (bookingDetails[j, 1].Equals(dates[i]))
                     {
                         for (int m = 0; m < times.Length; m++)
                         {
-                            if (bookingDetails[j, 2].Equals(times[m]))
+                            if (bookingDetails[j, 2].Substring(0,3).Equals(times[m].Substring(0,3)))
                             {
                                 if (Int32.Parse(bookingDetails[j, 3]) == 90)
                                 {
@@ -131,7 +136,7 @@ namespace HHsystem.Componets
             }
         }
 
-        public void redraws(int wth,int hght)
+        public void redrawScheduler(int wth,int hght)
         {
             width = wth;
             height = hght;
@@ -252,13 +257,13 @@ namespace HHsystem.Componets
         private Label header;
         private Label cell;
         private String[] days = new String[] { "", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun" };
-        private String[] times = new String[] { "", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00" };
+        private String[] times = new String[] { "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00" };
         private int y, x;
         private int yheader, xheader;
         private int yInterval, xInterval;
         private int rows, colums;
         private Label[,] cells = new Label[20, 20];
-        private Label[] headersColumm = new Label[7];
+        private Label[] headersColumm = new Label[8];
         private Label[] headersRow = new Label[10];
         //private List<DateTime> dates;
         private int weeknum = 0;
