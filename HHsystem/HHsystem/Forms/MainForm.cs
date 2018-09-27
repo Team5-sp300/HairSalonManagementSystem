@@ -19,6 +19,7 @@ namespace HHsystem
 
         DatabaseManager manager = new DatabaseManager();
         DataTable table;
+        int REFRESH_RATE = 5000;
 
         public MainForm()
         {
@@ -411,6 +412,13 @@ namespace HHsystem
         private void comboBox4_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             customWeeklyScheduler.setColums(comboBox4.SelectedIndex + 5);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Interval = REFRESH_RATE;
+            timer1.Start();
+            populateTable();
         }
     }
 }
