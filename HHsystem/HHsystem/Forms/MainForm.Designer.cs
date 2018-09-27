@@ -167,6 +167,7 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button1.Location = new System.Drawing.Point(18, 913);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 27);
@@ -324,7 +325,7 @@
             this.button9.BackColor = System.Drawing.Color.White;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button9.ForeColor = System.Drawing.SystemColors.Highlight;
             this.button9.Location = new System.Drawing.Point(26, 22);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(131, 45);

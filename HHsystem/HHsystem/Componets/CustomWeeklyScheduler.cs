@@ -11,21 +11,20 @@ namespace HHsystem.Componets
 {
     class WeeklyScheduler : Panel
     {
-      
-
         public WeeklyScheduler()
         {
             rows = 9;
             colums = 5;
             width = 1000;
-            height=760;
+            height = 760;
             Initialize();
         }
 
-        public void setColums(int cols) {
+        public void setColums(int cols)
+        {
             this.colums = cols;
-            redrawScheduler(width,height);
-        } 
+            redrawScheduler(width, height);
+        }
 
         public void setAppointment(String[] date, String[] time, String[] description, int[] duration)
         {
@@ -60,25 +59,55 @@ namespace HHsystem.Componets
                     {
                         for (int m = 0; m < times.Length; m++)
                         {
-                            if (bookingDetails[j, 2].Substring(0,3).Equals(times[m].Substring(0,3)))
+                            if (bookingDetails[j, 2].Substring(0, 3).Equals(times[m].Substring(0, 3)))
                             {
+                                k = i + 1;
+                                //if (!cells[k, m].Text.Equals(string.Empty))
+                                //{
+                                //    //cells[k, m].Text += "";
+                                //    if (Int32.Parse(bookingDetails[j, 3]) == 90)
+                                //    {
+                                //        cells[i + 1, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+                                //        cells[k, m + 1].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+                                //        cells[i + 1, m + 1].FlatAppearance.BorderSize = 1;
+                                //        cells[k, m].FlatAppearance.BorderSize = 1;
+                                //        cells[k, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+                                //        cells[k, m].FlatAppearance.BorderSize = 1;
+                                //        cells[i + 1, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
+                                //        cells[k, m + 1].BackColor = System.Drawing.SystemColors.MenuHighlight;
+                                //        //cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
+                                //        //cells[k, m + 1].BorderStyle = System.Windows.Forms.BorderStyle.None;
+                                //        cells[k, m].Text += ", " + bookingDetails[j, 0];
+                                //    }
+                                //    else if (Int32.Parse(bookingDetails[j, 3]) == 60)
+                                //    {
+                                //        cells[k, m].Text += ", " + bookingDetails[j, 0];
+                                //    }
+                                //}
+                                //else
+                                //{
                                 if (Int32.Parse(bookingDetails[j, 3]) == 90)
                                 {
-                                    k = i + 1;
+                                    cells[i + 1, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+                                    cells[k, m + 1].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+                                    cells[i + 1, m + 1].FlatAppearance.BorderSize = 1;
+                                    cells[k, m].FlatAppearance.BorderSize = 1;
                                     cells[i + 1, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m + 1].BackColor = System.Drawing.SystemColors.MenuHighlight;
-                                    cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
-                                    cells[k, m + 1].BorderStyle = System.Windows.Forms.BorderStyle.None;
-                                    cells[k, m].Text = bookingDetails[j, 2] + " \n" + bookingDetails[j, 0];
+                                    //cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
+                                    //cells[k, m + 1].BorderStyle = System.Windows.Forms.BorderStyle.None;
+                                    cells[k, m].Text += bookingDetails[j, 2] + " \n" + bookingDetails[j, 0] + " \n";
                                 }
-                                else if(Int32.Parse(bookingDetails[j, 3]) == 60)
+                                else if (Int32.Parse(bookingDetails[j, 3]) == 60)
                                 {
-                                    k = i + 1;
+                                    cells[k, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+                                    cells[k, m].FlatAppearance.BorderSize = 1;
                                     cells[k, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
-                                    cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
-                                    cells[k, m].Text = bookingDetails[j, 2] + " \n" + bookingDetails[j, 0];
+                                    //cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
+                                    cells[k, m].Text += bookingDetails[j, 2] + " \n" + bookingDetails[j, 0] + " \n";
                                 }
                             }
+                            //}
                         }
                     }
                 }
@@ -122,7 +151,7 @@ namespace HHsystem.Componets
             {
                 for (int i = 1; i <= colums; i++)
                 {
-                    cells[i, j].BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                    //cells[i, j].BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                     cells[i, j].Text = "";
                     if (i % 2 == 1)
                     {
@@ -136,7 +165,7 @@ namespace HHsystem.Componets
             }
         }
 
-        public void redrawScheduler(int wth,int hght)
+        public void redrawScheduler(int wth, int hght)
         {
             width = wth;
             height = hght;
@@ -189,7 +218,7 @@ namespace HHsystem.Componets
                         header.Location = new System.Drawing.Point(0, 0);
                         header.Size = new System.Drawing.Size(yheader, xheader);
                         this.Controls.Add(this.header);
-                        headersRow[0]=header;
+                        headersRow[0] = header;
                     }
                     else if (j == 0 && i != 0)
                     {
@@ -226,9 +255,9 @@ namespace HHsystem.Componets
                     }
                     else
                     {
-                        cell = new Label();
-                        //  cell.BackColor = System.Drawing.SystemColors.ButtonFace;
-                        cell.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+                        cell = new Button();
+                        //cell.BackColor = System.Drawing.SystemColors.ButtonFace;
+                        //cell.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                         cell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                         cell.Location = new System.Drawing.Point(i * yInterval - yheader - (int)errorCorrection, j * xInterval - xheader);
                         cell.Name = "Cell" + i;
@@ -236,6 +265,8 @@ namespace HHsystem.Componets
                         cell.Text = "";
                         cell.Font = new System.Drawing.Font("Arial", 11.25F);
                         cell.ForeColor = System.Drawing.Color.White;
+                        //cell.FlatAppearance.BorderColor = Color.Gray;
+                        //cell.FlatAppearance.BorderSize = 1;
                         this.Controls.Add(this.cell);
                         cells[i, j] = cell;
                         if (i % 2 == 1)
@@ -255,14 +286,14 @@ namespace HHsystem.Componets
         private int width;
         private int height;
         private Label header;
-        private Label cell;
+        private Button cell;
         private String[] days = new String[] { "", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun" };
         private String[] times = new String[] { "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00" };
         private int y, x;
         private int yheader, xheader;
         private int yInterval, xInterval;
         private int rows, colums;
-        private Label[,] cells = new Label[20, 20];
+        private Button[,] cells = new Button[20, 20];
         private Label[] headersColumm = new Label[8];
         private Label[] headersRow = new Label[10];
         //private List<DateTime> dates;
