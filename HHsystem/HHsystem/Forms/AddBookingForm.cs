@@ -141,19 +141,24 @@ namespace HHsystem.Forms
                 string[] clientname = getClientName().Split(new char[0]);
                 string[] employeename = getEmployeeName().Split(new char[0]);
 
-                manager.addBooking(clientname[0], clientname[1], employeename[0], employeename[1], getDate(), getTime(), getService());
-
-                for (int i = 0; i < clients.Length; i++)
+                if (manager.bookingCheck(employeename[0], employeename[1], getDate(), getTime()).Equals(0))
                 {
-                    if (clients[i, 1].ToString() == clientname[0] && clients[i, 2].ToString() == clientname[1])
+                    manager.addBooking(clientname[0], clientname[1], employeename[0], employeename[1], getDate(), getTime(), getService());
+                    for (int i = 0; i < clients.Length; i++)
                     {
-                        //email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime());
-                        break;
+                        if (clients[i, 1].ToString() == clientname[0] && clients[i, 2].ToString() == clientname[1])
+                        {
+                            //email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime());
+                            break;
+                        }
                     }
+                    main.addAdppointments();
+                    main.populateBookingTable();
+                    this.Dispose();
                 }
-                main.addAdppointments();
-                main.populateBookingTable();
-                this.Dispose();
+                else {
+                    MessageBox.Show("Stylist is not available for this appointment ");
+                }            
             }
             else
             {

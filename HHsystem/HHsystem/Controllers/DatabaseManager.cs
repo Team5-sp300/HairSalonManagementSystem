@@ -373,7 +373,23 @@ namespace HHsystem.Controllers
             return loginDetails;
         }
 
-        
+        public int bookingCheck(string efname, string elname, string adate, string atime)
+        {
+            string command = "CALL bookingCheck(?efname,?elname,?adate,?atime)";
+            connection();
+
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?efname", efname);
+            cmd.Parameters.AddWithValue("?elname", elname);
+            cmd.Parameters.AddWithValue("?adate", adate);
+            cmd.Parameters.AddWithValue("?atime", atime);
+            cmd.ExecuteNonQuery();
+            Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            return count;
+        }
+
+
         public void addEmployee(string uname, string fname, string lname, string email, string phone, string password)
         {
             string command = "CALL insertEmployee(?username,?fname,?lname,?email,?phone,?password)";
@@ -395,7 +411,7 @@ namespace HHsystem.Controllers
         {
             string command = "CALL insertBooking(?cfname,?clname,?efname,?elname,?adate,?atime,?service)";
             connection();
-            MessageBox.Show(command);
+            //MessageBox.Show(command);
             cmd = new MySqlCommand(command, conn);
             cmd.Parameters.AddWithValue("?cfname", cfname);
             cmd.Parameters.AddWithValue("?clname", clname);
@@ -405,7 +421,6 @@ namespace HHsystem.Controllers
             cmd.Parameters.AddWithValue("?atime", atime);
             cmd.Parameters.AddWithValue("?service", service);
             cmd.ExecuteNonQuery();
-
             conn.Close();
         }
 
