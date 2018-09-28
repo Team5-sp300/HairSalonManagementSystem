@@ -32,7 +32,7 @@ namespace HHsystem.Forms
         {
             if (nameValid && surnameValid && emailValid && phoneValid)
             {
-                new ClientController().add(getClientName(), getClientSurname(), getClientEmail(), getClientPhone());
+                new ClientController().add(getClientName(), getClientSurname(), getClientPhone(), getClientEmail());
                 this.Dispose();
             }
             else

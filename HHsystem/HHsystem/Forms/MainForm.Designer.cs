@@ -45,6 +45,7 @@
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.customTabControl1 = new HHsystem.CustomTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button9 = new System.Windows.Forms.Button();
@@ -124,7 +125,6 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -168,7 +168,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Location = new System.Drawing.Point(18, 913);
+            this.button1.Location = new System.Drawing.Point(18, 873);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 27);
             this.button1.TabIndex = 3;
@@ -184,7 +184,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(160, 958);
+            this.panel1.Size = new System.Drawing.Size(160, 918);
             this.panel1.TabIndex = 4;
             // 
             // label6
@@ -291,6 +291,11 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // customTabControl1
             // 
             this.customTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -304,7 +309,7 @@
             this.customTabControl1.Location = new System.Drawing.Point(169, 81);
             this.customTabControl1.Name = "customTabControl1";
             this.customTabControl1.SelectedIndex = 0;
-            this.customTabControl1.Size = new System.Drawing.Size(1110, 877);
+            this.customTabControl1.Size = new System.Drawing.Size(1110, 837);
             this.customTabControl1.TabIndex = 6;
             // 
             // tabPage1
@@ -315,7 +320,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1102, 851);
+            this.tabPage1.Size = new System.Drawing.Size(1102, 811);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -354,7 +359,7 @@
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.Location = new System.Drawing.Point(3, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1096, 845);
+            this.label2.Size = new System.Drawing.Size(1096, 805);
             this.label2.TabIndex = 15;
             // 
             // tabPage2
@@ -370,7 +375,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1102, 851);
+            this.tabPage2.Size = new System.Drawing.Size(1102, 811);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
@@ -429,7 +434,7 @@
             this.bookingTabControl.Location = new System.Drawing.Point(0, 88);
             this.bookingTabControl.Name = "bookingTabControl";
             this.bookingTabControl.SelectedIndex = 0;
-            this.bookingTabControl.Size = new System.Drawing.Size(1102, 767);
+            this.bookingTabControl.Size = new System.Drawing.Size(1102, 727);
             this.bookingTabControl.TabIndex = 14;
             // 
             // tabPage6
@@ -438,7 +443,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1094, 741);
+            this.tabPage6.Size = new System.Drawing.Size(1094, 701);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -451,7 +456,7 @@
             this.customWeeklyScheduler.BackColor = System.Drawing.Color.White;
             this.customWeeklyScheduler.Location = new System.Drawing.Point(3, 3);
             this.customWeeklyScheduler.Name = "customWeeklyScheduler";
-            this.customWeeklyScheduler.Size = new System.Drawing.Size(1088, 760);
+            this.customWeeklyScheduler.Size = new System.Drawing.Size(1088, 720);
             this.customWeeklyScheduler.TabIndex = 10;
             // 
             // tabPage7
@@ -460,7 +465,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1094, 741);
+            this.tabPage7.Size = new System.Drawing.Size(1094, 701);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "tabPage7";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -520,7 +525,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(131, 45);
             this.button6.TabIndex = 9;
-            this.button6.Text = "Create Apointment";
+            this.button6.Text = "Create Appointment";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -535,7 +540,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1102, 851);
+            this.tabPage3.Size = new System.Drawing.Size(1102, 811);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -605,7 +610,7 @@
             this.clientTabControl.Location = new System.Drawing.Point(0, 88);
             this.clientTabControl.Name = "clientTabControl";
             this.clientTabControl.SelectedIndex = 0;
-            this.clientTabControl.Size = new System.Drawing.Size(1106, 767);
+            this.clientTabControl.Size = new System.Drawing.Size(1106, 727);
             this.clientTabControl.TabIndex = 20;
             // 
             // tabPage11
@@ -624,7 +629,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1098, 741);
+            this.tabPage11.Size = new System.Drawing.Size(1098, 701);
             this.tabPage11.TabIndex = 0;
             this.tabPage11.Text = "tabPage11";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -656,9 +661,9 @@
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label12.Location = new System.Drawing.Point(230, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(159, 25);
+            this.label12.Size = new System.Drawing.Size(150, 25);
             this.label12.TabIndex = 22;
-            this.label12.Text = "Clients Information";
+            this.label12.Text = "Client Information";
             // 
             // label10
             // 
@@ -684,7 +689,7 @@
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.ReadOnly = true;
             this.dataGridView7.RowHeadersVisible = false;
-            this.dataGridView7.Size = new System.Drawing.Size(996, 520);
+            this.dataGridView7.Size = new System.Drawing.Size(996, 480);
             this.dataGridView7.TabIndex = 20;
             // 
             // label5
@@ -692,7 +697,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(80, 122);
+            this.label5.Location = new System.Drawing.Point(80, 127);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 25);
             this.label5.TabIndex = 19;
@@ -747,7 +752,7 @@
             this.cemail.AutoSize = true;
             this.cemail.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cemail.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.cemail.Location = new System.Drawing.Point(162, 122);
+            this.cemail.Location = new System.Drawing.Point(162, 127);
             this.cemail.Name = "cemail";
             this.cemail.Size = new System.Drawing.Size(55, 25);
             this.cemail.TabIndex = 15;
@@ -759,7 +764,7 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1098, 741);
+            this.tabPage12.Size = new System.Drawing.Size(1098, 701);
             this.tabPage12.TabIndex = 1;
             this.tabPage12.Text = "tabPage12";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -791,7 +796,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(131, 45);
             this.button7.TabIndex = 12;
-            this.button7.Text = "Create Clients";
+            this.button7.Text = "Create Client";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -806,7 +811,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1102, 851);
+            this.tabPage4.Size = new System.Drawing.Size(1102, 811);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -876,7 +881,7 @@
             this.staffTabControl.Location = new System.Drawing.Point(0, 88);
             this.staffTabControl.Name = "staffTabControl";
             this.staffTabControl.SelectedIndex = 0;
-            this.staffTabControl.Size = new System.Drawing.Size(1106, 767);
+            this.staffTabControl.Size = new System.Drawing.Size(1106, 727);
             this.staffTabControl.TabIndex = 21;
             // 
             // tabPage13
@@ -895,7 +900,7 @@
             this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(1098, 741);
+            this.tabPage13.Size = new System.Drawing.Size(1098, 701);
             this.tabPage13.TabIndex = 0;
             this.tabPage13.Text = "tabPage13";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -955,7 +960,7 @@
             this.dataGridView8.Name = "dataGridView8";
             this.dataGridView8.ReadOnly = true;
             this.dataGridView8.RowHeadersVisible = false;
-            this.dataGridView8.Size = new System.Drawing.Size(996, 520);
+            this.dataGridView8.Size = new System.Drawing.Size(996, 480);
             this.dataGridView8.TabIndex = 20;
             // 
             // label18
@@ -963,7 +968,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label18.Location = new System.Drawing.Point(80, 122);
+            this.label18.Location = new System.Drawing.Point(80, 127);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(60, 25);
             this.label18.TabIndex = 19;
@@ -1018,7 +1023,7 @@
             this.eemail.AutoSize = true;
             this.eemail.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eemail.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.eemail.Location = new System.Drawing.Point(162, 122);
+            this.eemail.Location = new System.Drawing.Point(162, 127);
             this.eemail.Name = "eemail";
             this.eemail.Size = new System.Drawing.Size(55, 25);
             this.eemail.TabIndex = 15;
@@ -1030,7 +1035,7 @@
             this.tabPage14.Location = new System.Drawing.Point(4, 22);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(1098, 741);
+            this.tabPage14.Size = new System.Drawing.Size(1098, 701);
             this.tabPage14.TabIndex = 1;
             this.tabPage14.Text = "tabPage14";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -1080,7 +1085,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1102, 851);
+            this.tabPage5.Size = new System.Drawing.Size(1102, 811);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1184,7 +1189,7 @@
             this.managementTabControl.Location = new System.Drawing.Point(157, 62);
             this.managementTabControl.Name = "managementTabControl";
             this.managementTabControl.SelectedIndex = 0;
-            this.managementTabControl.Size = new System.Drawing.Size(939, 789);
+            this.managementTabControl.Size = new System.Drawing.Size(939, 749);
             this.managementTabControl.TabIndex = 19;
             // 
             // tabPage8
@@ -1193,7 +1198,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(931, 763);
+            this.tabPage8.Size = new System.Drawing.Size(931, 723);
             this.tabPage8.TabIndex = 0;
             this.tabPage8.Text = "tabPage8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1211,7 +1216,7 @@
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.ReadOnly = true;
             this.dataGridView6.RowHeadersVisible = false;
-            this.dataGridView6.Size = new System.Drawing.Size(919, 747);
+            this.dataGridView6.Size = new System.Drawing.Size(919, 707);
             this.dataGridView6.TabIndex = 25;
             // 
             // tabPage9
@@ -1220,7 +1225,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(931, 763);
+            this.tabPage9.Size = new System.Drawing.Size(931, 723);
             this.tabPage9.TabIndex = 1;
             this.tabPage9.Text = "tabPage9";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -1238,7 +1243,7 @@
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowHeadersVisible = false;
             this.dataGridView5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView5.Size = new System.Drawing.Size(919, 747);
+            this.dataGridView5.Size = new System.Drawing.Size(919, 707);
             this.dataGridView5.TabIndex = 25;
             // 
             // tabPage10
@@ -1247,7 +1252,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(931, 763);
+            this.tabPage10.Size = new System.Drawing.Size(931, 723);
             this.tabPage10.TabIndex = 2;
             this.tabPage10.Text = "tabPage10";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -1265,7 +1270,7 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersVisible = false;
             this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView4.Size = new System.Drawing.Size(919, 747);
+            this.dataGridView4.Size = new System.Drawing.Size(919, 707);
             this.dataGridView4.TabIndex = 24;
             // 
             // tabPage15
@@ -1276,7 +1281,7 @@
             this.tabPage15.Location = new System.Drawing.Point(4, 22);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(931, 763);
+            this.tabPage15.Size = new System.Drawing.Size(931, 723);
             this.tabPage15.TabIndex = 3;
             this.tabPage15.Text = "tabPage15";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -1344,17 +1349,12 @@
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1278, 958);
+            this.ClientSize = new System.Drawing.Size(1278, 918);
             this.ControlBox = false;
             this.Controls.Add(this.button12);
             this.Controls.Add(this.label3);

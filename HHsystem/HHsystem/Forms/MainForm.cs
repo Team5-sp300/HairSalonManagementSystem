@@ -61,7 +61,9 @@ namespace HHsystem
             table.Columns[0].ColumnName = "Booking ID";
             table.Columns[1].ColumnName = "Client Name";
             table.Columns[2].ColumnName = "Employee Name";
-            table.Columns[3].ColumnName = "Appointment Time";
+            table.Columns[3].ColumnName = "Appointment Date";
+            table.Columns[4].ColumnName = "Appointment Time";
+            table.Columns[5].ColumnName = "Service Booked";
         }
 
         public void populateEmployeeTable()
@@ -71,6 +73,13 @@ namespace HHsystem
             bindingSource.DataSource = table;
             dataGridView1.DataSource = bindingSource;
             dataGridView4.DataSource = bindingSource;
+            table.Columns[0].ColumnName = "Username";
+            table.Columns[1].ColumnName = "Name";
+            table.Columns[2].ColumnName = "Last Name";
+            table.Columns[3].ColumnName = "Password";
+            table.Columns[4].ColumnName = "Phone Number";
+            table.Columns[5].ColumnName = "Email Address";
+            table.Columns[6].ColumnName = "Status";
             dataGridView4.Refresh();
         }
 
@@ -82,6 +91,12 @@ namespace HHsystem
             bindingSource2.DataSource = table;
             dataGridView3.DataSource = bindingSource2;
             dataGridView5.DataSource = bindingSource2;
+            table.Columns[0].ColumnName = "Client ID";
+            table.Columns[1].ColumnName = "Name";
+            table.Columns[2].ColumnName = "Last Name";
+            table.Columns[3].ColumnName = "Phone Number";
+            table.Columns[4].ColumnName = "Email Address";
+            table.Columns[5].ColumnName = "Status";
         }
 
         public void populateWeeks()
@@ -240,6 +255,9 @@ namespace HHsystem
                     bindingSource3.DataSource = table;
                     dataGridView7.DataSource = bindingSource3;
                     table.Columns[0].ColumnName = "Stylist";
+                    table.Columns[1].ColumnName = "Appointment Date";
+                    table.Columns[2].ColumnName = "Appointment Time";
+                    table.Columns[3].ColumnName = "Service Duration";
                 }
             }
         }
@@ -262,6 +280,9 @@ namespace HHsystem
                     bindingSource4.DataSource = table;
                     dataGridView8.DataSource = bindingSource4;
                     table.Columns[0].ColumnName = "Clients";
+                    table.Columns[1].ColumnName = "Appointment Date";
+                    table.Columns[2].ColumnName = "Appointment Time";
+                    table.Columns[3].ColumnName = "Service Duration";
                 }
             }
         }
@@ -300,16 +321,25 @@ namespace HHsystem
         private void button19_Click(object sender, EventArgs e)
         {
             managementTabControl.SelectedIndex = 0;
+            button19.ForeColor = SystemColors.MenuHighlight;
+            button26.ForeColor = SystemColors.ControlDarkDark;
+            button10.ForeColor = SystemColors.ControlDarkDark;
         }
 
         private void button26_Click(object sender, EventArgs e)
         {
             managementTabControl.SelectedIndex = 1;
+            button19.ForeColor = SystemColors.ControlDarkDark;
+            button26.ForeColor = SystemColors.MenuHighlight;
+            button10.ForeColor = SystemColors.ControlDarkDark;
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
             managementTabControl.SelectedIndex = 2;
+            button19.ForeColor = SystemColors.ControlDarkDark;
+            button26.ForeColor = SystemColors.ControlDarkDark;
+            button10.ForeColor = SystemColors.MenuHighlight;
         }
 
         private void settingsBtn_Click(object sender, EventArgs e)

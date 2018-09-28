@@ -514,41 +514,28 @@ namespace HHsystem.Controllers
 
         public void backup()
         {
-            string constring = "server=localhost;user=root;pwd=qwerty;database=test;";
-            string file = "C:\\backup.sql";
-            using (MySqlConnection conn = new MySqlConnection(constring))
-            {
-                using (MySqlCommand cmd = new MySqlCommand())
-                {
-                    using (MySqlBackup mb = new MySqlBackup(cmd))
-                    {
-                        cmd.Connection = conn;
-                        conn.Open();
-                        mb.ExportToFile(file);
-                        conn.Close();
-                    }
-                }
-            }
+            string file = "../../../../Database/Backups/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
+            connection();
+            MySqlBackup mb = new MySqlBackup(cmd);
+            mb.ExportToFile(file);
+            conn.Close();
+            MessageBox.Show("Database successfully backed up to file: HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy"));
         }
 
         public void restore()
         {
-            string constring = "server=localhost;user=root;pwd=qwerty;database=test;";
-            string file = "C:\\backup.sql";
-            using (MySqlConnection conn = new MySqlConnection(constring))
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            DialogResult result = openFileDialog.ShowDialog();
+            string file;
+            if (result == DialogResult.OK)
             {
-                using (MySqlCommand cmd = new MySqlCommand())
-                {
-                    using (MySqlBackup mb = new MySqlBackup(cmd))
-                    {
-                        cmd.Connection = conn;
-                        conn.Open();
-                        mb.ImportFromFile(file);
-                        conn.Close();
-                    }
-                }
-            }
+                file = openFileDialog.FileName;
+                connection();
+                MySqlBackup mb = new MySqlBackup(cmd);
+                mb.ImportFromFile(file);
+                conn.Close();
+                MessageBox.Show("Database successfully restored from file: " + file);
+            }                
         }
-
     }
 }
