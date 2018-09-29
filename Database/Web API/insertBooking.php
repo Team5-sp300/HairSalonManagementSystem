@@ -20,7 +20,7 @@ if (isset($_POST['cfname']) && isset($_POST['clname']) && isset($_POST['efname']
     }
 
 
-    $sql = "Call insertBooking('$cfname', '$clname','$efname', '$elname','$adate','$atime',$service')";
+    $sql = "Call insertBooking('$cfname', '$clname','$efname', '$elname','$adate','$atime','$service')";
 
 
     if (mysqli_query($con, $sql)) {

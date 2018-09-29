@@ -3033,13 +3033,11 @@ containing a value of this type.
         public static final int end_padder=0x7f0800ce;
         public static final int enterAlways=0x7f08003f;
         public static final int enterAlwaysCollapsed=0x7f080040;
-        public static final int etDate=0x7f080096;
         public static final int etEmail=0x7f0800a0;
         public static final int etFname=0x7f08009d;
         public static final int etLname=0x7f08009e;
         public static final int etNumber=0x7f08009f;
         public static final int etPass=0x7f0800b8;
-        public static final int etTime=0x7f080097;
         public static final int etusername=0x7f0800b7;
         public static final int exitUntilCollapsed=0x7f080041;
         public static final int expand_activities_button=0x7f08005e;
@@ -3128,7 +3126,9 @@ containing a value of this type.
         public static final int snap=0x7f080043;
         public static final int spacer=0x7f080064;
         public static final int spinnerClient=0x7f080095;
+        public static final int spinnerDate=0x7f080096;
         public static final int spinnerStaff=0x7f080093;
+        public static final int spinnerTime=0x7f080097;
         public static final int split_action_bar=0x7f080008;
         public static final int src_atop=0x7f08002a;
         public static final int src_in=0x7f08002b;
@@ -3169,8 +3169,8 @@ containing a value of this type.
         public static final int txtduration=0x7f0800cf;
         public static final int txtfname=0x7f0800a1;
         public static final int txtlname=0x7f0800a2;
-        public static final int txtname=0x7f0800d0;
         public static final int txtnameid=0x7f0800b3;
+        public static final int txtspinnername=0x7f0800d0;
         public static final int txtvalue=0x7f0800b4;
         public static final int uniform=0x7f08002d;
         public static final int up=0x7f080009;

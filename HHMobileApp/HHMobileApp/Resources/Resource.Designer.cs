@@ -2579,9 +2579,6 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f080040
 			public const int enterAlwaysCollapsed = 2131230784;
 			
-			// aapt resource value: 0x7f080096
-			public const int etDate = 2131230870;
-			
 			// aapt resource value: 0x7f0800a0
 			public const int etEmail = 2131230880;
 			
@@ -2596,9 +2593,6 @@ namespace HHmobileApp
 			
 			// aapt resource value: 0x7f0800b8
 			public const int etPass = 2131230904;
-			
-			// aapt resource value: 0x7f080097
-			public const int etTime = 2131230871;
 			
 			// aapt resource value: 0x7f0800b7
 			public const int etusername = 2131230903;
@@ -2864,8 +2858,14 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f080095
 			public const int spinnerClient = 2131230869;
 			
+			// aapt resource value: 0x7f080096
+			public const int spinnerDate = 2131230870;
+			
 			// aapt resource value: 0x7f080093
 			public const int spinnerStaff = 2131230867;
+			
+			// aapt resource value: 0x7f080097
+			public const int spinnerTime = 2131230871;
 			
 			// aapt resource value: 0x7f080008
 			public const int split_action_bar = 2131230728;
@@ -2987,11 +2987,11 @@ namespace HHmobileApp
 			// aapt resource value: 0x7f0800a2
 			public const int txtlname = 2131230882;
 			
-			// aapt resource value: 0x7f0800d0
-			public const int txtname = 2131230928;
-			
 			// aapt resource value: 0x7f0800b3
 			public const int txtnameid = 2131230899;
+			
+			// aapt resource value: 0x7f0800d0
+			public const int txtspinnername = 2131230928;
 			
 			// aapt resource value: 0x7f0800b4
 			public const int txtvalue = 2131230900;

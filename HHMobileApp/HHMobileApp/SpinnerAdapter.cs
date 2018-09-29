@@ -48,7 +48,7 @@ namespace HHmobileApp
                 row = LayoutInflater.From(context).Inflate(Resource.Layout.spinner_row, null, false);
             }
 
-            TextView txtname = row.FindViewById<TextView>(Resource.Id.txtname);
+            TextView txtname = row.FindViewById<TextView>(Resource.Id.txtspinnername);
             txtname.Text = items[position].fname+" "+ items[position].lname;
 
             return row;

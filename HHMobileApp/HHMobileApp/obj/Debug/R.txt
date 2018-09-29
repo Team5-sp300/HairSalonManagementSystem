@@ -817,13 +817,11 @@ int id end 0x7f080030
 int id end_padder 0x7f0800ce
 int id enterAlways 0x7f08003f
 int id enterAlwaysCollapsed 0x7f080040
-int id etDate 0x7f080096
 int id etEmail 0x7f0800a0
 int id etFname 0x7f08009d
 int id etLname 0x7f08009e
 int id etNumber 0x7f08009f
 int id etPass 0x7f0800b8
-int id etTime 0x7f080097
 int id etusername 0x7f0800b7
 int id exitUntilCollapsed 0x7f080041
 int id expand_activities_button 0x7f08005e
@@ -912,7 +910,9 @@ int id snackbar_text 0x7f0800ab
 int id snap 0x7f080043
 int id spacer 0x7f080064
 int id spinnerClient 0x7f080095
+int id spinnerDate 0x7f080096
 int id spinnerStaff 0x7f080093
+int id spinnerTime 0x7f080097
 int id split_action_bar 0x7f080008
 int id src_atop 0x7f08002a
 int id src_in 0x7f08002b
@@ -953,8 +953,8 @@ int id txtWelcome 0x7f0800b5
 int id txtduration 0x7f0800cf
 int id txtfname 0x7f0800a1
 int id txtlname 0x7f0800a2
-int id txtname 0x7f0800d0
 int id txtnameid 0x7f0800b3
+int id txtspinnername 0x7f0800d0
 int id txtvalue 0x7f0800b4
 int id uniform 0x7f08002d
 int id up 0x7f080009

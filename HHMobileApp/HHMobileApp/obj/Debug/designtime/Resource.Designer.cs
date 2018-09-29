@@ -2363,8 +2363,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0005
 			public const int actions = 2131492869;
 			
-			// aapt resource value: 0x7F020043
-			public const int action_back = 2130837571;
+			// aapt resource value: 0x7F020044
+			public const int action_back = 2130837572;
 			
 			// aapt resource value: 0x7F0C0002
 			public const int action_bar = 2131492866;
@@ -2522,9 +2522,6 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C002E
 			public const int end_padder = 2131492910;
 			
-			// aapt resource value: 0x7F020013
-			public const int etDate = 2130837523;
-			
 			// aapt resource value: 0x7F020023
 			public const int etEmail = 2130837539;
 			
@@ -2539,9 +2536,6 @@ namespace HHmobileApp
 			
 			// aapt resource value: 0x7F020033
 			public const int etPass = 2130837555;
-			
-			// aapt resource value: 0x7F020014
-			public const int etTime = 2130837524;
 			
 			// aapt resource value: 0x7F020032
 			public const int etusername = 2130837554;
@@ -2633,20 +2627,20 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
 			
-			// aapt resource value: 0x7F020040
-			public const int nav_bookings = 2130837568;
-			
 			// aapt resource value: 0x7F020041
-			public const int nav_clients = 2130837569;
-			
-			// aapt resource value: 0x7F020038
-			public const int nav_home = 2130837560;
-			
-			// aapt resource value: 0x7F020039
-			public const int nav_schedule = 2130837561;
+			public const int nav_bookings = 2130837569;
 			
 			// aapt resource value: 0x7F020042
-			public const int nav_settings = 2130837570;
+			public const int nav_clients = 2130837570;
+			
+			// aapt resource value: 0x7F020039
+			public const int nav_home = 2130837561;
+			
+			// aapt resource value: 0x7F020040
+			public const int nav_schedule = 2130837568;
+			
+			// aapt resource value: 0x7F020043
+			public const int nav_settings = 2130837571;
 			
 			// aapt resource value: 0x7F020003
 			public const int nav_view = 2130837507;
@@ -2771,8 +2765,14 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F020012
 			public const int spinnerClient = 2130837522;
 			
+			// aapt resource value: 0x7F020013
+			public const int spinnerDate = 2130837523;
+			
 			// aapt resource value: 0x7F020010
 			public const int spinnerStaff = 2130837520;
+			
+			// aapt resource value: 0x7F020014
+			public const int spinnerTime = 2130837524;
 			
 			// aapt resource value: 0x7F0C006F
 			public const int split_action_bar = 2131492975;
@@ -2890,6 +2890,9 @@ namespace HHmobileApp
 			
 			// aapt resource value: 0x7F020028
 			public const int txtnameid = 2130837544;
+			
+			// aapt resource value: 0x7F020038
+			public const int txtspinnername = 2130837560;
 			
 			// aapt resource value: 0x7F020017
 			public const int txtTime = 2130837527;

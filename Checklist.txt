@@ -2,7 +2,6 @@
 
 -login system
 -calendar fix: 2 appointment dont display
--sort by whole month, day
 -remove booking validation
 -Vadliaton name without white spaces
 -phone number lenght validation 
@@ -24,11 +23,10 @@
 Mobile
 
 -weight for  vertical alginment 
--sort by whole month, day
 -schedule-> take to info page
 	-add reschedule and cancelled
 -padding on all writing
--insert booing all spinner
+-insert booing all spinner DONE
 -move back button down
 -add duration and service
 -client back button to client page
@@ -36,7 +34,7 @@ Mobile
 -log out on drawer
 
 DB 
-
+-sort by whole month, day
 -add duration 2 bookingcheck
 
 Optional
