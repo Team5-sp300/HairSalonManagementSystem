@@ -4,7 +4,6 @@ using System.Collections.Specialized;
 using System.Linq;
 using System.Net;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -12,6 +11,7 @@ using Android.Runtime;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using Newtonsoft.Json;
 
 namespace HHmobileApp
 {
@@ -22,6 +22,13 @@ namespace HHmobileApp
         private EditText txtEname;
         private EditText txtDate;
         private EditText txtTime;
+        List<SpinnerDetails> items;
+        Spinner spinnerStlyist;
+        Spinner spinnerClient;
+        WebClient client;
+        Uri uri;
+        string cname;
+        string ename;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,10 +41,64 @@ namespace HHmobileApp
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
 
-            txtCname = FindViewById<EditText>(Resource.Id.etCname);
-            txtEname = FindViewById<EditText>(Resource.Id.etEname);
             txtDate = FindViewById<EditText>(Resource.Id.etDate);
             txtTime = FindViewById<EditText>(Resource.Id.etTime);
+
+            client = new WebClient();
+            uri = new Uri("http://10.0.0.169/getStaff.php");
+            client.DownloadDataAsync(uri);
+            client.DownloadDataCompleted += download_staff;
+
+            client = new WebClient();
+            uri = new Uri("http://10.0.0.169/getClients.php");
+            client.DownloadDataAsync(uri);
+            client.DownloadDataCompleted += download_client;
+
+            spinnerStlyist = FindViewById<Spinner>(Resource.Id.spinnerStaff);
+            spinnerClient = FindViewById<Spinner>(Resource.Id.spinnerClient);
+
+            spinnerClient.ItemSelected += spinnerClient_ItemSelected;
+            spinnerStlyist.ItemSelected += spinnerStylist_ItemSelected;
+        }
+
+        private void download_staff(object sender, DownloadDataCompletedEventArgs e)
+        {
+            RunOnUiThread(() =>
+            {
+                string json = Encoding.UTF8.GetString(e.Result);
+                items = JsonConvert.DeserializeObject<List<SpinnerDetails>>(json);
+                SpinnerAdapter adapter = new SpinnerAdapter(this, items);
+                spinnerStlyist.Adapter = adapter;
+            });
+
+        }
+
+        private void download_client(object sender, DownloadDataCompletedEventArgs e)
+        {
+            RunOnUiThread(() =>
+            {
+                string json = Encoding.UTF8.GetString(e.Result);
+                items = JsonConvert.DeserializeObject<List<SpinnerDetails>>(json);
+                SpinnerAdapter adapter = new SpinnerAdapter(this, items);
+                spinnerClient.Adapter = adapter;
+            });
+
+        }
+
+
+
+        private void spinnerClient_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+
+            cname = spinnerClient.GetItemAtPosition(e.Position).ToString();
+
+        }
+
+        private void spinnerStylist_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+          
+             ename=  spinnerStlyist.GetItemAtPosition(e.Position).ToString();
+        
         }
 
         private void Menu_Clicked(object sender, Android.Support.V7.Widget.Toolbar.MenuItemClickEventArgs e)
@@ -57,14 +118,17 @@ namespace HHmobileApp
 
         private void button_click(object sender, EventArgs e)
         {
-            WebClient client = new WebClient();
-            Uri uri = new Uri("http://10.0.0.169/insertBooking.php");
+             client = new WebClient();
+            uri = new Uri("http://10.0.0.169/insertBooking.php");
             NameValueCollection parameter = new NameValueCollection();
 
-            parameter.Add("cname", txtCname.Text);
-            parameter.Add("ename", txtEname.Text);
+            parameter.Add("cfname", "Mary");
+            parameter.Add("clname", "Black");
+            parameter.Add("efname", "Andrew");
+            parameter.Add("elname", "Schwabe");
             parameter.Add("adate", txtDate.Text);
             parameter.Add("atime", txtTime.Text);
+            parameter.Add("service","Mens Haircut");
 
             client.UploadValuesCompleted += Client_UploadValuesCompleted;
             client.UploadValuesAsync(uri, parameter);

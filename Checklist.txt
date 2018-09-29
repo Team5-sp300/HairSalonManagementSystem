@@ -1,0 +1,45 @@
+ System
+
+-login system
+-calendar fix: 2 appointment dont display
+-sort by whole month, day
+-remove booking validation
+-Vadliaton name without white spaces
+-phone number lenght validation 
+-remove id and status in tables
+-validation add confirm password 
+-backup confirm dialog
+-reschdule on clients
+-change colum name duration (m)
+-add service to client/staff table
+-whole setting table reworked
+	-add backlocation
+	-add resolution
+	-add refresh rate polling
+	-add default days
+-home page time
+-calendar check int i=select count(*) booking
+	i>select count(*)
+
+Mobile
+
+-weight for  vertical alginment 
+-sort by whole month, day
+-schedule-> take to info page
+	-add reschedule and cancelled
+-padding on all writing
+-insert booing all spinner
+-move back button down
+-add duration and service
+-client back button to client page
+-add validation
+-log out on drawer
+
+DB 
+
+-add duration 2 bookingcheck
+
+Optional
+-rename customer to client
+-client notes
+-add drawer icons 

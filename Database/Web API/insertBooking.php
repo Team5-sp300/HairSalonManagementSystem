@@ -4,12 +4,15 @@ require_once(dirname(__FILE__).'/ConnectionInfo.php');
 $connectionInfo = new ConnectionInfo();
 $con=$connectionInfo->GetConnection();
 
-if (isset($_POST['cname']) && isset($_POST['ename'])&& isset($_POST['adate'])&& isset($_POST['atime'])) {
+if (isset($_POST['cfname']) && isset($_POST['clname']) && isset($_POST['efname'])&& isset($_POST['elname'])&& isset($_POST['adate'])&& isset($_POST['atime'])&& isset($_POST['service'])) {
     //Get the POST variables
-    $cname = $_POST['cname'];
-    $ename = $_POST['ename'];
+    $cfname = $_POST['cfname'];
+    $clname = $_POST['clname'];
+    $efname = $_POST['efname'];
+    $elname = $_POST['elname'];
     $adate = $_POST['adate'];
     $atime = $_POST['atime'];
+    $service = $_POST['service'];
     // Create connection
 // Check connection
     if (!$con) {
@@ -17,7 +20,7 @@ if (isset($_POST['cname']) && isset($_POST['ename'])&& isset($_POST['adate'])&& 
     }
 
 
-    $sql = "Call insertBooking('$cname', '$ename','$adate','$atime')";
+    $sql = "Call insertBooking('$cfname', '$clname','$efname', '$elname','$adate','$atime',$service')";
 
 
     if (mysqli_query($con, $sql)) {

@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>9/27/2018 4:46:13 PM</xs:documentation>
+    <xs:documentation>9/29/2018 5:18:56 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -1029,6 +1029,7 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/client_prompt" />
             <xs:enumeration value="@string/navigation_drawer_close" />
             <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
@@ -1038,6 +1039,7 @@
             <xs:enumeration value="@string/path_password_strike_through" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/stylist_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -4112,6 +4114,7 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/client_prompt" />
             <xs:enumeration value="@string/navigation_drawer_close" />
             <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
@@ -4121,6 +4124,7 @@
             <xs:enumeration value="@string/path_password_strike_through" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/stylist_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11767,6 +11771,7 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/client_prompt" />
             <xs:enumeration value="@string/navigation_drawer_close" />
             <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
@@ -11776,6 +11781,7 @@
             <xs:enumeration value="@string/path_password_strike_through" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/stylist_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -15039,6 +15045,7 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/client_prompt" />
             <xs:enumeration value="@string/navigation_drawer_close" />
             <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
@@ -15048,6 +15055,7 @@
             <xs:enumeration value="@string/path_password_strike_through" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/stylist_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -15132,6 +15140,7 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/client_prompt" />
             <xs:enumeration value="@string/navigation_drawer_close" />
             <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
@@ -15141,6 +15150,7 @@
             <xs:enumeration value="@string/path_password_strike_through" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/stylist_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -16186,6 +16196,7 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/client_prompt" />
             <xs:enumeration value="@string/navigation_drawer_close" />
             <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
@@ -16195,6 +16206,7 @@
             <xs:enumeration value="@string/path_password_strike_through" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/stylist_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -16798,6 +16810,7 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/client_prompt" />
             <xs:enumeration value="@string/navigation_drawer_close" />
             <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
@@ -16807,6 +16820,7 @@
             <xs:enumeration value="@string/path_password_strike_through" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/stylist_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -18396,6 +18410,7 @@
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
             <xs:enumeration value="@string/character_counter_pattern" />
+            <xs:enumeration value="@string/client_prompt" />
             <xs:enumeration value="@string/navigation_drawer_close" />
             <xs:enumeration value="@string/navigation_drawer_open" />
             <xs:enumeration value="@string/password_toggle_content_description" />
@@ -18405,6 +18420,7 @@
             <xs:enumeration value="@string/path_password_strike_through" />
             <xs:enumeration value="@string/search_menu_title" />
             <xs:enumeration value="@string/status_bar_notification_info_overflow" />
+            <xs:enumeration value="@string/stylist_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />

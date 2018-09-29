@@ -1,7 +1,7 @@
 -- MySqlBackup.NET 2.0.12
--- Dump Time: 2018-09-28 20:43:01
+-- Dump Time: 2018-09-28 22:11:06
 -- --------------------------------------
--- Server version 10.1.13-MariaDB mariadb.org binary distribution
+-- Server version 10.1.32-MariaDB mariadb.org binary distribution
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `booking` (
   CONSTRAINT `fk_Booking_Customer` FOREIGN KEY (`CustomerID`) REFERENCES `customer` (`CustomerID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_Booking_Employee` FOREIGN KEY (`EmployeeUsername`) REFERENCES `employee` (`Username`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_Booking_Service1` FOREIGN KEY (`ServiceID`) REFERENCES `service` (`ServiceID`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 -- 
 -- Dumping data for table booking
@@ -44,8 +44,13 @@ INSERT INTO `booking`(`BookingID`,`CustomerID`,`EmployeeUsername`,`AppointmentDa
 (1,1,'AndrewSchwabe1','30/08','9:00',2),
 (2,2,'AndrewSchwabe1','29/08','10:00',1),
 (3,3,'AndrewSchwabe1','27/08','12:00',1),
-(4,2,'EricOdding2','02/10','08:00',2),
-(5,3,'AndrewSchwabe1','03/10','09:15',1);
+(4,1,'AndrewSchwabe1','27/09','08:00',1),
+(5,3,'EricOdding2','27/09','08:00',1),
+(6,2,'NickClaassens3','27/09','08:00',1),
+(7,1,'AndrewSchwabe1','27/09','13:00',2),
+(8,2,'NickClaassens3','27/09','13:30',1),
+(9,1,'AndrewSchwabe1','28/09','08:45',1),
+(10,3,'NickClaassens3','27/09','08:15',1);
 /*!40000 ALTER TABLE `booking` ENABLE KEYS */;
 
 -- 
@@ -61,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
   `CustomerEmail` varchar(45) DEFAULT NULL,
   `CustomerStatus` varchar(45) DEFAULT 'Active',
   PRIMARY KEY (`CustomerID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- 
 -- Dumping data for table customer
@@ -71,9 +76,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
 INSERT INTO `customer`(`CustomerID`,`CustomerName`,`CustomerLastName`,`CustomerPhone`,`CustomerEmail`,`CustomerStatus`) VALUES
 (1,'Sarah','Jone','0873774773','sara@gmail.com','Active'),
 (2,'Jessica','Lane','0857477345','sara@gmail.com','Active'),
-(3,'Mary','Black','0764662366','sara@gmail.com','Active'),
-(4,'James','Cameron','james@camero','0123456789','Active'),
-(5,'asd','das','123','das@asd.asd','Active');
+(3,'Mary','Black','0764662366','sara@gmail.com','Active');
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 
 -- 
@@ -348,5 +351,5 @@ DELIMITER ;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 
--- Dump completed on 2018-09-28 20:43:01
--- Total time: 0:0:0:0:219 (d:h:m:s:ms)
+-- Dump completed on 2018-09-28 22:11:06
+-- Total time: 0:0:0:0:52 (d:h:m:s:ms)
