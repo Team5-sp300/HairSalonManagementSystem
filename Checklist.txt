@@ -26,18 +26,18 @@ Mobile
 -schedule-> take to info page
 	-add reschedule and cancelled
 -padding on all writing
--insert booing all spinner DONE
--move back button down
+-insert booing all spinner - DONE
 -add duration and service
 -client back button to client page
 -add validation
--log out on drawer
+-log out on drawer - DONE
 
 DB 
 -sort by whole month, day
 -add duration 2 bookingcheck
 
 Optional
--rename customer to client
+-move back button down
+-rename customer to client DB
 -client notes
--add drawer icons 
+-add drawer icons - DONE

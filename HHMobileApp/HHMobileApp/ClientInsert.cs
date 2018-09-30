@@ -44,7 +44,7 @@ namespace HHmobileApp
         {
             if (e.Item.ItemId == Resource.Id.action_back)
             {
-                var intent = new Intent(this, typeof(BookingActivity));
+                var intent = new Intent(this, typeof(ClientActivity));
                 StartActivity(intent);
             }
         }

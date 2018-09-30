@@ -4,22 +4,29 @@
     tools:showIn="navigation_view"
     android:textColor="#ffffff">
 
-  <group android:checkableBehavior="single">
+  <group android:id="@+id/grp1" android:checkableBehavior="single">
     <item
         android:id="@+id/nav_home"
          android:textColor="#ffffff"
+         android:icon="@drawable/ic_home"
         android:title="Home" />
     <item
         android:id="@+id/nav_schedule"
+         android:icon="@drawable/ic_calendar"
        android:title="My Schedule" />
     <item
         android:id="@+id/nav_bookings"
+         android:icon="@drawable/ic_literature"
         android:title="Bookings" />
     <item
         android:id="@+id/nav_clients"
+         android:icon="@drawable/ic_user"
         android:title="Clients" />
-    <item
-        android:id="@+id/nav_settings"
-        android:title="Settings" />
   </group>
+   <group android:id="@+id/grp2" android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit"
+                android:title="Logout" />
+   </group>
 </menu>

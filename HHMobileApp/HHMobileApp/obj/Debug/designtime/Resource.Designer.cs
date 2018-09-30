@@ -2244,26 +2244,41 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F010010
-			public const int ic_launcher_foreground = 2130771984;
-			
 			// aapt resource value: 0x7F010004
-			public const int ic_menu_camera = 2130771972;
+			public const int ic_calendar = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int ic_menu_gallery = 2130771973;
+			public const int ic_exit = 2130771973;
 			
 			// aapt resource value: 0x7F010006
-			public const int ic_menu_manage = 2130771974;
+			public const int ic_home = 2130771974;
+			
+			// aapt resource value: 0x7F010015
+			public const int ic_launcher_foreground = 2130771989;
 			
 			// aapt resource value: 0x7F010007
-			public const int ic_menu_send = 2130771975;
+			public const int ic_literature = 2130771975;
 			
 			// aapt resource value: 0x7F010008
-			public const int ic_menu_share = 2130771976;
+			public const int ic_menu_camera = 2130771976;
 			
 			// aapt resource value: 0x7F010009
-			public const int ic_menu_slideshow = 2130771977;
+			public const int ic_menu_gallery = 2130771977;
+			
+			// aapt resource value: 0x7F010010
+			public const int ic_menu_manage = 2130771984;
+			
+			// aapt resource value: 0x7F010011
+			public const int ic_menu_send = 2130771985;
+			
+			// aapt resource value: 0x7F010012
+			public const int ic_menu_share = 2130771986;
+			
+			// aapt resource value: 0x7F010013
+			public const int ic_menu_slideshow = 2130771987;
+			
+			// aapt resource value: 0x7F010014
+			public const int ic_user = 2130771988;
 			
 			// aapt resource value: 0x7F010002
 			public const int Logo = 2130771970;
@@ -2363,8 +2378,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0005
 			public const int actions = 2131492869;
 			
-			// aapt resource value: 0x7F020044
-			public const int action_back = 2130837572;
+			// aapt resource value: 0x7F020046
+			public const int action_back = 2130837574;
 			
 			// aapt resource value: 0x7F0C0002
 			public const int action_bar = 2131492866;
@@ -2558,6 +2573,12 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0034
 			public const int ghost_view = 2131492916;
 			
+			// aapt resource value: 0x7F020039
+			public const int grp1 = 2130837561;
+			
+			// aapt resource value: 0x7F020044
+			public const int grp2 = 2130837572;
+			
 			// aapt resource value: 0x7F0C0035
 			public const int home = 2131492917;
 			
@@ -2627,20 +2648,20 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0047
 			public const int navigation_header_container = 2131492935;
 			
-			// aapt resource value: 0x7F020041
-			public const int nav_bookings = 2130837569;
-			
 			// aapt resource value: 0x7F020042
-			public const int nav_clients = 2130837570;
-			
-			// aapt resource value: 0x7F020039
-			public const int nav_home = 2130837561;
-			
-			// aapt resource value: 0x7F020040
-			public const int nav_schedule = 2130837568;
+			public const int nav_bookings = 2130837570;
 			
 			// aapt resource value: 0x7F020043
-			public const int nav_settings = 2130837571;
+			public const int nav_clients = 2130837571;
+			
+			// aapt resource value: 0x7F020040
+			public const int nav_home = 2130837568;
+			
+			// aapt resource value: 0x7F020045
+			public const int nav_logout = 2130837573;
+			
+			// aapt resource value: 0x7F020041
+			public const int nav_schedule = 2130837569;
 			
 			// aapt resource value: 0x7F020003
 			public const int nav_view = 2130837507;

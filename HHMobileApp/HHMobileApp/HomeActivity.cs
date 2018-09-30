@@ -97,10 +97,16 @@ namespace HHmobileApp
                 var intent = new Intent(this, typeof(ClientActivity));
                 StartActivity(intent);
             }
-            else if (id == Resource.Id.nav_settings)
+            else if (id == Resource.Id.nav_logout)
             {
-
+                ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+                ISharedPreferencesEditor edit = pref.Edit();
+                edit.Clear();
+                edit.Apply();
+                var intent = new Intent(this, typeof(LoginActivity));
+                StartActivity(intent);
             }
+
 
 
 

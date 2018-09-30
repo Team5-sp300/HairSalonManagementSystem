@@ -3076,8 +3076,8 @@ containing a value of this type.
         public static int nav_bookings=0x7f0800d6;
         public static int nav_clients=0x7f0800d7;
         public static int nav_home=0x7f0800d4;
+        public static int nav_logout=0x7f0800d8;
         public static int nav_schedule=0x7f0800d5;
-        public static int nav_settings=0x7f0800d8;
         public static int nav_view=0x7f08008c;
         public static int navigation_header_container=0x7f0800ad;
         public static int never=0x7f08003b;
