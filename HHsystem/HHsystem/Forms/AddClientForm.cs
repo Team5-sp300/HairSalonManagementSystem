@@ -47,13 +47,13 @@ namespace HHsystem.Forms
         }
 
         public string getClientName()
-        {
-            return nametxt.Text;
+        {            
+            return nametxt.Text.Replace(" ", "&nbsp&");
         }
 
         public string getClientSurname()
         {
-            return surnametxt.Text;
+            return surnametxt.Text.Replace(" ", "&nbsp&");
         }
 
         public string getClientEmail()
@@ -97,7 +97,7 @@ namespace HHsystem.Forms
         private void phonetxt_TextChanged(object sender, EventArgs e)
         {
             Regex nonNumericRegex = new Regex(@"\D");
-            if (!nonNumericRegex.IsMatch(getClientPhone()) && getClientPhone().Length > 0)
+            if (!nonNumericRegex.IsMatch(getClientPhone()) && getClientPhone().Length > 0 && getClientPhone().Length <= 10)
             {
                 pictureBoxPhone.Image = Properties.Resources.valid;
                 phoneValid = true;

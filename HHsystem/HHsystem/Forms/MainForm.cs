@@ -88,15 +88,20 @@ namespace HHsystem
         {
             table = new DataTable();
             manager.getClients().Fill(table);
+            foreach (DataRow row in table.Rows)
+            {                
+                row[1] = row[1].ToString().Replace("&nbsp&", " ");
+                row[0] = row[0].ToString().Replace("&nbsp&", " ");
+            }
+            table.Columns.Remove(table.Columns[0]);
+            table.Columns.Remove(table.Columns[4]);
             bindingSource2.DataSource = table;
             dataGridView3.DataSource = bindingSource2;
             dataGridView5.DataSource = bindingSource2;
-            table.Columns[0].ColumnName = "Client ID";
-            table.Columns[1].ColumnName = "Name";
-            table.Columns[2].ColumnName = "Last Name";
-            table.Columns[3].ColumnName = "Phone Number";
-            table.Columns[4].ColumnName = "Email Address";
-            table.Columns[5].ColumnName = "Status";
+            table.Columns[0].ColumnName = "Name";
+            table.Columns[1].ColumnName = "Last Name";
+            table.Columns[2].ColumnName = "Phone Number";
+            table.Columns[3].ColumnName = "Email Address";
         }
 
         public void populateWeeks()
@@ -257,7 +262,7 @@ namespace HHsystem
                     table.Columns[0].ColumnName = "Stylist";
                     table.Columns[1].ColumnName = "Appointment Date";
                     table.Columns[2].ColumnName = "Appointment Time";
-                    table.Columns[3].ColumnName = "Service Duration";
+                    table.Columns[3].ColumnName = "Service Duration (in m)";
                 }
             }
         }
@@ -282,7 +287,7 @@ namespace HHsystem
                     table.Columns[0].ColumnName = "Clients";
                     table.Columns[1].ColumnName = "Appointment Date";
                     table.Columns[2].ColumnName = "Appointment Time";
-                    table.Columns[3].ColumnName = "Service Duration";
+                    table.Columns[3].ColumnName = "Service Duration (in m)";
                 }
             }
         }

@@ -2,14 +2,14 @@
 
 -login system
 -calendar fix: 2 appointment dont display
--remove booking validation
--Vadliaton name without white spaces
--phone number lenght validation 
--remove id and status in tables
+-remove booking validation			-> done
+-Vadliaton name without white spaces		-> done
+-phone number lenght validation 		-> done
+-remove id and status in tables			-> partially done
 -validation add confirm password 
--backup confirm dialog
+-backup confirm dialog				-> done
 -reschdule on clients
--change colum name duration (m)
+-change colum name duration (m)			-> done
 -add service to client/staff table
 -whole setting table reworked
 	-add backlocation

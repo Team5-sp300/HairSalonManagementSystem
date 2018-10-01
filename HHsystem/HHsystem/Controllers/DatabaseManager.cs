@@ -223,7 +223,6 @@ namespace HHsystem.Controllers
                 result = cmd.ExecuteReader();
 
                 while (result.Read())
-
                 {
                     serviceDetails[i, 0] = result[0].ToString();
                     serviceDetails[i, 1] = result[1].ToString();
@@ -287,8 +286,8 @@ namespace HHsystem.Controllers
 
                 {
                     clientDetails[i, 0] = result[0].ToString();
-                    clientDetails[i, 1] = result[1].ToString();
-                    clientDetails[i, 2] = result[2].ToString();
+                    clientDetails[i, 1] = result[1].ToString().Replace("&nbsp&"," ");
+                    clientDetails[i, 2] = result[2].ToString().Replace("&nbsp&", " ");
                     clientDetails[i, 3] = result[3].ToString();
                     clientDetails[i, 4] = result[4].ToString();
                     i++;
@@ -328,8 +327,8 @@ namespace HHsystem.Controllers
 
                 {
                     clientDetails[i, 0] = result[0].ToString();
-                    clientDetails[i, 1] = result[1].ToString();
-                    clientDetails[i, 2] = result[2].ToString();
+                    clientDetails[i, 1] = result[1].ToString().Replace("&nbsp&", " ");
+                    clientDetails[i, 2] = result[2].ToString().Replace("&nbsp&", " ");
                     clientDetails[i, 3] = result[3].ToString();
                     i++;
                 }
@@ -514,12 +513,24 @@ namespace HHsystem.Controllers
 
         public void backup()
         {
-            string file = "../../../../Database/Backups/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
-            connection();
-            MySqlBackup mb = new MySqlBackup(cmd);
-            mb.ExportToFile(file);
-            conn.Close();
-            MessageBox.Show("Database successfully backed up to file: HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy"));
+            switch (MessageBox.Show("Are you sure you want to back up the database?",
+              "Confirm Backup",
+              MessageBoxButtons.YesNo,
+              MessageBoxIcon.Question))
+            {
+                case DialogResult.Yes:
+                    string file = "../../../../Database/Backups/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
+                    connection();
+                    MySqlBackup mb = new MySqlBackup(cmd);
+                    mb.ExportToFile(file);
+                    conn.Close();
+                    MessageBox.Show("Database successfully backed up to file: HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy"));
+                    break;
+
+                case DialogResult.No:
+                    MessageBox.Show("Backup Cancelled");
+                    break;
+            }
         }
 
         public void restore()
