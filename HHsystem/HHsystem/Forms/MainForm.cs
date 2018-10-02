@@ -31,6 +31,11 @@ namespace HHsystem
             populateEmployees();
             customWeeklyScheduler.redrawScheduler(this.Width - 200, this.Height - 205);
             comboBox4.SelectedIndex = 0;
+
+            System.DateTime nowtime = System.DateTime.Now;
+           
+                labelmonth.Text = nowtime.ToString("ddd dd/MM");
+            
         }
 
         public void populateTable()
@@ -454,6 +459,13 @@ namespace HHsystem
             timer1.Interval = REFRESH_RATE;
             timer1.Start();
             populateTable();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            timer1.Start();
+            string currentTime = System.DateTime.Now.ToString("HH:mm:ss");
+            labeltime.Text = currentTime;
         }
     }
 }

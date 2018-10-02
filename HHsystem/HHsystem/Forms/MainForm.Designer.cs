@@ -46,6 +46,7 @@
             this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.customTabControl1 = new HHsystem.CustomTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button9 = new System.Windows.Forms.Button();
@@ -125,6 +126,8 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.labeltime = new System.Windows.Forms.Label();
+            this.labelmonth = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -270,7 +273,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(219, 34);
+            this.label3.Location = new System.Drawing.Point(274, 33);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 25);
             this.label3.TabIndex = 8;
@@ -295,6 +298,12 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // customTabControl1
             // 
@@ -1349,6 +1358,32 @@
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
+            // labeltime
+            // 
+            this.labeltime.BackColor = System.Drawing.Color.Transparent;
+            this.labeltime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.labeltime.ForeColor = System.Drawing.Color.Black;
+            this.labeltime.Location = new System.Drawing.Point(171, 42);
+            this.labeltime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labeltime.Name = "labeltime";
+            this.labeltime.Size = new System.Drawing.Size(103, 28);
+            this.labeltime.TabIndex = 30;
+            this.labeltime.Text = "00:00:00";
+            this.labeltime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelmonth
+            // 
+            this.labelmonth.BackColor = System.Drawing.Color.Transparent;
+            this.labelmonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.labelmonth.ForeColor = System.Drawing.Color.Black;
+            this.labelmonth.Location = new System.Drawing.Point(169, 18);
+            this.labelmonth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelmonth.Name = "labelmonth";
+            this.labelmonth.Size = new System.Drawing.Size(105, 28);
+            this.labelmonth.TabIndex = 31;
+            this.labelmonth.Text = "00:00:00";
+            this.labelmonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1356,6 +1391,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1278, 918);
             this.ControlBox = false;
+            this.Controls.Add(this.labelmonth);
+            this.Controls.Add(this.labeltime);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
@@ -1511,6 +1548,9 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label labeltime;
+        private System.Windows.Forms.Label labelmonth;
     }
 }
 

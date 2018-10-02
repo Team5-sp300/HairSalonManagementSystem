@@ -16,7 +16,7 @@
 	-add resolution
 	-add refresh rate polling
 	-add default days
--home page time
+-home page time					- DONE
 -calendar check int i=select count(*) booking
 	i>select count(*)
 
@@ -26,11 +26,11 @@ Mobile
 -schedule-> take to info page
 	-add reschedule and cancelled
 -padding on all writing
--insert booing all spinner - DONE
+-insert booing all spinner 			- DONE
 -add duration and service
 -client back button to client page
 -add validation
--log out on drawer - DONE
+-log out on drawer 				- DONE
 
 DB 
 -sort by whole month, day
