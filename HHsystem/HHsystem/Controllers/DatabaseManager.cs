@@ -356,7 +356,7 @@ namespace HHsystem.Controllers
 
                 result.Close();
 
-                loginDetails = new string[arrySize, 2];
+                loginDetails = new string[arrySize, 3];
 
                 cmd = new MySqlCommand(command, conn);
                 result = cmd.ExecuteReader();
@@ -366,6 +366,7 @@ namespace HHsystem.Controllers
                 {
                     loginDetails[i, 0] = result[0].ToString();
                     loginDetails[i, 1] = result[1].ToString();
+                    loginDetails[i, 2] = result[2].ToString();
                     i++;
                 }
             }
@@ -389,11 +390,10 @@ namespace HHsystem.Controllers
         }
 
 
-        public void addEmployee(string uname, string fname, string lname, string email, string phone, string password)
+        public void addEmployee(string uname, string fname, string lname, string email, string phone, string password, int type)
         {
-            string command = "CALL insertEmployee(?username,?fname,?lname,?email,?phone,?password)";
+            string command = "CALL insertEmployee(?username,?fname,?lname,?password,?email,?phone,?type)";
             connection();
-            MessageBox.Show(command);
             cmd = new MySqlCommand(command, conn);
             cmd.Parameters.AddWithValue("?username", uname);
             cmd.Parameters.AddWithValue("?fname", fname);
@@ -401,6 +401,7 @@ namespace HHsystem.Controllers
             cmd.Parameters.AddWithValue("?email", email);
             cmd.Parameters.AddWithValue("?phone", phone);
             cmd.Parameters.AddWithValue("?password", password);
+            cmd.Parameters.AddWithValue("?type", type);
             cmd.ExecuteNonQuery();
 
             conn.Close();
@@ -410,7 +411,6 @@ namespace HHsystem.Controllers
         {
             string command = "CALL insertBooking(?cfname,?clname,?efname,?elname,?adate,?atime,?service)";
             connection();
-            //MessageBox.Show(command);
             cmd = new MySqlCommand(command, conn);
             cmd.Parameters.AddWithValue("?cfname", cfname);
             cmd.Parameters.AddWithValue("?clname", clname);
@@ -427,7 +427,6 @@ namespace HHsystem.Controllers
         {
             string command = "CALL insertClient(?fname, ?lname, ?email, ?phone)";
             connection();
-            MessageBox.Show(command);
             cmd = new MySqlCommand(command, conn);
             cmd.Parameters.AddWithValue("?fname", name);
             cmd.Parameters.AddWithValue("?lname", surname);

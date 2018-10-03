@@ -45,6 +45,7 @@ namespace HHsystem
                 populateEmployeeTable();
                 populateBookingTable();
                 populateClientTable();
+                populateClientTable2();
             }
             catch (Exception)
             {
@@ -102,11 +103,29 @@ namespace HHsystem
             table.Columns.Remove(table.Columns[4]);
             bindingSource2.DataSource = table;
             dataGridView3.DataSource = bindingSource2;
-            dataGridView5.DataSource = bindingSource2;
             table.Columns[0].ColumnName = "Name";
             table.Columns[1].ColumnName = "Last Name";
             table.Columns[2].ColumnName = "Phone Number";
             table.Columns[3].ColumnName = "Email Address";
+        }
+
+        public void populateClientTable2()
+        {
+            table = new DataTable();
+            manager.getClients().Fill(table);
+            foreach (DataRow row in table.Rows)
+            {
+                row[1] = row[1].ToString().Replace("&nbsp&", " ");
+                row[0] = row[0].ToString().Replace("&nbsp&", " ");
+            }
+            bindingSource5.DataSource = table;
+            dataGridView5.DataSource = bindingSource5;
+            table.Columns[0].ColumnName = "ID";
+            table.Columns[1].ColumnName = "Name";
+            table.Columns[2].ColumnName = "Last Name";
+            table.Columns[3].ColumnName = "Phone Number";
+            table.Columns[4].ColumnName = "Email Address";
+            table.Columns[5].ColumnName = "Status";
         }
 
         public void populateWeeks()
@@ -124,20 +143,28 @@ namespace HHsystem
 
         public void populateNames()
         {
+            comboBox2.Items.Clear();
             for (int i = 0; i < manager.getClientDetails().GetLength(0); i++)
             {
                 comboBox2.Items.Add(manager.getClientDetails()[i, 1] + " " + manager.getClientDetails()[i, 2]);
             }
-            comboBox2.SelectedIndex = 0;
+            if (comboBox2.Items.Count > 0)
+            {
+                comboBox2.SelectedIndex = 0;
+            }            
         }
 
         public void populateEmployees()
         {
+            comboBox3.Items.Clear();
             for (int i = 0; i < manager.getEmployeeDetails().GetLength(0); i++)
             {
                 comboBox3.Items.Add(manager.getEmployeeDetails()[i, 1] + " " + manager.getEmployeeDetails()[i, 2]);
             }
-            comboBox3.SelectedIndex = 0;
+            if (comboBox3.Items.Count > 0)
+            {
+                comboBox3.SelectedIndex = 0;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -219,7 +246,7 @@ namespace HHsystem
 
         private void button9_Click(object sender, EventArgs e)
         {
-            new LoginForm().Show();
+            new LoginForm(this).Show();
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -402,12 +429,14 @@ namespace HHsystem
                 {
                     manager.deleteClient(username);
                     populateClientTable();
+                    populateClientTable2();
                     populateBookingTable();
                 }
                 else if (result == DialogResult.No)
                 {
                     manager.voidClient(username);
                     populateClientTable();
+                    populateClientTable2();
                 }
                 else if (result == DialogResult.Cancel)
                 {
@@ -466,6 +495,32 @@ namespace HHsystem
             timer1.Start();
             string currentTime = System.DateTime.Now.ToString("HH:mm:ss");
             labeltime.Text = currentTime;
+        }
+
+        public void stylistLogin()
+        {
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
+            button5.Enabled = true;
+        }
+
+        public void adminLogin()
+        {
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
+            button5.Enabled = true;
+            button12.Enabled = true;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            button2.Enabled = false;
+            button3.Enabled = false;
+            button4.Enabled = false;
+            button5.Enabled = false;
+            button12.Enabled = false;
         }
     }
 }

@@ -1,12 +1,12 @@
  System
 
--login system
+-login system					-> done (logout not implemented yet)
 -calendar fix: 2 appointment dont display
 -remove booking validation			-> done
 -Vadliaton name without white spaces		-> done
 -phone number lenght validation 		-> done
--remove id and status in tables			-> partially done
--validation add confirm password 
+-remove id and status in tables			-> done
+-validation add confirm password 			
 -backup confirm dialog				-> done
 -reschdule on clients
 -change colum name duration (m)			-> done

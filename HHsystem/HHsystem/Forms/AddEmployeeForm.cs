@@ -19,7 +19,6 @@ namespace HHsystem.Forms
         private bool surnameValid;
         private bool emailValid;
         private bool phoneValid;
-        private bool usernameValid;
         private bool passwordValid;
 
         public AddEmployeeForm()
@@ -31,15 +30,14 @@ namespace HHsystem.Forms
             surnameValid = false;
             emailValid = false;
             phoneValid = false;
-            usernameValid = false;
             passwordValid = false;
     }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (nameValid && surnameValid && emailValid && phoneValid && usernameValid && passwordValid)
+            if (nameValid && surnameValid && emailValid && phoneValid && passwordValid)
             {
-                new EmployeeController().add(getEmployeeUname(), getEmployeeFname(), getEmployeeLname(), getEmployeeEmail(), getEmployeePhone(), getEmployeePassword());
+                new EmployeeController().add(getEmployeeUname(), getEmployeeFname(), getEmployeeLname(), getEmployeeEmail(), getEmployeePhone(), getEmployeePassword(), adminCheck());
                 this.Dispose();
             }
             else
@@ -55,7 +53,7 @@ namespace HHsystem.Forms
 
         public string getEmployeeUname()
         {
-            return usernametxt.Text;
+            return usernamelbl.Text;
         }
 
         public string getEmployeeFname()
@@ -83,23 +81,34 @@ namespace HHsystem.Forms
             return passwordtxt.Text;
         }
 
+        public int adminCheck()
+        {
+            if (checkBox1.Checked)
+            {
+                return 1;
+            } else
+            {
+                return 2;
+            }
+        }
+
         private void nametxt_TextChanged(object sender, EventArgs e)
         {
             fnametxt = sender as TextBox;
             if (fnametxt.Text.Length >= 3 && lnametxt.Text.Length >= 3)
             {
-                usernametxt.Text = fnametxt.Text.Substring(0, 3) + lnametxt.Text.Substring(0, 3) + id;
+                usernamelbl.Text = fnametxt.Text.Substring(0, 3) + lnametxt.Text.Substring(0, 3) + id;
             }
             else if (fnametxt.Text.Length >= 3 && lnametxt.Text=="")
             {
-                usernametxt.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
+                usernamelbl.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
             }
            else if(lnametxt.Text == ""){
-                usernametxt.Text = fnametxt.Text + lnametxt.Text + id;
+                usernamelbl.Text = fnametxt.Text + lnametxt.Text + id;
             }
             else if (lnametxt.Text != "")
             {
-                usernametxt.Text = fnametxt.Text+ lnametxt.Text.Substring(0, 3) + id;
+                usernamelbl.Text = fnametxt.Text+ lnametxt.Text.Substring(0, 3) + id;
             }
 
             if (getEmployeeFname().Length > 0 )
@@ -120,15 +129,15 @@ namespace HHsystem.Forms
 
             if (fnametxt.Text.Length >= 3 && lnametxt.Text.Length >= 3)
             {
-                usernametxt.Text = fnametxt.Text.Substring(0, 3) + lnametxt.Text.Substring(0, 3) + id;
+                usernamelbl.Text = fnametxt.Text.Substring(0, 3) + lnametxt.Text.Substring(0, 3) + id;
             }
             else if (lnametxt.Text.Length >= 3 && fnametxt.Text == "")
             {
-                usernametxt.Text = fnametxt.Text + lnametxt.Text.Substring(0, 3) + id;
+                usernamelbl.Text = fnametxt.Text + lnametxt.Text.Substring(0, 3) + id;
             }
             else if (fnametxt.Text != "")
             {
-                usernametxt.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
+                usernamelbl.Text = fnametxt.Text.Substring(0,3) + lnametxt.Text + id;
             }
 
             if (getEmployeeLname().Length > 0)
@@ -141,20 +150,6 @@ namespace HHsystem.Forms
                 pictureBoxSurname.Image = Properties.Resources.invalid;
                 surnameValid = false;
             }
-        }
-
-        private void usernametxt_TextChanged(object sender, EventArgs e)
-        {
-            if (getEmployeeUname().Length >= 8)
-            {
-                pictureBoxUserName.Image = Properties.Resources.valid;
-                usernameValid = true;
-            }
-            else
-            {
-                pictureBoxUserName.Image = Properties.Resources.invalid;
-                usernameValid = false;
-            }            
         }
 
         private void emailtxt_TextChanged(object sender, EventArgs e)
