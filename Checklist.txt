@@ -22,10 +22,10 @@
 
 Mobile
 
--weight for  vertical alginment 
+-weight for  vertical alginment 		- DONE
 -schedule-> take to info page
 	-add reschedule and cancelled
--padding on all writing
+-padding on all writing				- DONE
 -insert booing all spinner 			- DONE
 -add duration and service
 -client back button to client page

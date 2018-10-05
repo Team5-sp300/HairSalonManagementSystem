@@ -57,7 +57,11 @@ namespace HHmobileApp
                     var intent = new Intent(this, typeof(HomeActivity));
                     StartActivity(intent);
                 }
-
+                else if(i.Equals(loginDetails.Count))
+                {
+                    var intent = new Intent(this, typeof(LoginActivity));
+                    StartActivity(intent);
+                }
             }
 
         }

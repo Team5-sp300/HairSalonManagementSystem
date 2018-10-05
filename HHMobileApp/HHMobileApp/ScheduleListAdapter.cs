@@ -57,7 +57,7 @@ namespace HHmobileApp
             txttime.Text = items[position].time;
 
             TextView txtduration = row.FindViewById<TextView>(Resource.Id.txtduration);
-            txtduration.Text = items[position].length+ " Hour(s)";
+            txtduration.Text = items[position].length+ " Minutes";
 
             return row;
         }

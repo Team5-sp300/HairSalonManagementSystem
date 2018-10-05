@@ -37,7 +37,7 @@ namespace HHmobileApp
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
 
-            checkbox= FindViewById<CheckBox>(Resource.Id.cbRemeberMe);
+            checkbox = FindViewById<CheckBox>(Resource.Id.cbRemeberMe);
         }
 
         public override void OnBackPressed()
@@ -76,7 +76,8 @@ namespace HHmobileApp
                 {
                     var intent = new Intent(this, typeof(HomeActivity));
                     intent.PutExtra("Username", textName.Text);
-                    if (checkbox.Checked) {
+                    if (checkbox.Checked)
+                    {
                         ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
                         ISharedPreferencesEditor edit = pref.Edit();
                         edit.PutString("Username", textName.Text);
@@ -85,9 +86,12 @@ namespace HHmobileApp
                     }
                     StartActivity(intent);
                 }
+                else if (i.Equals(loginDetails.Count))
+                {
+                    textView.Visibility = ViewStates.Visible;
+                }
 
             }
-            textView.Visibility = ViewStates.Visible;
         }
     }
 }
