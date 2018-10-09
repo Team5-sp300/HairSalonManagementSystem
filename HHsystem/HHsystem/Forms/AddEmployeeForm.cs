@@ -20,6 +20,7 @@ namespace HHsystem.Forms
         private bool emailValid;
         private bool phoneValid;
         private bool passwordValid;
+        private bool confirmPasswordValid;
 
         public AddEmployeeForm()
         {
@@ -35,7 +36,7 @@ namespace HHsystem.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (nameValid && surnameValid && emailValid && phoneValid && passwordValid)
+            if (nameValid && surnameValid && emailValid && phoneValid && passwordValid && confirmPasswordValid)
             {
                 new EmployeeController().add(getEmployeeUname(), getEmployeeFname(), getEmployeeLname(), getEmployeeEmail(), getEmployeePhone(), getEmployeePassword(), adminCheck());
                 this.Dispose();
@@ -79,6 +80,11 @@ namespace HHsystem.Forms
         public string getEmployeePassword()
         {
             return passwordtxt.Text;
+        }
+
+        public string getEmployeePasswordConfirm()
+        {
+            return confirmpasswordtxt.Text;
         }
 
         public int adminCheck()
@@ -202,6 +208,20 @@ namespace HHsystem.Forms
             {
                 pictureBoxPassword.Image = Properties.Resources.invalid;
                 passwordValid = false;
+            }
+        }
+
+        private void confirmpasswordtxt_TextChanged(object sender, EventArgs e)
+        {
+            if (getEmployeePasswordConfirm().Equals(getEmployeePassword()))
+            {
+                pictureBoxConfirmPassword.Image = Properties.Resources.valid;
+                confirmPasswordValid = true;
+            }
+            else
+            {
+                pictureBoxConfirmPassword.Image = Properties.Resources.invalid;
+                confirmPasswordValid = false;
             }
         }
     }

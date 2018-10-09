@@ -49,11 +49,15 @@
             this.pictureBoxPhone = new System.Windows.Forms.PictureBox();
             this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.pictureBoxConfirmPassword = new System.Windows.Forms.PictureBox();
+            this.confirmpasswordtxt = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFirstName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSurname)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConfirmPassword)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -160,10 +164,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(129, 361);
+            this.button1.Location = new System.Drawing.Point(129, 414);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 31);
-            this.button1.TabIndex = 7;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -174,10 +178,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.Location = new System.Drawing.Point(31, 361);
+            this.button2.Location = new System.Drawing.Point(31, 414);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(82, 31);
-            this.button2.TabIndex = 6;
+            this.button2.TabIndex = 8;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -258,20 +262,52 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(31, 330);
+            this.checkBox1.Location = new System.Drawing.Point(31, 383);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(55, 17);
-            this.checkBox1.TabIndex = 40;
+            this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Admin";
             this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxConfirmPassword
+            // 
+            this.pictureBoxConfirmPassword.Location = new System.Drawing.Point(217, 348);
+            this.pictureBoxConfirmPassword.Name = "pictureBoxConfirmPassword";
+            this.pictureBoxConfirmPassword.Size = new System.Drawing.Size(20, 20);
+            this.pictureBoxConfirmPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxConfirmPassword.TabIndex = 43;
+            this.pictureBoxConfirmPassword.TabStop = false;
+            // 
+            // confirmpasswordtxt
+            // 
+            this.confirmpasswordtxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.confirmpasswordtxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.confirmpasswordtxt.Location = new System.Drawing.Point(31, 348);
+            this.confirmpasswordtxt.Name = "confirmpasswordtxt";
+            this.confirmpasswordtxt.PasswordChar = '*';
+            this.confirmpasswordtxt.Size = new System.Drawing.Size(180, 20);
+            this.confirmpasswordtxt.TabIndex = 6;
+            this.confirmpasswordtxt.TextChanged += new System.EventHandler(this.confirmpasswordtxt_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(22, 332);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 13);
+            this.label7.TabIndex = 42;
+            this.label7.Text = "Confirm Password";
             // 
             // AddEmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(248, 423);
+            this.ClientSize = new System.Drawing.Size(248, 464);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBoxConfirmPassword);
+            this.Controls.Add(this.confirmpasswordtxt);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBoxPassword);
             this.Controls.Add(this.pictureBoxPhone);
@@ -302,6 +338,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEmail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConfirmPassword)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,5 +367,8 @@
         private System.Windows.Forms.PictureBox pictureBoxPhone;
         private System.Windows.Forms.PictureBox pictureBoxPassword;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.PictureBox pictureBoxConfirmPassword;
+        private System.Windows.Forms.TextBox confirmpasswordtxt;
+        private System.Windows.Forms.Label label7;
     }
 }
