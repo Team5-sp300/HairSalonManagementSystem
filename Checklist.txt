@@ -33,7 +33,7 @@ Mobile
 -log out on drawer 				- DONE
 
 DB 
--sort by whole month, day
+-sort by whole month, day			-> done
 -add duration 2 bookingcheck
 
 Optional

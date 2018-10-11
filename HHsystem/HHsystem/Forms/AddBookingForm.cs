@@ -117,7 +117,7 @@ namespace HHsystem.Forms
 
         public string getDate()
         {
-            return dateTimePicker.Text;
+            return dateTimePicker.Value.ToShortDateString();
         }
 
         public string getTime()

@@ -159,7 +159,7 @@
             // 
             this.dateTimePicker.CustomFormat = "";
             this.dateTimePicker.Location = new System.Drawing.Point(31, 190);
-            this.dateTimePicker.MinDate = new System.DateTime(2018, 8, 22, 0, 0, 0, 0);
+            this.dateTimePicker.MinDate = new System.DateTime(2018, 10, 11, 0, 0, 0, 0);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(180, 20);
             this.dateTimePicker.TabIndex = 60;
