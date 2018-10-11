@@ -24,6 +24,10 @@ namespace HHmobileApp
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
+		public static void UpdateIdValues()
+		{
+		}
+		
 		public partial class Animation
 		{
 			
@@ -3104,7 +3108,7 @@ namespace HHmobileApp
 			public const int client_details = 2130903057;
 			
 			// aapt resource value: 0x7F030012
-			public const int client_insert = 2130903058;
+			public const int Client_Insert = 2130903058;
 			
 			// aapt resource value: 0x7F030013
 			public const int client_listview_row = 2130903059;
