@@ -54,7 +54,7 @@ namespace HHsystem.Componets
             {
                 for (int i = 0; i < colums; i++)
                 {
-
+                   // MessageBox.Show((bookingDetails[j, 1]));
                     if (bookingDetails[j, 1].Equals(dates[i]))
                     {
                         for (int m = 0; m < times.Length; m++)
@@ -62,30 +62,6 @@ namespace HHsystem.Componets
                             if (bookingDetails[j, 2].Substring(0, 3).Equals(times[m].Substring(0, 3)))
                             {
                                 k = i + 1;
-                                //if (!cells[k, m].Text.Equals(string.Empty))
-                                //{
-                                //    //cells[k, m].Text += "";
-                                //    if (Int32.Parse(bookingDetails[j, 3]) == 90)
-                                //    {
-                                //        cells[i + 1, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-                                //        cells[k, m + 1].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-                                //        cells[i + 1, m + 1].FlatAppearance.BorderSize = 1;
-                                //        cells[k, m].FlatAppearance.BorderSize = 1;
-                                //        cells[k, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-                                //        cells[k, m].FlatAppearance.BorderSize = 1;
-                                //        cells[i + 1, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
-                                //        cells[k, m + 1].BackColor = System.Drawing.SystemColors.MenuHighlight;
-                                //        //cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
-                                //        //cells[k, m + 1].BorderStyle = System.Windows.Forms.BorderStyle.None;
-                                //        cells[k, m].Text += ", " + bookingDetails[j, 0];
-                                //    }
-                                //    else if (Int32.Parse(bookingDetails[j, 3]) == 60)
-                                //    {
-                                //        cells[k, m].Text += ", " + bookingDetails[j, 0];
-                                //    }
-                                //}
-                                //else
-                                //{
                                 if (Int32.Parse(bookingDetails[j, 3]) == 90)
                                 {
                                     cells[i + 1, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
@@ -99,6 +75,14 @@ namespace HHsystem.Componets
                                     cells[k, m].Text += bookingDetails[j, 2] + " \n" + bookingDetails[j, 0] + " \n";
                                 }
                                 else if (Int32.Parse(bookingDetails[j, 3]) == 60)
+                                {
+                                    cells[k, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+                                    cells[k, m].FlatAppearance.BorderSize = 1;
+                                    cells[k, m].BackColor = System.Drawing.SystemColors.MenuHighlight;
+                                    //cells[k, m].BorderStyle = System.Windows.Forms.BorderStyle.None;
+                                    cells[k, m].Text += bookingDetails[j, 2] + " \n" + bookingDetails[j, 0] + " \n";
+                                }
+                                else 
                                 {
                                     cells[k, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m].FlatAppearance.BorderSize = 1;
