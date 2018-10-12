@@ -31,6 +31,7 @@ namespace HHsystem
             populateEmployees();
             customWeeklyScheduler.redrawScheduler(this.Width - 200, this.Height - 205);
             comboBox4.SelectedIndex = 0;
+            adminLogin();//needs to be removed, just for testing purposes
 
             System.DateTime nowtime = System.DateTime.Now;
            
