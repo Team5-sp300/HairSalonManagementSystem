@@ -49,6 +49,7 @@ namespace HHsystem.Componets
 
         private void addAppointments()
         {
+            setCells();
             int k = 0;
             for (int j = 0; j < bookingDetails.GetLength(0); j++)
             {
@@ -137,6 +138,8 @@ namespace HHsystem.Componets
                 {
                     //cells[i, j].BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                     cells[i, j].Text = "";
+                    cells[i, j].FlatAppearance.BorderColor = System.Drawing.Color.White;
+                    cells[i, j].FlatAppearance.BorderSize = 1;
                     if (i % 2 == 1)
                     {
                         cells[i, j].BackColor = System.Drawing.SystemColors.ButtonFace;
