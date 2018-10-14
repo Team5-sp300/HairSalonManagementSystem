@@ -8,7 +8,7 @@
     <activity android:label="Insert Booking" android:theme="@style/AppTheme.NoActionBar" android:name="md5b76358c62d0ed5b54e301eee72c3d151.BookingInsert" />
     <activity android:label="Clients" android:theme="@style/AppTheme.NoActionBar" android:name="md5b76358c62d0ed5b54e301eee72c3d151.ClientActivity" />
     <activity android:label="Bookings" android:theme="@style/AppTheme.NoActionBar" android:name="md5b76358c62d0ed5b54e301eee72c3d151.BookingActivity" />
-    <activity android:label="Clients" android:theme="@style/AppTheme.NoActionBar" android:name="md5b76358c62d0ed5b54e301eee72c3d151.BookingInformatin" />
+    <activity android:label="Booking" android:theme="@style/AppTheme.NoActionBar" android:name="md5b76358c62d0ed5b54e301eee72c3d151.BookingInformatin" />
     <activity android:label="Clients" android:theme="@style/AppTheme.NoActionBar" android:name="md5b76358c62d0ed5b54e301eee72c3d151.ClientInformatin" />
     <activity android:label="Insert Client" android:theme="@style/AppTheme.NoActionBar" android:name="md5b76358c62d0ed5b54e301eee72c3d151.ClientInsert" />
     <activity android:label="Login" android:theme="@style/AppTheme.NoActionBar" android:name="md5b76358c62d0ed5b54e301eee72c3d151.LoginActivity" />

@@ -16,12 +16,13 @@ using Android.Widget;
 
 namespace HHmobileApp
 {
-    [Activity(Label = "Clients", Theme = "@style/AppTheme.NoActionBar")]
+    [Activity(Label = "Booking", Theme = "@style/AppTheme.NoActionBar")]
     public class BookingInformatin : AppCompatActivity
     {
 
         List<string> items;
         ListView listview;
+        BookingDetailsListAdapter adapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,11 +37,20 @@ namespace HHmobileApp
 
             items = new List<string>();
             items.Add(Intent.GetStringExtra("cname"));
-            items.Add(Intent.GetStringExtra("ename"));
+            if (Intent.GetStringExtra("type").Equals("0"))
+            {
+                items.Add(Intent.GetStringExtra("ename"));
+                adapter = new BookingDetailsListAdapter(this, items, 0);
+            }
             items.Add(Intent.GetStringExtra("date"));
             items.Add(Intent.GetStringExtra("time"));
+        
+            if (Intent.GetStringExtra("type").Equals("1"))
+            {
+                items.Add(Intent.GetStringExtra("length"));
+                adapter = new BookingDetailsListAdapter(this, items, 1);
+            }
 
-            BookingDetailsListAdapter adapter = new BookingDetailsListAdapter(this, items);
             listview.Adapter = adapter;
 
             Button btn = FindViewById<Button>(Resource.Id.btncancelbooking);
@@ -70,12 +80,12 @@ namespace HHmobileApp
             NameValueCollection parameter = new NameValueCollection();
 
             parameter.Add("id", Intent.GetStringExtra("id"));
-       
+
             client.UploadValuesCompleted += Client_UploadValuesCompleted;
             client.UploadValuesAsync(uri, parameter);
         }
 
-      
+
 
         private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
         {

@@ -17,24 +17,24 @@
 	-add refresh rate polling
 	-add default days
 -home page time					- DONE
--calendar check int i=select count(*) booking	-> done (mostly, needs to be fine-tuned)
+-calendar check int i=select count(*) booking	
 	i>select count(*)
 
 Mobile
 
 -weight for  vertical alginment 		- DONE
--schedule-> take to info page
-	-add reschedule and cancelled
+-schedule-> take to info page			- DONE
+	-add reschedule and cancelled		- DONE paritially 
 -padding on all writing				- DONE
 -insert booing all spinner 			- DONE
--add duration and service
--client back button to client page
+-add duration and service			- DONE paritially 
+-client back button to client page		- DONE
 -add validation
 -log out on drawer 				- DONE
 
 DB 
 -sort by whole month, day			-> done
--add duration 2 bookingcheck
+-add duration 2 bookingcheck			-> done (mostly, needs to be fine-tuned)
 
 Optional
 -move back button down

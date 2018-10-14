@@ -16,11 +16,13 @@ namespace HHmobileApp
     {
         List<string> items;
         Context context;
+        int type;
 
-        public BookingDetailsListAdapter(Context context, List<string> items)
+        public BookingDetailsListAdapter(Context context, List<string> items,int type)
         {
             this.items = items;
             this.context = context;
+            this.type = type;
         }
 
         public override int Count
@@ -49,20 +51,42 @@ namespace HHmobileApp
             }
 
             TextView txtname = row.FindViewById<TextView>(Resource.Id.txtnameid);
-            switch (position)
+            if (type.Equals(0))
             {
-                case 0:
-                    txtname.Text = "Customer Name";
-                    break;
-                case 1:
-                    txtname.Text = "Stylist Name";
-                    break;
-                case 2:
-                    txtname.Text = "Appointment Date";
-                    break;
-                case 3:
-                    txtname.Text = "Appointment Time";
-                    break;
+                switch (position)
+                {
+                    case 0:
+                        txtname.Text = "Customer Name";
+                        break;
+                    case 1:
+                        txtname.Text = "Stylist Name";
+                        break;
+                    case 2:
+                        txtname.Text = "Appointment Date";
+                        break;
+                    case 3:
+                        txtname.Text = "Appointment Time";
+                        break;
+                }
+            }
+
+            if (type.Equals(1))
+            {
+                switch (position)
+                {
+                    case 0:
+                        txtname.Text = "Customer Name";
+                        break;
+                    case 1:
+                        txtname.Text = "Appointment Date";
+                        break;
+                    case 2:
+                        txtname.Text = "Appointment Time";
+                        break;
+                    case 3:
+                        txtname.Text = "Length";
+                        break;
+                }
             }
 
             TextView txtvalue = row.FindViewById<TextView>(Resource.Id.txtvalue);

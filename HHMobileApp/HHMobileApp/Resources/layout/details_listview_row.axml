@@ -10,7 +10,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtnameid"
         android:layout_weight="50"
-        android:gravity="center|left" />
+        android:gravity="center|left"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
     <TextView
         android:text="Value"
         android:textAppearance="?android:attr/textAppearanceSmall"
@@ -19,5 +23,9 @@
         android:id="@+id/txtvalue"
         android:layout_weight="50"
         android:textColor="#4286f4"
-        android:gravity="center|right" />
+        android:gravity="center|right"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
 </LinearLayout>

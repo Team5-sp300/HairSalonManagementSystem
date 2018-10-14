@@ -42,6 +42,7 @@ namespace HHmobileApp
             navigationView.SetNavigationItemSelectedListener(this);
 
             listview = FindViewById<ListView>(Resource.Id.listView1);
+            listview.ItemClick += Listview_ItemClick;
 
             client = new WebClient();
             uri = new Uri("http://10.0.0.169/getSchedule.php");
@@ -139,6 +140,18 @@ namespace HHmobileApp
         private void button_click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(BookingInsert));
+            StartActivity(intent);
+        }
+
+        private void Listview_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            var intent = new Intent(this, typeof(BookingInformatin));
+            intent.PutExtra("type", "1");
+            intent.PutExtra("id", items[e.Position].id);
+            intent.PutExtra("cname", items[e.Position].cusomter);
+            intent.PutExtra("date", items[e.Position].date);
+            intent.PutExtra("time", items[e.Position].time);
+            intent.PutExtra("length", items[e.Position].length);
             StartActivity(intent);
         }
 

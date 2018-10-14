@@ -14,6 +14,7 @@ namespace HHmobileApp
 {
     class ScheduleDetails
     {
+        public string id { get; set; }
         public string cusomter { get; set; }
         public string date { get; set; }
         public string time { get; set; }
