@@ -23,13 +23,15 @@ namespace HHmobileApp
         Spinner spinnerStlyist;
         Spinner spinnerClient;
         Spinner spinnerTime;
-        Spinner spinnerDate;
+        Spinner spinnerDay;
+        Spinner spinnerMonth;
         WebClient client;
         Uri uri;
         string cname;
         string ename;
         string atime;
-        string adate;
+        string aday;
+        string amonth;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -55,9 +57,11 @@ namespace HHmobileApp
             spinnerStlyist = FindViewById<Spinner>(Resource.Id.spinnerStaff);
             spinnerClient = FindViewById<Spinner>(Resource.Id.spinnerClient);
             spinnerTime = FindViewById<Spinner>(Resource.Id.spinnerTime);
-            spinnerDate = FindViewById<Spinner>(Resource.Id.spinnerDate);
+            spinnerDay = FindViewById<Spinner>(Resource.Id.spinnerDate);
+            spinnerMonth = FindViewById<Spinner>(Resource.Id.spinnerMonth);
 
-            spinnerDate.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinnerDate_ItemSelected);
+            spinnerDay.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinnerDate_ItemSelected);
+            spinnerMonth.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinnerMonth_ItemSelected);
             spinnerTime.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinnerTime_ItemSelected);
             spinnerStlyist.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinnerStylist_ItemSelected);
             spinnerClient.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinnerClient_ItemSelected);
@@ -67,23 +71,34 @@ namespace HHmobileApp
             var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, times);
             spinnerTime.Adapter = adapter;
 
-            var date = new List<string>() { "01/09", "02/09", "03/09", "04/09", "05/09", "06/09", "07/09", "08/09", "09/09" };
-            var adapter2 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, date);
-            spinnerDate.Adapter = adapter2;
+            var day = new List<string>() { "DD", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11","12","13", "14", "15", "16", "17", "18","19","20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", };
+            var adapter2 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, day);
+            spinnerDay.Adapter = adapter2;
+
+            var month = new List<string>() { "MM","01", "02", "03", "04", "05", "06", "07", "08", "09","10","11","12" };
+            var adapter3 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, month);
+            spinnerMonth.Adapter = adapter3;
         }
 
         private void spinnerDate_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
-            spinnerDate = (Spinner)sender;
-            adate = spinnerDate.GetItemAtPosition(e.Position).ToString();
+            spinnerDay = (Spinner)sender;
+            aday = spinnerDay.GetItemAtPosition(e.Position).ToString();
         }
+
+        private void spinnerMonth_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+            spinnerDay = (Spinner)sender;
+            amonth = spinnerDay.GetItemAtPosition(e.Position).ToString();
+        }
+
+
 
         private void spinnerTime_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
             spinnerTime = (Spinner)sender;
             atime = spinnerTime.GetItemAtPosition(e.Position).ToString();
-            string toast = atime;
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
+        
 
         }
 
@@ -92,8 +107,7 @@ namespace HHmobileApp
 
             spinnerStlyist = (Spinner)sender;
             ename = staff[e.Position].fname+" "+ staff[e.Position].lname;
-            string toast = ename;
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
+       
 
         }
 
@@ -102,9 +116,8 @@ namespace HHmobileApp
 
             spinnerClient = (Spinner)sender;
             cname = clients[e.Position].fname + " " + clients[e.Position].lname;
-            string toast = cname;
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
-
+        
+        
         }
 
         private void download_staff(object sender, DownloadDataCompletedEventArgs e)
@@ -159,9 +172,9 @@ namespace HHmobileApp
             parameter.Add("clname", clientname[1]);
             parameter.Add("efname", employeename[0]);
             parameter.Add("elname", employeename[1]);
-            parameter.Add("adate", adate);
+            parameter.Add("adate", "2018/"+aday+"/"+amonth);
             parameter.Add("atime", atime);
-            parameter.Add("service","Mens Haircut");
+            parameter.Add("service", "Gents Cut");
 
             client.UploadValuesCompleted += Client_UploadValuesCompleted;
             client.UploadValuesAsync(uri, parameter);
