@@ -34,7 +34,7 @@ Mobile
 
 DB 
 -sort by whole month, day			-> done
--add duration 2 bookingcheck			-> done (mostly, needs to be fine-tuned)
+-add duration 2 bookingcheck			-> done
 
 Optional
 -move back button down

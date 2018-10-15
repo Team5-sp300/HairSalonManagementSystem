@@ -63,7 +63,7 @@ namespace HHsystem.Componets
                             if (bookingDetails[j, 2].Substring(0, 3).Equals(times[m].Substring(0, 3)))
                             {
                                 k = i + 1;
-                                if (bookingDetails[j, 3] == "01:30")
+                                if (bookingDetails[j, 3] == "90")
                                 {
                                     cells[i + 1, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m + 1].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
@@ -75,7 +75,7 @@ namespace HHsystem.Componets
                                     //cells[k, m + 1].BorderStyle = System.Windows.Forms.BorderStyle.None;
                                     cells[k, m].Text += bookingDetails[j, 2] + " \n" + bookingDetails[j, 0] + " \n";
                                 }
-                                else if (bookingDetails[j, 3] == "01:00")
+                                else if (bookingDetails[j, 3] == "60")
                                 {
                                     cells[k, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m].FlatAppearance.BorderSize = 1;

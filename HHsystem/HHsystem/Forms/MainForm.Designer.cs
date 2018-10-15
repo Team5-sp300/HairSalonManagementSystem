@@ -129,6 +129,15 @@
             this.labeltime = new System.Windows.Forms.Label();
             this.labelmonth = new System.Windows.Forms.Label();
             this.bindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.button23 = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -1292,6 +1301,15 @@
             // 
             // tabPage15
             // 
+            this.tabPage15.Controls.Add(this.textBox2);
+            this.tabPage15.Controls.Add(this.label26);
+            this.tabPage15.Controls.Add(this.label25);
+            this.tabPage15.Controls.Add(this.comboBox5);
+            this.tabPage15.Controls.Add(this.button27);
+            this.tabPage15.Controls.Add(this.button25);
+            this.tabPage15.Controls.Add(this.textBox1);
+            this.tabPage15.Controls.Add(this.label23);
+            this.tabPage15.Controls.Add(this.button23);
             this.tabPage15.Controls.Add(this.label21);
             this.tabPage15.Controls.Add(this.label19);
             this.tabPage15.Controls.Add(this.button15);
@@ -1330,7 +1348,7 @@
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button15.Location = new System.Drawing.Point(154, 140);
+            this.button15.Location = new System.Drawing.Point(31, 43);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(131, 45);
             this.button15.TabIndex = 17;
@@ -1391,6 +1409,96 @@
             this.labelmonth.TabIndex = 31;
             this.labelmonth.Text = "00:00:00";
             this.labelmonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.Color.White;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button23.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button23.Location = new System.Drawing.Point(31, 94);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(131, 45);
+            this.button23.TabIndex = 18;
+            this.button23.Text = "Set Backup Location";
+            this.button23.UseVisualStyleBackColor = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(170, 99);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(125, 13);
+            this.label23.TabIndex = 19;
+            this.label23.Text = "Current Backup Location";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(168, 116);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(579, 20);
+            this.textBox1.TabIndex = 20;
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.White;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button25.Location = new System.Drawing.Point(31, 145);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(131, 45);
+            this.button25.TabIndex = 21;
+            this.button25.Text = "Set Refresh Rate";
+            this.button25.UseVisualStyleBackColor = false;
+            // 
+            // button27
+            // 
+            this.button27.BackColor = System.Drawing.Color.White;
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button27.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button27.Location = new System.Drawing.Point(31, 196);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(131, 45);
+            this.button27.TabIndex = 22;
+            this.button27.Text = "Set Default Calendar View";
+            this.button27.UseVisualStyleBackColor = false;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.ItemHeight = 13;
+            this.comboBox5.Location = new System.Drawing.Point(168, 218);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(121, 21);
+            this.comboBox5.TabIndex = 23;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(170, 201);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(112, 13);
+            this.label25.TabIndex = 24;
+            this.label25.Text = "Current Calendar View";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(168, 166);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(121, 20);
+            this.textBox2.TabIndex = 26;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(170, 149);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(107, 13);
+            this.label26.TabIndex = 25;
+            this.label26.Text = "Current Refresh Rate";
             // 
             // MainForm
             // 
@@ -1561,6 +1669,15 @@
         private System.Windows.Forms.Label labelmonth;
         private System.Windows.Forms.BindingSource bindingSource5;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button25;
     }
 }
 
