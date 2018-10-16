@@ -29,7 +29,7 @@ Mobile
 -insert booing all spinner 			- DONE
 -add duration and service			- DONE paritially 
 -client back button to client page		- DONE
--add validation
+-add validation					- DONE
 -log out on drawer 				- DONE
 -split time into hh/mm
 

@@ -3137,7 +3137,7 @@ containing a value of this type.
         public static int spacer=0x7f080064;
         public static int spinnerClient=0x7f080095;
         public static int spinnerDate=0x7f080096;
-        public static int spinnerDate2=0x7f080097;
+        public static int spinnerMonth=0x7f080097;
         public static int spinnerStaff=0x7f080093;
         public static int spinnerTime=0x7f080098;
         public static int split_action_bar=0x7f080008;
