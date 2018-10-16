@@ -389,6 +389,17 @@ namespace HHsystem.Controllers
             return count;
         }
 
+        public int bookingCount()
+        {
+            string command ="SELECT COUNT(*) FROM Booking";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            cmd.ExecuteNonQuery();
+            Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            return count;
+        }
+
 
         public void addEmployee(string uname, string fname, string lname, string email, string phone, string password, int type)
         {

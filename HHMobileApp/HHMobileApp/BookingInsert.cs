@@ -172,7 +172,7 @@ namespace HHmobileApp
             parameter.Add("clname", clientname[1]);
             parameter.Add("efname", employeename[0]);
             parameter.Add("elname", employeename[1]);
-            parameter.Add("adate", "2018/"+aday+"/"+amonth);
+            parameter.Add("adate", "2018/"+amonth+"/"+ aday);
             parameter.Add("atime", atime);
             parameter.Add("service", "Gents Cut");
 

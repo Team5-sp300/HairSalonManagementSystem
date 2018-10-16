@@ -20,6 +20,7 @@ namespace HHsystem
         DatabaseManager manager = new DatabaseManager();
         DataTable table;
         int REFRESH_RATE = 5000;
+        int count;
 
         public MainForm()
         {
@@ -32,11 +33,12 @@ namespace HHsystem
             customWeeklyScheduler.redrawScheduler(this.Width - 200, this.Height - 205);
             comboBox4.SelectedIndex = 0;
             adminLogin();//needs to be removed, just for testing purposes
+            count = manager.bookingCount();
 
             System.DateTime nowtime = System.DateTime.Now;
-           
-                labelmonth.Text = nowtime.ToString("ddd dd/MM");
-            
+
+            labelmonth.Text = nowtime.ToString("ddd dd/MM");
+
         }
 
         public void populateTable()
@@ -96,7 +98,7 @@ namespace HHsystem
             table = new DataTable();
             manager.getClients().Fill(table);
             foreach (DataRow row in table.Rows)
-            {                
+            {
                 row[1] = row[1].ToString().Replace("&nbsp&", " ");
                 row[0] = row[0].ToString().Replace("&nbsp&", " ");
             }
@@ -152,7 +154,7 @@ namespace HHsystem
             if (comboBox2.Items.Count > 0)
             {
                 comboBox2.SelectedIndex = 0;
-            }            
+            }
         }
 
         public void populateEmployees()
@@ -476,7 +478,7 @@ namespace HHsystem
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            customWeeklyScheduler.setColums(comboBox4.SelectedIndex+4);
+            customWeeklyScheduler.setColums(comboBox4.SelectedIndex + 4);
         }
 
         private void comboBox4_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -486,9 +488,14 @@ namespace HHsystem
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            int tmp = manager.bookingCount();
             timer1.Interval = REFRESH_RATE;
             timer1.Start();
             populateTable();
+            if (count !=tmp) {
+                count = tmp;
+                addAdppointments();
+            }
         }
 
         private void timer2_Tick(object sender, EventArgs e)
