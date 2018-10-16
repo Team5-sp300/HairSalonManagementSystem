@@ -11,7 +11,7 @@
 -reschdule on clients
 -change colum name duration (m)			-> done
 -add service to client/staff table		-> done
--whole setting table reworked
+-whole setting table reworked add to xml
 	-add backlocation
 	-add resolution
 	-add refresh rate polling
@@ -31,6 +31,8 @@ Mobile
 -client back button to client page		- DONE
 -add validation
 -log out on drawer 				- DONE
+-split time into hh/mm
+
 
 DB 
 -sort by whole month, day			-> done
@@ -40,4 +42,8 @@ Optional
 -move back button down
 -rename customer to client DB
 -client notes
--add drawer icons - DONE
+-add drawer icons 				- DONE
+
+Bugfix
+-EmployeeeSchedule display dates >today
+-Management tables no-refresh
