@@ -1,9 +1,9 @@
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\res.flag
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\HHmobileApp.csproj.CoreCompileInputs.cache
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\bin\Debug\HHmobileApp.dll
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\bin\Debug\HHmobileApp.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\bin\Debug\HHmobileApp.HHmobileApp.apk
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\bin\Debug\HHmobileApp.HHmobileApp-Signed.apk
-C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\res.flag
-C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\HHmobileApp.csproj.CoreCompileInputs.cache
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\HHmobileApp.dll
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\HHmobileApp.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\android\bin\HHmobileApp.HHmobileApp.apk

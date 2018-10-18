@@ -141,6 +141,7 @@ namespace HHmobileApp
             intent.PutExtra("date", items[e.Position].date);
             intent.PutExtra("time", items[e.Position].time);
             intent.PutExtra("ename", items[e.Position].employee);
+            intent.PutExtra("service", items[e.Position].service);
             StartActivity(intent);
         }
     }

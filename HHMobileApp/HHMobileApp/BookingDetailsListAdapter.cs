@@ -67,6 +67,9 @@ namespace HHmobileApp
                     case 3:
                         txtname.Text = "Appointment Time";
                         break;
+                    case 4:
+                        txtname.Text = "Service";
+                        break;
                 }
             }
 
@@ -84,7 +87,10 @@ namespace HHmobileApp
                         txtname.Text = "Appointment Time";
                         break;
                     case 3:
-                        txtname.Text = "Length";
+                        txtname.Text = "Duration (Min)";
+                        break;
+                    case 4:
+                        txtname.Text = "Service";
                         break;
                 }
             }

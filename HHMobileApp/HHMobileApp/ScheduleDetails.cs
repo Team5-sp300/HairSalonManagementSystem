@@ -18,6 +18,7 @@ namespace HHmobileApp
         public string cusomter { get; set; }
         public string date { get; set; }
         public string time { get; set; }
+        public string service { get; set; }
         public string length { get; set; }
     }
 }

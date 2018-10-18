@@ -27,11 +27,11 @@ Mobile
 	-add reschedule and cancelled		- DONE paritially 
 -padding on all writing				- DONE
 -insert booing all spinner 			- DONE
--add duration and service			- DONE paritially 
+-add duration and service			- DONE 
 -client back button to client page		- DONE
 -add validation					- DONE
 -log out on drawer 				- DONE
--split time into hh/mm
+-split time into hh/mm				- DONE
 
 
 DB 

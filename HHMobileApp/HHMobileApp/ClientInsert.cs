@@ -38,11 +38,6 @@ namespace HHmobileApp
             btn.Click += button_click;
 
             txtFname = FindViewById<EditText>(Resource.Id.etFname);
-
-
-
-
-
             txtLname = FindViewById<EditText>(Resource.Id.etLname);
             txtNumber = FindViewById<EditText>(Resource.Id.etNumber);
             txtEmail = FindViewById<EditText>(Resource.Id.etEmail);

@@ -50,6 +50,7 @@ namespace HHmobileApp
                 items.Add(Intent.GetStringExtra("length"));
                 adapter = new BookingDetailsListAdapter(this, items, 1);
             }
+            items.Add(Intent.GetStringExtra("service"));
 
             listview.Adapter = adapter;
 

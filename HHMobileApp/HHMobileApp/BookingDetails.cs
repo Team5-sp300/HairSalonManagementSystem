@@ -19,5 +19,6 @@ namespace HHmobileApp
         public string employee { get; set; }
         public string date { get; set; }
         public string time { get; set; }
+        public string service { get; set; }
     }
 }

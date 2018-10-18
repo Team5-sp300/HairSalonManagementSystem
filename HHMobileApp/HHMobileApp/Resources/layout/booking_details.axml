@@ -7,6 +7,17 @@
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+	<Button
+        android:text="Reschedule Booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnreschedule"
+        android:background="@layout/button_border_settings"
+        android:textColor="#3399ff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp" />
     <Button
         android:text="Cancel Booking"
         android:layout_width="match_parent"
@@ -14,7 +25,7 @@
         android:id="@+id/btncancelbooking"
         android:background="@layout/button_border_settings"
         android:textColor="#3399ff"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="20dp" />

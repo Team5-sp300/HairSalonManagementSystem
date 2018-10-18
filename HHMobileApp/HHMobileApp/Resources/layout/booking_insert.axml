@@ -103,15 +103,52 @@
                 android:id="@+id/textView2"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp" />
+			  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+			android:weightSum="100">
             <Spinner
-                android:id="@+id/spinnerTime"
-                android:layout_width="fill_parent"
+                android:id="@+id/spinnerHours"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:prompt="@string/stylist_prompt"
+				android:layout_weight="50"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+			android:background="@drawable/spinner_border_settings"
+				/>
+			 <Spinner
+                android:id="@+id/spinnerMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_weight="50"
                 android:prompt="@string/stylist_prompt"
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
 			android:background="@drawable/spinner_border_settings"/>
+				 </LinearLayout>
+
+			  <TextView
+                android:text="Service"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+			<Spinner
+				android:id="@+id/spinnerService"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:prompt="@string/client_prompt"
+				android:layout_marginBottom="20dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+					android:background="@drawable/spinner_border_settings"/>
+        
             <Button
                 android:text="Accept"
                 android:layout_width="match_parent"

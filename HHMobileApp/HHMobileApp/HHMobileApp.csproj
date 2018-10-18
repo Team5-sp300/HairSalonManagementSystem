@@ -55,6 +55,7 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ServiceAdapter.cs" />
     <Compile Include="SpinnerAdapter.cs" />
     <Compile Include="ScheduleListAdapter.cs" />
     <Compile Include="ScheduleDetails.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceDetails.cs" />
     <Compile Include="SpinnerDetails.cs" />
   </ItemGroup>
   <ItemGroup>
