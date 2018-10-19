@@ -389,6 +389,23 @@ namespace HHsystem.Controllers
             return count;
         }
 
+        public int updateBookingCheck(string efname, string elname, string adate, string atime, int bookingID)
+        {
+            string command = "CALL updateBookingCheck(?efname,?elname,?adate,?atime,?id)";
+            connection();
+
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?efname", efname);
+            cmd.Parameters.AddWithValue("?elname", elname);
+            cmd.Parameters.AddWithValue("?adate", adate);
+            cmd.Parameters.AddWithValue("?atime", atime);
+            cmd.Parameters.AddWithValue("?id", bookingID);
+            cmd.ExecuteNonQuery();
+            Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
+            conn.Close();
+            return count;
+        }
+
         public int bookingCount()
         {
             string command ="SELECT COUNT(*) FROM Booking";
@@ -474,6 +491,19 @@ namespace HHsystem.Controllers
             cmd.Parameters.AddWithValue("?lname", surname);
             cmd.Parameters.AddWithValue("?email", phone);
             cmd.Parameters.AddWithValue("?phone", email);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        public void updateBooking(int id, string date, string time, string service)
+        {
+            string command = "CALL updateBooking(?id,?adate,?atime,?service)";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?id", id);
+            cmd.Parameters.AddWithValue("?adate", date);
+            cmd.Parameters.AddWithValue("?atime", time);
+            cmd.Parameters.AddWithValue("?service", service);
             cmd.ExecuteNonQuery();
             conn.Close();
         }

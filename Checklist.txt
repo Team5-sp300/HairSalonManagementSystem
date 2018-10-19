@@ -8,10 +8,10 @@
 -remove id and status in tables			-> done
 -validation add confirm password 		-> done	
 -backup confirm dialog				-> done
--reschdule on clients
+-reschdule on clients				-> done (might need some revision)
 -change colum name duration (m)			-> done
 -add service to client/staff table		-> done
--whole setting table reworked add to xml
+-whole setting table reworked add to xml	-> buttons and fields added
 	-add backlocation
 	-add resolution
 	-add refresh rate polling
@@ -45,5 +45,6 @@ Optional
 -add drawer icons 				- DONE
 
 Bugfix
--EmployeeeSchedule display dates >today
+-EmployeeeSchedule display dates >today		-> done
 -Management tables no-refresh
+-updating calendar when rescheduling

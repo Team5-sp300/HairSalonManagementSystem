@@ -218,6 +218,7 @@ namespace HHsystem
             customTabControl1.SelectedIndex = 3;
             this.button5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             label3.Text = "Staff";
+            updateBookingTable();
 
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -304,6 +305,11 @@ namespace HHsystem
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
+            updateBookingTable();
+        }
+
+        public void updateBookingTable()
+        {
             int arraySize = manager.getEmployeeDetails().GetLength(0);
             string[,] employeeDetails = new string[arraySize, 6];
             Array.Copy(manager.getEmployeeDetails(), employeeDetails, employeeDetails.Length);
@@ -319,10 +325,12 @@ namespace HHsystem
                     manager.getEmployeeSchedule(employeeDetails[i, 0]).Fill(table);
                     bindingSource4.DataSource = table;
                     dataGridView8.DataSource = bindingSource4;
-                    table.Columns[0].ColumnName = "Clients";
-                    table.Columns[1].ColumnName = "Appointment Date";
-                    table.Columns[2].ColumnName = "Appointment Time";
-                    table.Columns[3].ColumnName = "Service Duration (in m)";
+                    table.Columns[0].ColumnName = "Booking ID";
+                    table.Columns[1].ColumnName = "Client";
+                    table.Columns[2].ColumnName = "Appointment Date";
+                    table.Columns[3].ColumnName = "Appointment Time";
+                    table.Columns[4].ColumnName = "Service";
+                    table.Columns[5].ColumnName = "Service Duration (in m)";
                 }
             }
         }
@@ -531,6 +539,20 @@ namespace HHsystem
             button4.Enabled = false;
             button5.Enabled = false;
             button12.Enabled = false;
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            int selectedrowindex = dataGridView8.SelectedCells[0].RowIndex;
+            DataGridViewRow selectedRow = dataGridView8.Rows[selectedrowindex];
+
+            int selectedID = Int32.Parse(selectedRow.Cells[0].Value.ToString());
+            string selectedClient = selectedRow.Cells[1].Value.ToString();
+            string selectedDate = selectedRow.Cells[2].Value.ToString();
+            string selectedTime = selectedRow.Cells[3].Value.ToString();
+            string selectedService = selectedRow.Cells[4].Value.ToString();
+
+            new RescheduleForm(selectedID,enametxt.Text,selectedClient,selectedDate,selectedTime,selectedService, this).Show();
         }
     }
 }
