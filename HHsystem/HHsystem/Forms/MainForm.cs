@@ -554,5 +554,11 @@ namespace HHsystem
 
             new RescheduleForm(selectedID,enametxt.Text,selectedClient,selectedDate,selectedTime,selectedService, this).Show();
         }
+
+        private void btnBrowseBackupLocation_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialog1.ShowDialog();
+            backuptxt.Text = folderBrowserDialog1.SelectedPath;
+        }
     }
 }

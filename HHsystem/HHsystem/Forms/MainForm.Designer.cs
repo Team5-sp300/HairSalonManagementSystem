@@ -42,6 +42,15 @@
             this.button12 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.labeltime = new System.Windows.Forms.Label();
+            this.labelmonth = new System.Windows.Forms.Label();
+            this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.customTabControl1 = new HHsystem.CustomTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button9 = new System.Windows.Forms.Button();
@@ -117,6 +126,7 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.btnBrowseBackupLocation = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.comboBoxScreenRes = new System.Windows.Forms.ComboBox();
             this.comboBoxRefresh = new System.Windows.Forms.ComboBox();
@@ -130,15 +140,13 @@
             this.btnUpdateSettings = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.labeltime = new System.Windows.Forms.Label();
-            this.labelmonth = new System.Windows.Forms.Label();
-            this.bindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource5)).BeginInit();
             this.customTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -167,12 +175,6 @@
             this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource5)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -320,6 +322,32 @@
             this.timer2.Enabled = true;
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // labeltime
+            // 
+            this.labeltime.BackColor = System.Drawing.Color.Transparent;
+            this.labeltime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.labeltime.ForeColor = System.Drawing.Color.Black;
+            this.labeltime.Location = new System.Drawing.Point(171, 42);
+            this.labeltime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labeltime.Name = "labeltime";
+            this.labeltime.Size = new System.Drawing.Size(103, 28);
+            this.labeltime.TabIndex = 30;
+            this.labeltime.Text = "00:00:00";
+            this.labeltime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelmonth
+            // 
+            this.labelmonth.BackColor = System.Drawing.Color.Transparent;
+            this.labelmonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.labelmonth.ForeColor = System.Drawing.Color.Black;
+            this.labelmonth.Location = new System.Drawing.Point(169, 18);
+            this.labelmonth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelmonth.Name = "labelmonth";
+            this.labelmonth.Size = new System.Drawing.Size(105, 28);
+            this.labelmonth.TabIndex = 31;
+            this.labelmonth.Text = "00:00:00";
+            this.labelmonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // customTabControl1
             // 
@@ -1316,6 +1344,7 @@
             // 
             // tabPage15
             // 
+            this.tabPage15.Controls.Add(this.btnBrowseBackupLocation);
             this.tabPage15.Controls.Add(this.label27);
             this.tabPage15.Controls.Add(this.comboBoxScreenRes);
             this.tabPage15.Controls.Add(this.comboBoxRefresh);
@@ -1335,6 +1364,16 @@
             this.tabPage15.Text = "tabPage15";
             this.tabPage15.UseVisualStyleBackColor = true;
             // 
+            // btnBrowseBackupLocation
+            // 
+            this.btnBrowseBackupLocation.Location = new System.Drawing.Point(449, 84);
+            this.btnBrowseBackupLocation.Name = "btnBrowseBackupLocation";
+            this.btnBrowseBackupLocation.Size = new System.Drawing.Size(75, 22);
+            this.btnBrowseBackupLocation.TabIndex = 30;
+            this.btnBrowseBackupLocation.Text = "Browse";
+            this.btnBrowseBackupLocation.UseVisualStyleBackColor = true;
+            this.btnBrowseBackupLocation.Click += new System.EventHandler(this.btnBrowseBackupLocation_Click);
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -1349,9 +1388,8 @@
             this.comboBoxScreenRes.FormattingEnabled = true;
             this.comboBoxScreenRes.ItemHeight = 13;
             this.comboBoxScreenRes.Items.AddRange(new object[] {
-            "5 Days",
-            "6 Days",
-            "7 Days"});
+            "Fullscreen",
+            "1280 x 920"});
             this.comboBoxScreenRes.Location = new System.Drawing.Point(35, 235);
             this.comboBoxScreenRes.Name = "comboBoxScreenRes";
             this.comboBoxScreenRes.Size = new System.Drawing.Size(163, 21);
@@ -1362,9 +1400,9 @@
             this.comboBoxRefresh.FormattingEnabled = true;
             this.comboBoxRefresh.ItemHeight = 13;
             this.comboBoxRefresh.Items.AddRange(new object[] {
-            "5 Days",
-            "6 Days",
-            "7 Days"});
+            "5 minutes",
+            "10 minutes",
+            "15 minutes"});
             this.comboBoxRefresh.Location = new System.Drawing.Point(35, 135);
             this.comboBoxRefresh.Name = "comboBoxRefresh";
             this.comboBoxRefresh.Size = new System.Drawing.Size(163, 21);
@@ -1480,32 +1518,6 @@
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
-            // labeltime
-            // 
-            this.labeltime.BackColor = System.Drawing.Color.Transparent;
-            this.labeltime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labeltime.ForeColor = System.Drawing.Color.Black;
-            this.labeltime.Location = new System.Drawing.Point(171, 42);
-            this.labeltime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labeltime.Name = "labeltime";
-            this.labeltime.Size = new System.Drawing.Size(103, 28);
-            this.labeltime.TabIndex = 30;
-            this.labeltime.Text = "00:00:00";
-            this.labeltime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelmonth
-            // 
-            this.labelmonth.BackColor = System.Drawing.Color.Transparent;
-            this.labelmonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labelmonth.ForeColor = System.Drawing.Color.Black;
-            this.labelmonth.Location = new System.Drawing.Point(169, 18);
-            this.labelmonth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelmonth.Name = "labelmonth";
-            this.labelmonth.Size = new System.Drawing.Size(105, 28);
-            this.labelmonth.TabIndex = 31;
-            this.labelmonth.Text = "00:00:00";
-            this.labelmonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1529,6 +1541,12 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource5)).EndInit();
             this.customTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -1563,12 +1581,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.tabPage15.ResumeLayout(false);
             this.tabPage15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1684,6 +1696,8 @@
         private System.Windows.Forms.ComboBox comboBoxRefresh;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.ComboBox comboBoxScreenRes;
+        private System.Windows.Forms.Button btnBrowseBackupLocation;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 
