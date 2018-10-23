@@ -11,7 +11,7 @@
 -reschdule on clients				-> done (might need some revision)
 -change colum name duration (m)			-> done
 -add service to client/staff table		-> done
--whole setting table reworked add to xml	-> buttons and fields added
+-whole setting table reworked add to xml	- DONE paritially 
 	-add backlocation
 	-add resolution
 	-add refresh rate polling

@@ -315,7 +315,6 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timer2
@@ -1415,9 +1414,9 @@
             this.comboBoxRefresh.FormattingEnabled = true;
             this.comboBoxRefresh.ItemHeight = 13;
             this.comboBoxRefresh.Items.AddRange(new object[] {
-            "5 minutes",
-            "10 minutes",
-            "15 minutes"});
+            "5 Seconds",
+            "10 Seconds",
+            "15 Seconds"});
             this.comboBoxRefresh.Location = new System.Drawing.Point(35, 135);
             this.comboBoxRefresh.Name = "comboBoxRefresh";
             this.comboBoxRefresh.Size = new System.Drawing.Size(163, 21);
@@ -1501,7 +1500,7 @@
             this.btnUpdateSettings.Name = "btnUpdateSettings";
             this.btnUpdateSettings.Size = new System.Drawing.Size(131, 45);
             this.btnUpdateSettings.TabIndex = 17;
-            this.btnUpdateSettings.Text = "Update Settings";
+            this.btnUpdateSettings.Text = "Save Settings";
             this.btnUpdateSettings.UseVisualStyleBackColor = false;
             this.btnUpdateSettings.Click += new System.EventHandler(this.button15_Click);
             // 
@@ -1695,7 +1694,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label labeltime;
         private System.Windows.Forms.Label labelmonth;
@@ -1714,6 +1712,7 @@
         private System.Windows.Forms.Button btnBrowseBackupLocation;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

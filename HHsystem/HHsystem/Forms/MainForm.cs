@@ -18,20 +18,26 @@ namespace HHsystem
     {
 
         DatabaseManager manager = new DatabaseManager();
+        SettingController settings = new SettingController();
         DataTable table;
-        int REFRESH_RATE = 5000;
+        int REFRESH_RATE;
+        string backLocation;
+        string RefreshRate;
+        string CalendarDays;
+        string Resolution;
         int count;
 
         public MainForm()
         {
             InitializeComponent();
+            loadSettings();
             populateTable();
             addAppointments();
             populateWeeks();
             populateNames();
             populateEmployees();
             customWeeklyScheduler.redrawScheduler(this.Width - 200, this.Height - 205);
-            comboBox4.SelectedIndex = 0;
+            comboBox4.Text = CalendarDays;
             adminLogin();//needs to be removed, just for testing purposes
             count = manager.bookingCount();
 
@@ -39,6 +45,46 @@ namespace HHsystem
 
             labelmonth.Text = nowtime.ToString("ddd dd/MM");
 
+        }
+
+
+        public void loadSettings() {
+            backLocation = settings.getBackLocation(); ;
+            RefreshRate = settings.getRefreshRate();
+             CalendarDays = settings.getCalendarDays() ;
+             Resolution = settings.getResolution();
+            backuptxt.Text = backLocation;
+            comboBoxScreenRes.Text = Resolution;
+
+            for (int i = 0; i < comboBoxCalendarView.Items.Count; i++)
+            {
+                if (comboBoxCalendarView.GetItemText(comboBoxCalendarView.Items[i]) == CalendarDays) {
+                    comboBoxCalendarView.SelectedIndex = i;
+                }
+            }
+
+            for (int i = 0; i < comboBoxRefresh.Items.Count; i++)
+            {
+                if (comboBoxRefresh.GetItemText(comboBoxRefresh.Items[i]) == RefreshRate)
+                {
+                    comboBoxRefresh.SelectedIndex = i;
+                }
+            }
+            timer1.Stop();
+            switch (comboBoxRefresh.Text) {
+
+                case "5 Seconds":
+                    REFRESH_RATE = 5000;
+                    break;
+                case "10 Seconds":
+                    REFRESH_RATE = 10000;
+                    break;
+                case "15 Seconds":
+                    REFRESH_RATE = 15000;
+                    break;
+            }
+            timer1.Interval = REFRESH_RATE;
+            //timer1.Start();
         }
 
         public void populateTable()
@@ -353,8 +399,11 @@ namespace HHsystem
 
         private void button15_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
-            customWeeklyScheduler.redrawScheduler(this.Width - 200, this.Height - 205);
+            settings.setSettings(backuptxt.Text.ToString(), comboBoxRefresh.SelectedItem.ToString(),
+            comboBoxCalendarView.SelectedItem.ToString(),
+            comboBoxScreenRes.SelectedItem.ToString());
+            MessageBox.Show("Settings Saved. Please Restart the System for the Settings to take Effect", "Settings Saved",
+            MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -513,8 +562,9 @@ namespace HHsystem
         private void timer1_Tick(object sender, EventArgs e)
         {
             int tmp = manager.bookingCount();
-            timer1.Interval = REFRESH_RATE;
-            timer1.Start();
+          //  timer1.Interval = REFRESH_RATE;
+            
+            MessageBox.Show("test");
             populateTable();
             if (count !=tmp) {
                 count = tmp;
