@@ -1,0 +1,168 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Net;
+using System.Text;
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Support.V7.App;
+using Android.Views;
+using Android.Widget;
+using Newtonsoft.Json;
+
+namespace HHmobileApp
+{
+    [Activity(Label = "Reschedule", Theme = "@style/AppTheme.NoActionBar")]
+    class BookingReschedule : AppCompatActivity
+    {
+        List<ServiceDetails> services;
+        Spinner spinnerDay;
+        Spinner spinnerMonth;
+        Spinner spinnerHour;
+        Spinner spinnerMinutes;
+        Spinner spinnerServices;
+        WebClient client;
+        Uri uri;
+        string aday;
+        string amonth;
+        string ahour;
+        string amin;
+        string aservice;
+
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.booking_schedule);
+            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            toolbar.MenuItemClick += Menu_Clicked;
+
+          
+
+            Button btn = FindViewById<Button>(Resource.Id.btninsert);
+            btn.Click += button_click;
+
+            client = new WebClient();
+            uri = new Uri("http://10.0.0.169/getServices.php");
+            client.DownloadDataAsync(uri);
+            client.DownloadDataCompleted += download_service;
+
+       
+            spinnerDay = FindViewById<Spinner>(Resource.Id.spinnerDate);
+            spinnerMonth = FindViewById<Spinner>(Resource.Id.spinnerMonth);
+            spinnerHour = FindViewById<Spinner>(Resource.Id.spinnerHours);
+            spinnerMinutes = FindViewById<Spinner>(Resource.Id.spinnerMin);
+            spinnerServices = FindViewById<Spinner>(Resource.Id.spinnerService);
+
+            spinnerDay.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            spinnerMonth.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            spinnerHour.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            spinnerMinutes.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+            spinnerServices.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+
+
+            var hours = new List<string>() { "08", "09", "10", "11", "12", "13", "14", "15", "16" };
+            var adapter0 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, hours);
+            spinnerHour.Adapter = adapter0;
+
+            var minutes = new List<string>() { "00", "15", "30", "45" };
+            var adapter1 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, minutes);
+            spinnerMinutes.Adapter = adapter1;
+
+            var day = new List<string>() { "DD", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11","12","13", "14", "15", "16", "17", "18","19","20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", };
+            var adapter2 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, day);
+            spinnerDay.Adapter = adapter2;
+
+            var month = new List<string>() { "MM","01", "02", "03", "04", "05", "06", "07", "08", "09","10","11","12" };
+            var adapter3 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, month);
+            spinnerMonth.Adapter = adapter3;
+          
+          //  Console.WriteLine("ID " + id);
+        }
+
+       
+
+        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        {
+        
+            if (sender.Equals(spinnerHour)) {
+                spinnerHour = (Spinner)sender;
+                ahour = spinnerHour.GetItemAtPosition(e.Position).ToString();
+            }
+            else if (sender.Equals(spinnerMinutes))
+            {
+                spinnerMinutes = (Spinner)sender;
+                amin = spinnerMinutes.GetItemAtPosition(e.Position).ToString();
+            }
+            else if (sender.Equals(spinnerDay))
+            {
+                spinnerDay = (Spinner)sender;
+                aday = spinnerDay.GetItemAtPosition(e.Position).ToString();
+            }
+            else if (sender.Equals(spinnerMonth))
+            {
+                spinnerMonth = (Spinner)sender;
+                amonth = spinnerMonth.GetItemAtPosition(e.Position).ToString();
+            }
+            else if (sender.Equals(spinnerServices))
+            {
+                spinnerServices = (Spinner)sender;
+                aservice = services[e.Position].service;
+            }
+        }
+
+        private void download_service(object sender, DownloadDataCompletedEventArgs e)
+        {
+            RunOnUiThread(() =>
+            {
+                string json = Encoding.UTF8.GetString(e.Result);
+                services = JsonConvert.DeserializeObject<List<ServiceDetails>>(json);
+                ServiceAdapter adapter = new ServiceAdapter(this, services);
+                spinnerServices.Adapter = adapter;
+            });
+        }
+
+        private void Menu_Clicked(object sender, Android.Support.V7.Widget.Toolbar.MenuItemClickEventArgs e)
+        {
+            if (e.Item.ItemId == Resource.Id.action_back)
+            {
+                var intent = new Intent(this, typeof(BookingActivity));
+                StartActivity(intent);
+            }
+        }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
+            return true;
+        }
+
+        private void button_click(object sender, EventArgs e)
+        {
+             client = new WebClient();
+            uri = new Uri("http://10.0.0.169/rescheduleBooking.php");
+            NameValueCollection parameter = new NameValueCollection();
+            string id = Intent.GetStringExtra("idBooking");
+            Console.WriteLine("HERE");
+            Console.WriteLine("Intent: " + Intent.GetStringExtra("idBooking"));
+            Console.WriteLine("ID: " + id);
+
+            parameter.Add("id", id);
+            parameter.Add("adate", "2018/"+amonth+"/"+ aday);
+            parameter.Add("atime", ahour+":"+amin);
+            parameter.Add("service", aservice);
+
+            client.UploadValuesCompleted += Client_UploadValuesCompleted;
+            client.UploadValuesAsync(uri, parameter);
+        }
+
+        private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
+        {
+            var intent = new Intent(this, typeof(BookingActivity));
+            StartActivity(intent);
+        }
+    }
+}

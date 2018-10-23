@@ -3107,22 +3107,25 @@ namespace HHmobileApp
 			public const int booking_main = 2130903048;
 			
 			// aapt resource value: 0x7F030009
-			public const int button_border_settings = 2130903049;
+			public const int booking_schedule = 2130903049;
 			
 			// aapt resource value: 0x7F030010
-			public const int client_activity = 2130903056;
+			public const int button_border_settings = 2130903056;
 			
 			// aapt resource value: 0x7F030011
-			public const int client_details = 2130903057;
+			public const int client_activity = 2130903057;
 			
 			// aapt resource value: 0x7F030012
-			public const int Client_Insert = 2130903058;
+			public const int client_details = 2130903058;
 			
 			// aapt resource value: 0x7F030013
-			public const int client_listview_row = 2130903059;
+			public const int Client_Insert = 2130903059;
 			
 			// aapt resource value: 0x7F030014
-			public const int client_main = 2130903060;
+			public const int client_listview_row = 2130903060;
+			
+			// aapt resource value: 0x7F030015
+			public const int client_main = 2130903061;
 			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
@@ -3166,20 +3169,20 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
 			
-			// aapt resource value: 0x7F030015
-			public const int details_listview_row = 2130903061;
-			
 			// aapt resource value: 0x7F030016
-			public const int home_activity = 2130903062;
+			public const int details_listview_row = 2130903062;
 			
 			// aapt resource value: 0x7F030017
-			public const int home_main = 2130903063;
+			public const int home_activity = 2130903063;
 			
 			// aapt resource value: 0x7F030018
-			public const int login_main = 2130903064;
+			public const int home_main = 2130903064;
 			
 			// aapt resource value: 0x7F030019
-			public const int nav_header_main = 2130903065;
+			public const int login_main = 2130903065;
+			
+			// aapt resource value: 0x7F030020
+			public const int nav_header_main = 2130903072;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;
@@ -3226,14 +3229,14 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
 			
-			// aapt resource value: 0x7F030020
-			public const int schedule_activity = 2130903072;
-			
 			// aapt resource value: 0x7F030021
-			public const int schedule_listview_row = 2130903073;
+			public const int schedule_activity = 2130903073;
 			
 			// aapt resource value: 0x7F030022
-			public const int schedule_main = 2130903074;
+			public const int schedule_listview_row = 2130903074;
+			
+			// aapt resource value: 0x7F030023
+			public const int schedule_main = 2130903075;
 			
 			// aapt resource value: 0x7F0F0038
 			public const int select_dialog_item_material = 2131689528;
@@ -3244,8 +3247,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0F003A
 			public const int select_dialog_singlechoice_material = 2131689530;
 			
-			// aapt resource value: 0x7F030023
-			public const int spinner_row = 2130903075;
+			// aapt resource value: 0x7F030024
+			public const int spinner_row = 2130903076;
 			
 			// aapt resource value: 0x7F0F003B
 			public const int support_simple_spinner_dropdown_item = 2131689531;

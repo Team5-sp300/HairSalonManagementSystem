@@ -24,7 +24,7 @@ Mobile
 
 -weight for  vertical alginment 		- DONE
 -schedule-> take to info page			- DONE
-	-add reschedule and cancelled		- DONE paritially 
+	-add reschedule and cancelled		- DONE 
 -padding on all writing				- DONE
 -insert booing all spinner 			- DONE
 -add duration and service			- DONE 

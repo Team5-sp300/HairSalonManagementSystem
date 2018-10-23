@@ -20,8 +20,9 @@ namespace HHmobileApp
     public class BookingInformatin : AppCompatActivity
     {
 
-        List<string> items;
-        ListView listview;
+        private string id;
+        private List<string> items;
+        private ListView listview;
         BookingDetailsListAdapter adapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -35,6 +36,9 @@ namespace HHmobileApp
 
             listview = FindViewById<ListView>(Resource.Id.listView1);
 
+            id = Intent.GetStringExtra("id");
+            
+
             items = new List<string>();
             items.Add(Intent.GetStringExtra("cname"));
             if (Intent.GetStringExtra("type").Equals("0"))
@@ -44,7 +48,7 @@ namespace HHmobileApp
             }
             items.Add(Intent.GetStringExtra("date"));
             items.Add(Intent.GetStringExtra("time"));
-        
+
             if (Intent.GetStringExtra("type").Equals("1"))
             {
                 items.Add(Intent.GetStringExtra("length"));
@@ -57,6 +61,20 @@ namespace HHmobileApp
             Button btn = FindViewById<Button>(Resource.Id.btncancelbooking);
             btn.Click += button_click;
 
+            Button btn1 = FindViewById<Button>(Resource.Id.btnreschedule);
+            btn1.Click += button_click1;
+
+        }
+
+        private void button_click1(object sender, EventArgs e)
+        {
+            Console.WriteLine("HERE");
+            Console.WriteLine("Intent: "+Intent.GetStringExtra("id"));
+            Console.WriteLine("ID "+id);
+           
+            var intent = new Intent(this, typeof(BookingReschedule));
+            intent.PutExtra("idBooking", id);
+            StartActivity(intent);
         }
 
         private void Menu_Clicked(object sender, Android.Support.V7.Widget.Toolbar.MenuItemClickEventArgs e)
