@@ -57,6 +57,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -419,6 +420,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.Controls.Add(this.comboBox5);
             this.tabPage2.Controls.Add(this.comboBox4);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.comboBox1);
@@ -433,6 +435,19 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
+            // comboBox5
+            // 
+            this.comboBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(240, 34);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(150, 21);
+            this.comboBox5.TabIndex = 25;
+            this.comboBox5.TabStop = false;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
+            // 
             // comboBox4
             // 
             this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -444,9 +459,9 @@
             "5 days",
             "6 days",
             "7 days"});
-            this.comboBox4.Location = new System.Drawing.Point(720, 34);
+            this.comboBox4.Location = new System.Drawing.Point(725, 34);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(93, 21);
+            this.comboBox4.Size = new System.Drawing.Size(95, 21);
             this.comboBox4.TabIndex = 19;
             this.comboBox4.TabStop = false;
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged_1);
@@ -471,9 +486,9 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(287, 34);
+            this.comboBox1.Location = new System.Drawing.Point(420, 34);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(410, 21);
+            this.comboBox1.Size = new System.Drawing.Size(275, 21);
             this.comboBox1.TabIndex = 15;
             this.comboBox1.TabStop = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -1698,6 +1713,7 @@
         private System.Windows.Forms.ComboBox comboBoxScreenRes;
         private System.Windows.Forms.Button btnBrowseBackupLocation;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.ComboBox comboBox5;
     }
 }
 

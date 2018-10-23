@@ -26,7 +26,7 @@ namespace HHsystem
         {
             InitializeComponent();
             populateTable();
-            addAdppointments();
+            addAppointments();
             populateWeeks();
             populateNames();
             populateEmployees();
@@ -55,9 +55,23 @@ namespace HHsystem
             }
         }
 
-        public void addAdppointments()
+        public void addAppointments()
         {
             customWeeklyScheduler.setAppointment(manager.getBookingDetails());
+        }
+
+        public void refreshAppointment() {
+            int arraySize = manager.getEmployeeDetails().GetLength(0);
+            string[,] employeeDetails = new string[arraySize, 6];
+            Array.Copy(manager.getEmployeeDetails(), employeeDetails, employeeDetails.Length);
+            for (int i = 0; i < employeeDetails.GetLength(0); i++)
+            {
+                string name = employeeDetails[i, 1] + " " + employeeDetails[i, 2];
+                if (name.Equals(comboBox5.SelectedItem))
+                {
+                    customWeeklyScheduler.setAppointment(manager.getBookingSchedule(employeeDetails[i, 0]));
+                }
+            }
         }
 
         public void populateBookingTable()
@@ -163,10 +177,12 @@ namespace HHsystem
             for (int i = 0; i < manager.getEmployeeDetails().GetLength(0); i++)
             {
                 comboBox3.Items.Add(manager.getEmployeeDetails()[i, 1] + " " + manager.getEmployeeDetails()[i, 2]);
+                comboBox5.Items.Add(manager.getEmployeeDetails()[i, 1] + " " + manager.getEmployeeDetails()[i, 2]);
             }
             if (comboBox3.Items.Count > 0)
             {
                 comboBox3.SelectedIndex = 0;
+                comboBox5.SelectedIndex = 0;
             }
         }
 
@@ -502,7 +518,7 @@ namespace HHsystem
             populateTable();
             if (count !=tmp) {
                 count = tmp;
-                addAdppointments();
+                refreshAppointment();
             }
         }
 
@@ -559,6 +575,11 @@ namespace HHsystem
         {
             folderBrowserDialog1.ShowDialog();
             backuptxt.Text = folderBrowserDialog1.SelectedPath;
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refreshAppointment();
         }
     }
 }

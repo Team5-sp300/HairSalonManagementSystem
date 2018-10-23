@@ -152,7 +152,8 @@ namespace HHsystem.Forms
                             break;
                         }
                     }
-                    main.addAdppointments();
+
+                    main.refreshAppointment();
                     main.populateBookingTable();
                     this.Dispose();
                 }

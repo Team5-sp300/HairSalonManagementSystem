@@ -115,7 +115,7 @@ namespace HHsystem.Controllers
         {
             try
             {
-                
+
                 string command = "Call getBookingHistory (?id)";
                 connection();
                 cmd = new MySqlCommand(command, conn);
@@ -125,7 +125,7 @@ namespace HHsystem.Controllers
                 {
                     SelectCommand = cmd
                 };
-                
+
             }
             catch (Exception ex)
             {
@@ -155,7 +155,7 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
-       
+
             return adapter;
         }
 
@@ -196,6 +196,48 @@ namespace HHsystem.Controllers
             }
             return bookingDetails;
         }
+
+        public string[,] getBookingSchedule(string id)
+        {
+            string[,] serviceDetails = null;
+            string command = "Call getCalendar (?username)";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?username", id);
+            MySqlDataReader result = cmd.ExecuteReader();
+
+            int i = 0;
+            int arrySize = 0;
+
+            if (result != null)
+            {
+                while (result.Read())
+                {
+                    arrySize++;
+                }
+
+                result.Close();
+
+                serviceDetails = new string[arrySize, 4];
+
+               // cmd = new MySqlCommand(command, conn);
+                result = cmd.ExecuteReader();
+
+                while (result.Read())
+                {
+                    serviceDetails[i, 0] = result[0].ToString();
+                    serviceDetails[i, 1] = result[1].ToString();
+                    serviceDetails[i, 2] = result[2].ToString();
+                    serviceDetails[i, 3] = result[3].ToString();
+                    i++;
+                }
+            }
+
+            return serviceDetails;
+        }
+
+
+
 
         public string[,] getServiceDetails()
         {
@@ -286,7 +328,7 @@ namespace HHsystem.Controllers
 
                 {
                     clientDetails[i, 0] = result[0].ToString();
-                    clientDetails[i, 1] = result[1].ToString().Replace("&nbsp&"," ");
+                    clientDetails[i, 1] = result[1].ToString().Replace("&nbsp&", " ");
                     clientDetails[i, 2] = result[2].ToString().Replace("&nbsp&", " ");
                     clientDetails[i, 3] = result[3].ToString();
                     clientDetails[i, 4] = result[4].ToString();
@@ -295,8 +337,8 @@ namespace HHsystem.Controllers
             }
             return clientDetails;
         }
-                
-        public string[,] getClientDetails(string fname,string lname)
+
+        public string[,] getClientDetails(string fname, string lname)
         {
             string[,] clientDetails = null;
             string command = "Call getCustomerDetails(?fname,?lname)";
@@ -408,7 +450,7 @@ namespace HHsystem.Controllers
 
         public int bookingCount()
         {
-            string command ="SELECT COUNT(*) FROM Booking";
+            string command = "SELECT COUNT(*) FROM Booking";
             connection();
             cmd = new MySqlCommand(command, conn);
             cmd.ExecuteNonQuery();
@@ -464,7 +506,7 @@ namespace HHsystem.Controllers
             conn.Close();
         }
 
-        public void updateClient(string id,string name, string surname, string phone, string email)
+        public void updateClient(string id, string name, string surname, string phone, string email)
         {
             string command = "CALL updateClient(?id,?fname, ?lname, ?email, ?phone)";
             connection();
@@ -586,7 +628,7 @@ namespace HHsystem.Controllers
                 mb.ImportFromFile(file);
                 conn.Close();
                 MessageBox.Show("Database successfully restored from file: " + file);
-            }                
+            }
         }
     }
 }

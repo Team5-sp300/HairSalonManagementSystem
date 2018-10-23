@@ -39,3 +39,4 @@ C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.Set
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.csprojAssemblyReference.cache
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.csprojAssemblyReference.cache
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.RescheduleForm.resources
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.RescheduleForm.resources

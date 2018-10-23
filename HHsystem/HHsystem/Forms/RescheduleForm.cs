@@ -129,7 +129,7 @@ namespace HHsystem.Forms
                     //        break;
                     //    }
                     //}
-                    main.addAdppointments();
+                    main.addAppointments();
                     main.populateBookingTable();
                     this.Dispose();
                 }

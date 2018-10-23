@@ -1,7 +1,7 @@
  System
 
 -login system					-> done
--calendar fix: 2 appointment dont display
+-calendar fix: 2 appointment dont display	- DONE
 -remove booking validation			-> done
 -Vadliaton name without white spaces		-> done
 -phone number lenght validation 		-> done
