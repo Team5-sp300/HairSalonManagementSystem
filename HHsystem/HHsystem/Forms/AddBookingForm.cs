@@ -148,7 +148,7 @@ namespace HHsystem.Forms
                     {
                         if (clients[i, 1].ToString() == clientname[0] && clients[i, 2].ToString() == clientname[1])
                         {
-                            //email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime());
+                            email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime(),getService());
                             break;
                         }
                     }

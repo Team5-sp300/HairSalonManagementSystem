@@ -10,7 +10,7 @@ namespace HHsystem.Controllers
 {
     class SettingController
     {
-        private string location = "C:\\Users\\Andrew\\Documents\\Projects\\HairSalonManagementSystem\\HHsystem\\HHsystem\\Settings.xml";
+        private string location = "..\\..\\Settings.xml";
         string backLocation;
         string RefreshRate;
         string CalendarDays;

@@ -13,7 +13,7 @@ namespace HHsystem.Controllers
     {
         DatabaseManager manager = new DatabaseManager();
 
-        public void sendEmail(int id, string client, string employee, string date, string time)
+        public void sendEmail(int id, string client, string employee, string date, string time, string service)
         {
             String[,] details = manager.getClientDetails();
             string body;
@@ -35,29 +35,72 @@ namespace HHsystem.Controllers
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
                 mail.From = new MailAddress("SP300Test@gmail.com");
-                mail.To.Add("eric_odding@hotmail.com");  //swabe@live.co.za , eric_odding@hotmail.com
-                mail.Subject = "Confirmation of Appointment for";
-                //mail.Body = "Dear " + client + "\n\n" +
-                //    "We hereby confirm your appointment at Heydt of Hair Design as follows:\n\n" +
-                //    "Hairdresser: " + employee + "\n" +
-                //    "Date: " + date + "\n" +
-                //    "Time: " + time + "\n\n" +
-                //    "If you wish to change your appointment, please contact us again.\n\n" + 
-                //    "Kind regards\n" +
-                //    "Heydt of Hair";
-                using (StreamReader reader = File.OpenText("..\\..\\..\\..\\basic.html"))
+                mail.To.Add(toAddess);  //swabe@live.co.za , eric_odding@hotmail.com
+                mail.Subject = "Confirmation of Appointment for " + client;
+                using (StreamReader reader = File.OpenText("..\\..\\..\\..\\bookingConfirmation.html"))
                 {
                     body = reader.ReadToEnd();
                     
                 }
                 body = body.Replace("?@client", client);
-                body =body.Replace("?@employee", employee);
-                body=body.Replace("?@date", date);
-                body=body.Replace("?@time", time);
+                body = body.Replace("?@employee", employee);
+                body = body.Replace("?@date", date);
+                body = body.Replace("?@time", time);
+                body = body.Replace("?@service", service);
                 mail.Body = body;
                 mail.IsBodyHtml = true;
                 SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("SP300Test".Trim(), "cTIgROUP5".Trim());
+                SmtpServer.Credentials = new System.Net.NetworkCredential("SP300Test".Trim(), "2018Group5".Trim());
+                SmtpServer.EnableSsl = true;
+
+                SmtpServer.Send(mail);
+                MessageBox.Show("Confirmation Sent to " + toAddess);
+                SmtpServer.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        public void sendRescheduleEmail(int id, string client, string employee, string date, string time, string service)
+        {
+            String[,] details = manager.getClientDetails();
+            string body;
+
+            string toAddess = "";
+
+            for (int i = 0; i < details.Length; i++)
+            {
+                if (int.Parse(details[i, 0]) == id)
+                {
+                    toAddess = details[i, 4];
+                    break;
+                }
+            }
+
+            try
+            {
+                MailMessage mail = new MailMessage();
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+                mail.From = new MailAddress("SP300Test@gmail.com");
+                mail.To.Add(toAddess);  //swabe@live.co.za , eric_odding@hotmail.com
+                mail.Subject = "Confirmation for change of Appointment for " + client;
+                using (StreamReader reader = File.OpenText("..\\..\\..\\..\\rebookingConfirmation.html"))
+                {
+                    body = reader.ReadToEnd();
+
+                }
+                body = body.Replace("?@client", client);
+                body = body.Replace("?@employee", employee);
+                body = body.Replace("?@date", date);
+                body = body.Replace("?@time", time);
+                body = body.Replace("?@service", service);
+                mail.Body = body;
+                mail.IsBodyHtml = true;
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("SP300Test".Trim(), "2018Group5".Trim());
                 SmtpServer.EnableSsl = true;
 
                 SmtpServer.Send(mail);

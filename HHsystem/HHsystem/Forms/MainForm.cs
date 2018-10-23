@@ -564,7 +564,7 @@ namespace HHsystem
             int tmp = manager.bookingCount();
           //  timer1.Interval = REFRESH_RATE;
             
-            MessageBox.Show("test");
+            //MessageBox.Show("test");
             populateTable();
             if (count !=tmp) {
                 count = tmp;
