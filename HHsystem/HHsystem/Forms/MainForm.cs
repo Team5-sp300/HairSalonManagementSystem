@@ -94,9 +94,10 @@ namespace HHsystem
             try
             {
                 populateEmployeeTable();
+                populateEmployeeTableMange();
                 populateBookingTable();
                 populateClientTable();
-                populateClientTable2();
+                populateClientTableManage();
             }
             catch (Exception)
             {
@@ -143,6 +144,20 @@ namespace HHsystem
             manager.getEmployee().Fill(table);
             bindingSource.DataSource = table;
             dataGridView1.DataSource = bindingSource;
+            table.Columns[0].ColumnName = "Username";
+            table.Columns[1].ColumnName = "Name";
+            table.Columns[2].ColumnName = "Last Name";
+            table.Columns[3].ColumnName = "Password";
+            table.Columns[4].ColumnName = "Phone Number";
+            table.Columns[5].ColumnName = "Email Address";
+            table.Columns[6].ColumnName = "Status";
+        }
+
+        public void populateEmployeeTableMange()
+        {
+            table = new DataTable();
+            manager.getEmployee().Fill(table);
+            bindingSource.DataSource = table;
             dataGridView4.DataSource = bindingSource;
             table.Columns[0].ColumnName = "Username";
             table.Columns[1].ColumnName = "Name";
@@ -174,7 +189,7 @@ namespace HHsystem
             table.Columns[3].ColumnName = "Email Address";
         }
 
-        public void populateClientTable2()
+        public void populateClientTableManage()
         {
             table = new DataTable();
             manager.getClients().Fill(table);
@@ -304,12 +319,12 @@ namespace HHsystem
 
         private void button13_Click(object sender, EventArgs e)
         {
-                manager.backup();
+                manager.backup(backLocation);
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-                    manager.restore();
+                    manager.restore(backLocation);
             }
 
         private void button9_Click(object sender, EventArgs e)
@@ -519,14 +534,14 @@ namespace HHsystem
                 {
                     manager.deleteClient(username);
                     populateClientTable();
-                    populateClientTable2();
+                    populateClientTableManage();
                     populateBookingTable();
                 }
                 else if (result == DialogResult.No)
                 {
                     manager.voidClient(username);
                     populateClientTable();
-                    populateClientTable2();
+                    populateClientTableManage();
                 }
                 else if (result == DialogResult.Cancel)
                 {
@@ -576,10 +591,12 @@ namespace HHsystem
         private void timer1_Tick(object sender, EventArgs e)
         {
             int tmp = manager.bookingCount();
-          //  timer1.Interval = REFRESH_RATE;
-            
+            //  timer1.Interval = REFRESH_RATE;
+
             //MessageBox.Show("test");
-            populateTable();
+            populateEmployeeTable();
+            populateClientTable();
+            populateBookingTable();
             if (count !=tmp) {
                 count = tmp;
                 refreshAppointment();

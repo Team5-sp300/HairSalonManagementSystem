@@ -101,8 +101,8 @@ namespace HHsystem.Forms
 
         private void phonetxt_TextChanged(object sender, EventArgs e)
         {
-            Regex nonNumericRegex = new Regex(@"\D");
-            if (!nonNumericRegex.IsMatch(getClientPhone()) && getClientPhone().Length > 0 && getClientPhone().Length <= 10)
+            Regex NumericRegex = new Regex("^[0-9]{10}$");
+            if (NumericRegex.IsMatch(getClientPhone()) && getClientPhone().Length > 0 && getClientPhone().Length <= 10)
             {
                 pictureBoxPhone.Image = Properties.Resources.valid;
                 phoneValid = true;

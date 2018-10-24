@@ -528,7 +528,7 @@ namespace HHsystem.Controllers
             cmd.Parameters.AddWithValue("?email", phone);
             cmd.Parameters.AddWithValue("?phone", email);
             cmd.ExecuteNonQuery();
-            conn.Close();
+            conn.Dispose();
         }
 
 
@@ -603,10 +603,9 @@ namespace HHsystem.Controllers
         }
 
 
-        public void backup()
+        public void backup(string location)
         {
-            new Thread(() =>
-            {
+          
                 connection();
                 switch (MessageBox.Show("Are you sure you want to back up the database?",
                   "Confirm Backup",
@@ -614,41 +613,43 @@ namespace HHsystem.Controllers
                   MessageBoxIcon.Question))
                 {
                     case DialogResult.Yes:
-
-                        string file = "../../../../Database/Backups/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
+                    new Thread(() =>
+                    {
+                    //string file = "../../../../Database/Backups/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
+                    string file = location+"/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
                         MySqlBackup mb = new MySqlBackup(cmd);
                         mb.ExportToFile(file);
                         conn.Close();
                         MessageBox.Show("Database successfully backed up to file: HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy"), "Backup",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        break;
-
+                    }).Start();
+                    break;
                     case DialogResult.No:
                         MessageBox.Show("Backup Cancelled", "Backup", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         break;
                 }
-            }).Start();
+          
         }
 
-        public void restore()
-        {
-            new Thread(() =>
-            {
+        public void restore(string location)
+        { 
                 connection();
                 OpenFileDialog openFileDialog = new OpenFileDialog();
                 DialogResult result = openFileDialog.ShowDialog();
                 string file;
                 if (result == DialogResult.OK)
                 {
-                    file = openFileDialog.FileName;
+                new Thread(() =>
+                {
+                    file = openFileDialog.InitialDirectory = location;
+                //    file = openFileDialog.FileName;
 
                     MySqlBackup mb = new MySqlBackup(cmd);
                     mb.ImportFromFile(file);
                     conn.Close();
                     MessageBox.Show("Database successfully restored from file: " + file, "Restore", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-
-            }).Start();
+                }).Start();
+            }
         }
     }
 }

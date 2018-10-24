@@ -24,15 +24,15 @@ Staff
  
 
 Mange
- valdaiton of phone number 10-12 
+ valdaiton of phone number 10-12 			-DONE
  no table resize					-DONE
- link backup loaction to back
- default location for restore same as backlocation
+ link backup loaction to back				-DONE
+ default location for restore same as backlocation	-DONE
  change messagebox type					-DONE
 
 Database Manager
  closeALL connections;   				-DONE
- refresh prevent editing of management tables 
+ refresh prevent editing of management tables 		-DONE
  client inactcive instead void				-DONE
 
 Database 
