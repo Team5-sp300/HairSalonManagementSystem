@@ -40,3 +40,5 @@ C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\o
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.csproj.CopyComplete
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.exe
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.pdb
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\WinFormAnimation.dll
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\WinFormAnimation.xml

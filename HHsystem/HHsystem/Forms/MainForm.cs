@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HHsystem.Controllers;
@@ -302,13 +303,13 @@ namespace HHsystem
 
         private void button13_Click(object sender, EventArgs e)
         {
-            manager.backup();
+                manager.backup();
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            manager.restore();
-        }
+                    manager.restore();
+            }
 
         private void button9_Click(object sender, EventArgs e)
         {

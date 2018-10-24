@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -53,7 +54,7 @@ namespace HHsystem.Forms
             Array.Copy(manager.getEmployeeDetails(), employeeDetails, employeeDetails.Length);
             for (int i = 0; i < length; i++)
             {
-                employeecombobox.Items.Add(employeeDetails[i,1] + " " + employeeDetails[i,2]);
+                employeecombobox.Items.Add(employeeDetails[i, 1] + " " + employeeDetails[i, 2]);
             }
             employeecombobox.SelectedIndex = 0;
         }
@@ -70,19 +71,19 @@ namespace HHsystem.Forms
                 {
                     timehourscombobox.Items.Add(i);
                 }
-                
+
             }
-            for (int j = 00; j < 60; j+= 15)
+            for (int j = 00; j < 60; j += 15)
             {
                 if (j == 00)
                 {
                     timeminutescombobox.Items.Add("00");
-                } 
+                }
                 else
                 {
                     timeminutescombobox.Items.Add(j);
                 }
-                
+
             }
             timehourscombobox.SelectedIndex = 0;
             timeminutescombobox.SelectedIndex = 0;
@@ -148,7 +149,7 @@ namespace HHsystem.Forms
                     {
                         if (clients[i, 1].ToString() == clientname[0] && clients[i, 2].ToString() == clientname[1])
                         {
-                            email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime(),getService());
+                            email.sendEmail(int.Parse(clients[i, 0]), getClientName(), getEmployeeName(), getDate(), getTime(), getService());
                             break;
                         }
                     }
@@ -157,9 +158,10 @@ namespace HHsystem.Forms
                     main.populateBookingTable();
                     this.Dispose();
                 }
-                else {
+                else
+                {
                     MessageBox.Show("Stylist is not available for this appointment ");
-                }            
+                }
             }
             else
             {

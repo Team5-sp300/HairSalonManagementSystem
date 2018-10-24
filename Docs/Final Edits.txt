@@ -1,15 +1,15 @@
 Home
  no log in feedback
- password flied on login				-DONE
+ password field on login				-DONE
  incorrect username/password close form			-DONE
  change messagebox type					-DONE
  enter for login
 
 Calendar
- progress bar on email sending
- custom calendar 2 hours display block
+ progress bar on email sending				-DONE (changed to thread, progress bar was not viable)
+ custom calendar 2 hours display block			-DONE
  booking check revised logic 
- day filter only redraws 5 days
+ day filter only redraws 5 days				-DONE
  table row select mode					-DONE
  
 Clients
@@ -29,7 +29,7 @@ Mange
  no table resize					-DONE
  link backup loaction to back
  default location for restore same as backlocation
- change messagebox type
+ change messagebox type					-DONE
 
 Database Manager
  closeALL connections;   				-DONE

@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -224,7 +225,7 @@ namespace HHsystem.Controllers
 
                 serviceDetails = new string[arrySize, 4];
 
-               // cmd = new MySqlCommand(command, conn);
+                // cmd = new MySqlCommand(command, conn);
                 result = cmd.ExecuteReader();
 
                 while (result.Read())
@@ -604,40 +605,50 @@ namespace HHsystem.Controllers
 
         public void backup()
         {
-            switch (MessageBox.Show("Are you sure you want to back up the database?",
-              "Confirm Backup",
-              MessageBoxButtons.YesNo,
-              MessageBoxIcon.Question))
+            new Thread(() =>
             {
-                case DialogResult.Yes:
-                    string file = "../../../../Database/Backups/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
-                    connection();
-                    MySqlBackup mb = new MySqlBackup(cmd);
-                    mb.ExportToFile(file);
-                    conn.Close();
-                    MessageBox.Show("Database successfully backed up to file: HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy"));
-                    break;
+                connection();
+                switch (MessageBox.Show("Are you sure you want to back up the database?",
+                  "Confirm Backup",
+                  MessageBoxButtons.YesNo,
+                  MessageBoxIcon.Question))
+                {
+                    case DialogResult.Yes:
 
-                case DialogResult.No:
-                    MessageBox.Show("Backup Cancelled");
-                    break;
-            }
+                        string file = "../../../../Database/Backups/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
+                        MySqlBackup mb = new MySqlBackup(cmd);
+                        mb.ExportToFile(file);
+                        conn.Close();
+                        MessageBox.Show("Database successfully backed up to file: HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy"), "Backup",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        break;
+
+                    case DialogResult.No:
+                        MessageBox.Show("Backup Cancelled", "Backup", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        break;
+                }
+            }).Start();
         }
 
         public void restore()
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            DialogResult result = openFileDialog.ShowDialog();
-            string file;
-            if (result == DialogResult.OK)
+            new Thread(() =>
             {
-                file = openFileDialog.FileName;
                 connection();
-                MySqlBackup mb = new MySqlBackup(cmd);
-                mb.ImportFromFile(file);
-                conn.Close();
-                MessageBox.Show("Database successfully restored from file: " + file);
-            }
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                DialogResult result = openFileDialog.ShowDialog();
+                string file;
+                if (result == DialogResult.OK)
+                {
+                    file = openFileDialog.FileName;
+
+                    MySqlBackup mb = new MySqlBackup(cmd);
+                    mb.ImportFromFile(file);
+                    conn.Close();
+                    MessageBox.Show("Database successfully restored from file: " + file, "Restore", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }).Start();
         }
     }
 }

@@ -123,6 +123,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(200, 2);
             this.label3.TabIndex = 20;
+            
             // 
             // LoginForm
             // 
@@ -143,6 +144,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net.Mail;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,7 +16,9 @@ namespace HHsystem.Controllers
 
         public void sendEmail(int id, string client, string employee, string date, string time, string service)
         {
-            String[,] details = manager.getClientDetails();
+            new Thread(() =>
+            {
+                String[,] details = manager.getClientDetails();
             string body;
 
             string toAddess = "";
@@ -61,6 +64,7 @@ namespace HHsystem.Controllers
             {
                 MessageBox.Show(ex.ToString());
             }
+            }).Start();
         }
 
         public void sendRescheduleEmail(int id, string client, string employee, string date, string time, string service)

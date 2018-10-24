@@ -63,7 +63,7 @@ namespace HHsystem.Componets
                             if (bookingDetails[j, 2].Substring(0, 3).Equals(times[m].Substring(0, 3)))
                             {
                                 k = i + 1;
-                                if (bookingDetails[j, 3] == "90")
+                                if (int.Parse(bookingDetails[j, 3]) > 60)
                                 {
                                     cells[i + 1, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m + 1].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
@@ -75,7 +75,7 @@ namespace HHsystem.Componets
                                     //cells[k, m + 1].BorderStyle = System.Windows.Forms.BorderStyle.None;
                                     cells[k, m].Text += bookingDetails[j, 2] + " \n" + bookingDetails[j, 0] + " \n";
                                 }
-                                else if (bookingDetails[j, 3] == "60")
+                                else if (int.Parse(bookingDetails[j, 3]) <= 60)
                                 {
                                     cells[k, m].FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
                                     cells[k, m].FlatAppearance.BorderSize = 1;
@@ -123,7 +123,7 @@ namespace HHsystem.Componets
 
         public void setHeaders()
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < colums; i++)
             {
                 headersColumm[i + 1].Text = dates[i];
 
