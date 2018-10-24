@@ -85,6 +85,7 @@ namespace HHsystem.Controllers
                     i++;
                 }
             }
+            conn.Close();
             return employeeDetails;
         }
 
@@ -108,6 +109,7 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
+            conn.Close();
             return adapter;
         }
 
@@ -132,6 +134,7 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
+            conn.Close();
             return adapter;
         }
 
@@ -155,7 +158,7 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
-
+            conn.Close();
             return adapter;
         }
 
@@ -194,6 +197,7 @@ namespace HHsystem.Controllers
                     i++;
                 }
             }
+            conn.Close();
             return bookingDetails;
         }
 
@@ -232,7 +236,7 @@ namespace HHsystem.Controllers
                     i++;
                 }
             }
-
+            conn.Close();
             return serviceDetails;
         }
 
@@ -272,6 +276,7 @@ namespace HHsystem.Controllers
                     i++;
                 }
             }
+            conn.Close();
             return serviceDetails;
         }
 
@@ -296,6 +301,7 @@ namespace HHsystem.Controllers
                 MessageBox.Show(ex.ToString());
                 //throw;
             }
+            conn.Close();
             return adapter;
         }
 
@@ -335,6 +341,7 @@ namespace HHsystem.Controllers
                     i++;
                 }
             }
+            conn.Close();
             return clientDetails;
         }
 
@@ -375,6 +382,7 @@ namespace HHsystem.Controllers
                     i++;
                 }
             }
+            conn.Close();
             return clientDetails;
         }
 
@@ -412,6 +420,7 @@ namespace HHsystem.Controllers
                     i++;
                 }
             }
+            conn.Close();
             return loginDetails;
         }
 

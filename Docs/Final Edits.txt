@@ -1,0 +1,54 @@
+Home
+ no log in feedback
+ password flied on login
+ incorrect username/password close form
+ change messagebox type
+ enter for login
+
+Calendar
+ progress bar on email sending
+ custom calendar 2 hours display block
+ booking check revised logic 
+ day filter only redraws 5 days
+ table row select mode
+ 
+Clients
+ icon change validation
+ refesh all client table in clients on create
+ hightlight view button
+ client dropdown refresh
+ table row select mode
+ on reschedule, redaw calendar
+		 
+Staff
+ remove employee type
+ 
+
+Mange
+ valdaiton of phone number 10-12 
+ no table resize
+ link backup loaction to back
+ default location for restore same as backlocation
+ change messagebox type
+
+Database Manager
+ closeALL connections;   				-DONE
+ refresh prevent editing of management tables 
+ client inactcive instead void				-DONE
+
+Database 
+ add type to insertEmployee
+ fix dummy data						-DONE
+ 
+
+Optional
+-buttons size
+
+
+Mobile
+ incorrect details no feedback
+ close keyboard on button press
+ ip address setting 
+ on reschedule set dd mm
+ back date error 
+ no booking on schedule crashes
