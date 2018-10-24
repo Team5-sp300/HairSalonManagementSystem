@@ -56,23 +56,24 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
-            // textBox1
+            // usernametxt
             // 
             this.usernametxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.usernametxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.usernametxt.Location = new System.Drawing.Point(31, 110);
-            this.usernametxt.Name = "textBox1";
+            this.usernametxt.Name = "usernametxt";
             this.usernametxt.Size = new System.Drawing.Size(180, 20);
             this.usernametxt.TabIndex = 2;
             // 
-            // textBox2
+            // passwordtxt
             // 
             this.passwordtxt.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.passwordtxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.passwordtxt.Location = new System.Drawing.Point(31, 161);
-            this.passwordtxt.Name = "textBox2";
+            this.passwordtxt.Name = "passwordtxt";
             this.passwordtxt.Size = new System.Drawing.Size(180, 20);
             this.passwordtxt.TabIndex = 3;
+            this.passwordtxt.UseSystemPasswordChar = true;
             // 
             // label4
             // 

@@ -1,8 +1,8 @@
 Home
  no log in feedback
- password flied on login
- incorrect username/password close form
- change messagebox type
+ password flied on login				-DONE
+ incorrect username/password close form			-DONE
+ change messagebox type					-DONE
  enter for login
 
 Calendar

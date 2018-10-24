@@ -14,6 +14,8 @@ namespace HHsystem.Forms
     public partial class LoginForm : Form
     {
         MainForm mf;
+        LoginController lc=new LoginController();
+
         public LoginForm(MainForm m)
         {
             InitializeComponent();
@@ -27,9 +29,10 @@ namespace HHsystem.Forms
 
         private void button9_Click(object sender, EventArgs e)
         {
-            LoginController lc = new LoginController();
-            lc.login(getUsername(), getPassword(), mf);
-            this.Dispose();
+            if (lc.login(getUsername(), getPassword(), mf).Equals(true))
+            {
+                this.Dispose();
+            }
         }
 
         public string getUsername() {

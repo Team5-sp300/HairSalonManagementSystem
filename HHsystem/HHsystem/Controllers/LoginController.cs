@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HHsystem.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,9 @@ namespace HHsystem.Controllers
         DatabaseManager manager = new DatabaseManager();
         int admincheck;
 
-        public void login(string username, string password, MainForm f)
+   
+
+        public bool login(string username, string password, MainForm f)
         {
             for (int i = 0; i < manager.login().GetLength(0); i++)
             {
@@ -27,14 +30,16 @@ namespace HHsystem.Controllers
                         f.stylistLogin();
                     }
                     admincheck = int.Parse(manager.login()[i, 2]);
-                    MessageBox.Show("Logged in as " + username);
-                    break;
+                    MessageBox.Show("Logged in as " + username, "Login", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    return true;
                 }
                 else if (i.Equals(manager.login().GetLength(0)-1))
                 {
-                    MessageBox.Show("Incorrect Username/Password");
+                    MessageBox.Show("Incorrect Username/Password", "Login", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    return false;
                 }
             }
+            return false;
         }
     }
 }
