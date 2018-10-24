@@ -226,6 +226,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Calendar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
@@ -258,6 +259,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "Clients";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
@@ -274,6 +276,7 @@
             this.button5.TabIndex = 9;
             this.button5.Text = "Staff";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label1
@@ -311,6 +314,7 @@
             this.button12.TabIndex = 11;
             this.button12.Text = "Manage";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Visible = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // timer1

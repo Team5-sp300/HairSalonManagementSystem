@@ -129,8 +129,8 @@ namespace HHsystem.Forms
                     //        break;
                     //    }
                     //}
-                    main.addAppointments();
                     main.populateBookingTable();
+                    main.refreshAppointment();
                     this.Dispose();
                 }
                 else

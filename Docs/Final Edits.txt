@@ -1,14 +1,13 @@
 Home
- no log in feedback
+ no log in feedback					-DONE
  password field on login				-DONE
  incorrect username/password close form			-DONE
  change messagebox type					-DONE
- enter for login
+ enter for login					-DONE
 
 Calendar
  progress bar on email sending				-DONE (changed to thread, progress bar was not viable)
  custom calendar 2 hours display block			-DONE
- booking check revised logic 
  day filter only redraws 5 days				-DONE
  table row select mode					-DONE
  
@@ -16,9 +15,9 @@ Clients
  icon change validation					-DONE
  refesh all client table in clients on create		-DONE
  hightlight view button					-DONE
- client dropdown refresh
+ client dropdown refresh				-DONE
  table row select mode					-DONE
- on reschedule, redaw calendar
+ on reschedule, redaw calendar				-DONE
 		 
 Staff
  remove employee type
@@ -37,7 +36,8 @@ Database Manager
  client inactcive instead void				-DONE
 
 Database 
- add type to insertEmployee
+ booking check revised logic 
+ add type to insertEmployee				-DONE
  fix dummy data						-DONE
  
 

@@ -35,11 +35,12 @@ namespace HHsystem
             populateTable();
             addAppointments();
             populateWeeks();
-            populateNames();
-            populateEmployees();
+            populateClientList();
+            populateEmployeesList();
             customWeeklyScheduler.redrawScheduler(this.Width - 200, this.Height - 205);
             comboBox4.Text = CalendarDays;
-            adminLogin();//needs to be removed, just for testing purposes
+              adminLogin();//needs to be removed, just for testing purposes
+            //stylistLogin();
             count = manager.bookingCount();
 
             System.DateTime nowtime = System.DateTime.Now;
@@ -205,7 +206,7 @@ namespace HHsystem
             comboBox1.SelectedIndex = 0;
         }
 
-        public void populateNames()
+        public void populateClientList()
         {
             comboBox2.Items.Clear();
             for (int i = 0; i < manager.getClientDetails().GetLength(0); i++)
@@ -218,7 +219,7 @@ namespace HHsystem
             }
         }
 
-        public void populateEmployees()
+        public void populateEmployeesList()
         {
             comboBox3.Items.Clear();
             for (int i = 0; i < manager.getEmployeeDetails().GetLength(0); i++)
@@ -332,7 +333,7 @@ namespace HHsystem
 
         private void button8_Click(object sender, EventArgs e)
         {
-            new AddEmployeeForm().Show();
+            new AddEmployeeForm(this).Show();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -599,6 +600,11 @@ namespace HHsystem
             button4.Enabled = true;
             button5.Enabled = true;
             button12.Enabled = false;
+
+            button2.Visible = true;
+            button4.Visible = true;
+            button5.Visible = true;
+            button12.Visible = false;
         }
 
         public void adminLogin()
@@ -608,6 +614,11 @@ namespace HHsystem
             button4.Enabled = true;
             button5.Enabled = true;
             button12.Enabled = true;
+
+            button2.Visible = true;
+            button4.Visible = true;
+            button5.Visible = true;
+            button12.Visible = true;
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -618,6 +629,11 @@ namespace HHsystem
             button4.Enabled = false;
             button5.Enabled = false;
             button12.Enabled = false;
+
+            button2.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+            button12.Visible = false;
         }
 
         private void button28_Click(object sender, EventArgs e)

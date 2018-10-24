@@ -21,8 +21,9 @@ namespace HHsystem.Forms
         private bool phoneValid;
         private bool passwordValid;
         private bool confirmPasswordValid;
+        MainForm main;
 
-        public AddEmployeeForm()
+        public AddEmployeeForm(MainForm main)
         {
             InitializeComponent();
             Random rnd = new Random();
@@ -32,6 +33,7 @@ namespace HHsystem.Forms
             emailValid = false;
             phoneValid = false;
             passwordValid = false;
+            this.main=  main;
     }
 
         private void button2_Click(object sender, EventArgs e)
@@ -39,6 +41,7 @@ namespace HHsystem.Forms
             if (nameValid && surnameValid && emailValid && phoneValid && passwordValid && confirmPasswordValid)
             {
                 new EmployeeController().add(getEmployeeUname(), getEmployeeFname(), getEmployeeLname(), getEmployeeEmail(), getEmployeePhone(), getEmployeePassword(), adminCheck());
+                main.populateEmployeesList();
                 this.Dispose();
             }
             else

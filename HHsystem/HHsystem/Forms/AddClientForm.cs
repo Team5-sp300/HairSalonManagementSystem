@@ -38,6 +38,7 @@ namespace HHsystem.Forms
                 this.Dispose();
                 main.refreshAppointment();
                 main.populateBookingTable();
+                main.populateClientList();
             }
             else
             {

@@ -74,7 +74,7 @@
             this.passwordtxt.Size = new System.Drawing.Size(180, 20);
             this.passwordtxt.TabIndex = 3;
             this.passwordtxt.UseSystemPasswordChar = true;
-            // 
+          
             // label4
             // 
             this.label4.AutoSize = true;
@@ -123,10 +123,10 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(200, 2);
             this.label3.TabIndex = 20;
-            
             // 
             // LoginForm
             // 
+            this.AcceptButton = this.button9;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
