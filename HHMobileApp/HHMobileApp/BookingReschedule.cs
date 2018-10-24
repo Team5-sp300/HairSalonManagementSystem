@@ -18,19 +18,20 @@ namespace HHmobileApp
     [Activity(Label = "Reschedule", Theme = "@style/AppTheme.NoActionBar")]
     class BookingReschedule : AppCompatActivity
     {
-        List<ServiceDetails> services;
-        Spinner spinnerDay;
-        Spinner spinnerMonth;
-        Spinner spinnerHour;
-        Spinner spinnerMinutes;
-        Spinner spinnerServices;
-        WebClient client;
-        Uri uri;
-        string aday;
-        string amonth;
-        string ahour;
-        string amin;
-        string aservice;
+        private string ip;
+        private List<ServiceDetails> services;
+        private Spinner spinnerDay;
+        private Spinner spinnerMonth;
+        private Spinner spinnerHour;
+        private Spinner spinnerMinutes;
+        private Spinner spinnerServices;
+        private WebClient client;
+        private Uri uri;
+        private string aday;
+        private string amonth;
+        private string ahour;
+        private string amin;
+        private string aservice;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -40,13 +41,14 @@ namespace HHmobileApp
             SetSupportActionBar(toolbar);
             toolbar.MenuItemClick += Menu_Clicked;
 
-          
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            ip = pref.GetString("IP", String.Empty);
 
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
 
             client = new WebClient();
-            uri = new Uri("http://10.0.0.169/getServices.php");
+            uri = new Uri("http://"+ip+"/getServices.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download_service;
 
@@ -143,7 +145,7 @@ namespace HHmobileApp
         private void button_click(object sender, EventArgs e)
         {
              client = new WebClient();
-            uri = new Uri("http://10.0.0.169/rescheduleBooking.php");
+            uri = new Uri("http://"+ip+"/rescheduleBooking.php");
             NameValueCollection parameter = new NameValueCollection();
             string id = Intent.GetStringExtra("idBooking");
             Console.WriteLine("HERE");

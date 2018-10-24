@@ -20,6 +20,7 @@ namespace HHmobileApp
     [Activity(Label = "Bookings", Theme = "@style/AppTheme.NoActionBar")]
     public class BookingActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
+        private string ip;
         List<BookingDetails> items;
         ListView listview;
 
@@ -30,6 +31,9 @@ namespace HHmobileApp
 
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
+
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            ip = pref.GetString("IP", String.Empty);
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
@@ -43,7 +47,7 @@ namespace HHmobileApp
             listview.ItemClick += Listview_ItemClick;
 
             WebClient client = new WebClient();
-            Uri uri = new Uri("http://10.0.0.169/getBookings.php");
+            Uri uri = new Uri("http://"+ip+"/getBookings.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download;
 

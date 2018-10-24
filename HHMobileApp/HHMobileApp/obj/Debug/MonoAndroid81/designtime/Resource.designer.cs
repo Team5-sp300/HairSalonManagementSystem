@@ -3119,7 +3119,7 @@ namespace HHmobileApp
 			public const int client_details = 2130903058;
 			
 			// aapt resource value: 0x7F030013
-			public const int Client_Insert = 2130903059;
+			public const int client_insert = 2130903059;
 			
 			// aapt resource value: 0x7F030014
 			public const int client_listview_row = 2130903060;

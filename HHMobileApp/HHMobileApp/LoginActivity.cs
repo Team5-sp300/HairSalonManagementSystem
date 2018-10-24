@@ -12,6 +12,7 @@ using Android.Support.V4.View;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 using Android.Views;
+using Android.Views.InputMethods;
 using Android.Widget;
 using Newtonsoft.Json;
 
@@ -20,11 +21,12 @@ namespace HHmobileApp
     [Activity(Label = "Login", Theme = "@style/AppTheme.NoActionBar")]
     public class LoginActivity : AppCompatActivity
     {
-        List<LoginDetails> loginDetails;
-        EditText textName;
-        EditText textPassword;
-        TextView textView;
-        CheckBox checkbox;
+        private string ip;
+        private List<LoginDetails> loginDetails;
+        private EditText textName;
+        private EditText textPassword;
+        private TextView textView;
+        private CheckBox checkbox;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,6 +35,10 @@ namespace HHmobileApp
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            ip = pref.GetString("IP", String.Empty);
+            Console.WriteLine("Here");
+            Console.WriteLine(ip);
 
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
@@ -55,8 +61,11 @@ namespace HHmobileApp
 
         private void button_click(object sender, EventArgs e)
         {
+            InputMethodManager inputManager = (InputMethodManager)GetSystemService(Context.InputMethodService);
+            inputManager.HideSoftInputFromWindow(this.CurrentFocus?.WindowToken, HideSoftInputFlags.None);
+
             WebClient client = new WebClient();
-            Uri uri = new Uri("http://10.0.0.169/login.php");
+            Uri uri = new Uri("http://"+ip+"/login.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download;
         }
@@ -85,13 +94,16 @@ namespace HHmobileApp
                         edit.Apply();
                     }
                     StartActivity(intent);
+                    break;
                 }
-                else if (i.Equals(loginDetails.Count))
-                {
-                    textView.Visibility = ViewStates.Visible;
-                }
+                //else if (i.Equals(loginDetails.Count))
+                //{
+                   
+                //}
 
             }
+            
+            textView.Visibility = ViewStates.Visible;
         }
     }
 }

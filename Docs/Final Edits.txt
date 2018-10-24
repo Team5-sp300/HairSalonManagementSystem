@@ -46,9 +46,9 @@ Optional
 
 
 Mobile
- incorrect details no feedback
- close keyboard on button press
- ip address setting 
+ incorrect details no feedback				-DONE
+ close keyboard on button press				-DONE
+ ip address setting 					-DONE
  on reschedule set dd mm
  back date error 
  no booking on schedule crashes

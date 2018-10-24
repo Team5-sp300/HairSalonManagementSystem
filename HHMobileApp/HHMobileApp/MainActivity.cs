@@ -20,16 +20,25 @@ namespace HHmobileApp
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        string username;
-        string password;
-        List<LoginDetails> loginDetails;
+        private string IP = "10.0.0.169";
+        private string ip;
+        private string username;
+        private string password;
+        private List<LoginDetails> loginDetails;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            ISharedPreferencesEditor edit = pref.Edit();
+            edit.PutString("IP", IP);
+            edit.Apply();
+
             username = pref.GetString("Username", String.Empty);
             password = pref.GetString("Password", String.Empty);
+            ip = pref.GetString("IP", String.Empty);
+    
 
             if (username == String.Empty || password == String.Empty)
             {
@@ -39,7 +48,7 @@ namespace HHmobileApp
             else
             {
                 WebClient client = new WebClient();
-                Uri uri = new Uri("http://10.0.0.169/login.php");
+                Uri uri = new Uri("http://"+ip+"/login.php");
                 client.DownloadDataAsync(uri);
                 client.DownloadDataCompleted += download;
             }
@@ -56,11 +65,13 @@ namespace HHmobileApp
                 {
                     var intent = new Intent(this, typeof(HomeActivity));
                     StartActivity(intent);
+                    break;
                 }
                 else if(i.Equals(loginDetails.Count))
                 {
                     var intent = new Intent(this, typeof(LoginActivity));
                     StartActivity(intent);
+                    break;
                 }
             }
 

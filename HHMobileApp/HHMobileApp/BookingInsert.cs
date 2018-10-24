@@ -18,25 +18,26 @@ namespace HHmobileApp
     [Activity(Label = "Insert Booking", Theme = "@style/AppTheme.NoActionBar")]
     class BookingInsert : AppCompatActivity
     {
-        List<SpinnerDetails> clients;
-        List<SpinnerDetails> staff;
-        List<ServiceDetails> services;
-        Spinner spinnerStlyist;
-        Spinner spinnerClient;
-        Spinner spinnerDay;
-        Spinner spinnerMonth;
-        Spinner spinnerHour;
-        Spinner spinnerMinutes;
-        Spinner spinnerServices;
-        WebClient client;
-        Uri uri;
-        string cname;
-        string ename;
-        string aday;
-        string amonth;
-        string ahour;
-        string amin;
-        string aservice;
+        private string ip;
+        private List<SpinnerDetails> clients;
+        private List<SpinnerDetails> staff;
+        private List<ServiceDetails> services;
+        private Spinner spinnerStlyist;
+        private Spinner spinnerClient;
+        private Spinner spinnerDay;
+        private Spinner spinnerMonth;
+        private Spinner spinnerHour;
+        private Spinner spinnerMinutes;
+        private Spinner spinnerServices;
+        private WebClient client;
+        private Uri uri;
+        private string cname;
+        private string ename;
+        private string aday;
+        private string amonth;
+        private string ahour;
+        private string amin;
+        private string aservice;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -46,21 +47,24 @@ namespace HHmobileApp
             SetSupportActionBar(toolbar);
             toolbar.MenuItemClick += Menu_Clicked;
 
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            ip = pref.GetString("IP", String.Empty);
+
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
 
             client = new WebClient();
-            uri = new Uri("http://10.0.0.169/getStaff.php");
+            uri = new Uri("http://"+ip+"/getStaff.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download_staff;
 
             client = new WebClient();
-            uri = new Uri("http://10.0.0.169/getClients.php");
+            uri = new Uri("http://"+ip+"/getClients.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download_client;
 
             client = new WebClient();
-            uri = new Uri("http://10.0.0.169/getServices.php");
+            uri = new Uri("http://"+ip+"/getServices.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download_service;
 
@@ -203,7 +207,7 @@ namespace HHmobileApp
         private void button_click(object sender, EventArgs e)
         {
              client = new WebClient();
-            uri = new Uri("http://10.0.0.169/insertBooking.php");
+            uri = new Uri("http://"+ip+"/insertBooking.php");
             NameValueCollection parameter = new NameValueCollection();
 
             string[] clientname = cname.Split(' ');

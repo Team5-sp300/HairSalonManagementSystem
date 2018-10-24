@@ -20,10 +20,11 @@ namespace HHmobileApp
     [Activity(Label = "Schedule", Theme = "@style/AppTheme.NoActionBar")]
     public class ScheduleActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
-        List<ScheduleDetails> items;
-        ListView listview;
-        WebClient client;
-        Uri uri;
+        private string ip;
+        private List<ScheduleDetails> items;
+        private ListView listview;
+        private WebClient client;
+        private Uri uri;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,11 +34,15 @@ namespace HHmobileApp
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            ip = pref.GetString("IP", String.Empty);
+
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);
             drawer.AddDrawerListener(toggle);
             toggle.SyncState();
-      
+
+
             NavigationView navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.SetNavigationItemSelectedListener(this);
 
@@ -45,7 +50,7 @@ namespace HHmobileApp
             listview.ItemClick += Listview_ItemClick;
 
             client = new WebClient();
-            uri = new Uri("http://10.0.0.169/getSchedule.php");
+            uri = new Uri("http://"+ip+"/getSchedule.php");
             NameValueCollection parameter = new NameValueCollection();
             parameter.Add("username", "AndSch676");
 
@@ -127,7 +132,7 @@ namespace HHmobileApp
 
         private void download(object sender, DownloadDataCompletedEventArgs e)
         {
-            RunOnUiThread(()=>
+            RunOnUiThread(() =>
             {
                 string json = Encoding.UTF8.GetString(e.Result);
                 items = JsonConvert.DeserializeObject<List<ScheduleDetails>>(json);

@@ -21,10 +21,12 @@ namespace HHmobileApp
     [Activity(Label = "Insert Client", Theme = "@style/AppTheme.NoActionBar")]
     class ClientInsert : AppCompatActivity
     {
+        private string ip;
         private EditText txtFname;
         private EditText txtLname;
         private EditText txtNumber;
         private EditText txtEmail;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,6 +35,9 @@ namespace HHmobileApp
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             toolbar.MenuItemClick += Menu_Clicked;
+
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            ip = pref.GetString("IP", String.Empty);
 
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
@@ -91,7 +96,7 @@ namespace HHmobileApp
             {
 
                 WebClient client = new WebClient();
-                Uri uri = new Uri("http://10.0.0.169/insertClient.php");
+                Uri uri = new Uri("http://"+ip+"/insertClient.php");
                 NameValueCollection parameter = new NameValueCollection();
 
                 parameter.Add("fname", txtFname.Text);

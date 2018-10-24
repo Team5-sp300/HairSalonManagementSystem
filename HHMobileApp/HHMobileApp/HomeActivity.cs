@@ -20,7 +20,6 @@ namespace HHmobileApp
     [Activity(Label = "Home", Theme = "@style/AppTheme.NoActionBar")]
     public class HomeActivity : AppCompatActivity, NavigationView.IOnNavigationItemSelectedListener
     {
-    
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,6 +28,8 @@ namespace HHmobileApp
 
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
+
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, Resource.String.navigation_drawer_open, Resource.String.navigation_drawer_close);

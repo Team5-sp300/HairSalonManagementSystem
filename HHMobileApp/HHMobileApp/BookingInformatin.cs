@@ -19,11 +19,11 @@ namespace HHmobileApp
     [Activity(Label = "Booking", Theme = "@style/AppTheme.NoActionBar")]
     public class BookingInformatin : AppCompatActivity
     {
-
+        private string ip;
         private string id;
         private List<string> items;
         private ListView listview;
-        BookingDetailsListAdapter adapter;
+        private BookingDetailsListAdapter adapter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,6 +33,9 @@ namespace HHmobileApp
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
             toolbar.MenuItemClick += Menu_Clicked;
+
+            ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            ip = pref.GetString("IP", String.Empty);
 
             listview = FindViewById<ListView>(Resource.Id.listView1);
 
@@ -95,7 +98,7 @@ namespace HHmobileApp
         private void button_click(object sender, EventArgs e)
         {
             WebClient client = new WebClient();
-            Uri uri = new Uri("http://10.0.0.169/cancelBooking.php");
+            Uri uri = new Uri("http://"+ip+"/cancelBooking.php");
             NameValueCollection parameter = new NameValueCollection();
 
             parameter.Add("id", Intent.GetStringExtra("id"));
