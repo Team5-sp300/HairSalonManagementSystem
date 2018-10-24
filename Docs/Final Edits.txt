@@ -10,14 +10,14 @@ Calendar
  custom calendar 2 hours display block
  booking check revised logic 
  day filter only redraws 5 days
- table row select mode
+ table row select mode					-DONE
  
 Clients
- icon change validation
- refesh all client table in clients on create
- hightlight view button
+ icon change validation					-DONE
+ refesh all client table in clients on create		-DONE
+ hightlight view button					-DONE
  client dropdown refresh
- table row select mode
+ table row select mode					-DONE
  on reschedule, redaw calendar
 		 
 Staff
@@ -26,7 +26,7 @@ Staff
 
 Mange
  valdaiton of phone number 10-12 
- no table resize
+ no table resize					-DONE
  link backup loaction to back
  default location for restore same as backlocation
  change messagebox type

@@ -318,11 +318,15 @@ namespace HHsystem
         private void button17_Click(object sender, EventArgs e)
         {
             bookingTabControl.SelectedIndex = 0;
+            button17.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            button18.BackColor = System.Drawing.Color.WhiteSmoke;
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
             bookingTabControl.SelectedIndex = 1;
+            button18.BackColor= System.Drawing.SystemColors.MenuHighlight; 
+            button17.BackColor= System.Drawing.Color.WhiteSmoke;
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -332,7 +336,7 @@ namespace HHsystem
 
         private void button7_Click(object sender, EventArgs e)
         {
-            new AddClientForm().Show();
+            new AddClientForm(this).Show();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -409,11 +413,15 @@ namespace HHsystem
         private void button16_Click(object sender, EventArgs e)
         {
             clientTabControl.SelectedIndex = 1;
+            button16.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            button20.BackColor = System.Drawing.Color.WhiteSmoke;
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
             clientTabControl.SelectedIndex = 0;
+            button20.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            button16.BackColor = System.Drawing.Color.WhiteSmoke;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -424,11 +432,15 @@ namespace HHsystem
         private void button22_Click(object sender, EventArgs e)
         {
             staffTabControl.SelectedIndex = 0;
+            button22.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            button21.BackColor = System.Drawing.Color.WhiteSmoke;
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
             staffTabControl.SelectedIndex = 1;
+            button21.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            button22.BackColor = System.Drawing.Color.WhiteSmoke;
         }
 
         private void button19_Click(object sender, EventArgs e)

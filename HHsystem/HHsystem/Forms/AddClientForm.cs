@@ -18,14 +18,16 @@ namespace HHsystem.Forms
         private bool surnameValid;
         private bool emailValid;
         private bool phoneValid;
+        MainForm main;
 
-        public AddClientForm()
+        public AddClientForm(MainForm main)
         {
             InitializeComponent();
             nameValid = false;
             surnameValid = false;
             emailValid = false;
             phoneValid = false;
+            this.main=main;
         }
 
         private void btn_add_Click(object sender, EventArgs e)
@@ -34,6 +36,8 @@ namespace HHsystem.Forms
             {
                 new ClientController().add(getClientName(), getClientSurname(), getClientPhone(), getClientEmail());
                 this.Dispose();
+                main.refreshAppointment();
+                main.populateBookingTable();
             }
             else
             {
