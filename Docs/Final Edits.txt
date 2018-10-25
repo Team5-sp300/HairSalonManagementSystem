@@ -20,7 +20,7 @@ Clients
  on reschedule, redaw calendar				-DONE
 		 
 Staff
- remove employee type
+ remove employee type					->done
  
 
 Mange

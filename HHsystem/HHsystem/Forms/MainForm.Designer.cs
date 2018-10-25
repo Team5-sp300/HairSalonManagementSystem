@@ -141,6 +141,7 @@
             this.btnUpdateSettings = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.bindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -176,6 +177,7 @@
             this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.tabPage15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource6)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -1610,6 +1612,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.tabPage15.ResumeLayout(false);
             this.tabPage15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1728,6 +1731,7 @@
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.BindingSource bindingSource6;
     }
 }
 

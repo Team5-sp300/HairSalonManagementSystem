@@ -42,3 +42,5 @@ C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\o
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\WinFormAnimation.dll
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\WinFormAnimation.xml
+C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\WinFormAnimation.dll
+C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\WinFormAnimation.xml

@@ -53,8 +53,8 @@ namespace HHsystem
         public void loadSettings() {
             backLocation = settings.getBackLocation(); ;
             RefreshRate = settings.getRefreshRate();
-             CalendarDays = settings.getCalendarDays() ;
-             Resolution = settings.getResolution();
+            CalendarDays = settings.getCalendarDays() ;
+            Resolution = settings.getResolution();
             backuptxt.Text = backLocation;
             comboBoxScreenRes.Text = Resolution;
 
@@ -142,6 +142,7 @@ namespace HHsystem
         {
             table = new DataTable();
             manager.getEmployee().Fill(table);
+            table.Columns.Remove(table.Columns[7]);
             bindingSource.DataSource = table;
             dataGridView1.DataSource = bindingSource;
             table.Columns[0].ColumnName = "Username";
@@ -157,8 +158,8 @@ namespace HHsystem
         {
             table = new DataTable();
             manager.getEmployee().Fill(table);
-            bindingSource.DataSource = table;
-            dataGridView4.DataSource = bindingSource;
+            bindingSource6.DataSource = table;
+            dataGridView4.DataSource = bindingSource6;
             table.Columns[0].ColumnName = "Username";
             table.Columns[1].ColumnName = "Name";
             table.Columns[2].ColumnName = "Last Name";
