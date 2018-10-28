@@ -4,6 +4,7 @@ Home
  incorrect username/password close form			-DONE
  change messagebox type					-DONE
  enter for login					-DONE
+ logged in user field
 
 Calendar
  progress bar on email sending				-DONE (changed to thread, progress bar was not viable)
@@ -18,6 +19,7 @@ Clients
  client dropdown refresh				-DONE
  table row select mode					-DONE
  on reschedule, redaw calendar				-DONE
+ call drop refresh in tick
 		 
 Staff
  remove employee type					->done
@@ -29,6 +31,7 @@ Mange
  link backup loaction to back				-DONE
  default location for restore same as backlocation	-DONE
  change messagebox type					-DONE
+ manage table refesh on insert 
 
 Database Manager
  closeALL connections;   				-DONE
@@ -47,8 +50,10 @@ Optional
 
 Mobile
  incorrect details no feedback				-DONE
- close keyboard on button press				-DONE
+ close keyboard on button press				-DONE (broken)
  ip address setting 					-DONE
  on reschedule set dd mm
  back date error 
  no booking on schedule crashes
+ on click remove incorrect detail feedback
+ stlying of incorrect detail feedback 

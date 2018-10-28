@@ -39,7 +39,7 @@ namespace HHsystem
             populateEmployeesList();
             customWeeklyScheduler.redrawScheduler(this.Width - 200, this.Height - 205);
             comboBox4.Text = CalendarDays;
-              adminLogin();//needs to be removed, just for testing purposes
+              //adminLogin();//needs to be removed, just for testing purposes
             //stylistLogin();
             count = manager.bookingCount();
 
@@ -591,17 +591,17 @@ namespace HHsystem
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            int tmp = manager.bookingCount();
+          //  int tmp = manager.bookingCount();
             //  timer1.Interval = REFRESH_RATE;
 
             //MessageBox.Show("test");
             populateEmployeeTable();
             populateClientTable();
             populateBookingTable();
-            if (count !=tmp) {
-                count = tmp;
+            //if (count !=tmp) {
+            //    count = tmp;
                 refreshAppointment();
-            }
+            //}
         }
 
         private void timer2_Tick(object sender, EventArgs e)

@@ -52,7 +52,7 @@ namespace HHmobileApp
             client = new WebClient();
             uri = new Uri("http://"+ip+"/getSchedule.php");
             NameValueCollection parameter = new NameValueCollection();
-            parameter.Add("username", "AndSch676");
+            parameter.Add("username", pref.GetString("Username", String.Empty));
 
             client.UploadValuesCompleted += Client_UploadValuesCompleted;
             client.UploadValuesAsync(uri, parameter);

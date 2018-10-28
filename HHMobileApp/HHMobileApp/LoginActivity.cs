@@ -96,14 +96,16 @@ namespace HHmobileApp
                     StartActivity(intent);
                     break;
                 }
+                else if (i.Equals(loginDetails.Count - 1))
+                {
+                    textView.Visibility = ViewStates.Visible;
+                }
                 //else if (i.Equals(loginDetails.Count))
                 //{
-                   
+
                 //}
 
             }
-            
-            textView.Visibility = ViewStates.Visible;
         }
     }
 }
