@@ -601,6 +601,8 @@ namespace HHsystem
             //if (count !=tmp) {
             //    count = tmp;
                 refreshAppointment();
+            populateClientList();
+            populateEmployeesList();
             //}
         }
 
@@ -652,6 +654,7 @@ namespace HHsystem
             button4.Visible = false;
             button5.Visible = false;
             button12.Visible = false;
+            labelloggedin.Text = "";
         }
 
         private void button28_Click(object sender, EventArgs e)

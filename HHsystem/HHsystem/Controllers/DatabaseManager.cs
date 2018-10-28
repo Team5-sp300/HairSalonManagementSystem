@@ -21,7 +21,7 @@ namespace HHsystem.Controllers
 
         public void connection()
         {
-            conn = new MySqlConnection("Server=localhost; database=HairSalon; UID=root; password=;SslMode=none;Allow User Variables=True");
+            conn = new MySqlConnection("Server=localhost; database=HairSalon; UID=root; password=root;SslMode=none;Allow User Variables=True");
             conn.Open();
         }
 
@@ -425,9 +425,9 @@ namespace HHsystem.Controllers
             return loginDetails;
         }
 
-        public int bookingCheck(string efname, string elname, string adate, string atime)
+        public int bookingCheck(string efname, string elname, string adate, string atime, string service)
         {
-            string command = "CALL bookingCheck(?efname,?elname,?adate,?atime)";
+            string command = "CALL bookingCheck(?efname,?elname,?adate,?atime,?service)";
             connection();
 
             cmd = new MySqlCommand(command, conn);
@@ -435,15 +435,16 @@ namespace HHsystem.Controllers
             cmd.Parameters.AddWithValue("?elname", elname);
             cmd.Parameters.AddWithValue("?adate", adate);
             cmd.Parameters.AddWithValue("?atime", atime);
+            cmd.Parameters.AddWithValue("?service", service);
             cmd.ExecuteNonQuery();
             Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
             conn.Close();
             return count;
         }
 
-        public int updateBookingCheck(string efname, string elname, string adate, string atime, int bookingID)
+        public int updateBookingCheck(string efname, string elname, string adate, string atime, int bookingID, string service)
         {
-            string command = "CALL updateBookingCheck(?efname,?elname,?adate,?atime,?id)";
+            string command = "CALL updateBookingCheck(?efname,?elname,?adate,?atime,?id,?service)";
             connection();
 
             cmd = new MySqlCommand(command, conn);
@@ -452,6 +453,7 @@ namespace HHsystem.Controllers
             cmd.Parameters.AddWithValue("?adate", adate);
             cmd.Parameters.AddWithValue("?atime", atime);
             cmd.Parameters.AddWithValue("?id", bookingID);
+            cmd.Parameters.AddWithValue("?service", service);
             cmd.ExecuteNonQuery();
             Int32 count = Convert.ToInt32(cmd.ExecuteScalar());
             conn.Close();

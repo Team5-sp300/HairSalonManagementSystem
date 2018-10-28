@@ -142,7 +142,7 @@ namespace HHsystem.Forms
                 string[] clientname = getClientName().Split(new char[0]);
                 string[] employeename = getEmployeeName().Split(new char[0]);
 
-                if (manager.bookingCheck(employeename[0], employeename[1], getDate(), getTime()).Equals(0))
+                if (manager.bookingCheck(employeename[0], employeename[1], getDate(), getTime(), getService()).Equals(0))
                 {
                     manager.addBooking(clientname[0], clientname[1], employeename[0], employeename[1], getDate(), getTime(), getService());
                     for (int i = 0; i < clients.Length; i++)

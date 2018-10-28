@@ -39,6 +39,8 @@ namespace HHsystem.Forms
                 main.refreshAppointment();
                 main.populateBookingTable();
                 main.populateClientList();
+                main.populateClientTableManage();
+                main.populateClientTable();
             }
             else
             {

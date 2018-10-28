@@ -13,11 +13,9 @@ C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\Google.Protobuf.dl
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\MySql.Data.dll
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\MySqlBackup.dll
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\Google.Protobuf.xml
-C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.csproj.CopyComplete
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.AddClientForm.resources
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Componets.WeeklyScheduler.resources
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.SettingForm.resources
-C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.csprojAssemblyReference.cache
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.Forms.RescheduleForm.resources
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\HHsystem.exe.config
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\HHsystem.exe
@@ -44,3 +42,4 @@ C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\b
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\WinFormAnimation.xml
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\WinFormAnimation.dll
 C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\bin\Debug\WinFormAnimation.xml
+C:\HSMS\HairSalonManagementSystem\HHsystem\HHsystem\obj\Debug\HHsystem.csprojResolveAssemblyReference.cache

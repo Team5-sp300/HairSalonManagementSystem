@@ -114,7 +114,7 @@ namespace HHsystem.Forms
                 string clientname = clientlbl.Text;
                 string[] employeename = selectedEmpName.Split(new char[0]);
 
-                if (manager.updateBookingCheck(employeename[0], employeename[1], getDate(), getTime(),selectedId).Equals(0))
+                if (manager.updateBookingCheck(employeename[0], employeename[1], getDate(), getTime(),selectedId,getService()).Equals(0))
                 {
                     manager.updateBooking(selectedId, getDate(), getTime(), getService());
                     MessageBox.Show("Date\t: " + dateTimePicker.Value.ToString("dd/MM/yyyy") + Environment.NewLine 

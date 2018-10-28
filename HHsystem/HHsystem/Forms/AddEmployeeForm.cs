@@ -42,6 +42,8 @@ namespace HHsystem.Forms
             {
                 new EmployeeController().add(getEmployeeUname(), getEmployeeFname(), getEmployeeLname(), getEmployeeEmail(), getEmployeePhone(), getEmployeePassword(), adminCheck());
                 main.populateEmployeesList();
+                main.populateEmployeeTable();
+                main.populateEmployeeTableMange();
                 this.Dispose();
             }
             else
@@ -188,7 +190,7 @@ namespace HHsystem.Forms
         private void phonetxt_TextChanged(object sender, EventArgs e)
         {
             Regex nonNumericRegex = new Regex(@"\D");
-            if (!nonNumericRegex.IsMatch(getEmployeePhone()) && getEmployeePhone().Length > 0)
+            if (!nonNumericRegex.IsMatch(getEmployeePhone()) && getEmployeePhone().Length > 0 && getEmployeePhone().Length <= 10)
             {
                 pictureBoxPhone.Image = Properties.Resources.valid;
                 phoneValid = true;
