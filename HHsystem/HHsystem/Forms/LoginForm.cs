@@ -31,6 +31,7 @@ namespace HHsystem.Forms
         {
             if (lc.login(getUsername(), getPassword(), mf).Equals(true))
             {
+                this.mf.labelloggedin.Text = getUsername();
                 this.Dispose();
             }
         }

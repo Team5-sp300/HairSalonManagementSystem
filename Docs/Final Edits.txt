@@ -4,7 +4,7 @@ Home
  incorrect username/password close form			-DONE
  change messagebox type					-DONE
  enter for login					-DONE
- logged in user field
+ logged in user field					->done
 
 Calendar
  progress bar on email sending				-DONE (changed to thread, progress bar was not viable)
@@ -19,7 +19,7 @@ Clients
  client dropdown refresh				-DONE
  table row select mode					-DONE
  on reschedule, redaw calendar				-DONE
- call drop refresh in tick
+ call drop refresh in tick				->done
 		 
 Staff
  remove employee type					->done
@@ -31,7 +31,7 @@ Mange
  link backup loaction to back				-DONE
  default location for restore same as backlocation	-DONE
  change messagebox type					-DONE
- manage table refesh on insert 
+ manage table refesh on insert 				->done
 
 Database Manager
  closeALL connections;   				-DONE
@@ -39,7 +39,7 @@ Database Manager
  client inactcive instead void				-DONE
 
 Database 
- booking check revised logic 
+ booking check revised logic 				->done
  add type to insertEmployee				-DONE
  fix dummy data						-DONE
  

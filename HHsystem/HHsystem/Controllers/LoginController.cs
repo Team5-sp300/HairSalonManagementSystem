@@ -24,6 +24,7 @@ namespace HHsystem.Controllers
                     if (int.Parse(manager.login()[i, 2]) == 1)
                     {
                         f.adminLogin();
+
                     }
                     else
                     {
