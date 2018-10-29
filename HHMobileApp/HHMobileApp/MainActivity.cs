@@ -25,6 +25,8 @@ namespace HHmobileApp
         private string username;
         private string password;
         private List<LoginDetails> loginDetails;
+        private WebClient client;
+        private Uri uri;
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -38,7 +40,9 @@ namespace HHmobileApp
             username = pref.GetString("Username", String.Empty);
             password = pref.GetString("Password", String.Empty);
             ip = pref.GetString("IP", String.Empty);
-    
+            client = new WebClient();
+         
+
 
             if (username == String.Empty || password == String.Empty)
             {
@@ -47,11 +51,11 @@ namespace HHmobileApp
             }
             else
             {
-                WebClient client = new WebClient();
-                Uri uri = new Uri("http://"+ip+"/login.php");
+                uri = new Uri("http://" + ip + "/login.php");
                 client.DownloadDataAsync(uri);
                 client.DownloadDataCompleted += download;
             }
+           
         }
 
         private void download(object sender, DownloadDataCompletedEventArgs e)
@@ -67,7 +71,7 @@ namespace HHmobileApp
                     StartActivity(intent);
                     break;
                 }
-                else if(i.Equals(loginDetails.Count))
+                else if (i.Equals(loginDetails.Count))
                 {
                     var intent = new Intent(this, typeof(LoginActivity));
                     StartActivity(intent);

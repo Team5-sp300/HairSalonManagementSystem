@@ -208,12 +208,12 @@ namespace HHmobileApp
         {
              client = new WebClient();
             uri = new Uri("http://"+ip+"/insertBooking.php");
-            NameValueCollection parameter = new NameValueCollection();
+           
 
             string[] clientname = cname.Split(' ');
             string[] employeename = ename.Split(' ');
             Console.Write(aservice);
-
+            NameValueCollection parameter = new NameValueCollection();
             parameter.Add("cfname", clientname[0]);
             parameter.Add("clname", clientname[1]);
             parameter.Add("efname", employeename[0]);
@@ -228,6 +228,16 @@ namespace HHmobileApp
 
         private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
         {
+            client = new WebClient();
+            uri = new Uri("http://" + ip + "/sendEmail.php");
+            NameValueCollection parameter = new NameValueCollection();
+            parameter.Add("cname", cname);
+            parameter.Add("ename", ename);
+            parameter.Add("adate", "2018/" + amonth + "/" + aday);
+            parameter.Add("atime", ahour + ":" + amin);
+            parameter.Add("service", aservice);
+            client.UploadValuesAsync(uri, parameter);
+
             var intent = new Intent(this, typeof(BookingActivity));
             StartActivity(intent);
         }

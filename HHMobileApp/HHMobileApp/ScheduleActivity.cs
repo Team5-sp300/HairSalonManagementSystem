@@ -50,7 +50,7 @@ namespace HHmobileApp
             listview.ItemClick += Listview_ItemClick;
 
             client = new WebClient();
-            uri = new Uri("http://"+ip+"/getSchedule.php");
+            uri = new Uri("http://" + ip + "/getSchedule.php");
             NameValueCollection parameter = new NameValueCollection();
             parameter.Add("username", pref.GetString("Username", String.Empty));
 
@@ -60,11 +60,28 @@ namespace HHmobileApp
 
         private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
         {
+            ScheduleListAdapter adapter;
             RunOnUiThread(() =>
             {
-                string json = Encoding.UTF8.GetString(e.Result);
-                items = JsonConvert.DeserializeObject<List<ScheduleDetails>>(json);
-                ScheduleListAdapter adapter = new ScheduleListAdapter(this, items);
+                
+            string json = Encoding.UTF8.GetString(e.Result);
+            var settings = new JsonSerializerSettings
+            {
+                NullValueHandling = NullValueHandling.Ignore,
+                MissingMemberHandling = MissingMemberHandling.Ignore
+            };
+
+                try
+                {
+                    items = JsonConvert.DeserializeObject<List<ScheduleDetails>>(json, settings);
+                     adapter = new ScheduleListAdapter(this, items, 1);
+                }
+                catch (Newtonsoft.Json.JsonSerializationException) {
+                    items = new List<ScheduleDetails>();
+                     adapter = new ScheduleListAdapter(this, items, 0);
+                    TextView textView = FindViewById<TextView>(Resource.Id.textError);
+                    textView.Visibility = ViewStates.Visible;
+                }
                 listview.Adapter = adapter;
             });
         }
@@ -130,17 +147,17 @@ namespace HHmobileApp
             return true;
         }
 
-        private void download(object sender, DownloadDataCompletedEventArgs e)
-        {
-            RunOnUiThread(() =>
-            {
-                string json = Encoding.UTF8.GetString(e.Result);
-                items = JsonConvert.DeserializeObject<List<ScheduleDetails>>(json);
-                ScheduleListAdapter adapter = new ScheduleListAdapter(this, items);
-                listview.Adapter = adapter;
-            });
+        //private void download(object sender, DownloadDataCompletedEventArgs e)
+        //{
+        //    RunOnUiThread(() =>
+        //    {
+        //        string json = Encoding.UTF8.GetString(e.Result);
+        //        items = JsonConvert.DeserializeObject<List<ScheduleDetails>>(json);
+        //        ScheduleListAdapter adapter = new ScheduleListAdapter(this, items,1);
+        //        listview.Adapter = adapter;
+        //    });
 
-        }
+        //}
 
         private void button_click(object sender, EventArgs e)
         {

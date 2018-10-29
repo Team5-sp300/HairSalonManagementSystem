@@ -27,6 +27,8 @@ namespace HHmobileApp
         private EditText textPassword;
         private TextView textView;
         private CheckBox checkbox;
+        private WebClient client;
+        private Uri uri;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,13 +39,22 @@ namespace HHmobileApp
 
             ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
             ip = pref.GetString("IP", String.Empty);
-            Console.WriteLine("Here");
-            Console.WriteLine(ip);
-
+        
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
 
+            textName = FindViewById<EditText>(Resource.Id.etusername);
+            textName.Click += textClick;
+            textPassword = FindViewById<EditText>(Resource.Id.etPass);
+            textPassword.Click += textClick;
+            textView = FindViewById<TextView>(Resource.Id.textError);
+
             checkbox = FindViewById<CheckBox>(Resource.Id.cbRemeberMe);
+        }
+
+        private void textClick(object sender, EventArgs e)
+        {
+            textView.Visibility = ViewStates.Invisible;
         }
 
         public override void OnBackPressed()
@@ -62,10 +73,11 @@ namespace HHmobileApp
         private void button_click(object sender, EventArgs e)
         {
             InputMethodManager inputManager = (InputMethodManager)GetSystemService(Context.InputMethodService);
-            inputManager.HideSoftInputFromWindow(this.CurrentFocus?.WindowToken, HideSoftInputFlags.None);
+            inputManager.HideSoftInputFromWindow(textName.WindowToken, 0);
+            inputManager.HideSoftInputFromWindow(textPassword.WindowToken, 0);
 
-            WebClient client = new WebClient();
-            Uri uri = new Uri("http://"+ip+"/login.php");
+            client = new WebClient();
+            uri = new Uri("http://"+ip+"/login.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download;
         }
@@ -73,10 +85,6 @@ namespace HHmobileApp
 
         private void download(object sender, DownloadDataCompletedEventArgs e)
         {
-            textName = FindViewById<EditText>(Resource.Id.etusername);
-            textPassword = FindViewById<EditText>(Resource.Id.etPass);
-            textView = FindViewById<TextView>(Resource.Id.textError);
-
             string json = Encoding.UTF8.GetString(e.Result);
             loginDetails = JsonConvert.DeserializeObject<List<LoginDetails>>(json);
             for (int i = 0; i < loginDetails.Count; i++)
@@ -100,11 +108,6 @@ namespace HHmobileApp
                 {
                     textView.Visibility = ViewStates.Visible;
                 }
-                //else if (i.Equals(loginDetails.Count))
-                //{
-
-                //}
-
             }
         }
     }

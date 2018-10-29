@@ -16,11 +16,13 @@ namespace HHmobileApp
     {
         List<ScheduleDetails> items;
         Context context;
+        int type;
 
-        public ScheduleListAdapter(Context context, List<ScheduleDetails> items)
+        public ScheduleListAdapter(Context context, List<ScheduleDetails> items, int type)
         {
             this.items = items;
             this.context = context;
+            this.type = type;
         }
 
         public override int Count
@@ -57,7 +59,7 @@ namespace HHmobileApp
             txttime.Text = items[position].time;
 
             TextView txtduration = row.FindViewById<TextView>(Resource.Id.txtduration);
-            txtduration.Text = items[position].length+ " Minutes";
+            txtduration.Text = items[position].length + " Minutes";
 
             return row;
         }

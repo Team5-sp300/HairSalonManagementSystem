@@ -50,10 +50,11 @@ Optional
 
 Mobile
  incorrect details no feedback				-DONE
- close keyboard on button press				-DONE (broken)
+ close keyboard on button press				-DONE 
  ip address setting 					-DONE
  on reschedule set dd mm
  back date error 
- no booking on schedule crashes
- on click remove incorrect detail feedback
- stlying of incorrect detail feedback 
+ no booking on schedule crashes				-DONE
+ on click remove incorrect detail feedback		-DONE
+ stlying of incorrect detail feedback 			-DONE
+ Send Email from mobile					-DONE
