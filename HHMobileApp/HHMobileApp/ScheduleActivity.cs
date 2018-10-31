@@ -65,15 +65,9 @@ namespace HHmobileApp
             {
                 
             string json = Encoding.UTF8.GetString(e.Result);
-            var settings = new JsonSerializerSettings
-            {
-                NullValueHandling = NullValueHandling.Ignore,
-                MissingMemberHandling = MissingMemberHandling.Ignore
-            };
-
                 try
                 {
-                    items = JsonConvert.DeserializeObject<List<ScheduleDetails>>(json, settings);
+                    items = JsonConvert.DeserializeObject<List<ScheduleDetails>>(json);
                      adapter = new ScheduleListAdapter(this, items, 1);
                 }
                 catch (Newtonsoft.Json.JsonSerializationException) {

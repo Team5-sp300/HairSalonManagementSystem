@@ -21,6 +21,7 @@ namespace HHmobileApp
     [Activity(Label = "Login", Theme = "@style/AppTheme.NoActionBar")]
     public class LoginActivity : AppCompatActivity
     {
+        private string IP = "10.0.0.169";
         private string ip;
         private List<LoginDetails> loginDetails;
         private EditText textName;
@@ -38,8 +39,12 @@ namespace HHmobileApp
             SetSupportActionBar(toolbar);
 
             ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+            ISharedPreferencesEditor edit = pref.Edit();
+            edit.PutString("IP", IP);
+            edit.Apply();
+
             ip = pref.GetString("IP", String.Empty);
-        
+
             Button btn = FindViewById<Button>(Resource.Id.btninsert);
             btn.Click += button_click;
 
@@ -77,7 +82,7 @@ namespace HHmobileApp
             inputManager.HideSoftInputFromWindow(textPassword.WindowToken, 0);
 
             client = new WebClient();
-            uri = new Uri("http://"+ip+"/login.php");
+            uri = new Uri("http://" + ip + "/login.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download;
         }

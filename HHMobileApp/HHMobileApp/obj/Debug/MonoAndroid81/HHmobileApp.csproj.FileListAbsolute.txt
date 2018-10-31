@@ -131,5 +131,6 @@ C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobil
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\android\assets\System.Web.Services.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\android\assets\System.Xml.Linq.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\HHmobileApp.csprojAssemblyReference.cache
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\bin\Debug\HHmobileApp.dll
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\linksrc\HHmobileApp.dll.mdb
