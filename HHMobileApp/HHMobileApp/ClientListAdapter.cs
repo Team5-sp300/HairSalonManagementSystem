@@ -49,10 +49,7 @@ namespace HHmobileApp
             }
 
             TextView fname = row.FindViewById<TextView>(Resource.Id.txtfname);
-            fname.Text = items[position].fname;
-
-            TextView lname = row.FindViewById<TextView>(Resource.Id.txtlname);
-            lname.Text = items[position].lname;
+            fname.Text = items[position].fname+" "+ items[position].lname;
 
             return row;
         }

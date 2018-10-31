@@ -2459,17 +2459,17 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F020030
 			public const int btnaddcontact = 2130837552;
 			
-			// aapt resource value: 0x7F020006
-			public const int btncancelbooking = 2130837510;
+			// aapt resource value: 0x7F020007
+			public const int btncancelbooking = 2130837511;
 			
 			// aapt resource value: 0x7F020019
 			public const int btninsert = 2130837529;
 			
-			// aapt resource value: 0x7F020005
-			public const int btnreschedule = 2130837509;
+			// aapt resource value: 0x7F020006
+			public const int btnreschedule = 2130837510;
 			
-			// aapt resource value: 0x7F020035
-			public const int btnsignout = 2130837557;
+			// aapt resource value: 0x7F020034
+			public const int btnsignout = 2130837556;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int buttonPanel = 2131492891;
@@ -2477,8 +2477,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C001C
 			public const int cancel_action = 2131492892;
 			
-			// aapt resource value: 0x7F020038
-			public const int cbRemeberMe = 2130837560;
+			// aapt resource value: 0x7F020037
+			public const int cbRemeberMe = 2130837559;
 			
 			// aapt resource value: 0x7F0C001D
 			public const int center = 2131492893;
@@ -2489,8 +2489,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0008
 			public const int chronometer = 2131492872;
 			
-			// aapt resource value: 0x7F020031
-			public const int clientlistview = 2130837553;
+			// aapt resource value: 0x7F020029
+			public const int clientlistview = 2130837545;
 			
 			// aapt resource value: 0x7F0C0020
 			public const int container = 2131492896;
@@ -2552,11 +2552,11 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F020026
 			public const int etNumber = 2130837542;
 			
-			// aapt resource value: 0x7F020037
-			public const int etPass = 2130837559;
-			
 			// aapt resource value: 0x7F020036
-			public const int etusername = 2130837558;
+			public const int etPass = 2130837558;
+			
+			// aapt resource value: 0x7F020035
+			public const int etusername = 2130837557;
 			
 			// aapt resource value: 0x7F0C0030
 			public const int expanded_menu = 2131492912;
@@ -2594,8 +2594,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0038
 			public const int image = 2131492920;
 			
-			// aapt resource value: 0x7F020040
-			public const int imageView = 2130837568;
+			// aapt resource value: 0x7F020039
+			public const int imageView = 2130837561;
 			
 			// aapt resource value: 0x7F020009
 			public const int imageView1 = 2130837513;
@@ -2627,8 +2627,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0040
 			public const int listMode = 2131492928;
 			
-			// aapt resource value: 0x7F020007
-			public const int listView1 = 2130837511;
+			// aapt resource value: 0x7F020005
+			public const int listView1 = 2130837509;
 			
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
@@ -2843,8 +2843,8 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0C0018
 			public const int text2 = 2131492888;
 			
-			// aapt resource value: 0x7F020039
-			public const int textError = 2130837561;
+			// aapt resource value: 0x7F020038
+			public const int textError = 2130837560;
 			
 			// aapt resource value: 0x7F0C007E
 			public const int textinput_counter = 2131492990;
@@ -2882,6 +2882,9 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F020004
 			public const int toolbar = 2130837508;
 			
+			// aapt resource value: 0x7F020042
+			public const int toolbar1 = 2130837570;
+			
 			// aapt resource value: 0x7F0C0084
 			public const int top = 2131492996;
 			
@@ -2909,32 +2912,29 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F020020
 			public const int txtDate = 2130837536;
 			
-			// aapt resource value: 0x7F020041
-			public const int txtduration = 2130837569;
+			// aapt resource value: 0x7F020040
+			public const int txtduration = 2130837568;
 			
 			// aapt resource value: 0x7F020028
 			public const int txtfname = 2130837544;
 			
-			// aapt resource value: 0x7F020029
-			public const int txtlname = 2130837545;
-			
 			// aapt resource value: 0x7F020022
 			public const int txtName = 2130837538;
 			
-			// aapt resource value: 0x7F020032
-			public const int txtnameid = 2130837554;
+			// aapt resource value: 0x7F020031
+			public const int txtnameid = 2130837553;
 			
-			// aapt resource value: 0x7F020042
-			public const int txtspinnername = 2130837570;
+			// aapt resource value: 0x7F020041
+			public const int txtspinnername = 2130837569;
 			
 			// aapt resource value: 0x7F020021
 			public const int txtTime = 2130837537;
 			
-			// aapt resource value: 0x7F020033
-			public const int txtvalue = 2130837555;
+			// aapt resource value: 0x7F020032
+			public const int txtvalue = 2130837554;
 			
-			// aapt resource value: 0x7F020034
-			public const int txtWelcome = 2130837556;
+			// aapt resource value: 0x7F020033
+			public const int txtWelcome = 2130837555;
 			
 			// aapt resource value: 0x7F0C008C
 			public const int uniform = 2131493004;
@@ -3253,6 +3253,9 @@ namespace HHmobileApp
 			// aapt resource value: 0x7F0F003B
 			public const int support_simple_spinner_dropdown_item = 2131689531;
 			
+			// aapt resource value: 0x7F030025
+			public const int toolbar_main = 2130903077;
+			
 			// aapt resource value: 0x7F0F003C
 			public const int tooltip = 2131689532;
 			
@@ -3274,6 +3277,9 @@ namespace HHmobileApp
 			
 			// aapt resource value: 0x7F040003
 			public const int menu_main = 2130968579;
+			
+			// aapt resource value: 0x7F040004
+			public const int menu_toolbar = 2130968580;
 			
 			static Menu()
 			{

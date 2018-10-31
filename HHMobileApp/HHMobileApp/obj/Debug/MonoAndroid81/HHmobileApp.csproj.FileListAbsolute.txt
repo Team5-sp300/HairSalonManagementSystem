@@ -72,6 +72,8 @@ C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobil
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\res\drawable-v21\ic_spinner_arrow.png
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\res\drawable-v21\ic_spinner_arrow24.png
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\res\layout\booking_schedule.xml
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\res\layout\toolbar_main.xml
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\res\menu\menu_toolbar.xml
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\R.cs.flag
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\R.txt
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\uploadflags.txt
@@ -129,6 +131,5 @@ C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobil
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\android\assets\System.Web.Services.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\android\assets\System.Xml.Linq.pdb
 C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
-C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHmobileApp\HHmobileApp\obj\Debug\MonoAndroid81\HHmobileApp.csprojAssemblyReference.cache
-C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHmobileApp\HHmobileApp\bin\Debug\HHmobileApp.dll
-C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHmobileApp\HHmobileApp\obj\Debug\MonoAndroid81\linksrc\HHmobileApp.dll.mdb
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\bin\Debug\HHmobileApp.dll
+C:\Users\Andrew\Documents\Projects\HairSalonManagementSystem\HHMobileApp\HHmobileApp\obj\Debug\MonoAndroid81\linksrc\HHmobileApp.dll.mdb

@@ -91,12 +91,14 @@ namespace HHmobileApp
             {
                 if (loginDetails[i].name.Equals(textName.Text) && loginDetails[i].password.Equals(textPassword.Text))
                 {
+                    ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
+                    ISharedPreferencesEditor edit = pref.Edit();
+                    edit.PutString("Username", textName.Text);
+                    edit.Apply();
                     var intent = new Intent(this, typeof(HomeActivity));
                     intent.PutExtra("Username", textName.Text);
                     if (checkbox.Checked)
                     {
-                        ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
-                        ISharedPreferencesEditor edit = pref.Edit();
                         edit.PutString("Username", textName.Text);
                         edit.PutString("Password", textPassword.Text);
                         edit.Apply();

@@ -30,7 +30,9 @@ namespace HHmobileApp
             SetContentView(Resource.Layout.booking_activity);
 
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            //Android.Support.V7.Widget.Toolbar toolbar1 = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar1);
             SetSupportActionBar(toolbar);
+            //toolbar1.InflateMenu(Resource.Menu.menu_toolbar);
 
             ISharedPreferences pref = Application.Context.GetSharedPreferences("UserInfor", FileCreationMode.Private);
             ip = pref.GetString("IP", String.Empty);
