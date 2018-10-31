@@ -21,7 +21,7 @@ namespace HHsystem.Controllers
 
         public void connection()
         {
-            conn = new MySqlConnection("Server=localhost; database=HairSalon; UID=root; password=root;SslMode=none;Allow User Variables=True");
+            conn = new MySqlConnection("Server=localhost; database=HairSalon; UID=root; password=;SslMode=none;Allow User Variables=True");
             conn.Open();
         }
 

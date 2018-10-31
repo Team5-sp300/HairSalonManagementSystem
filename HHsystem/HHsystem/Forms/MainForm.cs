@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -39,7 +40,7 @@ namespace HHsystem
             populateEmployeesList();
             customWeeklyScheduler.redrawScheduler(this.Width - 200, this.Height - 205);
             comboBox4.Text = CalendarDays;
-              //adminLogin();//needs to be removed, just for testing purposes
+             adminLogin();//needs to be removed, just for testing purposes
             //stylistLogin();
             count = manager.bookingCount();
 
@@ -86,6 +87,27 @@ namespace HHsystem
                     break;
             }
             timer1.Interval = REFRESH_RATE;
+
+            for (int i = 0; i < comboBoxScreenRes.Items.Count; i++)
+            {
+                if (comboBoxScreenRes.GetItemText(comboBoxScreenRes.Items[i]) == Resolution)
+                {
+                    comboBoxScreenRes.SelectedIndex = i;
+                }
+            }
+
+            if (comboBoxScreenRes.Text.Equals("Auto Detect"))
+            {
+                    this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                string[] resolution = comboBoxScreenRes.Text.Split(new string[] { "x" }, StringSplitOptions.None);
+                int xresolution = int.Parse(resolution[0]);
+                int yresolution = int.Parse(resolution[1]);
+                this.Width = xresolution;
+                this.Height = yresolution;
+            }
             //timer1.Start();
         }
 
@@ -241,12 +263,10 @@ namespace HHsystem
             for (int i = 0; i < manager.getEmployeeDetails().GetLength(0); i++)
             {
                 comboBox3.Items.Add(manager.getEmployeeDetails()[i, 1] + " " + manager.getEmployeeDetails()[i, 2]);
-                comboBox5.Items.Add(manager.getEmployeeDetails()[i, 1] + " " + manager.getEmployeeDetails()[i, 2]);
             }
             if (comboBox3.Items.Count > 0)
             {
                 comboBox3.SelectedIndex = 0;
-                comboBox5.SelectedIndex = 0;
             }
         }
 
@@ -258,6 +278,16 @@ namespace HHsystem
 
         private void button2_Click(object sender, EventArgs e)
         {
+            comboBox5.Items.Clear();
+            for (int i = 0; i < manager.getEmployeeDetails().GetLength(0); i++)
+            {
+                comboBox5.Items.Add(manager.getEmployeeDetails()[i, 1] + " " + manager.getEmployeeDetails()[i, 2]);
+            }
+            if (comboBox3.Items.Count > 0)
+            {
+                comboBox5.SelectedIndex = 0;
+            }
+
             customTabControl1.SelectedIndex = 1;
             this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             label3.Text = "Appointments";

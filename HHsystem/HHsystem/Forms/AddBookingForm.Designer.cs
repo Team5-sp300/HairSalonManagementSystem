@@ -141,6 +141,7 @@
             // 
             // employeecombobox
             // 
+            this.employeecombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.employeecombobox.FormattingEnabled = true;
             this.employeecombobox.Location = new System.Drawing.Point(31, 89);
             this.employeecombobox.Name = "employeecombobox";
@@ -149,6 +150,7 @@
             // 
             // clientcombobox
             // 
+            this.clientcombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.clientcombobox.FormattingEnabled = true;
             this.clientcombobox.Location = new System.Drawing.Point(31, 139);
             this.clientcombobox.Name = "clientcombobox";
@@ -166,6 +168,7 @@
             // 
             // servicecombobox
             // 
+            this.servicecombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.servicecombobox.FormattingEnabled = true;
             this.servicecombobox.Location = new System.Drawing.Point(31, 292);
             this.servicecombobox.Name = "servicecombobox";
@@ -174,6 +177,7 @@
             // 
             // timehourscombobox
             // 
+            this.timehourscombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.timehourscombobox.FormattingEnabled = true;
             this.timehourscombobox.Location = new System.Drawing.Point(31, 241);
             this.timehourscombobox.Name = "timehourscombobox";
@@ -182,6 +186,7 @@
             // 
             // timeminutescombobox
             // 
+            this.timeminutescombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.timeminutescombobox.FormattingEnabled = true;
             this.timeminutescombobox.Location = new System.Drawing.Point(81, 241);
             this.timeminutescombobox.Name = "timeminutescombobox";
