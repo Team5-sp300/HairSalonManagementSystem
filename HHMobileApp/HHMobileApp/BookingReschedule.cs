@@ -32,6 +32,11 @@ namespace HHmobileApp
         private string ahour;
         private string amin;
         private string aservice;
+        private string currentday;
+        private string currentmonth;
+        private string currenthour;
+        private string currentminute;
+        private string currentservice;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -52,6 +57,11 @@ namespace HHmobileApp
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download_service;
 
+            currentday = Intent.GetStringExtra("dayBooking");
+            currentmonth = Intent.GetStringExtra("monthBooking");
+            currenthour = Intent.GetStringExtra("hourBooking");
+            currentminute = Intent.GetStringExtra("minuteBooking");
+            currentservice = Intent.GetStringExtra("serviceBooking");
 
             spinnerDay = FindViewById<Spinner>(Resource.Id.spinnerDate);
             spinnerMonth = FindViewById<Spinner>(Resource.Id.spinnerMonth);
@@ -69,18 +79,22 @@ namespace HHmobileApp
             var hours = new List<string>() { "08", "09", "10", "11", "12", "13", "14", "15", "16" };
             var adapter0 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, hours);
             spinnerHour.Adapter = adapter0;
+            spinnerHour.SetSelection(hours.IndexOf(currenthour));
 
             var minutes = new List<string>() { "00", "15", "30", "45" };
             var adapter1 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, minutes);
             spinnerMinutes.Adapter = adapter1;
+            spinnerMinutes.SetSelection(minutes.IndexOf(currentminute));
 
             var day = new List<string>() { "DD", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30","31" };
             var adapter2 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, day);
             spinnerDay.Adapter = adapter2;
+            spinnerDay.SetSelection(day.IndexOf(currentday));
 
             var month = new List<string>() { "MM", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" };
             var adapter3 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, month);
             spinnerMonth.Adapter = adapter3;
+            spinnerMonth.SetSelection(month.IndexOf(currentmonth));
 
             //  Console.WriteLine("ID " + id);
         }
@@ -125,6 +139,7 @@ namespace HHmobileApp
                 services = JsonConvert.DeserializeObject<List<ServiceDetails>>(json);
                 ServiceAdapter adapter = new ServiceAdapter(this, services);
                 spinnerServices.Adapter = adapter;
+                spinnerServices.SetSelection();
             });
         }
 

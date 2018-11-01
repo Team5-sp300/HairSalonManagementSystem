@@ -20,7 +20,7 @@ namespace HHmobileApp
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        private string IP = "10.0.0.169";
+        private string IP = "10.0.0.8";
         private string ip;
         private string username;
         private string password;

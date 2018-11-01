@@ -21,6 +21,11 @@ namespace HHmobileApp
     {
         private string ip;
         private string id;
+        private string day;
+        private string month;
+        private string hour;
+        private string minute;
+        private string service;
         private List<string> items;
         private ListView listview;
         private BookingDetailsListAdapter adapter;
@@ -43,9 +48,14 @@ namespace HHmobileApp
             listview = FindViewById<ListView>(Resource.Id.listView1);
 
             id = Intent.GetStringExtra("id");
-            
+            day = Intent.GetStringExtra("date").Substring(0,2);
+            month = Intent.GetStringExtra("date").Substring(3, 2);
+            hour = Intent.GetStringExtra("time").Substring(0, 2);
+            minute = Intent.GetStringExtra("time").Substring(3, 2);
+            service = Intent.GetStringExtra("service");
 
-            items = new List<string>();
+
+        items = new List<string>();
             items.Add(Intent.GetStringExtra("cname"));
             if (Intent.GetStringExtra("type").Equals("0"))
             {
@@ -76,6 +86,11 @@ namespace HHmobileApp
         {           
             var intent = new Intent(this, typeof(BookingReschedule));
             intent.PutExtra("idBooking", id);
+            intent.PutExtra("dayBooking", day);
+            intent.PutExtra("monthBooking", month);
+            intent.PutExtra("hourBooking", hour);
+            intent.PutExtra("minuteBooking", minute);
+            intent.PutExtra("serviceBooking", service);
             StartActivity(intent);
         }
 
