@@ -139,7 +139,17 @@ namespace HHmobileApp
                 services = JsonConvert.DeserializeObject<List<ServiceDetails>>(json);
                 ServiceAdapter adapter = new ServiceAdapter(this, services);
                 spinnerServices.Adapter = adapter;
-                spinnerServices.SetSelection();
+                for (int i = 0; i < services.Count; i++)
+                {
+                    if (services[i].service.Equals(currentservice))
+                    {
+                        Console.WriteLine("service A :" + services[i].service);
+                        Console.WriteLine("service B :" + currentservice);
+                        spinnerServices.SetSelection(i);
+                    }
+                }
+
+
             });
         }
 

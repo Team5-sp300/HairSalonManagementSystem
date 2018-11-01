@@ -21,7 +21,7 @@ namespace HHmobileApp
     [Activity(Label = "Login", Theme = "@style/AppTheme.NoActionBar")]
     public class LoginActivity : AppCompatActivity
     {
-        private string IP = "10.0.0.8";
+        private string IP = "10.0.0.169";
         private string ip;
         private List<LoginDetails> loginDetails;
         private EditText textName;
