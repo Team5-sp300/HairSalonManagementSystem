@@ -54,17 +54,17 @@ namespace HHmobileApp
             btn.Click += button_click;
 
             client = new WebClient();
-            uri = new Uri("http://"+ip+"/getStaff.php");
+            uri = new Uri("http://" + ip + "/getStaff.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download_staff;
 
             client = new WebClient();
-            uri = new Uri("http://"+ip+"/getClients.php");
+            uri = new Uri("http://" + ip + "/getClients.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download_client;
 
             client = new WebClient();
-            uri = new Uri("http://"+ip+"/getServices.php");
+            uri = new Uri("http://" + ip + "/getServices.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download_service;
 
@@ -93,21 +93,22 @@ namespace HHmobileApp
             var adapter1 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, minutes);
             spinnerMinutes.Adapter = adapter1;
 
-            var day = new List<string>() { "DD", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11","12","13", "14", "15", "16", "17", "18","19","20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", };
+            var day = new List<string>() { "DD", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", };
             var adapter2 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, day);
             spinnerDay.Adapter = adapter2;
 
-            var month = new List<string>() { "MM","01", "02", "03", "04", "05", "06", "07", "08", "09","10","11","12" };
+            var month = new List<string>() { "MM", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" };
             var adapter3 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, month);
             spinnerMonth.Adapter = adapter3;
         }
 
-       
+
 
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
-        
-            if (sender.Equals(spinnerHour)) {
+
+            if (sender.Equals(spinnerHour))
+            {
                 spinnerHour = (Spinner)sender;
                 ahour = spinnerHour.GetItemAtPosition(e.Position).ToString();
             }
@@ -153,7 +154,7 @@ namespace HHmobileApp
         //    amin = spinnerMinutes.GetItemAtPosition(e.Position).ToString();
         //}
 
-      
+
         private void download_staff(object sender, DownloadDataCompletedEventArgs e)
         {
             RunOnUiThread(() =>
@@ -206,24 +207,36 @@ namespace HHmobileApp
 
         private void button_click(object sender, EventArgs e)
         {
-             client = new WebClient();
-            uri = new Uri("http://"+ip+"/insertBooking.php");
-           
+            if (ValidateDate().Equals(true))
+            {
+                client = new WebClient();
+                uri = new Uri("http://" + ip + "/insertBooking.php");
+                string[] clientname = cname.Split(' ');
+                string[] employeename = ename.Split(' ');
+                Console.Write(aservice);
+                NameValueCollection parameter = new NameValueCollection();
+                parameter.Add("cfname", clientname[0]);
+                parameter.Add("clname", clientname[1]);
+                parameter.Add("efname", employeename[0]);
+                parameter.Add("elname", employeename[1]);
+                parameter.Add("adate", "2018/" + amonth + "/" + aday);
+                parameter.Add("atime", ahour + ":" + amin);
+                parameter.Add("service", aservice);
 
-            string[] clientname = cname.Split(' ');
-            string[] employeename = ename.Split(' ');
-            Console.Write(aservice);
-            NameValueCollection parameter = new NameValueCollection();
-            parameter.Add("cfname", clientname[0]);
-            parameter.Add("clname", clientname[1]);
-            parameter.Add("efname", employeename[0]);
-            parameter.Add("elname", employeename[1]);
-            parameter.Add("adate", "2018/"+amonth+"/"+ aday);
-            parameter.Add("atime", ahour+":"+amin);
-            parameter.Add("service", aservice);
-
-            client.UploadValuesCompleted += Client_UploadValuesCompleted;
-            client.UploadValuesAsync(uri, parameter);
+                client.UploadValuesCompleted += Client_UploadValuesCompleted;
+                client.UploadValuesAsync(uri, parameter);
+            }
+            else
+            {
+                Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+                alert.SetTitle("Date Past");
+                alert.SetMessage("You cannot make an appointment for a date that has past");
+                alert.SetPositiveButton("OK", (senderAlert, args) =>
+                {
+                });
+                Dialog dialog = alert.Create();
+                dialog.Show();
+            }
         }
 
         private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
@@ -240,6 +253,30 @@ namespace HHmobileApp
 
             var intent = new Intent(this, typeof(BookingActivity));
             StartActivity(intent);
+        }
+
+        protected bool ValidateDate()
+        {
+            int month = int.Parse(DateTime.Now.ToString("MM"));
+            int day = int.Parse(DateTime.Now.ToString("dd"));
+            int hh = int.Parse(DateTime.Now.ToString("HH"));
+
+            if (month == int.Parse(amonth) && day == int.Parse(aday) && hh <= int.Parse(ahour))
+            {
+                return true;
+            }
+            else if (month == int.Parse(amonth) && day <= int.Parse(aday))
+            {
+                return true;
+            }
+            else if (month <= int.Parse(amonth))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

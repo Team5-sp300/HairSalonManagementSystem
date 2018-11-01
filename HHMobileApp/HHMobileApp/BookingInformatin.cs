@@ -73,11 +73,7 @@ namespace HHmobileApp
         }
 
         private void button_click1(object sender, EventArgs e)
-        {
-            Console.WriteLine("HERE");
-            Console.WriteLine("Intent: "+Intent.GetStringExtra("id"));
-            Console.WriteLine("ID "+id);
-           
+        {           
             var intent = new Intent(this, typeof(BookingReschedule));
             intent.PutExtra("idBooking", id);
             StartActivity(intent);

@@ -48,11 +48,11 @@ namespace HHmobileApp
             btn.Click += button_click;
 
             client = new WebClient();
-            uri = new Uri("http://"+ip+"/getServices.php");
+            uri = new Uri("http://" + ip + "/getServices.php");
             client.DownloadDataAsync(uri);
             client.DownloadDataCompleted += download_service;
 
-       
+
             spinnerDay = FindViewById<Spinner>(Resource.Id.spinnerDate);
             spinnerMonth = FindViewById<Spinner>(Resource.Id.spinnerMonth);
             spinnerHour = FindViewById<Spinner>(Resource.Id.spinnerHours);
@@ -74,23 +74,24 @@ namespace HHmobileApp
             var adapter1 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, minutes);
             spinnerMinutes.Adapter = adapter1;
 
-            var day = new List<string>() { "DD", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11","12","13", "14", "15", "16", "17", "18","19","20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", };
+            var day = new List<string>() { "DD", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30","31" };
             var adapter2 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, day);
             spinnerDay.Adapter = adapter2;
 
-            var month = new List<string>() { "MM","01", "02", "03", "04", "05", "06", "07", "08", "09","10","11","12" };
+            var month = new List<string>() { "MM", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" };
             var adapter3 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, month);
             spinnerMonth.Adapter = adapter3;
-          
-          //  Console.WriteLine("ID " + id);
+
+            //  Console.WriteLine("ID " + id);
         }
 
-       
+
 
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
-        
-            if (sender.Equals(spinnerHour)) {
+
+            if (sender.Equals(spinnerHour))
+            {
                 spinnerHour = (Spinner)sender;
                 ahour = spinnerHour.GetItemAtPosition(e.Position).ToString();
             }
@@ -144,27 +145,66 @@ namespace HHmobileApp
 
         private void button_click(object sender, EventArgs e)
         {
-             client = new WebClient();
-            uri = new Uri("http://"+ip+"/rescheduleBooking.php");
-            NameValueCollection parameter = new NameValueCollection();
-            string id = Intent.GetStringExtra("idBooking");
-            Console.WriteLine("HERE");
-            Console.WriteLine("Intent: " + Intent.GetStringExtra("idBooking"));
-            Console.WriteLine("ID: " + id);
+            if (ValidateDate().Equals(true))
+            {
+                client = new WebClient();
+                uri = new Uri("http://" + ip + "/rescheduleBooking.php");
+                NameValueCollection parameter = new NameValueCollection();
+                string id = Intent.GetStringExtra("idBooking");
+                Console.WriteLine("HERE");
+                Console.WriteLine("Intent: " + Intent.GetStringExtra("idBooking"));
+                Console.WriteLine("ID: " + id);
 
-            parameter.Add("id", id);
-            parameter.Add("adate", "2018/"+amonth+"/"+ aday);
-            parameter.Add("atime", ahour+":"+amin);
-            parameter.Add("service", aservice);
+                parameter.Add("id", id);
+                parameter.Add("adate", "2018/" + amonth + "/" + aday);
+                parameter.Add("atime", ahour + ":" + amin);
+                parameter.Add("service", aservice);
 
-            client.UploadValuesCompleted += Client_UploadValuesCompleted;
-            client.UploadValuesAsync(uri, parameter);
+                client.UploadValuesCompleted += Client_UploadValuesCompleted;
+                client.UploadValuesAsync(uri, parameter);
+            }
+            else
+            {
+                Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+                alert.SetTitle("Date Past");
+                alert.SetMessage("You cannot reschedule to a date that has past");
+                alert.SetPositiveButton("OK", (senderAlert, args) =>
+                {
+                });
+                Dialog dialog = alert.Create();
+                dialog.Show();
+            }
         }
 
         private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
         {
+
             var intent = new Intent(this, typeof(BookingActivity));
             StartActivity(intent);
+        }
+
+        protected bool ValidateDate()
+        {
+            int month = int.Parse(DateTime.Now.ToString("MM"));
+            int day = int.Parse(DateTime.Now.ToString("dd"));
+            int hh = int.Parse(DateTime.Now.ToString("HH"));
+
+            if (month == int.Parse(amonth) && day == int.Parse(aday) && hh <= int.Parse(ahour))
+            {
+                return true;
+            }
+            else if (month == int.Parse(amonth) && day<= int.Parse(aday))
+            {
+                return true;
+            }
+            else if (month <= int.Parse(amonth))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

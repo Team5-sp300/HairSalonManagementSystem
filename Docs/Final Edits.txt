@@ -53,7 +53,7 @@ Mobile
  close keyboard on button press				-DONE 
  ip address setting 					-DONE
  on reschedule set dd mm
- back date error 
+ back date error 					-DONE
  no booking on schedule crashes				-DONE
  on click remove incorrect detail feedback		-DONE
  stlying of incorrect detail feedback 			-DONE
