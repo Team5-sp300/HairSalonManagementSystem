@@ -118,6 +118,7 @@ namespace HHsystem
                 populateEmployeeTable();
                 populateEmployeeTableMange();
                 populateBookingTable();
+                populateBookingTableManage();
                 populateClientTable();
                 populateClientTableManage();
             }
@@ -151,7 +152,20 @@ namespace HHsystem
             manager.getBooking().Fill(table);
             bindingSource1.DataSource = table;
             dataGridView2.DataSource = bindingSource1;
-            dataGridView6.DataSource = bindingSource1;
+            table.Columns[0].ColumnName = "BookingID";
+            table.Columns[1].ColumnName = "Client Name";
+            table.Columns[2].ColumnName = "EmployeeName";
+            table.Columns[3].ColumnName = "Appointment Date";
+            table.Columns[4].ColumnName = "Appointment Time";
+            table.Columns[5].ColumnName = "Service Booked";
+        }
+
+        public void populateBookingTableManage()
+        {
+            table = new DataTable();
+            manager.getBooking().Fill(table);
+            bindingSource7.DataSource = table;
+            dataGridView6.DataSource = bindingSource7;
             table.Columns[0].ColumnName = "Booking ID";
             table.Columns[1].ColumnName = "Client Name";
             table.Columns[2].ColumnName = "Employee Name";
@@ -159,6 +173,7 @@ namespace HHsystem
             table.Columns[4].ColumnName = "Appointment Time";
             table.Columns[5].ColumnName = "Service Booked";
         }
+
 
         public void populateEmployeeTable()
         {
@@ -548,7 +563,7 @@ namespace HHsystem
 
             else
             {
-                MessageBox.Show("Not Implemented");
+                MessageBox.Show("This is a read only Table");
             }
         }
 
@@ -768,6 +783,30 @@ namespace HHsystem
             {
                 MessageBox.Show("Please Select an Appointment");
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (managementTabControl.SelectedIndex.Equals(0))
+            {
+    
+                bindingSource7.Filter = "[Client Name] Like '%" + textBox1.Text + "%'";
+         
+                dataGridView6.DataSource = bindingSource7;
+            }
+            else if (managementTabControl.SelectedIndex.Equals(1))
+            {
+                bindingSource5.Filter = "[Name] Like '%" + textBox1.Text + "%'";
+
+                dataGridView5.DataSource = bindingSource5;
+            }
+            else if(managementTabControl.SelectedIndex.Equals(2))
+            {
+                bindingSource6.Filter = "[Name] Like '%" + textBox1.Text + "%'";
+            
+                dataGridView4.DataSource = bindingSource6;
+            }
+
         }
     }
 }
