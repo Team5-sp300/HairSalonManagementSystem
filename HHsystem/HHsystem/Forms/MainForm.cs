@@ -566,7 +566,7 @@ namespace HHsystem
 
             else
             {
-                MessageBox.Show("This is a read only Table");
+                MessageBox.Show("This is a Read only Table");
             }
         }
 
@@ -624,7 +624,7 @@ namespace HHsystem
 
             else
             {
-                MessageBox.Show("Not Implemented");
+                MessageBox.Show("This is a Read only Table");
             }
         }
 
@@ -718,7 +718,14 @@ namespace HHsystem
                 string selectedTime = selectedRow.Cells[3].Value.ToString();
                 string selectedService = selectedRow.Cells[4].Value.ToString();
 
-                new RescheduleForm(selectedID, enametxt.Text, selectedClient, selectedDate, selectedTime, selectedService, this).Show();
+                if (Int32.Parse(selectedDate.Substring(3, 2)) <= DateTime.Today.Month && Int32.Parse(selectedDate.Substring(0, 2)) <= DateTime.Today.Day)
+                {
+                    new RescheduleForm(selectedID, enametxt.Text, selectedClient, selectedDate, selectedTime, selectedService, this).Show();
+                }
+                else
+                {
+                    MessageBox.Show("Date has Past");
+                }
             }
             else {
                 MessageBox.Show("Please Select an Appointment");
@@ -756,6 +763,7 @@ namespace HHsystem
         {
             if (!dataGridView7.SelectedRows.Count.Equals(0))
             {
+       
                 int selectedrowindex = dataGridView7.SelectedCells[0].RowIndex;
                 DataGridViewRow selectedRow = dataGridView7.Rows[selectedrowindex];
                 int selectedID = Int32.Parse(selectedRow.Cells[0].Value.ToString());
@@ -764,7 +772,13 @@ namespace HHsystem
                 string selectedTime = selectedRow.Cells[3].Value.ToString();
                 string selectedService = selectedRow.Cells[4].Value.ToString();
 
-                new RescheduleForm(selectedID, enametxt.Text, selectedClient, selectedDate, selectedTime, selectedService, this).Show();
+                if (Int32.Parse(selectedDate.Substring(3, 2)) <= DateTime.Today.Month && Int32.Parse(selectedDate.Substring(0, 2))<= DateTime.Today.Day)
+                {
+                    new RescheduleForm(selectedID, enametxt.Text, selectedClient, selectedDate, selectedTime, selectedService, this).Show();
+                }
+                else {
+                    MessageBox.Show("Appointment Date has Past");
+                }
             }
             else
             {
