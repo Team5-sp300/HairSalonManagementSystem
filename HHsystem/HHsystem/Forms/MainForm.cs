@@ -409,10 +409,11 @@ namespace HHsystem
                     manager.getBookingHistory(clientDetails[i, 0]).Fill(table);
                     bindingSource3.DataSource = table;
                     dataGridView7.DataSource = bindingSource3;
-                    table.Columns[0].ColumnName = "Stylist";
-                    table.Columns[1].ColumnName = "Appointment Date";
-                    table.Columns[2].ColumnName = "Appointment Time";
-                    table.Columns[3].ColumnName = "Service Duration (in m)";
+                    table.Columns[0].ColumnName = "ID";
+                    table.Columns[1].ColumnName = "Stylist";
+                    table.Columns[2].ColumnName = "Appointment Date";
+                    table.Columns[3].ColumnName = "Appointment Time";
+                    table.Columns[4].ColumnName = "Service Duration (in m)";
                 }
             }
         }
@@ -444,7 +445,7 @@ namespace HHsystem
                     table.Columns[2].ColumnName = "Appointment Date";
                     table.Columns[3].ColumnName = "Appointment Time";
                     table.Columns[4].ColumnName = "Service";
-                    table.Columns[5].ColumnName = "Service Duration (in m)";
+                    table.Columns[5].ColumnName = "Service Duration (mins)";
                 }
             }
         }
@@ -688,17 +689,22 @@ namespace HHsystem
         }
 
         private void button28_Click(object sender, EventArgs e)
-        {
-            int selectedrowindex = dataGridView8.SelectedCells[0].RowIndex;
-            DataGridViewRow selectedRow = dataGridView8.Rows[selectedrowindex];
+        { 
+            if (!dataGridView8.SelectedRows.Count.Equals(0))
+            {
+                int selectedrowindex = dataGridView8.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView8.Rows[selectedrowindex];
+                int selectedID = Int32.Parse(selectedRow.Cells[0].Value.ToString());
+                string selectedClient = selectedRow.Cells[1].Value.ToString();
+                string selectedDate = selectedRow.Cells[2].Value.ToString();
+                string selectedTime = selectedRow.Cells[3].Value.ToString();
+                string selectedService = selectedRow.Cells[4].Value.ToString();
 
-            int selectedID = Int32.Parse(selectedRow.Cells[0].Value.ToString());
-            string selectedClient = selectedRow.Cells[1].Value.ToString();
-            string selectedDate = selectedRow.Cells[2].Value.ToString();
-            string selectedTime = selectedRow.Cells[3].Value.ToString();
-            string selectedService = selectedRow.Cells[4].Value.ToString();
-
-            new RescheduleForm(selectedID,enametxt.Text,selectedClient,selectedDate,selectedTime,selectedService, this).Show();
+                new RescheduleForm(selectedID, enametxt.Text, selectedClient, selectedDate, selectedTime, selectedService, this).Show();
+            }
+            else {
+                MessageBox.Show("Please Select an Appointment");
+            }
         }
 
         private void btnBrowseBackupLocation_Click(object sender, EventArgs e)
@@ -710,6 +716,58 @@ namespace HHsystem
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
             refreshAppointment();
+        }
+
+        private void button25_Click_1(object sender, EventArgs e)
+        {
+            if (!dataGridView8.SelectedRows.Count.Equals(0))
+            {
+                int selectedrowindex = dataGridView8.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView8.Rows[selectedrowindex];
+                int selectedID = Int32.Parse(selectedRow.Cells[0].Value.ToString());
+                manager.cancelAppointment(selectedID);
+                MessageBox.Show("Appointment Cancelled");
+            }
+            else
+            {
+                MessageBox.Show("Please Select an Appointment");
+            }
+        }
+
+        private void button15_Click_1(object sender, EventArgs e)
+        {
+            if (!dataGridView7.SelectedRows.Count.Equals(0))
+            {
+                int selectedrowindex = dataGridView7.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView7.Rows[selectedrowindex];
+                int selectedID = Int32.Parse(selectedRow.Cells[0].Value.ToString());
+                string selectedClient = selectedRow.Cells[1].Value.ToString();
+                string selectedDate = selectedRow.Cells[2].Value.ToString();
+                string selectedTime = selectedRow.Cells[3].Value.ToString();
+                string selectedService = selectedRow.Cells[4].Value.ToString();
+
+                new RescheduleForm(selectedID, enametxt.Text, selectedClient, selectedDate, selectedTime, selectedService, this).Show();
+            }
+            else
+            {
+                MessageBox.Show("Please Select an Appointment");
+            }
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            if (!dataGridView7.SelectedRows.Count.Equals(0))
+            {
+                int selectedrowindex = dataGridView7.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dataGridView7.Rows[selectedrowindex];
+                int selectedID = Int32.Parse(selectedRow.Cells[0].Value.ToString());
+                manager.cancelAppointment(selectedID);
+                MessageBox.Show("Appointment Cancelled");
+            }
+            else
+            {
+                MessageBox.Show("Please Select an Appointment");
+            }
         }
     }
 }

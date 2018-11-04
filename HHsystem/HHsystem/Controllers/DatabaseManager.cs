@@ -604,6 +604,15 @@ namespace HHsystem.Controllers
             conn.Close();
         }
 
+        public void cancelAppointment(int id)
+        {
+            string command = "CALL cancelAppointment(?id)";
+            connection();
+            cmd = new MySqlCommand(command, conn);
+            cmd.Parameters.AddWithValue("?id", id);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
 
         public void backup(string location)
         {
