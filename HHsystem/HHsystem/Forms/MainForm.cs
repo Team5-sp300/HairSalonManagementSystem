@@ -509,6 +509,7 @@ namespace HHsystem
 
         private void button19_Click(object sender, EventArgs e)
         {
+            button8.Visible = false;
             managementTabControl.SelectedIndex = 0;
             button19.ForeColor = SystemColors.MenuHighlight;
             button26.ForeColor = SystemColors.ControlDarkDark;
@@ -521,10 +522,12 @@ namespace HHsystem
             button19.ForeColor = SystemColors.ControlDarkDark;
             button26.ForeColor = SystemColors.MenuHighlight;
             button10.ForeColor = SystemColors.ControlDarkDark;
+            button8.Visible = true;
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
+            button8.Visible = false;
             managementTabControl.SelectedIndex = 2;
             button19.ForeColor = SystemColors.ControlDarkDark;
             button26.ForeColor = SystemColors.ControlDarkDark;
@@ -606,12 +609,12 @@ namespace HHsystem
                 if (result == DialogResult.Yes)
                 {
                     manager.deleteEmployee(username);
-                    populateEmployeeTable();
+                    populateEmployeeTableMange();
                 }
                 else if (result == DialogResult.No)
                 {
                     manager.voidEmployee(username);
-                    populateEmployeeTable();
+                    populateEmployeeTableMange();
                 }
                 else if (result == DialogResult.Cancel)
                 {
@@ -789,21 +792,26 @@ namespace HHsystem
         {
             if (managementTabControl.SelectedIndex.Equals(0))
             {
-    
-                bindingSource7.Filter = "[Client Name] Like '%" + textBox1.Text + "%'";
-         
+
+                bindingSource7.Filter = "[Client Name]  Like '%" + textBox1.Text + "%' OR [Employee Name] Like '%" + textBox1.Text + "%' " +
+                    "OR [Appointment Date] Like '%" + textBox1.Text + "%' OR [Service Booked] Like '%" + textBox1.Text + "%'" +
+                    "OR [Appointment Time] Like '%" + textBox1.Text + "%'";
                 dataGridView6.DataSource = bindingSource7;
             }
             else if (managementTabControl.SelectedIndex.Equals(1))
             {
-                bindingSource5.Filter = "[Name] Like '%" + textBox1.Text + "%'";
+                bindingSource5.Filter = "[Name] Like '%" + textBox1.Text + "%' " +
+                    "OR [Last Name] Like '%" + textBox1.Text + "%' OR [Phone Number] Like '%" + textBox1.Text + "%' " +
+                    "OR [Email Address] Like '%" + textBox1.Text + "%'OR [Status] Like '%" + textBox1.Text + "%'";
 
                 dataGridView5.DataSource = bindingSource5;
             }
             else if(managementTabControl.SelectedIndex.Equals(2))
             {
-                bindingSource6.Filter = "[Name] Like '%" + textBox1.Text + "%'";
-            
+                bindingSource6.Filter = "[Name] Like '%" + textBox1.Text + "%' " +
+                    "OR [Last Name] Like '%" + textBox1.Text + "%' OR [Phone Number] Like '%" + textBox1.Text + "%' " +
+                    "OR [Email Address] Like '%" + textBox1.Text + "%'OR [Status] Like '%" + textBox1.Text + "%'";
+
                 dataGridView4.DataSource = bindingSource6;
             }
 
