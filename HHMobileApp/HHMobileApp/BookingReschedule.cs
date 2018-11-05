@@ -37,6 +37,9 @@ namespace HHmobileApp
         private string currenthour;
         private string currentminute;
         private string currentservice;
+        private string cname;
+        private string ename;
+        private string type;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -62,6 +65,10 @@ namespace HHmobileApp
             currenthour = Intent.GetStringExtra("hourBooking");
             currentminute = Intent.GetStringExtra("minuteBooking");
             currentservice = Intent.GetStringExtra("serviceBooking");
+
+            ename = Intent.GetStringExtra("cname");
+            cname = Intent.GetStringExtra("ename");
+            type = Intent.GetStringExtra("type");
 
             spinnerDay = FindViewById<Spinner>(Resource.Id.spinnerDate);
             spinnerMonth = FindViewById<Spinner>(Resource.Id.spinnerMonth);
@@ -203,9 +210,27 @@ namespace HHmobileApp
 
         private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
         {
+            client = new WebClient();
+            uri = new Uri("http://" + ip + "/sendEmailReschedule.php");
+            NameValueCollection parameter = new NameValueCollection();
+            parameter.Add("cname", cname);
+            parameter.Add("ename", ename);
+            parameter.Add("adate", "2018/" + amonth + "/" + aday);
+            parameter.Add("atime", ahour + ":" + amin);
+            parameter.Add("service", aservice);
+            client.UploadValuesAsync(uri, parameter);
 
-            var intent = new Intent(this, typeof(BookingActivity));
-            StartActivity(intent);
+
+            if (type.Equals("1"))
+            {
+                var intent = new Intent(this, typeof(ScheduleActivity));
+                StartActivity(intent);
+            }
+            else if (type.Equals("0"))
+            {
+                var intent = new Intent(this, typeof(BookingActivity));
+                StartActivity(intent);
+            }
         }
 
         protected bool ValidateDate()

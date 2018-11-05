@@ -38,6 +38,7 @@ namespace HHmobileApp
         private string ahour;
         private string amin;
         private string aservice;
+        private NameValueCollection parameter;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -209,36 +210,75 @@ namespace HHmobileApp
 
         private void button_click(object sender, EventArgs e)
         {
-            if (ValidateDate().Equals(true))
-            {
-                client = new WebClient();
-                uri = new Uri("http://" + ip + "/insertBooking.php");
-                string[] clientname = cname.Split(' ');
-                string[] employeename = ename.Split(' ');
-                Console.Write(aservice);
-                NameValueCollection parameter = new NameValueCollection();
-                parameter.Add("cfname", clientname[0]);
-                parameter.Add("clname", clientname[1]);
-                parameter.Add("efname", employeename[0]);
-                parameter.Add("elname", employeename[1]);
-                parameter.Add("adate", "2018/" + amonth + "/" + aday);
-                parameter.Add("atime", ahour + ":" + amin);
-                parameter.Add("service", aservice);
+            client = new WebClient();
+            uri = new Uri("http://" + ip + "/bookingCheck.php");
+            parameter = new NameValueCollection();
+            string[] employeename = ename.Split(' ');
+            parameter.Add("efname", employeename[0]);
+            parameter.Add("elname", employeename[1]);
+            parameter.Add("adate", "2018/" + amonth + "/" + aday);
+            parameter.Add("atime", ahour + ":" + amin);
+            parameter.Add("service", aservice);
 
-                client.UploadValuesCompleted += Client_UploadValuesCompleted;
-                client.UploadValuesAsync(uri, parameter);
-            }
-            else
+            client.UploadValuesCompleted += BookingCheck_UploadValuesCompleted;
+            client.UploadValuesAsync(uri, parameter);
+        }
+
+        private void BookingCheck_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
+        {
+            RunOnUiThread(() =>
             {
-                Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
-                alert.SetTitle("Date Past");
-                alert.SetMessage("You cannot make an appointment for a date that has past");
-                alert.SetPositiveButton("OK", (senderAlert, args) =>
-                {
-                });
-                Dialog dialog = alert.Create();
-                dialog.Show();
-            }
+                string json = Encoding.UTF8.GetString(e.Result);
+                string count = json.Replace("count","").Replace("{","").Replace("}", "").Replace(":", "").Replace("\"", "").Trim();
+                Console.WriteLine("Here");
+                Console.WriteLine(json);
+                Console.WriteLine(count);
+                if (int.Parse(count).Equals(0)) {
+                    if (ValidateDate().Equals(true))
+                    {
+
+                        client = new WebClient();
+                        uri = new Uri("http://" + ip + "/insertBooking.php");
+                        string[] clientname = cname.Split(' ');
+                        string[] employeename = ename.Split(' ');
+
+                        parameter = new NameValueCollection();
+                        parameter.Add("cfname", clientname[0]);
+                        parameter.Add("clname", clientname[1]);
+                        parameter.Add("efname", employeename[0]);
+                        parameter.Add("elname", employeename[1]);
+                        parameter.Add("adate", "2018/" + amonth + "/" + aday);
+                        parameter.Add("atime", ahour + ":" + amin);
+                        parameter.Add("service", aservice);
+
+                        client.UploadValuesCompleted += Client_UploadValuesCompleted;
+                        client.UploadValuesAsync(uri, parameter);
+                    }
+                    else
+                    {
+                        Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+                        alert.SetTitle("Date Past");
+                        alert.SetMessage("You cannot make an appointment for a date that has past");
+                        alert.SetPositiveButton("OK", (senderAlert, args) =>
+                        {
+                        });
+                        Dialog dialog = alert.Create();
+                        dialog.Show();
+                    }
+                }
+                else {
+                    Android.Support.V7.App.AlertDialog.Builder alert = new Android.Support.V7.App.AlertDialog.Builder(this);
+                    alert.SetTitle("Booking Already Exisit");
+                    alert.SetMessage("Stylist is unavaliable");
+                    alert.SetPositiveButton("OK", (senderAlert, args) =>
+                    {
+                    });
+                    Dialog dialog = alert.Create();
+                    dialog.Show();
+
+                }
+                //items = JsonConvert.DeserializeObject<List<ScheduleDetails>>(json);
+            });
         }
 
         private void Client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)

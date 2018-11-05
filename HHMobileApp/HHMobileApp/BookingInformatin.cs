@@ -26,9 +26,12 @@ namespace HHmobileApp
         private string hour;
         private string minute;
         private string service;
+        private string cname;
+        private string ename;
         private List<string> items;
         private ListView listview;
         private BookingDetailsListAdapter adapter;
+        string type;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -53,9 +56,12 @@ namespace HHmobileApp
             hour = Intent.GetStringExtra("time").Substring(0, 2);
             minute = Intent.GetStringExtra("time").Substring(3, 2);
             service = Intent.GetStringExtra("service");
+            ename = Intent.GetStringExtra("cname");
+            cname = Intent.GetStringExtra("ename");
+            type= Intent.GetStringExtra("type");
 
 
-        items = new List<string>();
+            items = new List<string>();
             items.Add(Intent.GetStringExtra("cname"));
             if (Intent.GetStringExtra("type").Equals("0"))
             {
@@ -91,6 +97,9 @@ namespace HHmobileApp
             intent.PutExtra("hourBooking", hour);
             intent.PutExtra("minuteBooking", minute);
             intent.PutExtra("serviceBooking", service);
+            intent.PutExtra("ename", ename);
+            intent.PutExtra("cname", cname);
+            intent.PutExtra("type", type);
             StartActivity(intent);
         }
 
@@ -98,8 +107,16 @@ namespace HHmobileApp
         {
             if (e.Item.ItemId == Resource.Id.action_back)
             {
-                var intent = new Intent(this, typeof(BookingActivity));
-                StartActivity(intent);
+                if (type.Equals("1"))
+                {
+                    var intent = new Intent(this, typeof(ScheduleActivity));
+                    StartActivity(intent);
+                }
+                else if (type.Equals("0"))
+                {
+                    var intent = new Intent(this, typeof(BookingActivity));
+                    StartActivity(intent);
+                }
             }
         }
 
