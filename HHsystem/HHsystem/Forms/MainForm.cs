@@ -718,7 +718,7 @@ namespace HHsystem
                 string selectedTime = selectedRow.Cells[3].Value.ToString();
                 string selectedService = selectedRow.Cells[4].Value.ToString();
 
-                if (Int32.Parse(selectedDate.Substring(3, 2)) <= DateTime.Today.Month && Int32.Parse(selectedDate.Substring(0, 2)) <= DateTime.Today.Day)
+                if (Int32.Parse(selectedDate.Substring(3, 2)) >= DateTime.Today.Month && Int32.Parse(selectedDate.Substring(0, 2)) >= DateTime.Today.Day)
                 {
                     new RescheduleForm(selectedID, enametxt.Text, selectedClient, selectedDate, selectedTime, selectedService, this).Show();
                 }
@@ -772,7 +772,7 @@ namespace HHsystem
                 string selectedTime = selectedRow.Cells[3].Value.ToString();
                 string selectedService = selectedRow.Cells[4].Value.ToString();
 
-                if (Int32.Parse(selectedDate.Substring(3, 2)) <= DateTime.Today.Month && Int32.Parse(selectedDate.Substring(0, 2))<= DateTime.Today.Day)
+                if (Int32.Parse(selectedDate.Substring(3, 2)) >= DateTime.Today.Month && Int32.Parse(selectedDate.Substring(0, 2))>= DateTime.Today.Day)
                 {
                     new RescheduleForm(selectedID, enametxt.Text, selectedClient, selectedDate, selectedTime, selectedService, this).Show();
                 }

@@ -101,7 +101,7 @@ namespace HHsystem.Controllers
                 mail.From = new MailAddress("SP300Test@gmail.com");
                 mail.To.Add(toAddess);  //swabe@live.co.za , eric_odding@hotmail.com
                 mail.Subject = "Confirmation for change of Appointment for " + client;
-                using (StreamReader reader = File.OpenText("..\\..\\..\\..\\rebookingConfirmation.html"))
+                using (StreamReader reader = File.OpenText("..\\..\\..\\..\\rescheduleConfirmation.html"))
                 {
                     body = reader.ReadToEnd();
 
@@ -113,6 +113,16 @@ namespace HHsystem.Controllers
                 body = body.Replace("?@service", service);
                 mail.Body = body;
                 mail.IsBodyHtml = true;
+
+                AlternateView htmlView = AlternateView.CreateAlternateViewFromString(body, null, "text/html");
+                LinkedResource theEmailImage1 = new LinkedResource("..\\..\\..\\..\\Docs\\heydt-Logo.jpg");
+                theEmailImage1.ContentId = "headerlogo";
+                LinkedResource theEmailImage2 = new LinkedResource("..\\..\\..\\..\\Docs\\heydt-270x200.jpg");
+                theEmailImage2.ContentId = "contentlogo";
+                htmlView.LinkedResources.Add(theEmailImage1);
+                htmlView.LinkedResources.Add(theEmailImage2);
+                mail.AlternateViews.Add(htmlView);
+
                 SmtpServer.Port = 587;
                 SmtpServer.Credentials = new System.Net.NetworkCredential("SP300Test".Trim(), "2018Group5".Trim());
                 SmtpServer.EnableSsl = true;

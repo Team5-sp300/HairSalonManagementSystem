@@ -387,6 +387,29 @@ namespace HHsystem.Controllers
             return clientDetails;
         }
 
+        public string[,] getClientSurname(int id)
+        {
+            string[,] client = null;
+
+            string command = "Call getCustomerById("+ id +")";
+            connection();
+            //cmd.Parameters.AddWithValue("?bookingid", id.ToString());
+            cmd = new MySqlCommand(command, conn);
+            MySqlDataReader result = cmd.ExecuteReader();
+
+            if (result != null)
+            {
+                client = new string[1,2]; 
+                while (result.Read())
+                {
+                    client[0, 0] = result[0].ToString().Replace("&nbsp&", " ");
+                    client[0, 1] = result[1].ToString().Replace("&nbsp&", " ");
+                }
+            }
+            conn.Close();
+            return client;
+        }
+
         public string[,] login()
         {
             string[,] loginDetails = null;
@@ -616,8 +639,6 @@ namespace HHsystem.Controllers
 
         public void backup(string location)
         {
-          
-                connection();
                 switch (MessageBox.Show("Are you sure you want to back up the database?",
                   "Confirm Backup",
                   MessageBoxButtons.YesNo,
@@ -626,8 +647,11 @@ namespace HHsystem.Controllers
                     case DialogResult.Yes:
                     new Thread(() =>
                     {
-                    //string file = "../../../../Database/Backups/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
-                    string file = location+"/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
+                        connection();
+                        //string file = "../../../../Database/Backups/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
+                        string file = location+"/HSMS_DBBackup_" + DateTime.Now.ToString("ddMMMyyyy") + ".sql";
+                        cmd = new MySqlCommand();
+                        cmd.Connection = conn;
                         MySqlBackup mb = new MySqlBackup(cmd);
                         mb.ExportToFile(file);
                         conn.Close();
@@ -644,22 +668,24 @@ namespace HHsystem.Controllers
 
         public void restore(string location)
         { 
-                connection();
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                DialogResult result = openFileDialog.ShowDialog();
-                string file;
-                if (result == DialogResult.OK)
-                {
-                new Thread(() =>
-                {
-                    file = openFileDialog.InitialDirectory = location;
-                //    file = openFileDialog.FileName;
-
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = location;
+            DialogResult result = openFileDialog.ShowDialog();
+            string file;
+            if (result == DialogResult.OK)
+            {
+                //new Thread(() =>
+                //{
+                    connection();
+                    file = openFileDialog.FileName;
+                    file = file.Replace("\\","/");
+                    cmd = new MySqlCommand();
+                    cmd.Connection = conn;
                     MySqlBackup mb = new MySqlBackup(cmd);
                     mb.ImportFromFile(file);
                     conn.Close();
                     MessageBox.Show("Database successfully restored from file: " + file, "Restore", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }).Start();
+                //}).Start();
             }
         }
     }

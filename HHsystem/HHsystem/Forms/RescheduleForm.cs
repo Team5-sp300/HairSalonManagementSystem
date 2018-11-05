@@ -121,14 +121,15 @@ namespace HHsystem.Forms
                         + "Time\t: " + getTime() + Environment.NewLine 
                         + "Service\t: " + getService(),"Rescheduling Confirmed");
                     main.updateBookingTable();
-                    //for (int i = 0; i < clients.Length; i++)
-                    //{
-                    //    if (clients[i, 1].ToString() == clientname[0] && clients[i, 2].ToString() == clientname[1])
-                    //    {
-                    //        //email.sendEmail(int.Parse(clients[i,0]),getClientName(),getEmployeeName(),getDate(),getTime());
-                    //        break;
-                    //    }
-                    //}
+                    string[,] client = manager.getClientSurname(selectedId);
+                    for (int i = 0; i < clients.Length; i++)
+                    {
+                        if (clients[i, 1].ToString() == client[0,0] && clients[i, 2].ToString() == client[0,1])
+                        {
+                            email.sendRescheduleEmail(int.Parse(clients[i,0]), client[0, 0] + " " + client[0, 1], selectedEmpName,getDate(),getTime(), getService());
+                            break;
+                        }
+                    }
                     main.populateBookingTable();
                     main.refreshAppointment();
                     this.Dispose();
